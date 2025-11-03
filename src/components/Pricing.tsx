@@ -50,11 +50,10 @@ export const Pricing = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Transparente Preise
+            Preise
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Selbstzahlerleistung – von privaten Krankenkassen regelhaft übernommen, 
-            bei gesetzlichen Kassen oft Teilerstattung möglich
+            Selbstzahlerleistung - von den privaten Krankenkassen regelhaft übernommen. (Teil)erstattung bei gesetzlichen Krankenkassen möglich. Eine Kostenübernahme kann von uns nicht garantiert werden.
           </p>
         </div>
 
