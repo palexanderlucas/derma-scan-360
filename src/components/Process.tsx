@@ -32,7 +32,7 @@ export const Process = () => {
     {
       icon: Clock,
       title: "Verlaufskontrollen",
-      description: "Dank Total-Body-Mapping können Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden."
+      description: "Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen."
     }
   ];
 
