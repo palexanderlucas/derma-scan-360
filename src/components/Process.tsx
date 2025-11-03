@@ -27,7 +27,7 @@ export const Process = () => {
     {
       icon: FileText,
       title: "Arztbrief & Empfehlung",
-      description: "Sie erhalten einen fachärztlichen Befundbericht. Bei Auffälligkeiten erfolgt eine telefonische Befundbesprechung."
+      description: "Sie erhalten einen fachärztlichen Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten erfolgt eine ärztliche Befundbesprechung telefonisch."
     },
     {
       icon: Clock,
