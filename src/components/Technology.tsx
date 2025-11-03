@@ -1,7 +1,7 @@
 import { Scan, Microscope, Brain } from "lucide-react";
 import bodyScanner from "@/assets/body-scanner.jpg";
 import dermatoscope from "@/assets/dermatoscope.jpg";
-import monitoring from "@/assets/monitoring.png";
+import doctorAnalysis from "@/assets/doctor-analysis.png";
 
 export const Technology = () => {
   return (
@@ -111,8 +111,8 @@ export const Technology = () => {
             </div>
             <div className="relative">
               <img 
-                src={monitoring} 
-                alt="KI-gestützte Verlaufskontrolle" 
+                src={doctorAnalysis} 
+                alt="Qualitätssicherung durch Hautarzt" 
                 className="rounded-2xl shadow-xl w-full"
               />
             </div>

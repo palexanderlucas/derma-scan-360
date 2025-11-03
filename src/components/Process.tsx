@@ -1,6 +1,6 @@
 import { Calendar, Scan, CheckCircle, FileText, Clock, Stethoscope } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import doctorAnalysis from "@/assets/doctor-analysis.png";
+import monitoring from "@/assets/monitoring.png";
 
 export const Process = () => {
   const fullBodySteps = [
@@ -95,8 +95,8 @@ export const Process = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center mt-16 p-8 bg-muted/30 rounded-2xl">
               <div>
                 <img 
-                  src={doctorAnalysis} 
-                  alt="Hautarzt analysiert Befunde" 
+                  src={monitoring} 
+                  alt="Professionelle Befundung" 
                   className="rounded-xl shadow-lg w-full"
                 />
               </div>
