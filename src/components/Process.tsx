@@ -40,7 +40,7 @@ export const Process = () => {
     {
       icon: Clock,
       title: "Sofort ohne Termin",
-      description: "Kommen Sie spontan zu unseren Öffnungszeiten. Wartezeit: ca. 10-30 Minuten."
+      description: "1. Kommen Sie jetzt vorbei - ohne Termin. Besuchen Sie uns spontan zu unseren Öffnungszeiten. Die Wartezeit beträgt erfahrungsgemäß zwischen 10-30 Minuten."
     },
     {
       icon: Scan,
