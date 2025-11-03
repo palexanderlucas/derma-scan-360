@@ -5,14 +5,13 @@ export const Pricing = () => {
   const plans = [
     {
       name: "Ganzkörper-Screening",
-      price: "150",
+      price: "149",
       delivery: "Befund innerhalb von 14 Tagen",
       features: [
         "Total-Body-Mapping",
         "Digitale Auflichtmikroskopie",
         "KI-gestützte Analyse",
-        "Fachärztlicher Arztbrief",
-        "Alle Hautveränderungen dokumentiert"
+        "Befundung durch erfahrenen Hautarzt"
       ],
       popular: false
     },
@@ -24,7 +23,7 @@ export const Pricing = () => {
         "Total-Body-Mapping",
         "Digitale Auflichtmikroskopie",
         "KI-gestützte Analyse",
-        "Fachärztlicher Arztbrief",
+        "Arztbrief",
         "Auszug der aufgenommenen Bilder",
         "Schnellere Befundung"
       ],
