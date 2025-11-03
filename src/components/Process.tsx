@@ -12,7 +12,7 @@ export const Process = () => {
     {
       icon: Scan,
       title: "Ganzkörper-Screening",
-      description: "Total-Body-Mapping und auflichtmikroskopische Aufnahmen auffälliger Veränderungen in unserem Zentrum."
+      description: "Zuerst wird ein Total-Body-Mapping erstellt. Im zweiten Schritt werden auffällige Veränderungen mit einem Auflichtmikroskop aufgenommen."
     },
     {
       icon: CheckCircle,
