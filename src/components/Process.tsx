@@ -17,7 +17,7 @@ export const Process = () => {
     {
       icon: CheckCircle,
       title: "Qualitätsprüfung",
-      description: "Ein Hautarzt überprüft die Aufnahmen. Bei Bedarf wird ein kostenfreier Zweittermin vereinbart."
+      description: "ein Hautarzt überprüft die Aufnahmen hinsichtlich Qualität und Vollständigkeit. Selten ist ein Zweittermin für speziellere Nahaufnahmen notwendig. Dieser Termin ist kostenfrei."
     },
     {
       icon: Stethoscope,
