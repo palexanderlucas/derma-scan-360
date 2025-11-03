@@ -27,20 +27,23 @@ export const Technology = () => {
                 <h3 className="text-2xl md:text-3xl font-bold">Total-Body-Mapping</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Unser Ganzkörper-Scanner erstellt eine präzise Landkarte Ihrer gesamten Hautoberfläche. 
-                Auffällige Veränderungen werden genau analysiert und bei Verlaufskontrollen von einer 
-                Software übereinandergelegt.
+                Unser Ganzkörper-Scanner erstellt eine Landkarte der gesamten Hautoberfläche. 
+                Auf diese Weise können auffällige Veränderungen genau analysiert werden. Bei Verlaufskontrollen 
+                werden alle Läsionen von einer Software übereinandergelegt und über die Zeit hinweg verglichen. 
+                Neue Muttermale oder Veränderungen in Form und Farbe können so präzise detektiert werden. 
+                Dank künstlicher Intelligenz werden auch sehr kleine Veränderungen frühzeitig erkannt. 
+                Die Sicherheit des Screenings wird so maximiert.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Neue Muttermale oder Veränderungen in Form und Farbe können so präzise detektiert werden. 
-                Dank künstlicher Intelligenz werden auch sehr kleine Veränderungen frühzeitig erkannt.
+                Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio" der Marke Canfield. Auch die Software 
+                und künstliche Intelligenz wird von Canfield zur Verfügung gestellt. Canfield ist in dieser 
+                Technologie weltweit führend und entspricht dem Prinzip von FotoFinder.
               </p>
-              <div className="bg-accent/50 p-4 rounded-lg">
-                <p className="text-sm font-medium">
-                  IntelliStudio von Canfield – weltweit führende Technologie, 
-                  etabliertes Medizinprodukt mit nachgewiesenem Mehrwert in zahlreichen Studien.
-                </p>
-              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
+                in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
+                Universitätskliniken setzen auf diese Technologie.
+              </p>
             </div>
             <div className="relative">
               <img 
