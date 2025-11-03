@@ -101,11 +101,9 @@ export const Process = () => {
                 />
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold">Professionelle Befundung</h3>
+                <h3 className="text-2xl font-bold">Verlaufskontrollen</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Jeder Befund wird von Frau Dr. Reuther supervidiert und signiert. 
-                  Die Kombination aus modernster KI-Technologie und hautärztlicher Expertise 
-                  gewährleistet höchste Diagnosegenauigkeit.
+                  Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.
                 </p>
               </div>
             </div>
