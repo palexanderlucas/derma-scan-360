@@ -1,5 +1,6 @@
 import { Calendar, Scan, CheckCircle, FileText, Clock, Stethoscope, CalendarCheck } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import monitoring from "@/assets/monitoring.png";
 
 export const Process = () => {
   const fullBodySteps = [
@@ -89,6 +90,22 @@ export const Process = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 items-center mt-16 p-8 bg-muted/30 rounded-2xl">
+              <div>
+                <img 
+                  src={monitoring} 
+                  alt="Verlaufskontrollen" 
+                  className="rounded-xl shadow-lg w-full"
+                />
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold">Verlaufskontrollen</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.
+                </p>
+              </div>
             </div>
           </TabsContent>
 
