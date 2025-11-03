@@ -1,6 +1,5 @@
-import { Calendar, Scan, CheckCircle, FileText, Clock, Stethoscope } from "lucide-react";
+import { Calendar, Scan, CheckCircle, FileText, Clock, Stethoscope, CalendarCheck } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import monitoring from "@/assets/monitoring.png";
 
 export const Process = () => {
   const fullBodySteps = [
@@ -17,7 +16,12 @@ export const Process = () => {
     {
       icon: CheckCircle,
       title: "Qualitätsprüfung",
-      description: "ein Hautarzt überprüft die Aufnahmen hinsichtlich Qualität und Vollständigkeit. Selten ist ein Zweittermin für speziellere Nahaufnahmen notwendig. Dieser Termin ist kostenfrei."
+      description: "ein Hautarzt überprüft die Aufnahmen hinsichtlich Qualität und Vollständigkeit."
+    },
+    {
+      icon: CalendarCheck,
+      title: "Zweittermin",
+      description: "Selten ist ein zweiter Termin notwendig, zB. bei unscharfen Aufnahmen oder um weitere spezielle auflichtmikroskopische Aufnahmen zu ergänzen. Dieser Termin wird Ihnen selbstverständlich nicht in Rechnung gestellt."
     },
     {
       icon: Stethoscope,
@@ -28,11 +32,6 @@ export const Process = () => {
       icon: FileText,
       title: "Arztbrief & Empfehlung",
       description: "Sie erhalten einen fachärztlichen Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten erfolgt eine ärztliche Befundbesprechung telefonisch."
-    },
-    {
-      icon: Clock,
-      title: "Verlaufskontrollen",
-      description: "Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen."
     }
   ];
 
@@ -90,22 +89,6 @@ export const Process = () => {
                   </div>
                 </div>
               ))}
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-12 items-center mt-16 p-8 bg-muted/30 rounded-2xl">
-              <div>
-                <img 
-                  src={monitoring} 
-                  alt="Professionelle Befundung" 
-                  className="rounded-xl shadow-lg w-full"
-                />
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold">Verlaufskontrollen</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.
-                </p>
-              </div>
             </div>
           </TabsContent>
 
