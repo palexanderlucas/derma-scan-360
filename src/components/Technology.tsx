@@ -72,19 +72,21 @@ export const Technology = () => {
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Mit einem Auflichtmikroskop können Muttermale stark vergrößert und sehr detailliert 
-                beurteilt werden. Dank speziellem und polarisiertem Licht werden Muster und Strukturen 
-                dargestellt, die mit dem bloßen Auge nicht erkennbar sind.
+                beurteilt werden. Dank speziellem und polarisiertem Licht können Muster und Strukturen 
+                dargestellt werden, die mit dem bloßen Auge nicht erkennbar sind. Auflichtmikroskopische 
+                Nahaufnahmen erhöhen anerkannterweise die Genauigkeit eines Hautkrebsscreenings und werden 
+                von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen 
+                Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield D2 Dermatoskop).
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut abgespeichert. 
-                Total-Body-Mapping und Dermatoskopie werden verbunden – für präzise Verlaufskontrollen.
+                Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen 
+                Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden also verbunden. So können auch 
+                auflichtmikroskopische Veränderungen über die Zeit präzise erkannt werden.
               </p>
-              <div className="bg-accent/50 p-4 rounded-lg">
-                <p className="text-sm font-medium">
-                  Canfield D2 Dermatoskop – eines der modernsten Dermatoskope auf dem Markt. 
-                  Empfohlen von sämtlichen Fachgesellschaften und Leitlinien.
-                </p>
-              </div>
+              <p className="text-muted-foreground leading-relaxed">
+                Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende 
+                Befundung erfolgt von einem erfahrenen Hautarzt.
+              </p>
             </div>
           </div>
 
