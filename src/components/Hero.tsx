@@ -12,7 +12,7 @@ export const Hero = () => {
               Hautkrebs Screening auf höchstem Niveau
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Frühzeitige Erkennung auffälliger Hautveränderungen dank hochpräzisem Total-Body-Mapping und digitaler Auflichtmikroskopie in Osnabrück.
+              Frühzeitige Erkennung auffälliger Hautveränderungen dank hochpräzisem Total-Body-Mapping und digitaler Auflichtmikroskopie – befundet von erfahrenen Fachärzten für Dermatologie mit Unterstützung von künstlicher Intelligenz.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -43,8 +43,8 @@ export const Hero = () => {
               <div className="flex items-start gap-2">
                 <Award className="h-5 w-5 text-primary mt-1" />
                 <div>
-                  <div className="font-semibold text-sm">Facharzt</div>
-                  <div className="text-xs text-muted-foreground">Zertifiziert</div>
+                  <div className="font-semibold text-sm">Facharztstandard</div>
+                  <div className="text-xs text-muted-foreground">Befundet von erfahrenen Hautärzten</div>
                 </div>
               </div>
             </div>
