@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Pricing = () => {
@@ -10,8 +10,9 @@ export const Pricing = () => {
       features: [
         "Total-Body-Mapping",
         "Digitale Auflichtmikroskopie",
-        "KI-gestützte Analyse",
-        "Befundung durch erfahrenen Hautarzt"
+        "KI-Unterstützung",
+        "Befundung durch erfahrenen Hautarzt",
+        "Arztbrief"
       ],
       popular: false
     },
@@ -22,23 +23,25 @@ export const Pricing = () => {
       features: [
         "Total-Body-Mapping",
         "Digitale Auflichtmikroskopie",
-        "KI-gestützte Analyse",
+        "KI-Unterstützung",
         "Arztbrief",
-        "Auszug der aufgenommenen Bilder",
-        "Schnellere Befundung"
+        "Fotoreport mit Auszug der aufgenommenen Bilder",
+        "Express-Befundung innerhalb von 5 Werktagen"
       ],
       popular: true
     },
     {
       name: "Single Lesion",
-      price: "30",
-      delivery: "1. Läsion, jede weitere 10€",
+      price: "ab 25",
+      delivery: "Erste Läsion 25€, jede weitere 10€",
       features: [
         "Auflichtmikroskopische Aufnahme",
-        "KI-gestützte Analyse",
+        "KI-Unterstützung",
         "Fachärztlicher Befund",
-        "Sofort ohne Termin",
-        "Flexible Anzahl"
+        "Sofort ohne Termin"
+      ],
+      negativeFeatures: [
+        "kein Total-Body-Mapping"
       ],
       popular: false
     }
@@ -83,6 +86,12 @@ export const Pricing = () => {
                   <li key={feature} className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <span className="text-sm">{feature}</span>
+                  </li>
+                ))}
+                {plan.negativeFeatures?.map((feature) => (
+                  <li key={feature} className="flex items-start gap-2">
+                    <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
+                    <span className="text-sm text-muted-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
