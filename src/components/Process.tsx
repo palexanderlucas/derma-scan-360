@@ -22,7 +22,7 @@ export const Process = () => {
     {
       icon: Stethoscope,
       title: "Analyse",
-      description: "Erfahrener Hautarzt befundet die Bilder – unterstützt von spezialisierter KI und Vergleich mit Voraufnahmen."
+      description: "Ein erfahrener Hautarzt befundet die Fotoaufnahmen - unterstützt von einer spezialisierten künstlichen Intelligenz. Wenn Sie uns schoneinmal besucht haben, erfolgt auch ein ausgiebiger Vergleich mit Ihren Voraufnahmen."
     },
     {
       icon: FileText,
