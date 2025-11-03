@@ -97,26 +97,17 @@ export const Technology = () => {
                 <div className="p-3 bg-primary/10 rounded-lg">
                   <Brain className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold">KI-gestützte Analyse</h3>
+                <h3 className="text-2xl md:text-3xl font-bold">Qualitätssicherung</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Künstliche Intelligenz unterstützt unsere erfahrenen Fachärzte bei der Befundung. 
-                Sämtliche Nahaufnahmen werden von spezialisierter KI mitbeurteilt, um auch kleinste 
-                Veränderungen zu erkennen.
+                Jeder Befund wird von einem erfahrenen Hautarzt erstellt. Zusätzlich erfolgt eine 
+                Qualitätssicherung durch Frau Dr. med. Judith Reuther. Sie ist Fachärztin für Dermatologie 
+                und spezialisiert auf Hautkrebsscreening. Sie ist stellvertretende Leiterin des 
+                Hauttumorzentrums der Universitätsklinik Münster und hat eine Zusatzbezeichnung für 
+                Tumortherapien erworben. Zudem hält sie regelmäßig Fortbildungen zum Thema Hautkrebsvorsorge 
+                und Auflichtmikroskopie. Die Befundung wird von Frau Dr. Reuther supervidiert und signiert. 
+                Bei Auffälligkeiten erfolgt zstz. eine telefonische Befundbesprechung.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Die abschließende Befundung erfolgt immer durch Dr. med. Judith Reuther – 
-                Fachärztin für Dermatologie und spezialisiert auf Hautkrebsscreening.
-              </p>
-              <div className="bg-primary/10 p-6 rounded-lg space-y-2">
-                <h4 className="font-semibold">Dr. med. Judith Reuther</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Fachärztin für Dermatologie</li>
-                  <li>• Stellv. Leiterin Hauttumorzentrums Uni Münster</li>
-                  <li>• Zusatzbezeichnung Tumortherapie</li>
-                  <li>• Regelmäßige Fortbildungen Auflichtmikroskopie</li>
-                </ul>
-              </div>
             </div>
             <div className="relative">
               <img 
