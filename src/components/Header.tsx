@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/dermascan-logo.jpg";
+import logo from "@/assets/logo.svg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
