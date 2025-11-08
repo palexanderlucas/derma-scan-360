@@ -27,21 +27,21 @@ export const Hero = () => {
 
             <div className="grid grid-cols-3 gap-4 pt-8 border-t">
               <div className="flex items-start gap-2">
-                <Clock className="h-5 w-5 text-primary mt-1" />
+                <Clock className="h-6 w-6 text-primary mt-1" />
                 <div>
                   <div className="font-semibold text-sm">Termingarantie</div>
                   <div className="text-xs text-muted-foreground">innerhalb von 3 Tagen. Einzelläsionen auch ohne Termin heute</div>
                 </div>
               </div>
               <div className="flex items-start gap-2">
-                <Microscope className="h-5 w-5 text-primary mt-1" />
+                <Microscope className="h-6 w-6 text-primary mt-1" />
                 <div>
                   <div className="font-semibold text-sm">Modernste Technik</div>
                   <div className="text-xs text-muted-foreground">KI-gestütztes Total-Body-Mapping und Dermatoskop</div>
                 </div>
               </div>
               <div className="flex items-start gap-2">
-                <Award className="h-5 w-5 text-primary mt-1" />
+                <Award className="h-6 w-6 text-primary mt-1" />
                 <div>
                   <div className="font-semibold text-sm">Facharztstandard</div>
                   <div className="text-xs text-muted-foreground">Erfahrene Hautärzte</div>
