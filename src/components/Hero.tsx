@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, Award } from "lucide-react";
+import { Calendar, Clock, Award, Microscope } from "lucide-react";
 import heroImage from "@/assets/hero-scan.png";
 
 export const Hero = () => {
@@ -9,7 +9,7 @@ export const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Hautkrebs Screening auf höchstem Niveau
+              Hautkrebs-Screening auf höchstem Niveau
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               Frühzeitige Erkennung auffälliger Hautveränderungen dank hochpräzisem Total-Body-Mapping und digitaler Auflichtmikroskopie – befundet von erfahrenen Fachärzten für Dermatologie mit Unterstützung von künstlicher Intelligenz.
@@ -29,22 +29,22 @@ export const Hero = () => {
               <div className="flex items-start gap-2">
                 <Clock className="h-5 w-5 text-primary mt-1" />
                 <div>
-                  <div className="font-semibold text-sm">Termin heute</div>
-                  <div className="text-xs text-muted-foreground">Keine Wartezeit</div>
+                  <div className="font-semibold text-sm">Termingarantie</div>
+                  <div className="text-xs text-muted-foreground">innerhalb von 3 Tagen. Einzelläsionen auch ohne Termin heute</div>
                 </div>
               </div>
               <div className="flex items-start gap-2">
-                <Award className="h-5 w-5 text-primary mt-1" />
+                <Microscope className="h-5 w-5 text-primary mt-1" />
                 <div>
-                  <div className="font-semibold text-sm">KI-gestützt</div>
-                  <div className="text-xs text-muted-foreground">Höchste Präzision</div>
+                  <div className="font-semibold text-sm">Modernste Technik</div>
+                  <div className="text-xs text-muted-foreground">KI-gestütztes Total-Body-Mapping und Dermatoskop</div>
                 </div>
               </div>
               <div className="flex items-start gap-2">
                 <Award className="h-5 w-5 text-primary mt-1" />
                 <div>
                   <div className="font-semibold text-sm">Facharztstandard</div>
-                  <div className="text-xs text-muted-foreground">Befundet von erfahrenen Hautärzten</div>
+                  <div className="text-xs text-muted-foreground">Erfahrene Hautärzte</div>
                 </div>
               </div>
             </div>
