@@ -55,10 +55,10 @@ export const Process = () => {
   ];
 
   return (
-    <section id="ablauf" className="py-16 md:py-24 lg:py-32">
-      <div className="container mx-auto px-4 lg:px-6">
-        <div className="text-center mb-16 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 tracking-tight">
+    <section id="ablauf" className="py-16 md:py-24 lg:py-32 xl:py-40">
+      <div className="container mx-auto px-4 lg:px-8 xl:px-12 max-w-[1600px]">
+        <div className="text-center mb-16 md:mb-20 xl:mb-24">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 xl:mb-8 tracking-tight">
             Einfacher Ablauf – Höchste Qualität
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
@@ -66,27 +66,27 @@ export const Process = () => {
           </p>
         </div>
 
-        <Tabs defaultValue="fullbody" className="max-w-6xl mx-auto">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8 md:mb-12 h-auto">
-            <TabsTrigger value="fullbody" className="text-sm sm:text-base py-2.5">Ganzkörper-Screening</TabsTrigger>
-            <TabsTrigger value="single" className="text-sm sm:text-base py-2.5">Einzelne Läsion</TabsTrigger>
+        <Tabs defaultValue="fullbody" className="max-w-7xl mx-auto">
+          <TabsList className="grid w-full max-w-lg mx-auto grid-cols-2 mb-8 md:mb-12 xl:mb-16 h-auto">
+            <TabsTrigger value="fullbody" className="text-sm lg:text-base xl:text-lg py-3 xl:py-4">Ganzkörper-Screening</TabsTrigger>
+            <TabsTrigger value="single" className="text-sm lg:text-base xl:text-lg py-3 xl:py-4">Einzelne Läsion</TabsTrigger>
           </TabsList>
 
           <TabsContent value="fullbody" className="space-y-8 md:space-y-12">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 xl:gap-10">
               {fullBodySteps.map((step, index) => (
                 <div key={index} className="relative group">
-                  <div className="flex flex-col h-full p-6 md:p-7 bg-card rounded-2xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
-                        <step.icon className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+                  <div className="flex flex-col h-full p-6 lg:p-7 xl:p-8 bg-card rounded-2xl lg:rounded-3xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
+                    <div className="flex items-center gap-3 xl:gap-4 mb-4 xl:mb-5">
+                      <div className="flex items-center justify-center w-11 h-11 lg:w-12 lg:h-12 xl:w-14 xl:h-14 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
+                        <step.icon className="h-5 w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7 text-primary" />
                       </div>
-                      <div className="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-primary text-primary-foreground text-sm md:text-base font-bold shadow-sm">
+                      <div className="flex items-center justify-center w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 rounded-full bg-primary text-primary-foreground text-sm lg:text-base xl:text-lg font-bold shadow-sm">
                         {index + 1}
                       </div>
                     </div>
-                    <h3 className="font-bold text-base md:text-lg mb-2.5">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">{step.description}</p>
+                    <h3 className="font-bold text-base lg:text-lg xl:text-xl mb-2.5 xl:mb-3">{step.title}</h3>
+                    <p className="text-muted-foreground text-sm lg:text-base xl:text-lg leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}

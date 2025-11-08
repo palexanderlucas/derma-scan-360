@@ -48,10 +48,10 @@ export const Pricing = () => {
   ];
 
   return (
-    <section id="preise" className="py-16 md:py-24 lg:py-32 bg-muted/40">
-      <div className="container mx-auto px-4 lg:px-6">
-        <div className="text-center mb-16 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 tracking-tight">
+    <section id="preise" className="py-16 md:py-24 lg:py-32 xl:py-40 bg-muted/40">
+      <div className="container mx-auto px-4 lg:px-8 xl:px-12 max-w-[1600px]">
+        <div className="text-center mb-16 md:mb-20 xl:mb-24">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 xl:mb-8 tracking-tight">
             Preise
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
@@ -59,12 +59,12 @@ export const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 xl:gap-10 max-w-7xl mx-auto">
           {plans.map((plan) => (
             <div 
               key={plan.name}
-              className={`relative flex flex-col p-7 md:p-9 bg-card rounded-2xl md:rounded-3xl border-2 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${
-                plan.popular ? 'border-primary sm:scale-105 shadow-xl' : 'border-border/50 hover:border-primary/30'
+              className={`relative flex flex-col p-7 lg:p-9 xl:p-10 bg-card rounded-2xl lg:rounded-3xl border-2 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${
+                plan.popular ? 'border-primary lg:scale-105 shadow-xl' : 'border-border/50 hover:border-primary/30'
               }`}
             >
               {plan.popular && (
