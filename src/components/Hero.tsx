@@ -25,27 +25,18 @@ export const Hero = () => {
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t">
-              <div className="flex items-start gap-2">
-                <Clock className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <div className="font-semibold text-sm">Termingarantie</div>
-                  <div className="text-xs text-muted-foreground">innerhalb von 3 Tagen. Einzelläsionen auch ohne Termin heute</div>
-                </div>
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t">
+              <div className="flex items-center gap-3">
+                <Clock className="h-8 w-8 text-primary flex-shrink-0" />
+                <div className="font-semibold">Termingarantie</div>
               </div>
-              <div className="flex items-start gap-2">
-                <Microscope className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <div className="font-semibold text-sm">Modernste Technik</div>
-                  <div className="text-xs text-muted-foreground">KI-gestütztes Total-Body-Mapping und Dermatoskop</div>
-                </div>
+              <div className="flex items-center gap-3">
+                <Microscope className="h-8 w-8 text-primary flex-shrink-0" />
+                <div className="font-semibold">Modernste Technik</div>
               </div>
-              <div className="flex items-start gap-2">
-                <Award className="h-6 w-6 text-primary mt-1" />
-                <div>
-                  <div className="font-semibold text-sm">Facharztstandard</div>
-                  <div className="text-xs text-muted-foreground">Erfahrene Hautärzte</div>
-                </div>
+              <div className="flex items-center gap-3">
+                <Award className="h-8 w-8 text-primary flex-shrink-0" />
+                <div className="font-semibold">Facharztstandard</div>
               </div>
             </div>
           </div>
