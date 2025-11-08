@@ -5,28 +5,28 @@ import doctorAnalysis from "@/assets/doctor-analysis.png";
 
 export const Technology = () => {
   return (
-    <section id="technologie" className="py-12 md:py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
+    <section id="technologie" className="py-16 md:py-24 lg:py-32 bg-muted/40">
+      <div className="container mx-auto px-4 lg:px-6">
+        <div className="text-center mb-16 md:mb-20 lg:mb-24">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 tracking-tight">
             Modernste Technologie für Ihre Sicherheit
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             Wir setzen auf weltweit führende Medizintechnik von Canfield für präzise Früherkennung
           </p>
         </div>
 
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-20 md:space-y-28 lg:space-y-32">
           {/* Total-Body-Mapping */}
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-4 md:space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="p-2.5 md:p-3 bg-primary/10 rounded-lg">
-                  <Scan className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
+            <div className="space-y-5 md:space-y-6 lg:space-y-7">
+              <div className="flex items-center gap-4">
+                <div className="p-3 md:p-4 bg-gradient-to-br from-primary/15 to-primary/5 rounded-2xl shadow-sm">
+                  <Scan className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                 </div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Total-Body-Mapping</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Total-Body-Mapping</h3>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Unser Ganzkörper-Scanner erstellt eine Landkarte der gesamten Hautoberfläche. 
                 Auf diese Weise können auffällige Veränderungen genau analysiert werden. Bei Verlaufskontrollen 
                 werden alle Läsionen von einer Software übereinandergelegt und über die Zeit hinweg verglichen. 
@@ -45,30 +45,32 @@ export const Technology = () => {
                 Universitätskliniken setzen auf diese Technologie.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative group">
+              <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
               <img 
                 src={bodyScanner} 
                 alt="Total-Body-Mapping Scanner" 
-                className="rounded-2xl shadow-xl w-full"
+                className="relative rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]"
               />
             </div>
           </div>
 
           {/* Auflichtmikroskopie */}
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative order-2 md:order-1">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
+            <div className="relative order-2 md:order-1 group">
+              <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
               <img 
                 src={dermatoscope} 
                 alt="Digitale Auflichtmikroskopie" 
-                className="rounded-xl md:rounded-2xl shadow-xl w-full"
+                className="relative rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]"
               />
             </div>
-            <div className="space-y-4 md:space-y-6 order-1 md:order-2">
-              <div className="flex items-center gap-3">
-                <div className="p-2.5 md:p-3 bg-primary/10 rounded-lg">
-                  <Microscope className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+            <div className="space-y-5 md:space-y-6 lg:space-y-7 order-1 md:order-2">
+              <div className="flex items-center gap-4">
+                <div className="p-3 md:p-4 bg-gradient-to-br from-primary/15 to-primary/5 rounded-2xl shadow-sm">
+                  <Microscope className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                 </div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Digitale Auflichtmikroskopie</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Digitale Auflichtmikroskopie</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Mit einem Auflichtmikroskop können Muttermale stark vergrößert und sehr detailliert 
@@ -91,13 +93,13 @@ export const Technology = () => {
           </div>
 
           {/* KI-Unterstützung */}
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-4 md:space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="p-2.5 md:p-3 bg-primary/10 rounded-lg">
-                  <Brain className="h-5 w-5 md:h-6 md:w-6 text-primary" />
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
+            <div className="space-y-5 md:space-y-6 lg:space-y-7">
+              <div className="flex items-center gap-4">
+                <div className="p-3 md:p-4 bg-gradient-to-br from-primary/15 to-primary/5 rounded-2xl shadow-sm">
+                  <Brain className="h-6 w-6 md:h-7 md:w-7 text-primary" />
                 </div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold">Qualitätssicherung</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">Qualitätssicherung</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
                 Jeder Befund wird von einem erfahrenen Hautarzt erstellt. Zusätzlich erfolgt eine 
@@ -109,11 +111,12 @@ export const Technology = () => {
                 Bei Auffälligkeiten erfolgt zstz. eine telefonische Befundbesprechung.
               </p>
             </div>
-            <div className="relative">
+            <div className="relative group">
+              <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
               <img 
                 src={doctorAnalysis} 
                 alt="Qualitätssicherung durch Hautarzt" 
-                className="rounded-2xl shadow-xl w-full"
+                className="relative rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]"
               />
             </div>
           </div>

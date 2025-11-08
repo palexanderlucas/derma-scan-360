@@ -48,10 +48,10 @@ export const Pricing = () => {
   ];
 
   return (
-    <section id="preise" className="py-12 md:py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
+    <section id="preise" className="py-16 md:py-24 lg:py-32 bg-muted/40">
+      <div className="container mx-auto px-4 lg:px-6">
+        <div className="text-center mb-16 md:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 tracking-tight">
             Preise
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
@@ -59,12 +59,12 @@ export const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto">
           {plans.map((plan) => (
             <div 
               key={plan.name}
-              className={`relative flex flex-col p-6 md:p-8 bg-card rounded-xl md:rounded-2xl border-2 shadow-lg transition-all hover:shadow-xl ${
-                plan.popular ? 'border-primary sm:scale-105' : 'border-transparent'
+              className={`relative flex flex-col p-7 md:p-9 bg-card rounded-2xl md:rounded-3xl border-2 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${
+                plan.popular ? 'border-primary sm:scale-105 shadow-xl' : 'border-border/50 hover:border-primary/30'
               }`}
             >
               {plan.popular && (
@@ -106,8 +106,8 @@ export const Pricing = () => {
           ))}
         </div>
 
-        <div className="mt-12 max-w-4xl mx-auto p-6 bg-accent/50 rounded-xl">
-          <h3 className="font-semibold mb-3 text-center">Kostenerstattung durch Krankenkassen</h3>
+        <div className="mt-16 md:mt-20 max-w-5xl mx-auto p-8 md:p-10 bg-gradient-to-br from-accent/60 to-accent/40 rounded-2xl md:rounded-3xl shadow-lg border border-border/30">
+          <h3 className="text-xl md:text-2xl font-bold mb-5 md:mb-6 text-center">Kostenerstattung durch Krankenkassen</h3>
           <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
             <div>
               <p className="font-medium text-foreground mb-2">Private Krankenkassen:</p>

@@ -55,10 +55,10 @@ export const Process = () => {
   ];
 
   return (
-    <section id="ablauf" className="py-12 md:py-20">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
+    <section id="ablauf" className="py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 lg:px-6">
+        <div className="text-center mb-16 md:mb-20">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 tracking-tight">
             Einfacher Ablauf – Höchste Qualität
           </h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
@@ -73,20 +73,20 @@ export const Process = () => {
           </TabsList>
 
           <TabsContent value="fullbody" className="space-y-8 md:space-y-12">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {fullBodySteps.map((step, index) => (
-                <div key={index} className="relative">
-                  <div className="flex flex-col h-full p-5 md:p-6 bg-card rounded-xl border shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-3 mb-3 md:mb-4">
-                      <div className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-lg bg-primary/10">
-                        <step.icon className="h-4 w-4 md:h-5 md:w-5 text-primary" />
+                <div key={index} className="relative group">
+                  <div className="flex flex-col h-full p-6 md:p-7 bg-card rounded-2xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
+                        <step.icon className="h-5 w-5 md:h-6 md:w-6 text-primary" />
                       </div>
-                      <div className="flex items-center justify-center w-7 h-7 md:w-8 md:h-8 rounded-full bg-primary text-primary-foreground text-xs md:text-sm font-bold">
+                      <div className="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full bg-primary text-primary-foreground text-sm md:text-base font-bold shadow-sm">
                         {index + 1}
                       </div>
                     </div>
-                    <h3 className="font-semibold text-base md:text-lg mb-2">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{step.description}</p>
+                    <h3 className="font-bold text-base md:text-lg mb-2.5">{step.title}</h3>
+                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}

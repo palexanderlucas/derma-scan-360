@@ -9,43 +9,49 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
+    --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 195 70% 45%;
+    --primary: 195 82% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 0 0% 97%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 0 0% 97%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 195 70% 92%;
-    --accent-foreground: 195 70% 45%;
+    --accent: 195 82% 94%;
+    --accent-foreground: 195 82% 40%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 195 70% 45%;
+    --border: 0 0% 92%;
+    --input: 0 0% 92%;
+    --ring: 195 82% 48%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
     
-    --medical-primary: 195 70% 45%;
-    --medical-light: 195 70% 92%;
-    --medical-dark: 195 70% 35%;
+    --medical-primary: 195 82% 48%;
+    --medical-light: 195 82% 94%;
+    --medical-dark: 195 82% 38%;
     --gray-50: 0 0% 98%;
-    --gray-100: 0 0% 96%;
-    --gray-200: 0 0% 90%;
-    --gray-800: 0 0% 20%;
-    --gray-900: 0 0% 10%;
+    --gray-100: 0 0% 97%;
+    --gray-200: 0 0% 92%;
+    --gray-800: 0 0% 18%;
+    --gray-900: 0 0% 8%;
+    
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-md: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 8px 10px -6px hsl(0 0% 0% / 0.1);
+    --shadow-xl: 0 25px 50px -12px hsl(0 0% 0% / 0.25);
 
     --sidebar-background: 0 0% 98%;
 
@@ -65,42 +71,48 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 10%;
+    --background: 0 0% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 12%;
+    --card: 0 0% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 12%;
+    --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 195 70% 55%;
-    --primary-foreground: 0 0% 10%;
+    --primary: 195 82% 58%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 0 0% 16%;
+    --secondary: 0 0% 14%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 62%;
 
-    --accent: 195 70% 20%;
-    --accent-foreground: 195 70% 80%;
+    --accent: 195 82% 18%;
+    --accent-foreground: 195 82% 78%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 195 70% 55%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 195 82% 58%;
     
-    --medical-primary: 195 70% 55%;
-    --medical-light: 195 70% 20%;
-    --medical-dark: 195 70% 65%;
-    --gray-50: 0 0% 12%;
-    --gray-100: 0 0% 16%;
-    --gray-200: 0 0% 20%;
-    --gray-800: 0 0% 80%;
-    --gray-900: 0 0% 90%;
+    --medical-primary: 195 82% 58%;
+    --medical-light: 195 82% 18%;
+    --medical-dark: 195 82% 68%;
+    --gray-50: 0 0% 10%;
+    --gray-100: 0 0% 14%;
+    --gray-200: 0 0% 18%;
+    --gray-800: 0 0% 78%;
+    --gray-900: 0 0% 88%;
+    
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.15);
+    --shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 10px 15px -3px hsl(0 0% 0% / 0.3), 0 4px 6px -4px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 20px 25px -5px hsl(0 0% 0% / 0.3), 0 8px 10px -6px hsl(0 0% 0% / 0.3);
+    --shadow-xl: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -118,6 +130,10 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
   }
 }

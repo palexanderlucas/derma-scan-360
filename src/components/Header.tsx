@@ -13,33 +13,38 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b">
-      <nav className="container mx-auto px-4 h-20 flex items-center justify-between">
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 z-50 border-b shadow-sm">
+      <nav className="container mx-auto px-4 lg:px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <img src={logo} alt="DermaScan360 Logo" className="h-[72px]" />
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-6">
-          <button onClick={() => scrollToSection("technologie")} className="text-sm font-medium hover:text-primary transition-colors">
+        <div className="hidden lg:flex items-center gap-8">
+          <button onClick={() => scrollToSection("technologie")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Technologie
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
-          <button onClick={() => scrollToSection("ablauf")} className="text-sm font-medium hover:text-primary transition-colors">
+          <button onClick={() => scrollToSection("ablauf")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Ablauf
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
-          <button onClick={() => scrollToSection("preise")} className="text-sm font-medium hover:text-primary transition-colors">
+          <button onClick={() => scrollToSection("preise")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Preise
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
-          <button onClick={() => scrollToSection("standort")} className="text-sm font-medium hover:text-primary transition-colors">
+          <button onClick={() => scrollToSection("standort")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Standort
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
-          <button onClick={() => scrollToSection("faq")} className="text-sm font-medium hover:text-primary transition-colors">
+          <button onClick={() => scrollToSection("faq")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             FAQ
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
         </div>
 
         <div className="flex items-center gap-3">
-          <Button className="bg-primary hover:bg-primary/90 hidden sm:inline-flex">
+          <Button className="bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-200 hidden sm:inline-flex">
             Termin buchen
           </Button>
           
