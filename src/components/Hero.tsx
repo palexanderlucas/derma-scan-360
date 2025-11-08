@@ -28,15 +28,24 @@ export const Hero = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-6 md:pt-8 border-t">
               <div className="flex items-center gap-3">
                 <Clock className="h-7 sm:h-8 w-7 sm:w-8 text-primary flex-shrink-0" />
-                <div className="font-semibold text-sm sm:text-base">Termingarantie</div>
+                <div>
+                  <div className="font-semibold text-sm sm:text-base">Termingarantie</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">innerhalb von 3 Tagen</div>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Microscope className="h-7 sm:h-8 w-7 sm:w-8 text-primary flex-shrink-0" />
-                <div className="font-semibold text-sm sm:text-base">Modernste Technik</div>
+                <div>
+                  <div className="font-semibold text-sm sm:text-base">Modernste Technik</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">KI-unterstützt</div>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Award className="h-7 sm:h-8 w-7 sm:w-8 text-primary flex-shrink-0" />
-                <div className="font-semibold text-sm sm:text-base">Facharztstandard</div>
+                <div>
+                  <div className="font-semibold text-sm sm:text-base">Facharztstandard</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">erfahrene Hautärzte</div>
+                </div>
               </div>
             </div>
           </div>
