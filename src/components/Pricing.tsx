@@ -48,37 +48,37 @@ export const Pricing = () => {
   ];
 
   return (
-    <section id="preise" className="py-20 bg-muted/30">
+    <section id="preise" className="py-12 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
             Preise
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Selbstzahlerleistung - von den privaten Krankenkassen regelhaft übernommen. (Teil)erstattung bei gesetzlichen Krankenkassen möglich. Eine Kostenübernahme kann von uns nicht garantiert werden.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {plans.map((plan) => (
             <div 
               key={plan.name}
-              className={`relative flex flex-col p-8 bg-card rounded-2xl border-2 shadow-lg transition-all hover:shadow-xl ${
-                plan.popular ? 'border-primary scale-105' : 'border-transparent'
+              className={`relative flex flex-col p-6 md:p-8 bg-card rounded-xl md:rounded-2xl border-2 shadow-lg transition-all hover:shadow-xl ${
+                plan.popular ? 'border-primary sm:scale-105' : 'border-transparent'
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
+                <div className="absolute -top-3 md:-top-4 left-1/2 -translate-x-1/2 px-3 md:px-4 py-1 bg-primary text-primary-foreground text-xs md:text-sm font-semibold rounded-full whitespace-nowrap">
                   Beliebteste Option
                 </div>
               )}
               
-              <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
+              <div className="mb-5 md:mb-6">
+                <h3 className="text-lg md:text-xl font-bold mb-2">{plan.name}</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold">{plan.price}€</span>
+                  <span className="text-3xl md:text-4xl font-bold">{plan.price}€</span>
                 </div>
-                <p className="text-sm text-muted-foreground mt-2">{plan.delivery}</p>
+                <p className="text-xs md:text-sm text-muted-foreground mt-2">{plan.delivery}</p>
               </div>
 
               <ul className="space-y-3 mb-8 flex-grow">
