@@ -10,7 +10,7 @@ export const Technology = () => {
             Modernste Technologie für Ihre Sicherheit
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Wir setzen auf weltweit führende Medizintechnik von Canfield für präzise Früherkennung
+            Wir setzen auf weltweit führende Medizintechnik von Canfield® für präzise Früherkennung
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export const Technology = () => {
                 Dank künstlicher Intelligenz werden auch sehr kleine Veränderungen frühzeitig erkannt. 
                 Die Sicherheit des Screenings wird so maximiert.
               </p>
-              <p className="text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio" der Marke Canfield. Auch die Software und künstliche Intelligenz werden von Canfield zur Verfügung gestellt. Canfield ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder.</p>
+              <p className="text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
               <p className="text-muted-foreground leading-relaxed">
                 Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
                 in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
@@ -64,7 +64,7 @@ export const Technology = () => {
                 dargestellt werden, die mit dem bloßen Auge nicht erkennbar sind. Auflichtmikroskopische 
                 Nahaufnahmen erhöhen anerkannterweise die Genauigkeit eines Hautkrebsscreenings und werden 
                 von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen 
-                Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield D2 Dermatoskop).
+                Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield® D2 Dermatoskop).
               </p>
               <p className="text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch verbunden. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
               <p className="text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
