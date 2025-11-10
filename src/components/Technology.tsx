@@ -24,7 +24,7 @@ export const Technology = () => {
                 </div>
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight">Total-Body-Mapping</h3>
               </div>
-              <p className="text-base lg:text-lg xl:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed xl:text-xl">
                 Unser Ganzkörper-Scanner erstellt eine Landkarte der gesamten Hautoberfläche. 
                 Auf diese Weise können auffällige Veränderungen genau analysiert werden. Bei Verlaufskontrollen 
                 werden alle Läsionen von einer Software übereinandergelegt und über die Zeit hinweg verglichen. 
@@ -32,8 +32,8 @@ export const Technology = () => {
                 Dank künstlicher Intelligenz werden auch sehr kleine Veränderungen frühzeitig erkannt. 
                 Die Sicherheit des Screenings wird so maximiert.
               </p>
-              <p className="text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-xl">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
+              <p className="text-muted-foreground leading-relaxed text-xl">
                 Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
                 in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
                 Universitätskliniken setzen auf diese Technologie.
