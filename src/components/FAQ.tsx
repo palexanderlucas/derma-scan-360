@@ -9,59 +9,43 @@ export const FAQ = () => {
   const faqs = [
     {
       question: "Was sind die Vorteile von DermaScan360?",
-      answer: "DermaScan360 bietet modernste Technologie (Total-Body-Mapping, digitale Auflichtmikroskopie, KI-Unterstützung), keine Wartezeiten (Termin meist am gleichen Tag), vollständige Digitalisierung für präzise Verlaufskontrollen und fachärztliche Befundung durch erfahrene Dermatologen."
+      answer: "Wir bieten eine Termingarantie ohne lange Wartezeiten - für gesetzlich und privat Versicherte. Bei DermaScan360 erhalten sie einen Termin meistens noch am gleichen Tag, spätestens innerhalb von drei Werktagen. Einzelläsionen schauen wir uns auch ohne Termin an. Darüber hinaus sind wir mit modernsten Technik ausgestattet. Durch Total-Body-Mapping und digitaler Dermatoskopie mit KI-Unterstützung wird die Präzision der Hautkrebsvorsorge erhöht. Sie erhalten einen Arztbericht mit konkreter und genauer Handlungsempfehlung für eine reibungslose Weiterbehandlung."
     },
     {
       question: "Wie unterscheidet sich DermaScan360 von einem üblichen Hautkrebsscreening?",
-      answer: "Im Gegensatz zum klassischen Arzttermin ermöglichen wir ein schnelles, vollständig digitalisiertes Hautkrebs-Screening. Vor Ort begleitet Sie unser speziell geschultes Team und erstellt mithilfe modernster Kamerasysteme hochwertige Aufnahmen Ihrer Haut – ohne direkten Arztkontakt. Die dermatologische Begutachtung erfolgt im Anschluss durch erfahrene Hautärzte. Ihren Befund erhalten Sie inklusive eines aussagekräftigen Arztbriefs mit konkreten Empfehlungen."
+      answer: "Im Gegensatz zum klassischen Arzttermin ermöglichen wir ein vollständig digitalisiertes Hautkrebs-Screening an. Vor Ort begleitet Sie unser speziell geschultes Team und erstellt mithilfe von Kamerasystemen hochwertige Aufnahmen Ihrer Haut – ohne direkten Arztkontakt. Die dermatologische Begutachtung erfolgt im Anschluss durch einen erfahrenen Hautarzt. Ihren Befund inklusive eines aussagekräftigen Arztbriefs mit konkreten Empfehlungen zum weiteren Vorgehen erhalten Sie innerhalb weniger Werktage nach Vorstellung. Bei Auffälligkeiten werden Sie durch einen unserer Hautärzte telefonisch zur ausführlichen Befundbesprechung kontaktiert."
     },
     {
       question: "Was passiert, wenn ein Befund auffällig sein sollte?",
-      answer: "Bei Auffälligkeiten erfolgt eine persönliche Befundbesprechung durch einen unserer Ärzte telefonisch. Sie erhalten zudem einen ausführlichen Arztbrief mit einer konkreten Empfehlung zum weiteren Vorgehen."
+      answer: "Bei Auffälligkeiten erfolgt eine telefonische Befundbesprechung durch einen unserer Ärzte. Hier werden Befund und die weiteren Schritte detailliert mit Ihnen besprochen. Sie erhalten zudem einen Arztbrief mit einer konkreten Handlungsempfehlung."
     },
     {
-      question: "Werden Kosten von den Krankenkassen übernommen?",
-      answer: "Für gesetzlich Versicherte wird unser Screening derzeit als Selbstzahlerleistung angeboten. Wir empfehlen, die Rechnung bei Ihrer Kasse einzureichen – in vielen Fällen ist eine teilweise Erstattung möglich. Privatversicherte können die Kosten in der Regel bei ihrer Krankenversicherung einreichen. Je nach Tarif erfolgt meist eine vollständige Erstattung."
+      question: "Werden die Kosten von meiner Krankenkasse übernommen?",
+      answer: "Die meisten gesetzlichen Krankenkassen übernehmen die Kosten aktuell nicht. Es handelt sich also um eine Selbstzahlerleistung. Wir empfehlen jedoch, die Rechnung bei der Krankenkasse einzureichen, um ggf. von einer Teilerstattung zu profitieren. Sie können auch vorab bei Ihrer Krankenkasse die Möglichkeit einer Kostenübernahme prüfen. Private Krankenkassen übernehmen die Kosten regelhaft. Wir empfehlen, sich vorab bei Ihrer Krankenversicherung über eine Kostenübernahme zu informieren. Die Erstattungsfähigkeit kann durch uns nicht garantiert werden."
+    },
+    {
+      question: "Habe ich Kontakt zu einem Arzt?",
+      answer: "Vor Ort besteht kein direkter Kontakt zu einem Arzt. Die Fotoaufnahmen vor Ort werden durch unser geschultes Team erstellt. Erst im Anschluss werden die Aufnahmen von einem Facharzt für Dermatologie sorgfältig analysiert und befundet. Bei Auffälligkeiten nimmt der behandelnde Arzt telefonisch Kontakt mit Ihnen auf, um den Befund und das weitere Vorgehen ausführlich mit Ihnen zu besprechen."
+    },
+    {
+      question: "Muss ich mich vollständig entkleiden und wird tatsächlich die gesamte Hautfläche erfasst?",
+      answer: "Sie können frei entscheiden, ob Sie sich vollständig oder teilweise entkleiden. Für eine möglichst vollständige Hautanalyse ist es empfehlenswert, sich so weit wie möglich zu entkleiden. Bereiche, die von der Kamera nicht erfasst werden können (behaarte Kopfhaut, hautnahe Schleimhäute, Genitalien, Haut auf Haut Kontakte) können - sofern gewünscht - von unserem geschulten Personal gesondert inspiriert und mit einem speziellen Auflichtmikroskop dokumentiert werden. So stellen wir sicher, dass keine relevanten Stellen übersehen werden."
+    },
+    {
+      question: "Wer kann meine Daten und Fotoaufnahmen sehen und sind diese sicher?",
+      answer: "Ihre personenbezogenen Daten sowie Fotoaufnahmen werden ausschließlich von dem betreuenden Team und behandelnden Arzt gesichtet. Es werden nur Daten erhoben, die für die Diagnostik notwendig sind. Die Verarbeitung Ihrer Daten erfolgt DSGVO-konform. Sämtliche personenbezogenen Daten werden ausschließlich zum Zwecke der Diagnostik verwendet. Es erfolgt keine Weitergabe an Dritte."
+    },
+    {
+      question: "Ist das Screening für Menschen mit Behinderungen möglich?",
+      answer: "Während des Ganzkörper-Screenings/Total-Body-Mappings ist es erforderlich, über etwa 5-10 Minuten selbstständig zu stehen. Während des Scans müssen zudem verschiedene Positionen (zB. Arme und Füße heben, Drehen um die Körperachse) eingenommen werden. Daher ist ein sicherer Stand und eine gewisse Beweglichkeit erforderlich. Einzelne Hautveränderungen können jedoch auch bei eingeschränkter Gehfähigkeit und Beweglichkeit mit Unterstützung durch unser Team dokumentiert werden."
+    },
+    {
+      question: "Kann ich mich vorbereiten?",
+      answer: "Für eine ideale Beurteilbarkeit sollte die Haut sauber und ungeschminkt sein. Langes Haar sollte zusammengebunden oder hochgesteckt werden. Bei starker Körperbehaarung empfiehlt sich eine Körperrasur. Alternativ können stark behaarte Bereiche aber auch manuell mit einem Dermatoskop inspiziert und dokumentiert werden."
     },
     {
       question: "Wie lange dauert die Untersuchung?",
-      answer: "Das Ganzkörper-Screening vor Ort dauert in der Regel 20-30 Minuten. Die Single-Lesion-Untersuchung ist deutlich kürzer und dauert etwa 10-15 Minuten."
-    },
-    {
-      question: "Muss ich mich vollständig entkleiden?",
-      answer: "Für das Ganzkörper-Screening mit Total-Body-Mapping ist es notwendig, dass die gesamte Hautoberfläche fotografiert werden kann. Sie tragen dabei Unterwäsche. Bei der Single-Lesion-Untersuchung entkleiden Sie nur die betroffenen Bereiche."
-    },
-    {
-      question: "Ist ein Arzt vor Ort?",
-      answer: "Die Aufnahmen werden von speziell geschultem medizinischem Fachpersonal erstellt. Die ärztliche Befundung erfolgt zeitversetzt durch Dr. med. Judith Reuther und ihr Team. Bei Auffälligkeiten erfolgt eine persönliche ärztliche Befundbesprechung."
-    },
-    {
-      question: "Muss ich mich vorbereiten?",
-      answer: "Keine spezielle Vorbereitung notwendig. Wir empfehlen, am Tag der Untersuchung kein Make-up oder Nagellack zu tragen, damit die Haut optimal beurteilt werden kann."
-    },
-    {
-      question: "Darf ich eine Begleitperson mitnehmen?",
-      answer: "Ja, Sie können gerne eine Begleitperson mitbringen. Diese kann im Wartezimmer Platz nehmen."
-    },
-    {
-      question: "Ab welchem Alter sollte man ein Hautkrebsscreening durchführen lassen?",
-      answer: "Grundsätzlich kann ein Screening in jedem Alter sinnvoll sein, besonders bei Risikofaktoren (viele Muttermale, heller Hauttyp, Hautkrebs in der Familie). Ab dem 35. Lebensjahr wird ein regelmäßiges Screening alle 2 Jahre empfohlen."
-    },
-    {
-      question: "Wie oft ist Hautkrebsvorsorge empfohlen?",
-      answer: "Bei unauffälligen Befunden und geringem Risiko alle 1-2 Jahre. Bei erhöhtem Risiko (viele Muttermale, dysplastische Nävi, Hautkrebs in der Vorgeschichte) werden kürzere Intervalle von 3-6 Monaten empfohlen."
-    },
-    {
-      question: "Sind meine Aufnahmen sicher?",
-      answer: "Ja, alle Daten werden nach höchsten Datenschutzstandards (DSGVO) gespeichert und verschlüsselt. Nur autorisiertes medizinisches Personal hat Zugriff auf Ihre Aufnahmen."
-    },
-    {
-      question: "Werden Hautproben entnommen?",
-      answer: "Nein, bei DermaScan360 werden ausschließlich nicht-invasive digitale Aufnahmen erstellt. Sollte eine Hautprobe notwendig sein, wird dies im Befund empfohlen und kann bei einem niedergelassenen Dermatologen erfolgen."
-    },
-    {
-      question: "Ist Hautkrebs heilbar?",
-      answer: "Ja, Hautkrebs ist heilbar, wenn er rechtzeitig erkannt und behandelt wird. Die Heilungschancen sind bei früher Diagnose sehr gut. Genau deshalb ist regelmäßige Vorsorge so wichtig."
+      answer: "Die Dauer des Ganzkörper-Screenings hängt von den individuellen Untersuchungsbedingungen sowie der Anzahl auffälliger Veränderungen ab. In der Regel dauert die eigentliche Untersuchung ca. 20-25min. Im Einzelfall kann die Dauer hiervon jedoch abweichen. Bitte planen Sie für Ihren gesamten Aufenthalt ca. 45 Minuten ein, da wir vor der Untersuchung noch Gesundheitsfragen erheben."
     }
   ];
 
