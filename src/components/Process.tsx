@@ -80,8 +80,8 @@ export const Process = () => {
                 <img src={monitoring} alt="Verlaufskontrollen" className="rounded-xl shadow-lg w-full" />
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold">Verlaufskontrollen</h3>
-                <p className="text-muted-foreground leading-relaxed">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
+                <h3 className="font-bold text-5xl">Verlaufskontrollen</h3>
+                <p className="text-muted-foreground leading-relaxed text-xl">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
               </div>
             </div>
           </TabsContent>

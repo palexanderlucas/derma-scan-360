@@ -1,9 +1,7 @@
 import { MapPin, Car, Train, Bus } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 export const Location = () => {
-  return (
-    <section id="standort" className="py-20">
+  return <section id="standort" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -18,16 +16,9 @@ export const Location = () => {
           {/* Map placeholder */}
           <div className="relative h-[400px] lg:h-[500px] bg-muted rounded-2xl overflow-hidden shadow-lg">
             <div className="absolute inset-0 flex items-center justify-center">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.1871234567890!2d8.043611!3d52.278611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE2JzQzLjAiTiA4wrAwMiczdTciRQ!5e0!3m2!1sde!2sde!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="DermaScan360 Standort Osnabrück"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.1871234567890!2d8.043611!3d52.278611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE2JzQzLjAiTiA4wrAwMiczdTciRQ!5e0!3m2!1sde!2sde!4v1234567890" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="DermaScan360 Standort Osnabrück"></iframe>
             </div>
           </div>
 
@@ -58,8 +49,8 @@ export const Location = () => {
                 <h3 className="font-semibold text-lg mb-2">Parkmöglichkeiten</h3>
                 <ul className="text-muted-foreground space-y-1 text-sm">
                   <li>• Parkplatz Haarmannsbrunnen: 1 min Fußweg</li>
-                  <li>• Parkhaus Sparkasse (Schillerstraße 21): 2 min</li>
-                  <li>• Parkhaus Galeria Kaufhof: 3 min</li>
+                  <li>• Parkhaus Sparkasse: 2 min Fußweg</li>
+                  <li>• Parkhaus Galeria Kaufhof: 3 min Fußweg</li>
                 </ul>
               </div>
             </div>
@@ -98,6 +89,5 @@ export const Location = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
