@@ -21,7 +21,7 @@ export const Process = () => {
   }, {
     icon: Stethoscope,
     title: "Analyse",
-    description: "Ein erfahrener Hautarzt befundet die Fotoaufnahmen - unterstützt von einer spezialisierten künstlichen Intelligenz. Wenn Sie uns schoneinmal besucht haben, erfolgt auch ein ausgiebiger Vergleich mit Ihren Voraufnahmen."
+    description: "Ein erfahrener Hautarzt befundet die Fotoaufnahmen - unterstützt von einer spezialisierten künstlichen Intelligenz. Wenn Sie uns schon einmal besucht haben, erfolgt auch ein ausgiebiger Vergleich mit Ihren Voraufnahmen."
   }, {
     icon: FileText,
     title: "Arztbrief & Empfehlung",
