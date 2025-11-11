@@ -48,56 +48,56 @@ export const Pricing = () => {
   ];
 
   return (
-    <section id="preise" className="py-16 md:py-24 lg:py-32 xl:py-40 bg-muted/40">
-      <div className="container mx-auto px-4 lg:px-8 xl:px-12 max-w-[1600px]">
-        <div className="text-center mb-16 md:mb-20 xl:mb-24">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 xl:mb-8 tracking-tight">
+    <section id="preise" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/40">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
             Preise
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2 sm:px-4">
             Selbstzahlerleistung - von den privaten Krankenkassen regelhaft übernommen. (Teil)erstattung bei gesetzlichen Krankenkassen möglich. Eine Kostenübernahme kann von uns nicht garantiert werden.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 xl:gap-10 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
           {plans.map((plan) => (
             <div 
               key={plan.name}
-              className={`relative flex flex-col p-7 lg:p-9 xl:p-10 bg-card rounded-2xl lg:rounded-3xl border-2 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${
+              className={`relative flex flex-col p-4 sm:p-5 md:p-6 lg:p-8 bg-card rounded-xl sm:rounded-2xl border-2 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${
                 plan.popular ? 'border-primary lg:scale-105 shadow-xl' : 'border-border/50 hover:border-primary/30'
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 md:-top-4 left-1/2 -translate-x-1/2 px-3 md:px-4 py-1 bg-primary text-primary-foreground text-xs md:text-sm font-semibold rounded-full whitespace-nowrap">
+                <div className="absolute -top-2.5 sm:-top-3 left-1/2 -translate-x-1/2 px-2.5 sm:px-3 md:px-4 py-1 bg-primary text-primary-foreground text-[10px] sm:text-xs md:text-sm font-semibold rounded-full whitespace-nowrap">
                   Beliebteste Option
                 </div>
               )}
               
-              <div className="mb-5 md:mb-6">
-                <h3 className="text-lg md:text-xl font-bold mb-2">{plan.name}</h3>
+              <div className="mb-4 sm:mb-5">
+                <h3 className="text-base sm:text-lg md:text-xl font-bold mb-1.5 sm:mb-2">{plan.name}</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-3xl md:text-4xl font-bold">{plan.price}€</span>
+                  <span className="text-2xl sm:text-3xl md:text-4xl font-bold">{plan.price}€</span>
                 </div>
-                <p className="text-xs md:text-sm text-muted-foreground mt-2">{plan.delivery}</p>
+                <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground mt-1.5 sm:mt-2">{plan.delivery}</p>
               </div>
 
-              <ul className="space-y-3 mb-8 flex-grow">
+              <ul className="space-y-2 sm:space-y-2.5 md:space-y-3 mb-6 sm:mb-7 md:mb-8 flex-grow">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2">
-                    <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                    <span className="text-sm">{feature}</span>
+                  <li key={feature} className="flex items-start gap-1.5 sm:gap-2">
+                    <Check className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
+                    <span className="text-xs sm:text-sm">{feature}</span>
                   </li>
                 ))}
                 {plan.negativeFeatures?.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2">
-                    <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
-                    <span className="text-sm text-muted-foreground">{feature}</span>
+                  <li key={feature} className="flex items-start gap-1.5 sm:gap-2">
+                    <X className="h-4 w-4 sm:h-5 sm:w-5 text-destructive shrink-0 mt-0.5" />
+                    <span className="text-xs sm:text-sm text-muted-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <Button 
-                className={`w-full ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`}
+                className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`}
                 variant={plan.popular ? 'default' : 'outline'}
               >
                 {plan.name === "Single Lesion" ? "Jetzt vorbeikommen" : "Termin buchen"}
@@ -106,9 +106,9 @@ export const Pricing = () => {
           ))}
         </div>
 
-        <div className="mt-16 md:mt-20 max-w-5xl mx-auto p-8 md:p-10 bg-gradient-to-br from-accent/60 to-accent/40 rounded-2xl md:rounded-3xl shadow-lg border border-border/30">
-          <h3 className="text-xl md:text-2xl font-bold mb-5 md:mb-6 text-center">Kostenerstattung durch Krankenkassen</h3>
-          <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
+        <div className="mt-10 sm:mt-12 md:mt-16 lg:mt-20 max-w-5xl mx-auto p-5 sm:p-6 md:p-8 lg:p-10 bg-gradient-to-br from-accent/60 to-accent/40 rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg border border-border/30">
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-4 sm:mb-5 md:mb-6 text-center">Kostenerstattung durch Krankenkassen</h3>
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 text-xs sm:text-sm text-muted-foreground">
             <div>
               <p className="font-medium text-foreground mb-2">Private Krankenkassen:</p>
               <p>Die Leistung wird regelhaft übernommen. Je nach Tarif erfolgt meist eine vollständige Erstattung.</p>

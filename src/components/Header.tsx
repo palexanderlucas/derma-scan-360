@@ -14,9 +14,9 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 z-50 border-b shadow-sm">
-      <nav className="container mx-auto px-4 lg:px-6 h-20 flex items-center justify-between">
+      <nav className="container mx-auto px-3 sm:px-4 lg:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src={logo} alt="DermaScan360 Logo" className="h-[72px]" />
+          <img src={logo} alt="DermaScan360 Logo" className="h-14 sm:h-16 lg:h-[72px]" />
         </div>
         
         {/* Desktop Navigation */}
@@ -43,8 +43,8 @@ export const Header = () => {
           </button>
         </div>
 
-        <div className="flex items-center gap-3">
-          <Button className="bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-200 hidden sm:inline-flex">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <Button className="bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-200 hidden sm:inline-flex text-sm lg:text-base px-3 lg:px-4 h-9 lg:h-10">
             Termin buchen
           </Button>
           

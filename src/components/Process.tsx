@@ -40,48 +40,48 @@ export const Process = () => {
     title: "Arztbrief & Empfehlung",
     description: "Fachärztlicher Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten telefonische Befundbesprechung."
   }];
-  return <section id="ablauf" className="py-16 md:py-24 lg:py-32 xl:py-40">
-      <div className="container mx-auto px-4 lg:px-8 xl:px-12 max-w-[1600px]">
-        <div className="text-center mb-16 md:mb-20 xl:mb-24">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 xl:mb-8 tracking-tight">
+  return <section id="ablauf" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36">
+      <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
             Einfacher Ablauf – Höchste Qualität
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Wählen Sie zwischen unserem Ganzkörper-Screening oder der Untersuchung einzelner Hautveränderungen
           </p>
         </div>
 
         <Tabs defaultValue="fullbody" className="max-w-7xl mx-auto">
-          <TabsList className="grid w-full max-w-lg mx-auto grid-cols-2 mb-8 md:mb-12 xl:mb-16 h-auto">
-            <TabsTrigger value="fullbody" className="text-sm lg:text-base xl:text-lg py-3 xl:py-4">Ganzkörper-Screening</TabsTrigger>
-            <TabsTrigger value="single" className="text-sm lg:text-base xl:text-lg py-3 xl:py-4">Einzelne Läsion</TabsTrigger>
+          <TabsList className="grid w-full max-w-md sm:max-w-lg mx-auto grid-cols-2 mb-6 sm:mb-8 md:mb-10 h-auto">
+            <TabsTrigger value="fullbody" className="text-xs sm:text-sm lg:text-base py-2.5 sm:py-3">Ganzkörper-Screening</TabsTrigger>
+            <TabsTrigger value="single" className="text-xs sm:text-sm lg:text-base py-2.5 sm:py-3">Einzelne Läsion</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="fullbody" className="space-y-8 md:space-y-12">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 xl:gap-10">
+          <TabsContent value="fullbody" className="space-y-6 sm:space-y-8 md:space-y-10">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
               {fullBodySteps.map((step, index) => <div key={index} className="relative group">
-                  <div className="flex flex-col h-full p-6 lg:p-7 xl:p-8 bg-card rounded-2xl lg:rounded-3xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
-                    <div className="flex items-center gap-3 xl:gap-4 mb-4 xl:mb-5">
-                      <div className="flex items-center justify-center w-11 h-11 lg:w-12 lg:h-12 xl:w-14 xl:h-14 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
-                        <step.icon className="h-5 w-5 lg:h-6 lg:w-6 xl:h-7 xl:w-7 text-primary" />
+                  <div className="flex flex-col h-full p-4 sm:p-5 md:p-6 lg:p-7 bg-card rounded-xl sm:rounded-2xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1">
+                    <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                      <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
+                        <step.icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-primary" />
                       </div>
-                      <div className="flex items-center justify-center w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 rounded-full bg-primary text-primary-foreground text-sm lg:text-base xl:text-lg font-bold shadow-sm">
+                      <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-full bg-primary text-primary-foreground text-xs sm:text-sm lg:text-base font-bold shadow-sm">
                         {index + 1}
                       </div>
                     </div>
-                    <h3 className="font-bold text-base lg:text-lg xl:text-xl mb-2.5 xl:mb-3">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm lg:text-base xl:text-lg leading-relaxed">{step.description}</p>
+                    <h3 className="font-bold text-sm sm:text-base lg:text-lg mb-2 sm:mb-2.5">{step.title}</h3>
+                    <p className="text-muted-foreground text-xs sm:text-sm lg:text-base leading-relaxed">{step.description}</p>
                   </div>
                 </div>)}
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center mt-12 md:mt-16 p-6 md:p-8 bg-muted/30 rounded-xl md:rounded-2xl">
+            <div className="grid md:grid-cols-2 gap-5 sm:gap-6 md:gap-10 items-center mt-8 sm:mt-10 md:mt-12 p-4 sm:p-5 md:p-6 lg:p-8 bg-muted/30 rounded-lg sm:rounded-xl md:rounded-2xl">
               <div>
-                <img src={monitoring} alt="Verlaufskontrollen" className="rounded-xl shadow-lg w-full" />
+                <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
               </div>
-              <div className="space-y-4">
-                <h3 className="font-bold text-5xl">Verlaufskontrollen</h3>
-                <p className="text-muted-foreground leading-relaxed text-xl">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
+              <div className="space-y-3 sm:space-y-4">
+                <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Verlaufskontrollen</h3>
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base lg:text-lg">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
               </div>
             </div>
           </TabsContent>

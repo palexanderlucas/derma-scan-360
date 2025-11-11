@@ -50,29 +50,29 @@ export const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <section id="faq" className="py-12 sm:py-16 md:py-20 bg-muted/30">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
             Häufig gestellte Fragen
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Alle wichtigen Informationen auf einen Blick
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="bg-card rounded-lg border px-6 data-[state=open]:shadow-md transition-shadow"
+                className="bg-card rounded-lg border px-3 sm:px-4 md:px-6 data-[state=open]:shadow-md transition-shadow"
               >
-                <AccordionTrigger className="text-left hover:no-underline py-5">
-                  <span className="font-semibold pr-4">{faq.question}</span>
+                <AccordionTrigger className="text-left hover:no-underline py-3 sm:py-4 md:py-5">
+                  <span className="font-semibold pr-3 sm:pr-4 text-sm sm:text-base">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                <AccordionContent className="text-muted-foreground pb-3 sm:pb-4 md:pb-5 leading-relaxed text-xs sm:text-sm md:text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
