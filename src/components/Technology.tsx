@@ -66,7 +66,7 @@ export const Technology = () => {
                 von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen 
                 Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield® D2 Dermatoskop).
               </p>
-              <p className="text-muted-foreground leading-relaxed text-xl">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch verbunden. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
+              <p className="text-muted-foreground leading-relaxed text-xl">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
               <p className="text-muted-foreground leading-relaxed text-xl">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
             </div>
           </div>
