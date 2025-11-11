@@ -13,7 +13,7 @@ export const Process = () => {
   }, {
     icon: CheckCircle,
     title: "Qualitätsprüfung",
-    description: "ein Hautarzt überprüft die Aufnahmen hinsichtlich Qualität und Vollständigkeit."
+    description: "Ein Hautarzt überprüft die Aufnahmen hinsichtlich Qualität und Vollständigkeit."
   }, {
     icon: CalendarCheck,
     title: "Zweittermin",
