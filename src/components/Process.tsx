@@ -43,10 +43,10 @@ export const Process = () => {
   return <section id="ablauf" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
-          <h2 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
             Einfacher Ablauf – Höchste Qualität
           </h2>
-          <p className="text-base sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
             Wählen Sie zwischen unserem Ganzkörper-Screening oder der Untersuchung einzelner Hautveränderungen
           </p>
         </div>
@@ -69,8 +69,8 @@ export const Process = () => {
                         {index + 1}
                       </div>
                     </div>
-                    <h3 className="font-bold text-base sm:text-base lg:text-lg mb-2 sm:mb-2.5">{step.title}</h3>
-                    <p className="text-muted-foreground text-sm sm:text-sm lg:text-base leading-relaxed">{step.description}</p>
+                    <h3 className="font-bold text-sm sm:text-base lg:text-lg mb-2 sm:mb-2.5">{step.title}</h3>
+                    <p className="text-muted-foreground text-xs sm:text-sm lg:text-base leading-relaxed">{step.description}</p>
                   </div>
                 </div>)}
             </div>
@@ -81,7 +81,7 @@ export const Process = () => {
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Verlaufskontrollen</h3>
-                <p className="text-muted-foreground leading-relaxed text-base sm:text-base lg:text-lg">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base lg:text-lg">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
               </div>
             </div>
           </TabsContent>
