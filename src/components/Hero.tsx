@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Award, Microscope } from "lucide-react";
 import heroImage from "@/assets/hero-scan.png";
-
 export const Hero = () => {
-  return (
-    <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
+  return <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 relative max-w-[1600px]">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14 xl:gap-20 items-center">
@@ -13,7 +11,7 @@ export const Hero = () => {
               Hautkrebs-Screening auf höchstem Niveau
             </h1>
             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed">
-              Frühzeitige Erkennung auffälliger Hautveränderungen dank hochpräzisem Total-Body-Mapping und digitaler Auflichtmikroskopie – befundet von erfahrenen Fachärzten für Dermatologie mit Unterstützung von künstlicher Intelligenz.
+              Innovative Hautkrebsvorsorge mit hochpräzisem Total-Body-Mapping und digitaler Auflichtmikroskopie – befundet von erfahrenen Dermatologen mit Unterstützung von künstlicher Intelligenz.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 pt-2 sm:pt-4">
@@ -59,14 +57,9 @@ export const Hero = () => {
 
           <div className="relative group mt-6 lg:mt-0">
             <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 rounded-2xl sm:rounded-3xl blur-2xl lg:blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <img 
-              src={heroImage} 
-              alt="Hautkrebs Screening mit digitaler Analyse" 
-              className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl w-full transition-transform duration-500 group-hover:scale-[1.02]"
-            />
+            <img src={heroImage} alt="Hautkrebs Screening mit digitaler Analyse" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl w-full transition-transform duration-500 group-hover:scale-[1.02]" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
