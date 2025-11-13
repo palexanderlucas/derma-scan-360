@@ -63,31 +63,31 @@ export const Hero = () => {
 
           {/* Icons for mobile - shown only below lg */}
           <div className="flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-5 pt-6 sm:pt-8 border-t border-border/50 lg:hidden order-3">
-            <div className="flex items-center gap-2.5 sm:gap-3 group">
-              <div className="p-2 sm:p-2.5 bg-primary/10 rounded-lg sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+            <div className="flex items-center gap-3 sm:gap-3 group">
+              <div className="p-3 sm:p-2.5 bg-primary/10 rounded-xl sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
+                <Clock className="h-7 w-7 sm:h-6 sm:w-6 text-primary" />
               </div>
               <div className="min-w-0">
-                <div className="font-semibold text-xs sm:text-sm whitespace-nowrap">Termingarantie</div>
-                <div className="text-[10px] sm:text-xs text-muted-foreground whitespace-nowrap">innerhalb von 3 Tagen</div>
+                <div className="font-semibold text-sm sm:text-sm whitespace-nowrap">Termingarantie</div>
+                <div className="text-xs sm:text-xs text-muted-foreground whitespace-nowrap">innerhalb von 3 Tagen</div>
               </div>
             </div>
-            <div className="flex items-center gap-2.5 sm:gap-3 group">
-              <div className="p-2 sm:p-2.5 bg-primary/10 rounded-lg sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                <Microscope className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+            <div className="flex items-center gap-3 sm:gap-3 group">
+              <div className="p-3 sm:p-2.5 bg-primary/10 rounded-xl sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
+                <Microscope className="h-7 w-7 sm:h-6 sm:w-6 text-primary" />
               </div>
               <div className="min-w-0">
-                <div className="font-semibold text-xs sm:text-sm whitespace-nowrap">Modernste Technik</div>
-                <div className="text-[10px] sm:text-xs text-muted-foreground whitespace-nowrap">KI-unterstützt</div>
+                <div className="font-semibold text-sm sm:text-sm whitespace-nowrap">Modernste Technik</div>
+                <div className="text-xs sm:text-xs text-muted-foreground whitespace-nowrap">KI-unterstützt</div>
               </div>
             </div>
-            <div className="flex items-center gap-2.5 sm:gap-3 group">
-              <div className="p-2 sm:p-2.5 bg-primary/10 rounded-lg sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                <Award className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+            <div className="flex items-center gap-3 sm:gap-3 group">
+              <div className="p-3 sm:p-2.5 bg-primary/10 rounded-xl sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
+                <Award className="h-7 w-7 sm:h-6 sm:w-6 text-primary" />
               </div>
               <div className="min-w-0">
-                <div className="font-semibold text-xs sm:text-sm whitespace-nowrap">Facharztstandard</div>
-                <div className="text-[10px] sm:text-xs text-muted-foreground whitespace-nowrap">erfahrene Hautärzte</div>
+                <div className="font-semibold text-sm sm:text-sm whitespace-nowrap">Facharztstandard</div>
+                <div className="text-xs sm:text-xs text-muted-foreground whitespace-nowrap">erfahrene Hautärzte</div>
               </div>
             </div>
           </div>
