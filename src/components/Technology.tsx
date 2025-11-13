@@ -1,8 +1,12 @@
-import { Scan, Microscope, Brain } from "lucide-react";
+import { Scan, Microscope, Brain, ChevronDown } from "lucide-react";
+import { useState } from "react";
 import bodyScanner from "@/assets/body-scanner.jpg";
 import dermatoscope from "@/assets/dermatoscope.jpg";
 import doctorAnalysis from "@/assets/doctor-analysis.png";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+
 export const Technology = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return <section id="technologie" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/40">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
@@ -39,12 +43,32 @@ export const Technology = () => {
                 Dank künstlicher Intelligenz werden auch sehr kleine Veränderungen frühzeitig erkannt. 
                 Die Sicherheit des Screenings wird so maximiert.
               </p>
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
-                in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
-                Universitätskliniken setzen auf diese Technologie.
-              </p>
+              
+              {/* Desktop version - always visible */}
+              <div className="hidden lg:block space-y-4 sm:space-y-5 lg:space-y-6">
+                <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
+                <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+                  Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
+                  in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
+                  Universitätskliniken setzen auf diese Technologie.
+                </p>
+              </div>
+
+              {/* Mobile version - collapsible */}
+              <Collapsible open={isOpen} onOpenChange={setIsOpen} className="lg:hidden">
+                <CollapsibleTrigger className="flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+                  {isOpen ? "Weniger anzeigen" : "Mehr anzeigen"}
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="space-y-4 mt-4">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
+                    in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
+                    Universitätskliniken setzen auf diese Technologie.
+                  </p>
+                </CollapsibleContent>
+              </Collapsible>
             </div>
             {/* Image for desktop/tablet only */}
             <div className="relative group hidden lg:block">
