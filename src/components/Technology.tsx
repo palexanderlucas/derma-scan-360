@@ -79,7 +79,7 @@ export const Technology = () => {
 
           {/* Auflichtmikroskopie */}
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-14 xl:gap-20 items-center">
-            <div className="relative order-2 lg:order-1 group">
+            <div className="relative order-2 lg:order-1 group hidden lg:block">
               <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
               <img src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
             </div>
@@ -90,6 +90,13 @@ export const Technology = () => {
                 </div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">Digitale Auflichtmikroskopie</h3>
               </div>
+              
+              {/* Image for mobile only - between title and text */}
+              <div className="relative group lg:hidden">
+                <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <img src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+              </div>
+              
               <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
                 Mit einem Auflichtmikroskop können Muttermale stark vergrößert und sehr detailliert 
                 beurteilt werden. Dank speziellem und polarisiertem Licht können Muster und Strukturen 
