@@ -7,6 +7,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 
 export const Technology = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
   return <section id="technologie" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/40">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
@@ -105,8 +106,24 @@ export const Technology = () => {
                 von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen 
                 Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield® D2 Dermatoskop).
               </p>
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
+              
+              {/* Desktop version - always visible */}
+              <div className="hidden lg:block space-y-4 sm:space-y-5 lg:space-y-6">
+                <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
+                <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
+              </div>
+
+              {/* Mobile version - collapsible */}
+              <Collapsible open={isOpen2} onOpenChange={setIsOpen2} className="lg:hidden">
+                <CollapsibleTrigger className="flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+                  {isOpen2 ? "Weniger anzeigen" : "Mehr anzeigen"}
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen2 ? "rotate-180" : ""}`} />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="space-y-4 mt-4">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
+                </CollapsibleContent>
+              </Collapsible>
             </div>
           </div>
 
