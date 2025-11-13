@@ -24,6 +24,13 @@ export const Technology = () => {
                 </div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">Total-Body-Mapping</h3>
               </div>
+              
+              {/* Image for mobile only - between title and text */}
+              <div className="relative group lg:hidden">
+                <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <img src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+              </div>
+              
               <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
                 Unser Ganzkörper-Scanner erstellt eine Landkarte der gesamten Hautoberfläche. 
                 Auf diese Weise können auffällige Veränderungen genau analysiert werden. Bei Verlaufskontrollen 
@@ -39,7 +46,8 @@ export const Technology = () => {
                 Universitätskliniken setzen auf diese Technologie.
               </p>
             </div>
-            <div className="relative group">
+            {/* Image for desktop/tablet only */}
+            <div className="relative group hidden lg:block">
               <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
               <img src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
             </div>
