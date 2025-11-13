@@ -136,9 +136,16 @@ export const Technology = () => {
                 </div>
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">Qualitätssicherung</h3>
               </div>
+              
+              {/* Image for mobile only - between title and text */}
+              <div className="relative group lg:hidden">
+                <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <img src={doctorAnalysis} alt="Qualitätssicherung durch Hautarzt" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+              </div>
+              
               <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Jeder Befund wird von einem erfahrenen Hautarzt erstellt. Zusätzlich erfolgt eine Qualitätssicherung durch Frau Dr. med. Judith Reuther. Sie ist Fachärztin für Dermatologie und spezialisiert auf Hautkrebsscreening. Sie ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster und hat eine Zusatzbezeichnung für Tumortherapien erworben. Zudem hält sie regelmäßig Fortbildungen zum Thema Hautkrebsvorsorge und Auflichtmikroskopie. Die Befundung wird von Frau Dr. Reuther supervidiert und signiert. Bei Auffälligkeiten erfolgt zusätz eine telefonische Befundbesprechung.</p>
             </div>
-            <div className="relative group">
+            <div className="relative group hidden lg:block">
               <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
               <img src={doctorAnalysis} alt="Qualitätssicherung durch Hautarzt" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
             </div>
