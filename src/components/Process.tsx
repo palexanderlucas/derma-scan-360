@@ -76,15 +76,17 @@ export const Process = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-5 sm:gap-6 md:gap-10 items-center mt-8 sm:mt-10 md:mt-12 p-4 sm:p-5 md:p-6 lg:p-8 bg-muted/30 rounded-lg sm:rounded-xl md:rounded-2xl">
-              <div className="hidden md:block">
-                <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
+              <div className="relative group hidden md:block">
+                <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-xl sm:rounded-2xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                <img src={monitoring} alt="Verlaufskontrollen" className="relative rounded-lg sm:rounded-xl shadow-lg w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Verlaufskontrollen</h3>
                 
                 {/* Image for mobile only - between title and text */}
-                <div className="md:hidden">
-                  <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
+                <div className="relative group md:hidden">
+                  <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-xl sm:rounded-2xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                  <img src={monitoring} alt="Verlaufskontrollen" className="relative rounded-lg sm:rounded-xl shadow-lg w-full transition-transform duration-300 group-hover:scale-[1.02]" />
                 </div>
                 
                 <p className="text-muted-foreground leading-relaxed text-sm sm:text-base lg:text-lg">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
