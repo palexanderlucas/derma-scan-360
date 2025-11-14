@@ -26,7 +26,7 @@ export const Technology = () => {
                 <div className="p-2.5 sm:p-3 lg:p-4 bg-gradient-to-br from-primary/15 to-primary/5 rounded-xl sm:rounded-2xl shadow-sm">
                   <Scan className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 text-primary" />
                 </div>
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">Total-Body-Mapping</h3>
+                <h3 className="sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-xl">Total-Body-Mapping</h3>
               </div>
               
               {/* Image for mobile only - between title and text */}
