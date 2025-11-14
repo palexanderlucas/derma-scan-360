@@ -13,7 +13,7 @@ export const Technology = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
             Modernste Technologie für Ihre Sicherheit
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2">
+          <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2">
             Wir setzen auf weltweit führende Medizintechnik von Canfield® für präzise Früherkennung
           </p>
         </div>
