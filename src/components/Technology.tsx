@@ -35,7 +35,7 @@ export const Technology = () => {
                 <img src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
-              <p className="text-lg sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
                 Unser Ganzkörper-Scanner erstellt eine Landkarte der gesamten Hautoberfläche. 
                 Auf diese Weise können auffällige Veränderungen genau analysiert werden. Bei Verlaufskontrollen 
                 werden alle Läsionen von einer Software übereinandergelegt und über die Zeit hinweg verglichen. 
@@ -46,8 +46,8 @@ export const Technology = () => {
               
               {/* Desktop version - always visible */}
               <div className="hidden lg:block space-y-4 sm:space-y-5 lg:space-y-6">
-                <p className="text-lg sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
-                <p className="text-lg sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
                   Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
                   in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
                   Universitätskliniken setzen auf diese Technologie.
@@ -61,8 +61,8 @@ export const Technology = () => {
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
                 </CollapsibleTrigger>
                 <CollapsibleContent className="space-y-4 mt-4">
-                  <p className="text-lg sm:text-base text-muted-foreground leading-relaxed font-sans">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
-                  <p className="text-lg sm:text-base text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed font-sans">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
                     in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
                     Universitätskliniken setzen auf diese Technologie.
@@ -97,7 +97,7 @@ export const Technology = () => {
                 <img src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
-              <p className="text-lg sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
                 Mit einem Auflichtmikroskop können Muttermale stark vergrößert und sehr detailliert 
                 beurteilt werden. Dank speziellem und polarisiertem Licht können Muster und Strukturen 
                 dargestellt werden, die mit dem bloßen Auge nicht erkennbar sind. Auflichtmikroskopische 
@@ -108,8 +108,8 @@ export const Technology = () => {
               
               {/* Desktop version - always visible */}
               <div className="hidden lg:block space-y-4 sm:space-y-5 lg:space-y-6">
-                <p className="text-lg sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
-                <p className="text-lg sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
+                <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
               </div>
 
               {/* Mobile version - collapsible */}
@@ -119,8 +119,8 @@ export const Technology = () => {
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen2 ? "rotate-180" : ""}`} />
                 </CollapsibleTrigger>
                 <CollapsibleContent className="space-y-4 mt-4 text-base">
-                  <p className="text-lg sm:text-base text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
-                  <p className="text-lg sm:text-base text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
                 </CollapsibleContent>
               </Collapsible>
             </div>
@@ -142,7 +142,7 @@ export const Technology = () => {
                 <img src={doctorAnalysis} alt="Qualitätssicherung durch Hautarzt" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
-              <p className="text-lg sm:text-base lg:text-lg text-muted-foreground leading-relaxed">Jeder Befund wird von einem erfahrenen Hautarzt erstellt. Zusätzlich erfolgt eine Qualitätssicherung durch Frau Dr. med. Judith Reuther. Sie ist Fachärztin für Dermatologie und spezialisiert auf Hautkrebsscreening. Sie ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster und hat eine Zusatzbezeichnung für Tumortherapien erworben. Zudem hält sie regelmäßig Fortbildungen zum Thema Hautkrebsvorsorge und Auflichtmikroskopie. Die Befundung wird von Frau Dr. Reuther supervidiert und signiert. Bei Auffälligkeiten erfolgt zusätz eine telefonische Befundbesprechung.</p>
+              <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">Jeder Befund wird von einem erfahrenen Hautarzt erstellt. Zusätzlich erfolgt eine Qualitätssicherung durch Frau Dr. med. Judith Reuther. Sie ist Fachärztin für Dermatologie und spezialisiert auf Hautkrebsscreening. Sie ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster und hat eine Zusatzbezeichnung für Tumortherapien erworben. Zudem hält sie regelmäßig Fortbildungen zum Thema Hautkrebsvorsorge und Auflichtmikroskopie. Die Befundung wird von Frau Dr. Reuther supervidiert und signiert. Bei Auffälligkeiten erfolgt zusätz eine telefonische Befundbesprechung.</p>
             </div>
             <div className="relative group hidden lg:block">
               <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
