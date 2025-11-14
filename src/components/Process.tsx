@@ -46,7 +46,7 @@ export const Process = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
             Einfacher Ablauf – Höchste Qualität
           </h2>
-          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
+          <p className="sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2 text-base">
             Wählen Sie zwischen unserem Ganzkörper-Screening oder der Untersuchung einzelner Hautveränderungen
           </p>
         </div>
