@@ -118,8 +118,8 @@ export const Technology = () => {
                   {isOpen2 ? "Weniger anzeigen" : "Mehr anzeigen"}
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen2 ? "rotate-180" : ""}`} />
                 </CollapsibleTrigger>
-                <CollapsibleContent className="space-y-4 mt-4">
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
+                <CollapsibleContent className="space-y-4 mt-4 text-base">
+                  <p className="sm:text-base text-muted-foreground leading-relaxed text-base">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
                 </CollapsibleContent>
               </Collapsible>
