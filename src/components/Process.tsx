@@ -110,7 +110,7 @@ export const Process = () => {
                 </div>)}
             </div>
 
-            <div className="p-4 sm:p-5 md:p-6 lg:p-8 bg-muted/30 rounded-lg sm:rounded-xl md:rounded-2xl text-center max-w-2xl mx-auto">
+            <div className="p-4 sm:p-5 md:p-6 lg:p-8 bg-accent/50 rounded-lg sm:rounded-xl md:rounded-2xl text-center max-w-2xl mx-auto">
               <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4">Schnelle Untersuchung ohne Wartezeit</h3>
               <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">
                 Ideal für die schnelle Abklärung einzelner verdächtiger Hautveränderungen. 
