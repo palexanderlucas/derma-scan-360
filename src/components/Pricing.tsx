@@ -16,7 +16,7 @@ export const Pricing = () => {
   }, {
     name: "Single Lesion",
     price: "ab 29",
-    delivery: "Erste Läsion 25€, jede weitere 10€",
+    delivery: "Erste Läsion 29€, jede weitere 10€",
     features: ["Auflichtmikroskopische Aufnahme", "KI-Unterstützung", "Fachärztlicher Befund", "Sofort ohne Termin"],
     negativeFeatures: ["kein Total-Body-Mapping"],
     popular: false
