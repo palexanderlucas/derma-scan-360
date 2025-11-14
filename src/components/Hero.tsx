@@ -10,7 +10,7 @@ export const Hero = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight">
               Hautkrebs-Screening auf höchstem Niveau
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed">
+            <p className="sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed text-base">
               Innovative Hautkrebsvorsorge mit hochpräzisem Total-Body-Mapping und digitaler Auflichtmikroskopie – befundet von erfahrenen Dermatologen mit Unterstützung von künstlicher Intelligenz.
             </p>
             
