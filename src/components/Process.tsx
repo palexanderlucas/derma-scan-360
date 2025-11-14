@@ -9,7 +9,7 @@ export const Process = () => {
   }, {
     icon: Scan,
     title: "Ganzkörper-Screening",
-    description: "Zuerst wird das Total-Body-Mapping erstellt. Danach werden auffällige Veränderungen mit einem Dermatoskop aufgenommen. In unserer Praxis begleitet Sie unser speziell geschultes Team."
+    description: "Zuerst wird ein Total-Body-Mapping erstellt. Im zweiten Schritt werden auffällige Veränderungen mit einem Auflichtmikroskop aufgenommen."
   }, {
     icon: CheckCircle,
     title: "Qualitätsprüfung",
@@ -87,7 +87,7 @@ export const Process = () => {
                   <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
                 </div>
                 
-                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base lg:text-lg">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
+                <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
               </div>
             </div>
           </TabsContent>
@@ -104,7 +104,7 @@ export const Process = () => {
                         {index + 1}
                       </div>
                     </div>
-                    <h3 className="font-semibold mb-2 text-base">{step.title}</h3>
+                    <h3 className="mb-2 text-lg font-bold">{step.title}</h3>
                     <p className="text-muted-foreground leading-relaxed text-base font-thin">{step.description}</p>
                   </div>
                 </div>)}
