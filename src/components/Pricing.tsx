@@ -2,23 +2,23 @@ import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 export const Pricing = () => {
   const plans = [{
-    name: "Ganzkörper-Screening",
-    price: "149",
-    delivery: "Befund innerhalb von 14 Tagen",
-    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief"],
-    popular: false
-  }, {
-    name: "Ganzkörper-Screening Express",
-    price: "199",
-    delivery: "Befund innerhalb von 5 Werktagen",
-    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
-    popular: true
-  }, {
     name: "Single Lesion",
     price: "ab 29",
     delivery: "Erste Läsion 29€, jede weitere 10€",
     features: ["Auflichtmikroskopische Aufnahme", "KI-Unterstützung", "Fachärztlicher Befund", "Sofort ohne Termin"],
     negativeFeatures: ["kein Total-Body-Mapping"],
+    popular: false
+  }, {
+    name: "Ganzkörper-Screening",
+    price: "149",
+    delivery: "Befund innerhalb von 14 Tagen",
+    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief"],
+    popular: true
+  }, {
+    name: "Ganzkörper-Screening Express",
+    price: "199",
+    delivery: "Befund innerhalb von 5 Werktagen",
+    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
     popular: false
   }];
   return <section id="preise" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/40">
