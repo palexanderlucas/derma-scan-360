@@ -13,7 +13,7 @@ export const FAQ = () => {
     },
     {
       question: "Wie unterscheidet sich DermaScan360 von einem üblichen Hautkrebsscreening?",
-      answer: "Im Gegensatz zum klassischen Arzttermin ermöglichen wir ein vollständig digitalisiertes Hautkrebs-Screening an. Vor Ort begleitet Sie unser speziell geschultes Team und erstellt mithilfe von Kamerasystemen hochwertige Aufnahmen Ihrer Haut – ohne direkten Arztkontakt. Die dermatologische Begutachtung erfolgt im Anschluss durch einen erfahrenen Hautarzt. Ihren Befund inklusive eines aussagekräftigen Arztbriefs mit konkreten Empfehlungen zum weiteren Vorgehen erhalten Sie innerhalb weniger Werktage nach Vorstellung. Bei Auffälligkeiten werden Sie durch einen unserer Hautärzte telefonisch zur ausführlichen Befundbesprechung kontaktiert."
+      answer: "Im Gegensatz zum klassischen Arzttermin ermöglichen wir ein vollständig digitalisiertes Hautkrebs-Screening. Vor Ort begleitet Sie unser speziell geschultes Team und erstellt mithilfe von Kamerasystemen hochwertige Aufnahmen Ihrer Haut – ohne direkten Arztkontakt. Die dermatologische Begutachtung erfolgt im Anschluss durch einen erfahrenen Hautarzt. Ihren Befund inklusive eines aussagekräftigen Arztbriefs mit konkreten Empfehlungen zum weiteren Vorgehen erhalten Sie innerhalb weniger Werktage nach Vorstellung. Bei Auffälligkeiten werden Sie durch einen unserer Hautärzte telefonisch zur ausführlichen Befundbesprechung kontaktiert."
     },
     {
       question: "Was passiert, wenn ein Befund auffällig sein sollte?",
