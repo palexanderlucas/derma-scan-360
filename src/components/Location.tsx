@@ -29,8 +29,8 @@ export const Location = () => {
                 <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
               </div>
               <div>
-                <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Osnabrück Zentrum</h3>
-                <p className="text-muted-foreground text-xs sm:text-sm md:text-base">
+                <h3 className="font-semibold sm:text-lg mb-1.5 sm:mb-2 text-base">Osnabrück Zentrum</h3>
+                <p className="text-muted-foreground sm:text-sm md:text-base text-sm">
                   Möserstraße 2-3<br />
                   49074 Osnabrück
                 </p>
@@ -48,9 +48,9 @@ export const Location = () => {
               <div>
                 <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Parkmöglichkeiten</h3>
                 <ul className="text-muted-foreground space-y-1 text-xs sm:text-sm">
-                  <li>• Parkplatz Haarmannsbrunnen: 1 min Fußweg</li>
-                  <li>• Parkhaus Sparkasse: 2 min Fußweg</li>
-                  <li>• Parkhaus Galeria Kaufhof: 3 min Fußweg</li>
+                  <li className="text-sm">• Haarmannsbrunnen: 1 min Fußweg</li>
+                  <li className="text-sm">• Parkhaus Sparkasse: 2 min Fußweg</li>
+                  <li className="text-sm">• Parkhaus Galeria Kaufhof: 3 min Fußweg</li>
                 </ul>
               </div>
             </div>
@@ -62,8 +62,8 @@ export const Location = () => {
                   <Train className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">Hauptbahnhof</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground">11 min Fußweg</p>
+                  <h4 className="font-semibold mb-0.5 sm:mb-1 sm:text-base text-base">Hauptbahnhof</h4>
+                  <p className="sm:text-sm text-muted-foreground text-sm">11 min Fußweg</p>
                 </div>
               </div>
 
@@ -72,8 +72,8 @@ export const Location = () => {
                   <Bus className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-0.5 sm:mb-1 text-sm sm:text-base">Berliner Platz</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground">3 min Fußweg</p>
+                  <h4 className="font-semibold mb-0.5 sm:mb-1 sm:text-base text-base">Berliner Platz</h4>
+                  <p className="sm:text-sm text-muted-foreground text-sm">3 min Fußweg</p>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export const Location = () => {
             {/* Coming Soon */}
             <div className="p-4 sm:p-5 md:p-6 bg-accent/50 rounded-lg sm:rounded-xl">
               <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Bald auch in Köln</h3>
-              <p className="text-muted-foreground text-xs sm:text-sm md:text-base">
+              <p className="text-muted-foreground sm:text-sm md:text-base text-sm">
                 Unser zweiter Standort in Köln Innenstadt ist in Planung. 
                 Bleiben Sie informiert über die Eröffnung!
               </p>

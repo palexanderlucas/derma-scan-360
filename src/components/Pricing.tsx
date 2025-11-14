@@ -43,17 +43,17 @@ export const Pricing = () => {
                 <div className="flex items-baseline gap-1">
                   <span className="text-2xl sm:text-3xl md:text-4xl font-bold">{plan.price}€</span>
                 </div>
-                <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground mt-1.5 sm:mt-2">{plan.delivery}</p>
+                <p className="sm:text-xs md:text-sm text-muted-foreground mt-1.5 sm:mt-2 text-sm">{plan.delivery}</p>
               </div>
 
               <ul className="space-y-2 sm:space-y-2.5 md:space-y-3 mb-6 sm:mb-7 md:mb-8 flex-grow">
                 {plan.features.map(feature => <li key={feature} className="flex items-start gap-1.5 sm:gap-2">
                     <Check className="h-4 w-4 sm:h-5 sm:w-5 text-primary shrink-0 mt-0.5" />
-                    <span className="text-xs sm:text-sm">{feature}</span>
+                    <span className="sm:text-sm text-sm">{feature}</span>
                   </li>)}
                 {plan.negativeFeatures?.map(feature => <li key={feature} className="flex items-start gap-1.5 sm:gap-2">
                     <X className="h-4 w-4 sm:h-5 sm:w-5 text-destructive shrink-0 mt-0.5" />
-                    <span className="text-xs sm:text-sm text-muted-foreground">{feature}</span>
+                    <span className="sm:text-sm text-muted-foreground text-sm">{feature}</span>
                   </li>)}
               </ul>
 
@@ -64,15 +64,15 @@ export const Pricing = () => {
         </div>
 
         <div className="mt-10 sm:mt-12 md:mt-16 lg:mt-20 max-w-5xl mx-auto p-5 sm:p-6 md:p-8 lg:p-10 bg-gradient-to-br from-accent/60 to-accent/40 rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg border border-border/30">
-          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-4 sm:mb-5 md:mb-6 text-center">Kostenerstattung durch Krankenkassen</h3>
+          <h3 className="sm:text-lg md:text-xl lg:text-2xl font-bold mb-4 sm:mb-5 md:mb-6 text-center text-base">Kostenerstattung durch Krankenkassen</h3>
           <div className="grid md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 text-xs sm:text-sm text-muted-foreground">
             <div>
-              <p className="font-medium text-foreground mb-2">Private Krankenkassen:</p>
-              <p>Die Leistung wird regelhaft übernommen. Je nach Tarif erfolgt meist eine vollständige Erstattung.</p>
+              <p className="font-medium text-foreground mb-2 text-sm">Private Krankenkassen:</p>
+              <p className="text-sm">Die Leistung wird regelhaft übernommen. Je nach Tarif erfolgt meist eine vollständige Erstattung.</p>
             </div>
             <div>
-              <p className="font-medium text-foreground mb-2">Gesetzliche Krankenkassen:</p>
-              <p>Einige GKVs bieten eine Erstattung oder Teilerstattung an. Wir empfehlen, die Rechnung einzureichen.</p>
+              <p className="font-medium text-foreground mb-2 text-sm">Gesetzliche Krankenkassen:</p>
+              <p className="text-sm">Einige GKVs bieten eine Erstattung oder Teilerstattung an. Wir empfehlen, die Rechnung einzureichen.</p>
             </div>
           </div>
         </div>
