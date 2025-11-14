@@ -4,7 +4,6 @@ import bodyScanner from "@/assets/body-scanner.jpg";
 import dermatoscope from "@/assets/dermatoscope.jpg";
 import doctorAnalysis from "@/assets/doctor-analysis.png";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-
 export const Technology = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -36,7 +35,7 @@ export const Technology = () => {
                 <img src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+              <p className="sm:text-base lg:text-lg text-muted-foreground leading-relaxed text-base">
                 Unser Ganzkörper-Scanner erstellt eine Landkarte der gesamten Hautoberfläche. 
                 Auf diese Weise können auffällige Veränderungen genau analysiert werden. Bei Verlaufskontrollen 
                 werden alle Läsionen von einer Software übereinandergelegt und über die Zeit hinweg verglichen. 
@@ -62,8 +61,8 @@ export const Technology = () => {
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`} />
                 </CollapsibleTrigger>
                 <CollapsibleContent className="space-y-4 mt-4">
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  <p className="sm:text-base text-muted-foreground leading-relaxed font-sans text-base">Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.</p>
+                  <p className="sm:text-base text-muted-foreground leading-relaxed text-base">
                     Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
                     in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
                     Universitätskliniken setzen auf diese Technologie.
@@ -98,7 +97,7 @@ export const Technology = () => {
                 <img src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
-              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">
+              <p className="sm:text-base lg:text-lg text-muted-foreground leading-relaxed text-base">
                 Mit einem Auflichtmikroskop können Muttermale stark vergrößert und sehr detailliert 
                 beurteilt werden. Dank speziellem und polarisiertem Licht können Muster und Strukturen 
                 dargestellt werden, die mit dem bloßen Auge nicht erkennbar sind. Auflichtmikroskopische 
