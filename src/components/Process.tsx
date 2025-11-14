@@ -92,27 +92,27 @@ export const Process = () => {
             </div>
           </TabsContent>
 
-          <TabsContent value="single" className="space-y-12">
-            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {singleLesionSteps.map((step, index) => <div key={index} className="relative">
-                  <div className="flex flex-col h-full p-6 bg-card rounded-xl border shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10">
-                        <step.icon className="h-5 w-5 text-primary" />
+          <TabsContent value="single" className="space-y-6 sm:space-y-8 md:space-y-10">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
+              {singleLesionSteps.map((step, index) => <div key={index} className="relative group">
+                  <div className="flex flex-col h-full p-4 sm:p-5 md:p-6 lg:p-7 bg-card sm:rounded-2xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 rounded-xl">
+                    <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                      <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300">
+                        <step.icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-primary" />
                       </div>
-                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-primary-foreground text-sm font-bold">
+                      <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-full bg-primary text-primary-foreground text-xs sm:text-sm lg:text-base font-bold shadow-sm">
                         {index + 1}
                       </div>
                     </div>
-                    <h3 className="mb-2 text-lg font-bold">{step.title}</h3>
+                    <h3 className="font-bold lg:text-lg mb-2 sm:mb-2.5 text-lg sm:text-lg">{step.title}</h3>
                     <p className="text-muted-foreground lg:text-base leading-relaxed text-base sm:text-base">{step.description}</p>
                   </div>
                 </div>)}
             </div>
 
-            <div className="max-w-2xl mx-auto p-8 bg-accent/50 rounded-2xl text-center">
-              <h3 className="text-xl font-bold mb-3">Schnelle Untersuchung ohne Wartezeit</h3>
-              <p className="text-muted-foreground">
+            <div className="p-4 sm:p-5 md:p-6 lg:p-8 bg-muted/30 rounded-lg sm:rounded-xl md:rounded-2xl text-center max-w-2xl mx-auto">
+              <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4">Schnelle Untersuchung ohne Wartezeit</h3>
+              <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">
                 Ideal für die schnelle Abklärung einzelner verdächtiger Hautveränderungen. 
                 Sie entscheiden, welche Muttermale oder Läsionen wir anschauen sollen.
               </p>
