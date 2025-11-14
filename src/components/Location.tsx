@@ -57,23 +57,23 @@ export const Location = () => {
 
             {/* Public Transport */}
             <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-              <div className="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-4 bg-card rounded-lg sm:rounded-xl border">
-                <div className="p-1.5 sm:p-2 bg-primary/10 rounded-lg shrink-0">
-                  <Train className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+              <div className="flex items-start gap-3 sm:gap-3 p-4 sm:p-4 bg-card rounded-lg sm:rounded-xl border">
+                <div className="p-2 sm:p-2 bg-primary/10 rounded-lg shrink-0">
+                  <Train className="h-5 w-5 sm:h-5 sm:w-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-0.5 sm:mb-1 sm:text-base text-base">Hauptbahnhof</h4>
-                  <p className="sm:text-sm text-muted-foreground text-sm">11 min Fußweg</p>
+                  <h4 className="font-semibold mb-1.5 sm:mb-1 text-base sm:text-base">Hauptbahnhof</h4>
+                  <p className="text-sm sm:text-sm text-muted-foreground">11 min Fußweg</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5 sm:gap-3 p-3 sm:p-4 bg-card rounded-lg sm:rounded-xl border">
-                <div className="p-1.5 sm:p-2 bg-primary/10 rounded-lg shrink-0">
-                  <Bus className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+              <div className="flex items-start gap-3 sm:gap-3 p-4 sm:p-4 bg-card rounded-lg sm:rounded-xl border">
+                <div className="p-2 sm:p-2 bg-primary/10 rounded-lg shrink-0">
+                  <Bus className="h-5 w-5 sm:h-5 sm:w-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-0.5 sm:mb-1 sm:text-base text-base">Berliner Platz</h4>
-                  <p className="sm:text-sm text-muted-foreground text-sm">3 min Fußweg</p>
+                  <h4 className="font-semibold mb-1.5 sm:mb-1 text-base sm:text-base">Berliner Platz</h4>
+                  <p className="text-sm sm:text-sm text-muted-foreground">3 min Fußweg</p>
                 </div>
               </div>
             </div>
