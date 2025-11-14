@@ -9,7 +9,7 @@ export const FAQ = () => {
   const faqs = [
     {
       question: "Was sind die Vorteile von DermaScan360?",
-      answer: "Wir bieten eine Termingarantie ohne lange Wartezeiten - für gesetzlich und privat Versicherte. Bei DermaScan360 erhalten sie einen Termin meistens noch am gleichen Tag, spätestens innerhalb von drei Werktagen. Einzelläsionen schauen wir uns auch ohne Termin an. Darüber hinaus sind wir mit modernsten Technik ausgestattet. Durch Total-Body-Mapping und digitaler Dermatoskopie mit KI-Unterstützung wird die Präzision der Hautkrebsvorsorge erhöht. Sie erhalten einen Arztbericht mit konkreter und genauer Handlungsempfehlung für eine reibungslose Weiterbehandlung."
+      answer: "Wir bieten eine Termingarantie ohne lange Wartezeiten - für gesetzlich und privat Versicherte. Bei DermaScan360 erhalten sie einen Termin meistens noch am gleichen Tag, spätestens innerhalb von drei Werktagen. Einzelläsionen schauen wir uns auch ohne Termin an. Darüber hinaus sind wir mit modernster Technik ausgestattet. Durch Total-Body-Mapping und digitaler Dermatoskopie mit KI-Unterstützung wird die Präzision der Hautkrebsvorsorge erhöht. Sie erhalten einen Arztbericht mit konkreter und genauer Handlungsempfehlung für eine reibungslose Weiterbehandlung."
     },
     {
       question: "Wie unterscheidet sich DermaScan360 von einem üblichen Hautkrebsscreening?",
