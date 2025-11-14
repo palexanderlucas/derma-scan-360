@@ -14,13 +14,10 @@ export const Hero = () => {
               Innovative Hautkrebsvorsorge mit hochpräzisem Total-Body-Mapping und digitaler Auflichtmikroskopie – befundet von erfahrenen Dermatologen mit Unterstützung von künstlicher Intelligenz.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3 pt-2 sm:pt-4">
+            <div className="pt-2 sm:pt-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200 text-sm sm:text-base lg:text-lg h-11 sm:h-12 lg:h-14 xl:h-16 font-semibold px-6 sm:px-8">
                 <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Jetzt Termin buchen
-              </Button>
-              <Button size="lg" variant="outline" className="text-sm sm:text-base lg:text-lg h-11 sm:h-12 lg:h-14 xl:h-16 font-semibold border-2 hover:bg-accent/50 transition-all duration-200 px-6 sm:px-8">
-                Mehr erfahren
               </Button>
             </div>
 
