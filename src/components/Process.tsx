@@ -9,7 +9,7 @@ export const Process = () => {
   }, {
     icon: Scan,
     title: "Ganzkörper-Screening",
-    description: "Zuerst wird ein Total-Body-Mapping erstellt. Im zweiten Schritt werden auffällige Veränderungen mit einem Auflichtmikroskop aufgenommen."
+    description: "Zuerst wird das Total-Body-Mapping erstellt. Danach werden auffällige Veränderungen mit einem Dermatoskop aufgenommen. In unserer Praxis begleitet Sie unser speziell geschultes Team."
   }, {
     icon: CheckCircle,
     title: "Qualitätsprüfung",
