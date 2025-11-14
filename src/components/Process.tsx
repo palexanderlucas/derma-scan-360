@@ -69,8 +69,8 @@ export const Process = () => {
                         {index + 1}
                       </div>
                     </div>
-                    <h3 className="font-bold sm:text-base lg:text-lg mb-2 sm:mb-2.5 text-lg">{step.title}</h3>
-                    <p className="text-muted-foreground sm:text-sm lg:text-base leading-relaxed text-base">{step.description}</p>
+                    <h3 className="font-bold lg:text-lg mb-2 sm:mb-2.5 text-lg sm:text-lg">{step.title}</h3>
+                    <p className="text-muted-foreground lg:text-base leading-relaxed text-base sm:text-base">{step.description}</p>
                   </div>
                 </div>)}
             </div>
