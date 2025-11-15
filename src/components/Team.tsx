@@ -1,13 +1,17 @@
 import profilImg from "@/assets/profil.jpg";
+import { useState, useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  CarouselApi,
 } from "@/components/ui/carousel";
 
 export const Team = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
   const founders = [
     {
       name: "Dr. med. Judith Reuther",
@@ -26,6 +30,16 @@ export const Team = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) return;
+
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   return (
     <section id="team" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -38,7 +52,7 @@ export const Team = () => {
         
         {/* Mobile & Tablet: Carousel */}
         <div className="lg:hidden max-w-2xl mx-auto">
-          <Carousel className="w-full">
+          <Carousel className="w-full" setApi={setApi}>
             <CarouselContent>
               {founders.map((founder, index) => (
                 <CarouselItem key={index}>
@@ -63,6 +77,22 @@ export const Team = () => {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
+          
+          {/* Navigation Dots */}
+          <div className="flex justify-center gap-2 mt-6">
+            {founders.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => api?.scrollTo(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  current === index 
+                    ? "w-8 bg-primary" 
+                    : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                }`}
+                aria-label={`Zu Gründer ${index + 1} wechseln`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Desktop: Grid */}
