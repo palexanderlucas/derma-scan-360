@@ -45,7 +45,7 @@ export const Team = () => {
                     <h3 className="font-semibold text-foreground mb-3 text-lg">
                       {founder.name}
                     </h3>
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed text-base">
                       {founder.description}
                     </p>
                   </div>
