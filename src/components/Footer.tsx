@@ -81,6 +81,11 @@ export const Footer = () => {
                 </button>
               </li>
               <li>
+                <button onClick={() => scrollToSection("team")} className="hover:text-primary transition-colors">
+                  Team
+                </button>
+              </li>
+              <li>
                 <button onClick={() => scrollToSection("standort")} className="hover:text-primary transition-colors">
                   Standort
                 </button>
