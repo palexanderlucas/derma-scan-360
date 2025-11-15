@@ -1,16 +1,14 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logo from "@/assets/logo.jpg";
-
 export const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-gray-100 py-8 sm:py-10 md:py-12">
+  return <footer className="bg-gray-900 text-gray-100 py-8 sm:py-10 md:py-12">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           {/* Logo & Description */}
           <div className="space-y-3 sm:space-y-4">
             <img src={logo} alt="DermaScan360" className="h-8 sm:h-9 md:h-10 brightness-0 invert" />
             <p className="text-xs sm:text-sm text-gray-400">
-              Hautkrebs Screening auf höchstem Niveau mit modernster Technologie in Osnabrück.
+              Hautkrebs-Screening Osnabrück.
             </p>
           </div>
 
@@ -92,6 +90,5 @@ export const Footer = () => {
           <p>&copy; {new Date().getFullYear()} DermaScan360. Alle Rechte vorbehalten.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
