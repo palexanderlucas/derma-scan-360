@@ -75,7 +75,7 @@ export const Process = () => {
                 </div>)}
             </div>
 
-            <div className="grid md:grid-cols-2 gap-5 sm:gap-6 md:gap-10 items-center mt-8 sm:mt-10 md:mt-12 p-4 sm:p-5 md:p-6 lg:p-8 bg-muted/30 rounded-lg sm:rounded-xl md:rounded-2xl">
+            <div className="grid md:grid-cols-2 gap-5 sm:gap-6 md:gap-10 items-center mt-8 sm:mt-10 md:mt-12 p-4 sm:p-5 md:p-6 lg:p-8 bg-blue-50 rounded-lg sm:rounded-xl md:rounded-2xl">
               <div className="hidden md:block">
                 <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
               </div>
