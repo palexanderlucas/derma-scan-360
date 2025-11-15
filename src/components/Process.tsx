@@ -80,7 +80,7 @@ export const Process = () => {
                 <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
               </div>
               <div className="space-y-3 sm:space-y-4">
-                <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Verlaufskontrollen</h3>
+                <h3 className="font-bold sm:text-3xl md:text-4xl lg:text-5xl text-lg">Verlaufskontrollen</h3>
                 
                 {/* Image for mobile only - between title and text */}
                 <div className="md:hidden">
@@ -111,7 +111,7 @@ export const Process = () => {
             </div>
 
             <div className="p-4 sm:p-5 md:p-6 lg:p-8 bg-accent/50 rounded-lg sm:rounded-xl md:rounded-2xl text-center max-w-2xl mx-auto">
-              <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4">Schnelle Untersuchung ohne Wartezeit</h3>
+              <h3 className="font-bold sm:text-3xl md:text-4xl lg:text-5xl mb-3 sm:mb-4 text-lg">Schnelle Untersuchung ohne Wartezeit</h3>
               <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">
                 Ideal für die schnelle Abklärung einzelner verdächtiger Hautveränderungen. 
                 Sie entscheiden, welche Muttermale oder Läsionen wir anschauen sollen.
