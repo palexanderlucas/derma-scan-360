@@ -68,11 +68,11 @@ export const Pricing = () => {
           <div className="grid md:grid-cols-2 gap-4 sm:gap-5 md:gap-6 text-xs sm:text-sm text-muted-foreground">
             <div>
               <p className="font-medium text-foreground mb-2 text-sm">Private Krankenkassen:</p>
-              <p className="text-sm">Die Leistung wird regelhaft übernommen. Je nach Tarif erfolgt meist eine vollständige Erstattung.</p>
+              <p className="text-sm">Die Leistung wird regelhaft übernommen. Meist erfolgt eine vollständige Erstattung.</p>
             </div>
             <div>
               <p className="font-medium text-foreground mb-2 text-sm">Gesetzliche Krankenkassen:</p>
-              <p className="text-sm">Einige GKVs bieten eine Erstattung oder Teilerstattung an. Wir empfehlen, die Rechnung einzureichen.</p>
+              <p className="text-sm">Einige GKVs bieten eine (Teil-)erstattung an. Wir empfehlen, die Rechnung einzureichen.</p>
             </div>
           </div>
         </div>
