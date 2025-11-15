@@ -100,8 +100,12 @@ export const Technology = () => {
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
                 Mit einem Auflichtmikroskop können Muttermale stark vergrößert und sehr detailliert 
                 beurteilt werden. Dank speziellem und polarisiertem Licht können Muster und Strukturen 
-                dargestellt werden, die mit dem bloßen Auge nicht erkennbar sind. Auflichtmikroskopische 
-                Nahaufnahmen erhöhen anerkannterweise die Genauigkeit eines Hautkrebsscreenings und werden 
+                dargestellt werden, die mit dem bloßen Auge nicht erkennbar sind.
+              </p>
+              
+              {/* Desktop version - additional text always visible */}
+              <p className="hidden lg:block text-base lg:text-lg text-muted-foreground leading-relaxed">
+                Auflichtmikroskopische Nahaufnahmen erhöhen anerkannterweise die Genauigkeit eines Hautkrebsscreenings und werden 
                 von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen 
                 Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield® D2 Dermatoskop).
               </p>
@@ -119,6 +123,7 @@ export const Technology = () => {
                   <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isOpen2 ? "rotate-180" : ""}`} />
                 </CollapsibleTrigger>
                 <CollapsibleContent className="space-y-4 mt-4 text-base">
+                  <p className="text-base text-muted-foreground leading-relaxed">Auflichtmikroskopische Nahaufnahmen erhöhen anerkannterweise die Genauigkeit eines Hautkrebsscreenings und werden von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield® D2 Dermatoskop).</p>
                   <p className="text-base text-muted-foreground leading-relaxed">Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.</p>
                   <p className="text-base text-muted-foreground leading-relaxed">Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.</p>
                 </CollapsibleContent>
