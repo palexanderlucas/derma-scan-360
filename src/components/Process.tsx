@@ -80,7 +80,7 @@ export const Process = () => {
                 <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
               </div>
               <div className="space-y-3 sm:space-y-4">
-                <h3 className="font-bold sm:text-3xl md:text-4xl lg:text-5xl text-lg">Verlaufskontrollen</h3>
+                <h3 className="font-bold sm:text-3xl md:text-4xl lg:text-5xl text-2xl">Verlaufskontrollen</h3>
                 
                 {/* Image for mobile only - between title and text */}
                 <div className="md:hidden">
