@@ -1,23 +1,28 @@
-import judithImg from "@/assets/judith.jpg";
-import leonImg from "@/assets/leon.jpg";
-import alexImg from "@/assets/alex.jpg";
+import profilImg from "@/assets/profil.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const Team = () => {
   const founders = [
     {
       name: "Dr. med. Judith Reuther",
-      image: judithImg,
-      description: "Gründerin DermaScan360 - Fachärztin für Dermatologie - stellvertretende Leiterin Hauttumorzentrum Universitätsklinik Münster - Zusatzbezeichnung für Medikamentöse Tumortherapie. Verantwortlich für Qualitätssicherung und Befundung."
+      image: profilImg,
+      description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Dr. med. Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
     },
     {
       name: "Dr. med. Leon Hardung",
-      image: leonImg,
-      description: "Gründer DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
+      image: profilImg,
+      description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
     },
     {
       name: "Dr. med. Alexander Lucas",
-      image: alexImg,
-      description: "Gründer DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
+      image: profilImg,
+      description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
     }
   ];
 
@@ -31,16 +36,49 @@ export const Team = () => {
           Gemeinsam mit unserem Team arbeiten wir leidenschaftlich daran, Hautkrebsvorsorge für jeden einfach und zugänglich zu machen.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
+        {/* Mobile & Tablet: Carousel */}
+        <div className="lg:hidden max-w-2xl mx-auto">
+          <Carousel className="w-full">
+            <CarouselContent>
+              {founders.map((founder, index) => (
+                <CarouselItem key={index}>
+                  <div className="flex flex-col items-center text-center px-4">
+                    <div className="mb-6 rounded-lg overflow-hidden w-full max-w-md aspect-video">
+                      <img 
+                        src={founder.image} 
+                        alt={founder.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">
+                      {founder.name}
+                    </h3>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {founder.description}
+                    </p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+
+        {/* Desktop: Grid */}
+        <div className="hidden lg:grid grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
           {founders.map((founder, index) => (
             <div key={index} className="flex flex-col items-center text-center">
-              <div className="mb-6 rounded-lg overflow-hidden w-48 h-48 md:w-56 md:h-56">
+              <div className="mb-6 rounded-lg overflow-hidden w-full aspect-video">
                 <img 
                   src={founder.image} 
                   alt={founder.name}
                   className="w-full h-full object-cover"
                 />
               </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3">
+                {founder.name}
+              </h3>
               <p className="text-base text-muted-foreground leading-relaxed">
                 {founder.description}
               </p>
