@@ -26,10 +26,10 @@ export const Team = () => {
   }, [api]);
   return <section id="team" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="md:text-4xl lg:text-5xl font-bold text-center mb-4 text-foreground text-2xl">
+        <h2 className="md:text-4xl font-bold text-center mb-4 text-foreground text-2xl lg:text-6xl">
           Wer wir sind
         </h2>
-        <p className="md:text-xl text-center text-muted-foreground mb-12 md:mb-16 max-w-3xl mx-auto text-base">
+        <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-3xl mx-auto text-base md:text-xl">
           Gemeinsam mit unserem Team arbeiten wir leidenschaftlich daran, Hautkrebsvorsorge für jeden einfach und zugänglich zu machen.
         </p>
         
@@ -67,10 +67,10 @@ export const Team = () => {
               <div className="mb-6 rounded-lg overflow-hidden w-full aspect-video">
                 <img src={founder.image} alt={founder.name} className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-semibold text-foreground mb-3 text-2xl">
                 {founder.name}
               </h3>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-lg">
                 {founder.description}
               </p>
             </div>)}
