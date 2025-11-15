@@ -30,7 +30,7 @@ export const Process = () => {
   const singleLesionSteps = [{
     icon: Clock,
     title: "Sofort ohne Termin",
-    description: "Kommen Sie jetzt vorbei - ohne Termin. Besuchen Sie uns spontan zu unseren Öffnungszeiten. Die Wartezeit beträgt erfahrungsgemäß zwischen 10-30 Minuten."
+    description: "Kommen Sie jetzt vorbei - ohne Termin. Besuchen Sie uns spontan zu unseren Öffnungszeiten. Die Wartezeit beträgt erfahrungsgemäß etwa 5-20 Minuten."
   }, {
     icon: Scan,
     title: "Auflichtmikroskopie",
