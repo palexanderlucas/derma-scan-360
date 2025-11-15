@@ -1,6 +1,21 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+
 export const Footer = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
+
   return <footer className="bg-gray-900 text-gray-100 py-8 sm:py-10 md:py-12">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
@@ -51,29 +66,29 @@ export const Footer = () => {
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Schnelllinks</h3>
             <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-400">
               <li>
-                <a href="#technologie" className="hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("technologie")} className="hover:text-primary transition-colors">
                   Technologie
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#ablauf" className="hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("ablauf")} className="hover:text-primary transition-colors">
                   Ablauf
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#preise" className="hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("preise")} className="hover:text-primary transition-colors">
                   Preise
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#standort" className="hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("standort")} className="hover:text-primary transition-colors">
                   Standort
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#faq" className="hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("faq")} className="hover:text-primary transition-colors">
                   FAQ
-                </a>
+                </button>
               </li>
             </ul>
           </div>
