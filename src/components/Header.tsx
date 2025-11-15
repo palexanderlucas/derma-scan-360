@@ -46,6 +46,10 @@ export const Header = () => {
             Preise
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
+          <button onClick={() => scrollToSection("team")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
+            Team
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+          </button>
           <button onClick={() => scrollToSection("standort")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Standort
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
@@ -84,6 +88,9 @@ export const Header = () => {
             </button>
             <button onClick={() => scrollToSection("preise")} className="text-left py-2 font-medium hover:text-primary transition-colors">
               Preise
+            </button>
+            <button onClick={() => scrollToSection("team")} className="text-left py-2 font-medium hover:text-primary transition-colors">
+              Team
             </button>
             <button onClick={() => scrollToSection("standort")} className="text-left py-2 font-medium hover:text-primary transition-colors">
               Standort
