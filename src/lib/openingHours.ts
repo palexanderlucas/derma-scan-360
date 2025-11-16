@@ -1,14 +1,14 @@
 export const openingHours = [
   {
-    day: "Mo-Fr",
+    day: "Montag - Freitag",
     hours: "9:00 - 18:00 Uhr"
   },
   {
-    day: "Sa",
+    day: "Samstag",
     hours: "10:00 - 14:00 Uhr"
   },
   {
-    day: "So",
+    day: "Sonntag",
     hours: "Geschlossen"
   }
 ];
