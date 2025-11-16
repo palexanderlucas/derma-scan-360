@@ -1,4 +1,5 @@
 import profilImg from "@/assets/profil.jpg";
+import judithImg from "@/assets/judith.jpg";
 import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 export const Team = () => {
@@ -6,7 +7,7 @@ export const Team = () => {
   const [current, setCurrent] = useState(0);
   const founders = [{
     name: "Dr. med. Judith Reuther",
-    image: profilImg,
+    image: judithImg,
     description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Dr. med. Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
   }, {
     name: "Dr. med. Leon Hardung",
