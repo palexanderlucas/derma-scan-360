@@ -1,6 +1,7 @@
 import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { openingHours } from "@/lib/openingHours";
 export const Pricing = () => {
   const plans = [{
     name: "Single Lesion",
@@ -71,30 +72,12 @@ export const Pricing = () => {
                     </DialogHeader>
                     <div className="space-y-4 py-4">
                       <div className="space-y-3">
-                        <div className="flex justify-between py-2 border-b">
-                          <span className="font-medium">Montag</span>
-                          <span className="text-muted-foreground">08:00 - 18:00</span>
-                        </div>
-                        <div className="flex justify-between py-2 border-b">
-                          <span className="font-medium">Dienstag</span>
-                          <span className="text-muted-foreground">08:00 - 18:00</span>
-                        </div>
-                        <div className="flex justify-between py-2 border-b">
-                          <span className="font-medium">Mittwoch</span>
-                          <span className="text-muted-foreground">08:00 - 18:00</span>
-                        </div>
-                        <div className="flex justify-between py-2 border-b">
-                          <span className="font-medium">Donnerstag</span>
-                          <span className="text-muted-foreground">08:00 - 18:00</span>
-                        </div>
-                        <div className="flex justify-between py-2 border-b">
-                          <span className="font-medium">Freitag</span>
-                          <span className="text-muted-foreground">08:00 - 16:00</span>
-                        </div>
-                        <div className="flex justify-between py-2">
-                          <span className="font-medium">Samstag & Sonntag</span>
-                          <span className="text-muted-foreground">Geschlossen</span>
-                        </div>
+                        {openingHours.map((item, index) => (
+                          <div key={item.day} className={`flex justify-between py-2 ${index < openingHours.length - 1 ? 'border-b' : ''}`}>
+                            <span className="font-medium">{item.day}</span>
+                            <span className="text-muted-foreground">{item.hours}</span>
+                          </div>
+                        ))}
                       </div>
                       <p className="text-sm text-muted-foreground pt-2">
                         Die Wartezeit beträgt erfahrungsgemäß etwa 5-20 Minuten.
