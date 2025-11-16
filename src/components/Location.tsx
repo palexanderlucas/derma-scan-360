@@ -56,24 +56,6 @@ export const Location = () => {
               </div>
             </div>
 
-            {/* Opening Hours */}
-            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-card rounded-lg sm:rounded-xl border">
-              <div className="p-2 sm:p-2.5 md:p-3 bg-primary/10 rounded-lg shrink-0">
-                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-              </div>
-              <div className="w-full">
-                <h3 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3">Öffnungszeiten</h3>
-                <div className="space-y-1.5">
-                  {openingHours.map((item) => (
-                    <div key={item.day} className="flex justify-between text-xs sm:text-sm">
-                      <span className="text-muted-foreground">{item.day}</span>
-                      <span className="font-medium">{item.hours}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
             {/* Public Transport */}
             <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
               <div className="flex items-start gap-3 sm:gap-3 p-4 sm:p-4 bg-card rounded-lg sm:rounded-xl border">
@@ -93,6 +75,24 @@ export const Location = () => {
                 <div>
                   <h4 className="font-semibold mb-1.5 sm:mb-1 text-base sm:text-base">Berliner Platz</h4>
                   <p className="text-sm sm:text-sm text-muted-foreground">3 min Fußweg</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Opening Hours */}
+            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-card rounded-lg sm:rounded-xl border">
+              <div className="p-2 sm:p-2.5 md:p-3 bg-primary/10 rounded-lg shrink-0">
+                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              </div>
+              <div className="w-full">
+                <h3 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3">Öffnungszeiten</h3>
+                <div className="space-y-1.5">
+                  {openingHours.map((item) => (
+                    <div key={item.day} className="flex justify-between text-xs sm:text-sm">
+                      <span className="text-muted-foreground">{item.day}</span>
+                      <span className="font-medium">{item.hours}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

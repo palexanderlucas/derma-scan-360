@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+import { openingHours } from "@/lib/openingHours";
 
 export const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -53,9 +54,9 @@ export const Footer = () => {
               <div className="flex items-start gap-1.5 sm:gap-2">
                 <Clock className="h-3.5 w-3.5 sm:h-4 sm:w-4 mt-0.5 sm:mt-1 shrink-0" />
                 <div>
-                  <p>Mo-Fr: 9:00 - 18:00 Uhr</p>
-                  <p>Sa: 10:00 - 14:00 Uhr</p>
-                  <p>So: Geschlossen</p>
+                  {openingHours.map((item) => (
+                    <p key={item.day}>{item.day}: {item.hours}</p>
+                  ))}
                 </div>
               </div>
             </div>
