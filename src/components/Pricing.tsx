@@ -1,5 +1,6 @@
 import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 export const Pricing = () => {
   const plans = [{
     name: "Single Lesion",
@@ -57,9 +58,55 @@ export const Pricing = () => {
                   </li>)}
               </ul>
 
-              <Button className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} variant={plan.popular ? 'default' : 'outline'}>
-                {plan.name === "Single Lesion" ? "Jetzt vorbeikommen" : "Termin buchen"}
-              </Button>
+              {plan.name === "Single Lesion" ? (
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} variant={plan.popular ? 'default' : 'outline'}>
+                      Jetzt vorbeikommen
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-md">
+                    <DialogHeader>
+                      <DialogTitle className="text-xl sm:text-2xl">Kommen Sie spontan zu uns - ohne Termin!</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4 py-4">
+                      <div className="space-y-3">
+                        <div className="flex justify-between py-2 border-b">
+                          <span className="font-medium">Montag</span>
+                          <span className="text-muted-foreground">08:00 - 18:00</span>
+                        </div>
+                        <div className="flex justify-between py-2 border-b">
+                          <span className="font-medium">Dienstag</span>
+                          <span className="text-muted-foreground">08:00 - 18:00</span>
+                        </div>
+                        <div className="flex justify-between py-2 border-b">
+                          <span className="font-medium">Mittwoch</span>
+                          <span className="text-muted-foreground">08:00 - 18:00</span>
+                        </div>
+                        <div className="flex justify-between py-2 border-b">
+                          <span className="font-medium">Donnerstag</span>
+                          <span className="text-muted-foreground">08:00 - 18:00</span>
+                        </div>
+                        <div className="flex justify-between py-2 border-b">
+                          <span className="font-medium">Freitag</span>
+                          <span className="text-muted-foreground">08:00 - 16:00</span>
+                        </div>
+                        <div className="flex justify-between py-2">
+                          <span className="font-medium">Samstag & Sonntag</span>
+                          <span className="text-muted-foreground">Geschlossen</span>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground pt-2">
+                        Die Wartezeit beträgt erfahrungsgemäß etwa 5-20 Minuten.
+                      </p>
+                    </div>
+                  </DialogContent>
+                </Dialog>
+              ) : (
+                <Button className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} variant={plan.popular ? 'default' : 'outline'}>
+                  Termin buchen
+                </Button>
+              )}
             </div>)}
         </div>
 
