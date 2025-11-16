@@ -1,5 +1,6 @@
-import { MapPin, Car, Train, Bus } from "lucide-react";
+import { MapPin, Car, Train, Bus, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { openingHours } from "@/lib/openingHours";
 export const Location = () => {
   return <section id="standort" className="py-12 sm:py-16 md:py-20">
       <div className="container mx-auto px-3 sm:px-4">
@@ -52,6 +53,24 @@ export const Location = () => {
                   <li className="text-sm">• Parkhaus Sparkasse: 2 min Fußweg</li>
                   <li className="text-sm">• Parkhaus Galeria Kaufhof: 3 min Fußweg</li>
                 </ul>
+              </div>
+            </div>
+
+            {/* Opening Hours */}
+            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-card rounded-lg sm:rounded-xl border">
+              <div className="p-2 sm:p-2.5 md:p-3 bg-primary/10 rounded-lg shrink-0">
+                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+              </div>
+              <div className="w-full">
+                <h3 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3">Öffnungszeiten</h3>
+                <div className="space-y-1.5">
+                  {openingHours.map((item) => (
+                    <div key={item.day} className="flex justify-between text-xs sm:text-sm">
+                      <span className="text-muted-foreground">{item.day}</span>
+                      <span className="font-medium">{item.hours}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
