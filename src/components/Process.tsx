@@ -62,14 +62,15 @@ export const Process = () => {
               {fullBodySteps.map((step, index) => <div key={index} className="relative group">
                   <div className="flex flex-col h-full p-4 sm:p-5 md:p-6 lg:p-7 bg-card sm:rounded-2xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 rounded-xl">
                     <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
-                      <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300 shrink-0">
-                        <step.icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-primary" />
-                      </div>
                       <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-full bg-primary text-primary-foreground text-xs sm:text-sm lg:text-base font-bold shadow-sm shrink-0">
                         {index + 1}
                       </div>
-                      <h3 className="font-bold text-base sm:text-lg lg:text-xl flex-1">{step.title}</h3>
+                      <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300 shrink-0">
+                        <step.icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-primary" />
+                      </div>
+                      <h3 className="font-bold text-base sm:hidden flex-1">{step.title}</h3>
                     </div>
+                    <h3 className="font-bold text-lg lg:text-xl mb-2 sm:mb-3 hidden sm:block">{step.title}</h3>
                     <p className="text-muted-foreground lg:text-base leading-relaxed text-base sm:text-base">{step.description}</p>
                   </div>
                 </div>)}
@@ -97,14 +98,15 @@ export const Process = () => {
               {singleLesionSteps.map((step, index) => <div key={index} className="relative group">
                   <div className="flex flex-col h-full p-4 sm:p-5 md:p-6 lg:p-7 bg-card sm:rounded-2xl border border-border/50 shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 rounded-xl">
                     <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
-                      <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300 shrink-0">
-                        <step.icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-primary" />
-                      </div>
                       <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9 rounded-full bg-primary text-primary-foreground text-xs sm:text-sm lg:text-base font-bold shadow-sm shrink-0">
                         {index + 1}
                       </div>
-                      <h3 className="font-bold text-base sm:text-lg lg:text-xl flex-1">{step.title}</h3>
+                      <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-lg sm:rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10 transition-colors duration-300 shrink-0">
+                        <step.icon className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-primary" />
+                      </div>
+                      <h3 className="font-bold text-base sm:hidden flex-1">{step.title}</h3>
                     </div>
+                    <h3 className="font-bold text-lg lg:text-xl mb-2 sm:mb-3 hidden sm:block">{step.title}</h3>
                     <p className="text-muted-foreground lg:text-base leading-relaxed text-base sm:text-base">{step.description}</p>
                   </div>
                 </div>)}
