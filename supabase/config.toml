@@ -1,0 +1,4 @@
+project_id = "default"
+
+[functions.send-corporate-contact]
+verify_jwt = false

@@ -1,7 +1,6 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
-import { Resend } from "npm:resend@2.0.0";
 
-const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -27,26 +26,39 @@ const handler = async (req: Request): Promise<Response> => {
   try {
     const data: CorporateContactRequest = await req.json();
 
-    const emailResponse = await resend.emails.send({
-      from: "DermaScan360 <onboarding@resend.dev>",
-      to: ["info@dermascan360.de"],
-      subject: `Neue Unternehmensanfrage von ${data.firstName} ${data.lastName}`,
-      html: `
-        <h2>Neue Unternehmensanfrage</h2>
-        
-        <h3>Kontaktdaten</h3>
-        <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
-        <p><strong>E-Mail:</strong> ${data.email}</p>
-        <p><strong>Telefon:</strong> ${data.phone}</p>
-        
-        <h3>Unternehmensdaten</h3>
-        <p><strong>Unternehmen:</strong> ${data.company}</p>
-        <p><strong>Mitarbeiteranzahl:</strong> ${data.employeeCount}</p>
-        
-        <h3>Nachricht</h3>
-        <p>${data.message.replace(/\n/g, '<br>')}</p>
-      `,
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${RESEND_API_KEY}`,
+      },
+      body: JSON.stringify({
+        from: "DermaScan360 <onboarding@resend.dev>",
+        to: ["info@dermascan360.de"],
+        subject: `Neue Unternehmensanfrage von ${data.firstName} ${data.lastName}`,
+        html: `
+          <h2>Neue Unternehmensanfrage</h2>
+          
+          <h3>Kontaktdaten</h3>
+          <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
+          <p><strong>E-Mail:</strong> ${data.email}</p>
+          <p><strong>Telefon:</strong> ${data.phone}</p>
+          
+          <h3>Unternehmensdaten</h3>
+          <p><strong>Unternehmen:</strong> ${data.company}</p>
+          <p><strong>Mitarbeiteranzahl:</strong> ${data.employeeCount}</p>
+          
+          <h3>Nachricht</h3>
+          <p>${data.message.replace(/\n/g, '<br>')}</p>
+        `,
+      }),
     });
+
+    const emailResponse = await res.json();
+
+    if (!res.ok) {
+      throw new Error(emailResponse.message || 'Failed to send email');
+    }
 
     console.log("Email sent successfully:", emailResponse);
 
