@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.jpg";
 import { openingHours } from "@/lib/openingHours";
 
@@ -90,6 +91,11 @@ export const Footer = () => {
                 <button onClick={() => scrollToSection("standort")} className="hover:text-primary transition-colors">
                   Standort
                 </button>
+              </li>
+              <li>
+                <Link to="/corporate" className="hover:text-primary transition-colors">
+                  Für Unternehmen
+                </Link>
               </li>
               <li>
                 <button onClick={() => scrollToSection("faq")} className="hover:text-primary transition-colors">

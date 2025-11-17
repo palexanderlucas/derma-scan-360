@@ -18,7 +18,7 @@ export const CorporateCTA = () => {
             Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen – ob in unserer Filiale 
             oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
           </p>
-          <Link to="/corporate">
+          <Link to="/corporate" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Button size="lg" className="gap-2">
               Mehr erfahren
               <ArrowRight className="h-5 w-5" />
