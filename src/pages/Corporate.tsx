@@ -121,7 +121,7 @@ const Corporate = () => {
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               <div className="bg-card p-6 rounded-xl border text-center">
-                <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
+                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Gesundheit fördern - Produktivität erhalten</h3>
               </div>
               <div className="bg-card p-6 rounded-xl border text-center">
@@ -133,7 +133,7 @@ const Corporate = () => {
                 <h3 className="font-semibold mb-2">Mitarbeiterbindung und -zufriedenheit stärken</h3>
               </div>
               <div className="bg-card p-6 rounded-xl border text-center">
-                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
+                <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold mb-2">Gesundes Arbeitsumfeld – hohe Attraktivität</h3>
               </div>
             </div>
