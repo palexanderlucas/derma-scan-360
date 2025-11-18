@@ -99,7 +99,7 @@ const Corporate = () => {
                   Hautkrebs-Screening für Unternehmen
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
-                  Machen Sie Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich.Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen  – ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
+                  Machen Sie Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich. Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen  – ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
                 </p>
                 <Button size="lg" onClick={scrollToContact}>
                   Kontakt
