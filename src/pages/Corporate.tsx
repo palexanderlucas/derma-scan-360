@@ -78,7 +78,7 @@ const Corporate = () => {
       <CorporateHeader />
       <main className="pt-16 sm:pt-20">
         {/* Hero Section */}
-        <section className="py-12 sm:py-16 md:py-20 lg:py-24">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-primary/5">
           <div className="container mx-auto px-3 sm:px-4">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="text-center lg:text-left">

@@ -25,13 +25,13 @@ export const CorporateHeader = () => {
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 z-50 border-b shadow-sm">
       <nav className="container mx-auto px-3 sm:px-4 lg:px-6 h-16 sm:h-20 flex items-center justify-between">
-        <Link 
-          to="/" 
-          className="flex items-center gap-2"
-          aria-label="Zur Startseite"
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="flex items-center gap-2 cursor-pointer"
+          aria-label="Zum Seitenanfang"
         >
           <img src={logo} alt="DermaScan360 Logo" className="h-[70px] sm:h-[92px] lg:h-[104px]" />
-        </Link>
+        </button>
         
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-8">
@@ -74,7 +74,7 @@ export const CorporateHeader = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-background/98 backdrop-blur-xl border-b shadow-lg">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-background backdrop-blur-xl border-b shadow-lg">
           <div className="container mx-auto px-3 sm:px-4 py-4 flex flex-col gap-3">
             <Link 
               to="/"
