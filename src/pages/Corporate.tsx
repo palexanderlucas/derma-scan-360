@@ -91,8 +91,9 @@ const Corporate = () => {
       <CorporateHeader />
       <main className="pt-16 sm:pt-20">
         {/* Hero Section */}
-        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-primary/5">
-          <div className="container mx-auto px-3 sm:px-4">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
+          <div className="container mx-auto px-3 sm:px-4 relative">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="text-center lg:text-left">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-left">
