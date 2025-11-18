@@ -95,10 +95,10 @@ const Corporate = () => {
           <div className="container mx-auto px-3 sm:px-4">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="text-center lg:text-left">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-left">
                   Hautkrebs-Screening für Unternehmen
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 text-left">
                   Machen Sie Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich. Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen  – ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
                 </p>
                 <Button size="lg" onClick={scrollToContact}>
