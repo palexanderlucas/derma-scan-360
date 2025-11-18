@@ -13,8 +13,7 @@ export const CorporateCTA = () => {
 Weniger Ausfälle - stärkere Mitarbeiterbindung - höhere Produktivität.
           </p>
           <p className="sm:text-base text-muted-foreground mb-6 sm:mb-8 md:text-xl text-base">
-            Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen
- – ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
+            Wir bieten maßgeschneiderte Lösungen, ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen. Wir freuen uns über einen Austausch!
           </p>
           <Link to="/corporate">
             <Button size="lg" className="gap-2">
