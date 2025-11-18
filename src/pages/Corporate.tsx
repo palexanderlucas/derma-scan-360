@@ -122,16 +122,7 @@ const Corporate = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               <div className="bg-card p-6 rounded-xl border text-center">
                 <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold mb-2">                                                                                          Produktivität steigern
-Kosten senken    
-
-
-
-
-
-
-
-              </h3>
+                <h3 className="font-semibold mb-2">Gesundheit fördern - Produktivität erhalten</h3>
               </div>
               <div className="bg-card p-6 rounded-xl border text-center">
                 <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
