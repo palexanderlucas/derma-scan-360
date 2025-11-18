@@ -55,10 +55,10 @@ export const Header = () => {
             Standort
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
-          <Link to="/corporate" className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
+          <button onClick={() => scrollToSection("unternehmen")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Für Unternehmen
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
-          </Link>
+          </button>
           <button onClick={() => scrollToSection("faq")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             FAQ
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
@@ -100,13 +100,9 @@ export const Header = () => {
             <button onClick={() => scrollToSection("standort")} className="text-left py-2 font-medium hover:text-primary transition-colors">
               Standort
             </button>
-            <Link 
-              to="/corporate"
-              className="text-left py-2 font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
+            <button onClick={() => scrollToSection("unternehmen")} className="text-left py-2 font-medium hover:text-primary transition-colors">
               Für Unternehmen
-            </Link>
+            </button>
             <button onClick={() => scrollToSection("faq")} className="text-left py-2 font-medium hover:text-primary transition-colors">
               FAQ
             </button>
