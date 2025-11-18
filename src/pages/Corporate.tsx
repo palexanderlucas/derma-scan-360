@@ -11,74 +11,83 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { useState, useEffect } from "react";
-
 const formSchema = z.object({
-  email: z.string().email({ message: "Bitte geben Sie eine gültige E-Mail-Adresse ein" }),
-  phone: z.string().min(1, { message: "Bitte geben Sie eine Telefonnummer ein" }),
-  company: z.string().min(1, { message: "Bitte geben Sie Ihr Unternehmen ein" }),
-  employeeCount: z.string().min(1, { message: "Bitte geben Sie die Mitarbeiteranzahl ein" }),
-  firstName: z.string().min(1, { message: "Bitte geben Sie Ihren Vornamen ein" }),
-  lastName: z.string().min(1, { message: "Bitte geben Sie Ihren Nachnamen ein" }),
-  message: z.string().min(10, { message: "Bitte geben Sie eine Nachricht mit mindestens 10 Zeichen ein" }),
+  email: z.string().email({
+    message: "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+  }),
+  phone: z.string().min(1, {
+    message: "Bitte geben Sie eine Telefonnummer ein"
+  }),
+  company: z.string().min(1, {
+    message: "Bitte geben Sie Ihr Unternehmen ein"
+  }),
+  employeeCount: z.string().min(1, {
+    message: "Bitte geben Sie die Mitarbeiteranzahl ein"
+  }),
+  firstName: z.string().min(1, {
+    message: "Bitte geben Sie Ihren Vornamen ein"
+  }),
+  lastName: z.string().min(1, {
+    message: "Bitte geben Sie Ihren Nachnamen ein"
+  }),
+  message: z.string().min(10, {
+    message: "Bitte geben Sie eine Nachricht mit mindestens 10 Zeichen ein"
+  })
 });
-
 type FormData = z.infer<typeof formSchema>;
-
 const Corporate = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: {
+      errors
+    }
   } = useForm<FormData>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(formSchema)
   });
-
   const scrollToContact = () => {
     const contactSection = document.getElementById("kontakt");
-    contactSection?.scrollIntoView({ behavior: "smooth" });
+    contactSection?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
       const response = await fetch("/api/send-corporate-contact", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(data)
       });
-
       if (!response.ok) {
         throw new Error("Fehler beim Senden der Nachricht");
       }
-
       toast({
         title: "Nachricht gesendet",
-        description: "Wir werden uns so schnell wie möglich bei Ihnen melden.",
+        description: "Wir werden uns so schnell wie möglich bei Ihnen melden."
       });
       reset();
     } catch (error) {
       toast({
         title: "Fehler",
         description: "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
     }
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <CorporateHeader />
       <main className="pt-16 sm:pt-20">
         {/* Hero Section */}
@@ -90,18 +99,14 @@ const Corporate = () => {
                   Hautkrebs-Screening für Unternehmen
                 </h1>
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
-                  Machen Sie Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich.
+                  Machen Sie Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich.Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen  – ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
                 </p>
                 <Button size="lg" onClick={scrollToContact}>
                   Kontakt
                 </Button>
               </div>
               <div className="relative">
-                <img 
-                  src={heroImage} 
-                  alt="Hautkrebs-Screening für Unternehmen" 
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                />
+                <img src={heroImage} alt="Hautkrebs-Screening für Unternehmen" className="w-full h-auto rounded-2xl shadow-2xl" />
               </div>
             </div>
           </div>
@@ -296,90 +301,45 @@ const Corporate = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">Vorname *</Label>
-                    <Input 
-                      id="firstName" 
-                      {...register("firstName")}
-                      className={errors.firstName ? "border-destructive" : ""}
-                    />
-                    {errors.firstName && (
-                      <p className="text-sm text-destructive">{errors.firstName.message}</p>
-                    )}
+                    <Input id="firstName" {...register("firstName")} className={errors.firstName ? "border-destructive" : ""} />
+                    {errors.firstName && <p className="text-sm text-destructive">{errors.firstName.message}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="lastName">Nachname *</Label>
-                    <Input 
-                      id="lastName" 
-                      {...register("lastName")}
-                      className={errors.lastName ? "border-destructive" : ""}
-                    />
-                    {errors.lastName && (
-                      <p className="text-sm text-destructive">{errors.lastName.message}</p>
-                    )}
+                    <Input id="lastName" {...register("lastName")} className={errors.lastName ? "border-destructive" : ""} />
+                    {errors.lastName && <p className="text-sm text-destructive">{errors.lastName.message}</p>}
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="email">E-Mail-Adresse *</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    {...register("email")}
-                    className={errors.email ? "border-destructive" : ""}
-                  />
-                  {errors.email && (
-                    <p className="text-sm text-destructive">{errors.email.message}</p>
-                  )}
+                  <Input id="email" type="email" {...register("email")} className={errors.email ? "border-destructive" : ""} />
+                  {errors.email && <p className="text-sm text-destructive">{errors.email.message}</p>}
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="phone">Telefonnummer *</Label>
-                  <Input 
-                    id="phone" 
-                    type="tel" 
-                    {...register("phone")}
-                    className={errors.phone ? "border-destructive" : ""}
-                  />
-                  {errors.phone && (
-                    <p className="text-sm text-destructive">{errors.phone.message}</p>
-                  )}
+                  <Input id="phone" type="tel" {...register("phone")} className={errors.phone ? "border-destructive" : ""} />
+                  {errors.phone && <p className="text-sm text-destructive">{errors.phone.message}</p>}
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="company">Unternehmen *</Label>
-                    <Input 
-                      id="company" 
-                      {...register("company")}
-                      className={errors.company ? "border-destructive" : ""}
-                    />
-                    {errors.company && (
-                      <p className="text-sm text-destructive">{errors.company.message}</p>
-                    )}
+                    <Input id="company" {...register("company")} className={errors.company ? "border-destructive" : ""} />
+                    {errors.company && <p className="text-sm text-destructive">{errors.company.message}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="employeeCount">Mitarbeiteranzahl *</Label>
-                    <Input 
-                      id="employeeCount" 
-                      {...register("employeeCount")}
-                      className={errors.employeeCount ? "border-destructive" : ""}
-                    />
-                    {errors.employeeCount && (
-                      <p className="text-sm text-destructive">{errors.employeeCount.message}</p>
-                    )}
+                    <Input id="employeeCount" {...register("employeeCount")} className={errors.employeeCount ? "border-destructive" : ""} />
+                    {errors.employeeCount && <p className="text-sm text-destructive">{errors.employeeCount.message}</p>}
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="message">Ihre Nachricht an uns *</Label>
-                  <Textarea 
-                    id="message" 
-                    rows={5}
-                    {...register("message")}
-                    className={errors.message ? "border-destructive" : ""}
-                  />
-                  {errors.message && (
-                    <p className="text-sm text-destructive">{errors.message.message}</p>
-                  )}
+                  <Textarea id="message" rows={5} {...register("message")} className={errors.message ? "border-destructive" : ""} />
+                  {errors.message && <p className="text-sm text-destructive">{errors.message.message}</p>}
                 </div>
 
                 <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
@@ -399,8 +359,6 @@ const Corporate = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Corporate;
