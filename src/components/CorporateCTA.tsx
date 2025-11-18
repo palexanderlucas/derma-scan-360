@@ -9,12 +9,12 @@ export const CorporateCTA = () => {
             Für Unternehmen
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 sm:mb-6">
-            Integrieren Sie Hautkrebsvorsorge in Ihr betriebliches Gesundheitsmanagement.  
+            Integrieren Sie Hautkrebsvorsorge in Ihr betriebliches Gesundheitsmanagement.
 Weniger Ausfälle - stärkere Mitarbeiterbindung - höhere Produktivität.
           </p>
           <p className="text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8 md:text-xl">
-            Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen – ob in unserer Filiale 
-            oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
+            Wir bieten maßgeschneiderte Lösungen für Ihr Unternehmen
+ – ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
           </p>
           <Link to="/corporate">
             <Button size="lg" className="gap-2">
