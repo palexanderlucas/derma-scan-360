@@ -10,7 +10,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const formSchema = z.object({
   email: z.string().email({ message: "Bitte geben Sie eine gültige E-Mail-Adresse ein" }),
@@ -27,6 +27,10 @@ type FormData = z.infer<typeof formSchema>;
 const Corporate = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   const {
     register,
