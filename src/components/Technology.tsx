@@ -10,7 +10,7 @@ export const Technology = () => {
   return <section id="technologie" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/40">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
+          <h2 className="sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight text-2xl">
             Modernste Technologie für Ihre Sicherheit
           </h2>
           <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2">

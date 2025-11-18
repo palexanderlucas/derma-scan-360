@@ -27,7 +27,7 @@ export const Team = () => {
   }, [api]);
   return <section id="team" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="md:text-4xl font-bold text-center mb-4 text-foreground lg:text-6xl text-2xl">
+        <h2 className="md:text-4xl font-bold text-center mb-4 text-foreground lg:text-6xl text-3xl">
           Wer wir sind
         </h2>
         <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-3xl mx-auto md:text-xl text-base">
