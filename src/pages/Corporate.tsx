@@ -120,20 +120,20 @@ const Corporate = () => {
               Ihre Vorteile
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              <div className="bg-card p-6 rounded-xl border text-center">
-                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4" />
+              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="font-semibold mb-2">Gesundheit fördern - Produktivität erhalten</h3>
               </div>
-              <div className="bg-card p-6 rounded-xl border text-center">
-                <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <Shield className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="font-semibold mb-2">Krankheitsausfälle und Frühberentung vermeiden</h3>
               </div>
-              <div className="bg-card p-6 rounded-xl border text-center">
-                <Users className="h-12 w-12 text-primary mx-auto mb-4" />
+              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <Users className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="font-semibold mb-2">Mitarbeiterbindung und -zufriedenheit stärken</h3>
               </div>
-              <div className="bg-card p-6 rounded-xl border text-center">
-                <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
+              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <Heart className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="font-semibold mb-2">Gesundes Arbeitsumfeld – hohe Attraktivität</h3>
               </div>
             </div>
