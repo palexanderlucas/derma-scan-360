@@ -8,8 +8,13 @@ import { Location } from "@/components/Location";
 import { CorporateCTA } from "@/components/CorporateCTA";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="min-h-screen">
       <Header />
