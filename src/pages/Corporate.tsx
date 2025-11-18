@@ -99,7 +99,7 @@ const Corporate = () => {
         <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
           <div className="container mx-auto px-3 sm:px-4 relative">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
               <div className="text-left">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                   Hautkrebs-Screening für Unternehmen
@@ -107,7 +107,7 @@ const Corporate = () => {
                 <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
                   Machen Sie Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich. Wir bieten maßgeschneiderte Lösungen, ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
                 </p>
-                <Button size="lg" onClick={scrollToContact} className="gap-2">
+                <Button size="lg" onClick={scrollToContact} className="gap-3 justify-start w-fit">
                   <Mail className="h-5 w-5" />
                   Kontakt
                 </Button>
