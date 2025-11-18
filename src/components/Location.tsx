@@ -5,7 +5,7 @@ export const Location = () => {
   return <section id="standort" className="py-12 sm:py-16 md:py-20">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 md:text-5xl">
             Unser Standort in Osnabrück
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
@@ -87,12 +87,10 @@ export const Location = () => {
               <div className="w-full">
                 <h3 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3">Öffnungszeiten</h3>
                 <div className="space-y-1.5">
-                  {openingHours.map((item) => (
-                    <div key={item.day} className="flex justify-between text-xs sm:text-sm">
+                  {openingHours.map(item => <div key={item.day} className="flex justify-between text-xs sm:text-sm">
                       <span className="text-muted-foreground">{item.day}</span>
                       <span className="font-medium">{item.hours}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
               </div>
             </div>
