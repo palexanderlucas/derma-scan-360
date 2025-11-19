@@ -10,7 +10,8 @@ export const Header = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const headerOffset = 80; // Header height offset
+      // Mobile: 64px, Tablet/Desktop: 80px
+      const headerOffset = window.innerWidth < 768 ? 64 : 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
