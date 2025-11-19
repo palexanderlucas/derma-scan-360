@@ -10,7 +10,7 @@ export const MunicipalityCTA = () => {
           <p className="sm:text-lg md:text-xl text-muted-foreground mb-4 sm:mb-6 text-base">
             Schließen Sie Versorgungslücken in Ihrer Region.
           </p>
-          <p className="sm:text-base text-muted-foreground mb-6 sm:mb-8 md:text-lg text-base text-left sm:text-center">
+          <p className="sm:text-base text-muted-foreground mb-6 sm:mb-8 md:text-lg text-base sm:text-center text-center">
             Wir unterstützen Kommunen dabei, Hautkrebsvorsorge direkt vor Ort anzubieten – schnell, niedrigschwellig und medizinisch hochwertig. Ob Stadt, Gemeinde oder Landkreis: Wir kommen mit unseren erfahrenen Hautärzten und modernen Screening-Systemen direkt zu Ihnen und ermöglichen BürgerInnen eine professionelle Hautkrebsvorsorge ohne lange Wege und Wartezeiten. Ideal für Aktionstage, Gesundheitswochen oder kommunale Präventionsprogramme.
           </p>
           <div className="flex justify-center">
