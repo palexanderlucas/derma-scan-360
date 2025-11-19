@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.svg";
 import { useActiveSection } from "@/hooks/useActiveSection";
@@ -8,6 +8,18 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const activeSection = useActiveSection();
+
+  useEffect(() => {
+    const originalOverflow = document.body.style.overflow;
+
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isMenuOpen]);
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
