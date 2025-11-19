@@ -158,8 +158,15 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden border-t bg-background">
-          <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
+        <div 
+          className="lg:hidden border-t bg-background fixed inset-0 top-16 sm:top-20 z-40"
+          onTouchMove={(e) => e.preventDefault()}
+          style={{ touchAction: 'none' }}
+        >
+          <div className="container mx-auto px-4 py-4 flex flex-col gap-3 h-full overflow-y-auto"
+            onTouchMove={(e) => e.stopPropagation()}
+            style={{ touchAction: 'pan-y' }}
+          >
             <button 
               onClick={() => scrollToSection("technologie")} 
               className={`text-left py-2 font-medium transition-colors ${
