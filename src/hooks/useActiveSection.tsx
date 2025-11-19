@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-export const useActiveSection = (sections?: string[]) => {
+export const useActiveSection = () => {
   const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
-    const defaultSections = [
+    const sections = [
       "technologie",
       "ablauf",
       "preise",
@@ -14,8 +14,6 @@ export const useActiveSection = (sections?: string[]) => {
       "kommunen",
       "faq",
     ];
-
-    const sectionsToObserve = sections || defaultSections;
 
     const observerOptions = {
       root: null,
@@ -33,7 +31,7 @@ export const useActiveSection = (sections?: string[]) => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    sectionsToObserve.forEach((sectionId) => {
+    sections.forEach((sectionId) => {
       const element = document.getElementById(sectionId);
       if (element) {
         observer.observe(element);
@@ -41,14 +39,14 @@ export const useActiveSection = (sections?: string[]) => {
     });
 
     return () => {
-      sectionsToObserve.forEach((sectionId) => {
+      sections.forEach((sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
           observer.unobserve(element);
         }
       });
     };
-  }, [sections]);
+  }, []);
 
   return activeSection;
 };

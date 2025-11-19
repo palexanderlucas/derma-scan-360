@@ -1,31 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.svg";
-import { useActiveSection } from "@/hooks/useActiveSection";
 
 export const CorporateHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const activeSection = useActiveSection(["vorteile", "angebot", "kontakt"]);
-
-  useEffect(() => {
-    const originalOverflow = document.body.style.overflow;
-
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    }
-
-    return () => {
-      document.body.style.overflow = originalOverflow;
-    };
-  }, [isMenuOpen]);
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      // Mobile: 64px, Tablet/Desktop: 80px
-      const headerOffset = window.innerWidth < 768 ? 64 : 80;
+      const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -57,38 +42,17 @@ export const CorporateHeader = () => {
             DermaScan360
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </Link>
-          <button 
-            onClick={() => scrollToSection("vorteile")} 
-            className={`text-sm font-medium transition-all duration-200 relative group ${
-              activeSection === "vorteile" ? "text-primary" : "text-foreground/80 hover:text-primary"
-            }`}
-          >
+          <button onClick={() => scrollToSection("vorteile")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Vorteile
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
-              activeSection === "vorteile" ? "w-full" : "w-0 group-hover:w-full"
-            }`}></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
-          <button 
-            onClick={() => scrollToSection("angebot")} 
-            className={`text-sm font-medium transition-all duration-200 relative group ${
-              activeSection === "angebot" ? "text-primary" : "text-foreground/80 hover:text-primary"
-            }`}
-          >
+          <button onClick={() => scrollToSection("angebot")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Unser Angebot
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
-              activeSection === "angebot" ? "w-full" : "w-0 group-hover:w-full"
-            }`}></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
-          <button 
-            onClick={() => scrollToSection("kontakt")} 
-            className={`text-sm font-medium transition-all duration-200 relative group ${
-              activeSection === "kontakt" ? "text-primary" : "text-foreground/80 hover:text-primary"
-            }`}
-          >
+          <button onClick={() => scrollToSection("kontakt")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Kontakt
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
-              activeSection === "kontakt" ? "w-full" : "w-0 group-hover:w-full"
-            }`}></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
         </div>
 
@@ -113,16 +77,8 @@ export const CorporateHeader = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div 
-          className="lg:hidden fixed inset-0 top-16 sm:top-20 z-40 bg-background backdrop-blur-xl border-b shadow-lg"
-          onTouchMove={(e) => e.preventDefault()}
-          style={{ touchAction: 'none' }}
-        >
-          <div 
-            className="container mx-auto px-3 sm:px-4 py-4 flex flex-col gap-3 h-full overflow-y-auto"
-            onTouchMove={(e) => e.stopPropagation()}
-            style={{ touchAction: 'pan-y' }}
-          >
+        <div className="lg:hidden absolute top-full left-0 w-full bg-background backdrop-blur-xl border-b shadow-lg">
+          <div className="container mx-auto px-3 sm:px-4 py-4 flex flex-col gap-3">
             <Link 
               to="/"
               className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border/50"
@@ -132,25 +88,19 @@ export const CorporateHeader = () => {
             </Link>
             <button 
               onClick={() => scrollToSection("vorteile")} 
-              className={`text-base font-medium transition-colors text-left py-2 border-b border-border/50 ${
-                activeSection === "vorteile" ? "text-primary" : "text-foreground/80 hover:text-primary"
-              }`}
+              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors text-left py-2 border-b border-border/50"
             >
               Vorteile
             </button>
             <button 
               onClick={() => scrollToSection("angebot")} 
-              className={`text-base font-medium transition-colors text-left py-2 border-b border-border/50 ${
-                activeSection === "angebot" ? "text-primary" : "text-foreground/80 hover:text-primary"
-              }`}
+              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors text-left py-2 border-b border-border/50"
             >
               Unser Angebot
             </button>
             <button 
               onClick={() => scrollToSection("kontakt")} 
-              className={`text-base font-medium transition-colors text-left py-2 border-b border-border/50 ${
-                activeSection === "kontakt" ? "text-primary" : "text-foreground/80 hover:text-primary"
-              }`}
+              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors text-left py-2 border-b border-border/50"
             >
               Kontakt
             </button>
