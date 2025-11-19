@@ -295,7 +295,7 @@ const Corporate = () => {
                 </p>
               </div>
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">> 10 Mitarbeiter</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-2">&gt; 10 Mitarbeiter</h3>
                 <p className="text-muted-foreground">
                   fachärztliches Ganzkörper-Screening mit Auflichtmikroskop vor Ort in Ihrem Unternehmen
                 </p>
