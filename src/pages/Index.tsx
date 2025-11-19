@@ -6,6 +6,7 @@ import { Pricing } from "@/components/Pricing";
 import { Team } from "@/components/Team";
 import { Location } from "@/components/Location";
 import { CorporateCTA } from "@/components/CorporateCTA";
+import { MunicipalityCTA } from "@/components/MunicipalityCTA";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
@@ -26,6 +27,7 @@ const Index = () => {
         <Team />
         <Location />
         <CorporateCTA />
+        <MunicipalityCTA />
         <FAQ />
       </main>
       <Footer />
