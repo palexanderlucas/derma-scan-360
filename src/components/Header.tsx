@@ -59,6 +59,10 @@ export const Header = () => {
             Für Unternehmen
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
+          <button onClick={() => scrollToSection("kommunen")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
+            Für Kommunen
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+          </button>
           <button onClick={() => scrollToSection("faq")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             FAQ
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
@@ -102,6 +106,9 @@ export const Header = () => {
             </button>
             <button onClick={() => scrollToSection("unternehmen")} className="text-left py-2 font-medium hover:text-primary transition-colors">
               Für Unternehmen
+            </button>
+            <button onClick={() => scrollToSection("kommunen")} className="text-left py-2 font-medium hover:text-primary transition-colors">
+              Für Kommunen
             </button>
             <button onClick={() => scrollToSection("faq")} className="text-left py-2 font-medium hover:text-primary transition-colors">
               FAQ
