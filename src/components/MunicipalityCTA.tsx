@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export const MunicipalityCTA = () => {
   return (
@@ -14,15 +15,13 @@ export const MunicipalityCTA = () => {
           <p className="sm:text-base text-muted-foreground mb-6 sm:mb-8 md:text-lg text-base text-left sm:text-center">
             Wir sind mobil und unterstützen Kommunen dabei, Hautkrebsvorsorge direkt vor Ort anzubieten – schnell, niedrigschwellig und medizinisch hochwertig. Ob Stadt, Gemeinde oder Landkreis: Wir kommen mit unseren erfahrenen Hautärzten und modernen Screening-Systemen direkt zu Ihnen und ermöglichen BürgerInnen eine professionelle Hautkrebsvorsorge ohne lange Wege und Wartezeiten. Ideal für Aktionstage, Gesundheitswochen oder kommunale Präventionsprogramme.
           </p>
-          <div className="flex items-center justify-center gap-2 text-base sm:text-lg">
-            <Mail className="h-5 w-5 text-primary" />
-            <span className="font-medium">Kontaktieren Sie uns jetzt:</span>
-            <a 
-              href="mailto:info@dermascan360.de" 
-              className="text-primary hover:underline font-semibold"
-            >
-              info@dermascan360.de
-            </a>
+          <div className="flex justify-center">
+            <Button size="lg" asChild>
+              <a href="mailto:info@dermascan360.de" className="gap-3">
+                <Mail className="h-5 w-5" />
+                info@dermascan360.de
+              </a>
+            </Button>
           </div>
         </div>
       </div>
