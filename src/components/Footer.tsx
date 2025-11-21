@@ -103,16 +103,6 @@ export const Footer = () => {
               </li>
               <li>
                 <button 
-                  onClick={() => scrollToSection("team")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "team" ? "text-primary font-medium" : ""
-                  }`}
-                >
-                  Team
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => scrollToSection("standort")} 
                   className={`hover:text-primary transition-colors ${
                     activeSection === "standort" ? "text-primary font-medium" : ""
@@ -139,6 +129,16 @@ export const Footer = () => {
                   }`}
                 >
                   Für Kommunen
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection("team")} 
+                  className={`hover:text-primary transition-colors ${
+                    activeSection === "team" ? "text-primary font-medium" : ""
+                  }`}
+                >
+                  Team
                 </button>
               </li>
               <li>
