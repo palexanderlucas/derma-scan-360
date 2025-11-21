@@ -20,15 +20,15 @@ const Index = () => {
     <div className="min-h-screen overflow-x-hidden">
       <Header />
       <main className="overflow-x-hidden">
-        <Hero />
-        <Technology />
-        <Process />
-        <Pricing />
-        <Team />
-        <Location />
-        <CorporateCTA />
-        <MunicipalityCTA />
-        <FAQ />
+      <Hero />
+      <Technology />
+      <Process />
+      <Pricing />
+      <Location />
+      <CorporateCTA />
+      <MunicipalityCTA />
+      <Team />
+      <FAQ />
       </main>
       <Footer />
     </div>
