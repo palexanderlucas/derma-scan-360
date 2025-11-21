@@ -84,17 +84,6 @@ export const Header = () => {
             }`}></span>
           </button>
           <button 
-            onClick={() => scrollToSection("team")} 
-            className={`text-sm font-medium transition-all duration-200 relative group ${
-              activeSection === "team" ? "text-primary" : "text-foreground/80 hover:text-primary"
-            }`}
-          >
-            Team
-            <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
-              activeSection === "team" ? "w-full" : "w-0 group-hover:w-full"
-            }`}></span>
-          </button>
-          <button 
             onClick={() => scrollToSection("standort")} 
             className={`text-sm font-medium transition-all duration-200 relative group ${
               activeSection === "standort" ? "text-primary" : "text-foreground/80 hover:text-primary"
@@ -125,6 +114,17 @@ export const Header = () => {
             Für Kommunen
             <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
               activeSection === "kommunen" ? "w-full" : "w-0 group-hover:w-full"
+            }`}></span>
+          </button>
+          <button 
+            onClick={() => scrollToSection("team")} 
+            className={`text-sm font-medium transition-all duration-200 relative group ${
+              activeSection === "team" ? "text-primary" : "text-foreground/80 hover:text-primary"
+            }`}
+          >
+            Team
+            <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200 ${
+              activeSection === "team" ? "w-full" : "w-0 group-hover:w-full"
             }`}></span>
           </button>
           <button 
@@ -185,14 +185,6 @@ export const Header = () => {
               Preise
             </button>
             <button 
-              onClick={() => scrollToSection("team")} 
-              className={`text-left py-2 font-medium transition-colors ${
-                activeSection === "team" ? "text-primary" : "hover:text-primary"
-              }`}
-            >
-              Team
-            </button>
-            <button 
               onClick={() => scrollToSection("standort")} 
               className={`text-left py-2 font-medium transition-colors ${
                 activeSection === "standort" ? "text-primary" : "hover:text-primary"
@@ -215,6 +207,14 @@ export const Header = () => {
               }`}
             >
               Für Kommunen
+            </button>
+            <button 
+              onClick={() => scrollToSection("team")} 
+              className={`text-left py-2 font-medium transition-colors ${
+                activeSection === "team" ? "text-primary" : "hover:text-primary"
+              }`}
+            >
+              Team
             </button>
             <button 
               onClick={() => scrollToSection("faq")} 
