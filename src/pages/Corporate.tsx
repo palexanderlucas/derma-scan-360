@@ -115,29 +115,29 @@ const Corporate = () => {
         </section>
 
         {/* Ihre Vorteile */}
-        <section id="vorteile" className="py-12 sm:py-16 md:py-20 bg-accent/50">
+        <section id="vorteile" className="py-8 sm:py-16 md:py-20 bg-accent/50">
           <div className="container mx-auto px-3 sm:px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12">
               Ihre Vorteile
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                <TrendingUp className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold mb-2">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 max-w-6xl mx-auto">
+              <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <TrendingUp className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-sm sm:text-base mb-2">
                   Produktivität steigern<br />Kosten senken
                 </h3>
               </div>
-              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                <Shield className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold mb-2">Krankheitsausfälle und Frühberentung vermeiden</h3>
+              <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-sm sm:text-base mb-2">Krankheitsausfälle und Frühberentung vermeiden</h3>
               </div>
-              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                <Users className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold mb-2">Mitarbeiterbindung und -zufriedenheit stärken</h3>
+              <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <Users className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-sm sm:text-base mb-2">Mitarbeiterbindung und -zufriedenheit stärken</h3>
               </div>
-              <div className="group bg-card p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
-                <Heart className="h-12 w-12 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold mb-2">Gesundes Arbeitsumfeld – hohe Attraktivität</h3>
+              <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <Heart className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold text-sm sm:text-base mb-2">Gesundes Arbeitsumfeld – hohe Attraktivität</h3>
               </div>
             </div>
           </div>
