@@ -129,15 +129,15 @@ const Corporate = () => {
               </div>
               <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                 <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-sm sm:text-base mb-2">Krankheitsausfälle und<br />Frühberentung vermeiden</h3>
+                <h3 className="font-semibold sm:text-base mb-2 text-base">Krankheitsausfälle und<br />Frühberentung vermeiden</h3>
               </div>
               <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                 <Users className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-sm sm:text-base mb-2">Mitarbeiterbindung und<br />-zufriedenheit stärken</h3>
+                <h3 className="font-semibold sm:text-base mb-2 text-base">Mitarbeiterbindung und<br />-zufriedenheit stärken</h3>
               </div>
               <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                 <Heart className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold text-sm sm:text-base mb-2">Gesundes Arbeitsumfeld<br />hohe Attraktivität</h3>
+                <h3 className="font-semibold sm:text-base mb-2 text-base">Gesundes Arbeitsumfeld<br />hohe Attraktivität</h3>
               </div>
             </div>
           </div>
