@@ -123,8 +123,20 @@ const Corporate = () => {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 max-w-6xl mx-auto">
               <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                 <TrendingUp className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold sm:text-base mb-2 text-base">
-                  Produktivität steigern -  Kosten senken
+                <h3 className="font-semibold sm:text-base mb-2 text-base text-center">
+                  Produktivität steigern- Kosten senken                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+
 
  
  
