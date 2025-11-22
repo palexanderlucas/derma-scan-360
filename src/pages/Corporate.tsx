@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Radiation, Sun } from "lucide-react";
+import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Sun } from "lucide-react";
 import heroImage from "@/assets/hero-scan.png";
+import cancerCellIcon from "@/assets/cancer-cell-icon.png";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -200,7 +201,7 @@ const Corporate = () => {
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
                 <div className="flex items-center gap-3 mb-4">
-                  <Radiation className="h-6 w-6 text-primary shrink-0" />
+                  <img src={cancerCellIcon} alt="Cancer cell" className="h-6 w-6 shrink-0" />
                   <h3 className="text-xl sm:text-2xl font-bold">Schwarzer Hautkrebs</h3>
                 </div>
                 <ul className="space-y-3 text-muted-foreground">
