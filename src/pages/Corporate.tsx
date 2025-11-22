@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X } from "lucide-react";
+import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Activity, Sun } from "lucide-react";
 import heroImage from "@/assets/hero-scan.png";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -199,7 +199,10 @@ const Corporate = () => {
             </p>
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <Activity className="h-6 w-6 text-primary shrink-0" />
+                  <h3 className="text-xl sm:text-2xl font-bold">Schwarzer Hautkrebs</h3>
+                </div>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1 self-center">•</span>
@@ -223,7 +226,10 @@ const Corporate = () => {
               </div>
               
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Weißer Hautkrebs</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <Sun className="h-6 w-6 text-primary shrink-0" />
+                  <h3 className="text-xl sm:text-2xl font-bold">Weißer Hautkrebs</h3>
+                </div>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1 self-center">•</span>
@@ -264,15 +270,15 @@ const Corporate = () => {
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening steigert Produktivität</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span>Frühes Screening = weniger Krankheitstage</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span>Vorstufen sind erkennbar und meist leicht zu behandeln</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
                     <span>Hauttumore zum Großteil vermeidbar</span>
                   </li>
                 </ul>
