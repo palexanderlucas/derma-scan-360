@@ -261,7 +261,7 @@ const Corporate = () => {
               </div>
               
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening steigert Produktivität</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening  </h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
