@@ -319,9 +319,7 @@ const Corporate = () => {
                 Kontakt
               </h2>
               <p className="text-center text-muted-foreground mb-8 sm:mb-10">
-                Gesunde, motivierte Mitarbeitende treiben den Erfolg Ihres Unternehmens voran. 
-                Für Ihr Unternehmen entwickeln wir eine passgenaue BGM-Lösung. 
-                Wir freuen uns darauf, im Austausch die beste Lösung für Sie zu finden!
+                ​Stets individuell auf Ihre Bedürfnisse angepasst - nahtlose Integration in Ihren Alltag           
               </p>
               
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-card p-6 sm:p-8 rounded-xl border">
