@@ -192,7 +192,7 @@ const Corporate = () => {
         <section className="py-12 sm:py-16 md:py-20 bg-accent/20">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
-              Hautkrebs Fakten
+              Hautkrebs Risiken und Chancen   
             </h2>
             <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-4xl mx-auto text-base">
               Hautkrebs ist der häufigste Tumor des Menschen und früh erkannt fast immer heilbar. Viele Mitarbeiter nehmen aus Zeitgründen keine Vorsorge wahr.
