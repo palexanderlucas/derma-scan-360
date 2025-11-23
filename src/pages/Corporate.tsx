@@ -265,11 +265,11 @@ const Corporate = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
-                    <span>Frühes Screening = weniger Krankheitstage</span>
+                    <span>Vor</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
-                    <span>Vorstufen sind erkennbar und meist leicht zu behandeln</span>
+                    <span>Vorstufen meist leicht zu behandeln</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
