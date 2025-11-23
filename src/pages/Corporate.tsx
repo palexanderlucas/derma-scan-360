@@ -194,7 +194,7 @@ const Corporate = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Hautkrebs Fakten
             </h2>
-            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-4xl mx-auto text-lg">
+            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-4xl mx-auto text-base">
               Hautkrebs ist der häufigste Tumor des Menschen und früh erkannt fast immer heilbar. Viele Mitarbeiter nehmen aus Zeitgründen keine Vorsorge wahr.
             </p>
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
@@ -287,7 +287,7 @@ const Corporate = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Unser Angebot für Ihr Unternehmen
             </h2>
-            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-lg">​Wir entwickeln für Sie eine passgenaue BGM-Lösung - individuell auf Ihre Bedürfnisse angepasst.                                                       </p>
+            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-base">​Wir entwickeln für Sie eine passgenaue BGM-Lösung - individuell auf Ihre Bedürfnisse angepasst.                                                       </p>
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
                 <h3 className="text-lg sm:text-xl font-bold mb-2">Unternehmen jeder Größe                                                                  </h3>
@@ -318,7 +318,7 @@ const Corporate = () => {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
                 Kontakt
               </h2>
-              <p className="text-center text-muted-foreground mb-8 sm:mb-10">
+              <p className="text-center text-muted-foreground mb-8 sm:mb-10 text-base">
                 Wir freuen uns darauf, im Austausch mit Ihnen die beste Lösung für Sie zu finden!            
               </p>
               
