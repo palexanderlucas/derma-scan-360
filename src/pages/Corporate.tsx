@@ -181,7 +181,7 @@ const Corporate = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Erfahrene Hautärzte</h3>
                   <p className="text-muted-foreground">
-                    persönliche und fachärztliche Diagnostik unter Leitung von Dr. Reuther - langjährige stellvertretende Leiterin des Hauttumorzentrums der Universität Münster
+                    fachärztliche Diagnostik unter Leitung von Dr. Reuther - langjährige stellvertretende Leiterin des Hauttumorzentrums der Universität Münster
                   </p>
                 </div>
               </div>
@@ -208,13 +208,13 @@ const Corporate = () => {
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1 self-center">•</span>
                     <span>
-                      Ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeiter erkrankt an diesem Tumor
+                      ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeiter               
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
                     <span>
-                      bei Erstdiagnose: Grad der Behinderung von 50-80% = Schwerbehinderung ab 1. Stadium
+                      Schwerbehinderung ab 1. Stadium (GdB 50-80%)  
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
