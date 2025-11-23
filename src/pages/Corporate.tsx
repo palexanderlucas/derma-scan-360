@@ -4,9 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Sun } from "lucide-react";
+import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X } from "lucide-react";
 import heroImage from "@/assets/hero-scan.png";
-import cancerCellIcon from "@/assets/cancer-cell-icon.png";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -200,37 +199,31 @@ const Corporate = () => {
             </p>
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <div className="flex items-center gap-3 mb-4">
-                  <img src={cancerCellIcon} alt="Cancer cell" className="h-6 w-6 shrink-0" />
-                  <h3 className="text-xl sm:text-2xl font-bold">Schwarzer Hautkrebs</h3>
-                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1 self-center">•</span>
                     <span>
-                      ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeite                                                                                                                                                                                                                                                                                                                                                                        
+                      ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeiter
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
                     <span>
-                      Schwerbehinderung ab 1. Stadium (GdB 50-80%)  
+                      Schwerbehinderung ab 1. Stadium (GdB 50-80%)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
                     <span>
-                      Lange Krankheitsausfälle, Folgeerkrankungen unter medikamentöser Therapie, psychische Folgeprobleme
+                      Lange Krankheitsausfälle, medikamentöse Nebenwirkungen, psychische Folgeprobleme
                     </span>
                   </li>
                 </ul>
               </div>
               
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <div className="flex items-center gap-3 mb-4">
-                  <Sun className="h-6 w-6 text-primary shrink-0" />
-                  <h3 className="text-xl sm:text-2xl font-bold">Weißer Hautkrebs</h3>
-                </div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Weißer Hautkrebs</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1 self-center">•</span>
