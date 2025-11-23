@@ -170,9 +170,11 @@ const Corporate = () => {
                 <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold mb-2">Modernste Technik</h3>
-                  <p className="text-muted-foreground">
-                    Total-Body-Mapping + digitale Auflichtmikroskopie + KI-Unterstützung
-                  </p>
+                <p className="text-muted-foreground">
+                  digitale Auflichtmikroskopie<br />
+                  Total-Body-Mapping<br />
+                  KI-Unterstützung
+                </p>
                 </div>
               </div>
               <div className="flex items-start gap-4 p-6 bg-card rounded-xl border">
