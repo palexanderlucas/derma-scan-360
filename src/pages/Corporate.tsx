@@ -269,7 +269,7 @@ const Corporate = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
-                    <span>Vorstufen meist leicht b      </span>
+                    <span>Vorstufen meist leicht behandelbar                       </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
