@@ -195,7 +195,7 @@ const Corporate = () => {
               Hautkrebs Fakten
             </h2>
             <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-4xl mx-auto text-lg">
-              Hautkrebs ist der häufigste Tumor des Menschen - und früh erkannt fast immer heilbar. Viele Mitarbeiter nehmen aus Zeitgründen keine Vorsorge wahr.
+              Hautkrebs ist der häufigste Tumor des Menschen und früh erkannt fast immer heilbar. Viele Mitarbeiter nehmen aus Zeitgründen keine Vorsorge wahr.
             </p>
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
