@@ -319,7 +319,7 @@ const Corporate = () => {
                 Kontakt
               </h2>
               <p className="text-center text-muted-foreground mb-8 sm:mb-10">
-                ​Stets individuell auf Ihre Bedürfnisse angepasst - nahtlose Integration in Ihren Alltag           
+                Wir freuen uns darauf, im Austausch mit Ihnen die beste Lösung für Sie zu finden!            
               </p>
               
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-card p-6 sm:p-8 rounded-xl border">
