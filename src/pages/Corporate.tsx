@@ -208,7 +208,7 @@ const Corporate = () => {
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1 self-center">•</span>
                     <span>
-                      ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeiter               
+                      ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeite                                                                                                                                                                                                                                                                                                                                                                        
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
