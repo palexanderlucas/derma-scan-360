@@ -171,7 +171,7 @@ const Corporate = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Modernste Technik</h3>
                 <p className="text-muted-foreground">
-                  digitale Auflichtmikroskopie, Total-Body-Mapping und KI-Unterstützung<br />
+                  digitale Auflichtmikroskopie, Total-Body-Mapping und KI-UnterstützungTotal  <br />
                   Total-Body-Mapping<br />
                   KI-Unterstützung
                 </p>
