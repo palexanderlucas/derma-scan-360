@@ -312,7 +312,7 @@ const Corporate = () => {
         </section>
 
         {/* Kontakt */}
-        <section id="kontakt" className="py-12 sm:py-16 md:py-20">
+        <section id="kontakt" className="py-12 sm:py-16 md:py-20 bg-accent/30">
           <div className="container mx-auto px-3 sm:px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
