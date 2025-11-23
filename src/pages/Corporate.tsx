@@ -287,7 +287,7 @@ const Corporate = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Unser Angebot für Ihr Unternehmen
             </h2>
-            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-lg">​Gesunde, motivierte Mitarbeitende treiben den Erfolg Ihres Unternehmens voran. Für Ihr Unternehmen entwickeln wir eine passgenaue BGM-Lösung. Wir freuen uns darauf, im Austausch die beste Lösung für Sie zu finden!</p>
+            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-lg">​Gesunde, motivierte Mitarbeitende treiben den Erfolg Ihres Unternehmens voran. Für Ihr Unternehmen entwickeln wir eine passgenaue BGM-Lösung. </p>
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
                 <h3 className="text-lg sm:text-xl font-bold mb-2">Unternehmen jeder Größe                                                                  </h3>
