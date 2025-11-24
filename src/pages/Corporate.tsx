@@ -202,19 +202,19 @@ const Corporate = () => {
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[3px]">•</span>
                     <span>
                       ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeiter
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[3px]">•</span>
                     <span>
                       Schwerbehinderung ab 1. Stadium (GdB 50-80%)
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[3px]">•</span>
                     <span>
                       Lange Krankheitsausfälle, medikamentöse Nebenwirkungen, psychische Folgeprobleme
                     </span>
@@ -226,15 +226,15 @@ const Corporate = () => {
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Weißer Hautkrebs</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[3px]">•</span>
                     <span>Häufigste Tumorerkrankung des Menschen</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[3px]">•</span>
                     <span>Hohe Ausfallzeiten und Produktivitätsverluste</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[3px]">•</span>
                     <span>Outdoor-Berufe besonders gefährdet</span>
                   </li>
                 </ul>
