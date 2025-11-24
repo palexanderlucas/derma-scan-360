@@ -2,10 +2,8 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { openingHours } from "@/lib/openingHours";
 import { useActiveSection } from "@/hooks/useActiveSection";
-
 export const Footer = () => {
   const activeSection = useActiveSection();
-  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,21 +11,19 @@ export const Footer = () => {
       const headerOffset = window.innerWidth < 768 ? 64 : 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth"
       });
     }
   };
-
   return <footer className="bg-gray-900 text-gray-100 py-8 sm:py-10 md:py-12">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           {/* Logo & Description */}
           <div className="space-y-3 sm:space-y-4">
             <p className="text-xs sm:text-sm text-gray-400">
-              Hautkrebs-Screening Osnabrück.
+              DermaScan360 - Hautkrebs-Screening Osnabrück.
             </p>
           </div>
 
@@ -57,9 +53,7 @@ export const Footer = () => {
               <div className="flex items-start gap-1.5 sm:gap-2">
                 <Clock className="h-3.5 w-3.5 sm:h-4 sm:w-4 mt-0.5 sm:mt-1 shrink-0" />
                 <div>
-                  {openingHours.map((item) => (
-                    <p key={item.day}>{item.day}: {item.hours}</p>
-                  ))}
+                  {openingHours.map(item => <p key={item.day}>{item.day}: {item.hours}</p>)}
                 </div>
               </div>
             </div>
@@ -70,82 +64,42 @@ export const Footer = () => {
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Schnelllinks</h3>
             <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-400">
               <li>
-                <button 
-                  onClick={() => scrollToSection("technologie")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "technologie" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("technologie")} className={`hover:text-primary transition-colors ${activeSection === "technologie" ? "text-primary font-medium" : ""}`}>
                   Technologie
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("ablauf")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "ablauf" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("ablauf")} className={`hover:text-primary transition-colors ${activeSection === "ablauf" ? "text-primary font-medium" : ""}`}>
                   Ablauf
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("preise")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "preise" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("preise")} className={`hover:text-primary transition-colors ${activeSection === "preise" ? "text-primary font-medium" : ""}`}>
                   Preise
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("standort")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "standort" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("standort")} className={`hover:text-primary transition-colors ${activeSection === "standort" ? "text-primary font-medium" : ""}`}>
                   Standort
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("unternehmen")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "unternehmen" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("unternehmen")} className={`hover:text-primary transition-colors ${activeSection === "unternehmen" ? "text-primary font-medium" : ""}`}>
                   Für Unternehmen
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("kommunen")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "kommunen" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("kommunen")} className={`hover:text-primary transition-colors ${activeSection === "kommunen" ? "text-primary font-medium" : ""}`}>
                   Für Kommunen
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("team")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "team" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("team")} className={`hover:text-primary transition-colors ${activeSection === "team" ? "text-primary font-medium" : ""}`}>
                   Team
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection("faq")} 
-                  className={`hover:text-primary transition-colors ${
-                    activeSection === "faq" ? "text-primary font-medium" : ""
-                  }`}
-                >
+                <button onClick={() => scrollToSection("faq")} className={`hover:text-primary transition-colors ${activeSection === "faq" ? "text-primary font-medium" : ""}`}>
                   FAQ
                 </button>
               </li>
