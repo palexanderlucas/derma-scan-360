@@ -234,7 +234,7 @@ const Corporate = () => {
                     <span>Hohe Ausfallzeiten und Produktivitätsverluste</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none my-[3px]">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-0">•</span>
                     <span>Outdoor-Berufe besonders gefährdet</span>
                   </li>
                 </ul>
