@@ -1,6 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.jpg";
 import { openingHours } from "@/lib/openingHours";
 import { useActiveSection } from "@/hooks/useActiveSection";
 
@@ -27,7 +26,6 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           {/* Logo & Description */}
           <div className="space-y-3 sm:space-y-4">
-            <img src={logo} alt="DermaScan360" className="h-12 sm:h-14 md:h-16 brightness-0 invert" style={{ mixBlendMode: 'screen' }} />
             <p className="text-xs sm:text-sm text-gray-400">
               Hautkrebs-Screening Osnabrück.
             </p>
