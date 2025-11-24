@@ -230,7 +230,7 @@ const Corporate = () => {
                     <span>Häufigste Tumorerkrankung des Menschen</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
+                    <span className="text-primary mt-1 my-0">•</span>
                     <span>Hohe Ausfallzeiten und Produktivitätsverluste</span>
                   </li>
                   <li className="flex items-start gap-2">
