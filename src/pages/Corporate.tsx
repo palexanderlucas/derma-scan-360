@@ -226,15 +226,15 @@ const Corporate = () => {
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Weißer Hautkrebs</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
                     <span>Häufigste Tumorerkrankung des Menschen</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
                     <span>Hohe Ausfallzeiten und Produktivitätsverluste</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-primary mt-[0.4em] leading-none">•</span>
+                    <span className="text-primary mt-[0.4em] leading-none my-[5px]">•</span>
                     <span>Outdoor-Berufe besonders gefährdet</span>
                   </li>
                 </ul>
