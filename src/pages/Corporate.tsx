@@ -145,7 +145,7 @@ const Corporate = () => {
 
 
         {/* Hautkrebs Fakten */}
-        <section className="py-12 sm:py-16 md:py-20 bg-muted/40">
+        <section className="py-12 sm:py-16 md:py-20">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Hautkrebs: Risiken und Chancen   
@@ -238,7 +238,7 @@ const Corporate = () => {
         </section>
 
         {/* Unser Angebot */}
-        <section id="angebot" className="py-12 sm:py-16 md:py-20">
+        <section id="angebot" className="py-12 sm:py-16 md:py-20 bg-muted/40">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Unser Angebot für Ihr Unternehmen
@@ -296,7 +296,7 @@ const Corporate = () => {
         </section>
 
         {/* Kontakt */}
-        <section id="kontakt" className="py-12 sm:py-16 md:py-20 bg-muted/50">
+        <section id="kontakt" className="py-12 sm:py-16 md:py-20 bg-accent/20">
           <div className="container mx-auto px-3 sm:px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
