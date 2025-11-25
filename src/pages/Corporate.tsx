@@ -289,27 +289,7 @@ const Corporate = () => {
             </h2>
             <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-base">​Wir entwickeln für Sie eine passgenaue BGM-Lösung - individuell auf Ihre Bedürfnisse angepasst.                                                       </p>
             <div className="max-w-4xl mx-auto space-y-6">
-              <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">Unternehmen jeder Größe      </h3>
-                <p className="text-muted-foreground">
-                  Sonderkonditionen für Ihre Mitarbeiter in unserer Filiale
-                </p>
-              </div>
-              <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">&gt; 10 Mitarbeiter</h3>
-                <p className="text-muted-foreground">
-                  fachärztliches Ganzkörper-Screening mit Auflichtmikroskop vor Ort in Ihrem Unternehmen
-                </p>
-              </div>
-              <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">&gt; 100 Mitarbeiter</h3>
-                <p className="text-muted-foreground">
-                  fachärztliches Ganzkörper-Screening mit Auflichtmikroskop und optional Total-Body-Mapping vor Ort in Ihrem Unternehmen
-                </p>
-              </div>
-
-              <div className="bg-primary/10 p-6 sm:p-8 rounded-xl border border-primary/20 mt-8">
-                <h3 className="text-lg sm:text-xl font-bold mb-6">Wir bieten</h3>
+              <div className="bg-primary/10 p-6 sm:p-8 rounded-xl border border-primary/20">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -346,6 +326,25 @@ const Corporate = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div className="bg-card p-6 sm:p-8 rounded-xl border">
+                <h3 className="text-lg sm:text-xl font-bold mb-2">Unternehmen jeder Größe      </h3>
+                <p className="text-muted-foreground">
+                  Sonderkonditionen für Ihre Mitarbeiter in unserer Filiale
+                </p>
+              </div>
+              <div className="bg-card p-6 sm:p-8 rounded-xl border">
+                <h3 className="text-lg sm:text-xl font-bold mb-2">&gt; 10 Mitarbeiter</h3>
+                <p className="text-muted-foreground">
+                  fachärztliches Ganzkörper-Screening mit Auflichtmikroskop vor Ort in Ihrem Unternehmen
+                </p>
+              </div>
+              <div className="bg-card p-6 sm:p-8 rounded-xl border">
+                <h3 className="text-lg sm:text-xl font-bold mb-2">&gt; 100 Mitarbeiter</h3>
+                <p className="text-muted-foreground">
+                  fachärztliches Ganzkörper-Screening mit Auflichtmikroskop und optional Total-Body-Mapping vor Ort in Ihrem Unternehmen
+                </p>
               </div>
             </div>
           </div>
