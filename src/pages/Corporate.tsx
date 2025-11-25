@@ -143,48 +143,6 @@ const Corporate = () => {
           </div>
         </section>
 
-        {/* Wir bieten */}
-        <section className="py-12 sm:py-16 md:py-20">
-          <div className="container mx-auto px-3 sm:px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 sm:mb-12">
-              Wir bieten
-            </h2>
-            <div className="max-w-4xl mx-auto space-y-6">
-              <div className="flex items-start gap-4 p-6 bg-card rounded-xl border">
-                <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Individuelle Lösungen</h3>
-                  <p className="text-muted-foreground">
-                    in unserer Filiale oder vor Ort direkt in Ihrem Unternehmen
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-6 bg-card rounded-xl border">
-                <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Einfache und schnelle Abläufe</h3>
-                  <p className="text-muted-foreground">integriert in Ihren Alltag</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-6 bg-card rounded-xl border">
-                <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Modernste Technik</h3>
-                <p className="text-muted-foreground">
-                  digitale Auflichtmikroskopie, Total-Body-Mapping und KI-Unterstützung
-                </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-6 bg-card rounded-xl border">
-                <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Erfahrene Hautärzte</h3>
-                  <p className="text-muted-foreground">fachärztliche Diagnostik unter Leitung von Dr. Reuther (stv. Leiterin Hauttumorzentrum UKM)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Hautkrebs Fakten */}
         <section className="py-12 sm:py-16 md:py-20 bg-muted/40">
