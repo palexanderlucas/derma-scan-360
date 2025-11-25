@@ -289,41 +289,39 @@ const Corporate = () => {
             </h2>
             <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-base">​Wir entwickeln für Sie eine passgenaue BGM-Lösung - individuell auf Ihre Bedürfnisse angepasst.                                                       </p>
             <div className="max-w-4xl mx-auto space-y-6">
-              <div className="bg-primary/10 p-6 sm:p-8 rounded-xl border border-primary/20">
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-semibold mb-1">Individuelle Lösungen</h4>
-                      <p className="text-muted-foreground text-sm">
-                        in unserer Filiale oder vor Ort direkt in Ihrem Unternehmen
-                      </p>
-                    </div>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Individuelle Lösungen</h4>
+                    <p className="text-muted-foreground text-sm">
+                      in unserer Filiale oder vor Ort direkt in Ihrem Unternehmen
+                    </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-semibold mb-1">Einfache und schnelle Abläufe</h4>
-                      <p className="text-muted-foreground text-sm">integriert in Ihren Alltag</p>
-                    </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Einfache und schnelle Abläufe</h4>
+                    <p className="text-muted-foreground text-sm">integriert in Ihren Alltag</p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-semibold mb-1">Modernste Technik</h4>
-                      <p className="text-muted-foreground text-sm">
-                        digitale Auflichtmikroskopie, Total-Body-Mapping und KI-Unterstützung
-                      </p>
-                    </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Modernste Technik</h4>
+                    <p className="text-muted-foreground text-sm">
+                      digitale Auflichtmikroskopie, Total-Body-Mapping und KI-Unterstützung
+                    </p>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                    <div>
-                      <h4 className="font-semibold mb-1">Erfahrene Hautärzte</h4>
-                      <p className="text-muted-foreground text-sm">
-                        fachärztliche Diagnostik unter Leitung von Dr. Reuther - stv. Leiterin des Hauttumorzentrums der Universität Münster
-                      </p>
-                    </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Erfahrene Hautärzte</h4>
+                    <p className="text-muted-foreground text-sm">
+                      fachärztliche Diagnostik unter Leitung von Dr. Reuther - stv. Leiterin des Hauttumorzentrums der Universität Münster
+                    </p>
                   </div>
                 </div>
               </div>
