@@ -243,7 +243,7 @@ const Corporate = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Unser Angebot für Ihr Unternehmen
             </h2>
-            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-base">​Wir entwickeln für Sie eine passgenaue BGM-Lösung - angepasst auf Ihre Bedürfnisse.                                                       </p>
+            <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-base">​Wir entwickeln für Sie eine passgenaue BGM-Lösung - individuell angepasst auf Ihre Bedürfnisse.                                                       </p>
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
