@@ -307,6 +307,46 @@ const Corporate = () => {
                   fachärztliches Ganzkörper-Screening mit Auflichtmikroskop und optional Total-Body-Mapping vor Ort in Ihrem Unternehmen
                 </p>
               </div>
+
+              <div className="bg-card p-6 sm:p-8 rounded-xl border mt-8">
+                <h3 className="text-lg sm:text-xl font-bold mb-6">Wir bieten</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-semibold mb-1">Individuelle Lösungen</h4>
+                      <p className="text-muted-foreground text-sm">
+                        in unserer Filiale oder vor Ort direkt in Ihrem Unternehmen
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-semibold mb-1">Einfache und schnelle Abläufe</h4>
+                      <p className="text-muted-foreground text-sm">integriert in Ihren Alltag</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-semibold mb-1">Modernste Technik</h4>
+                      <p className="text-muted-foreground text-sm">
+                        digitale Auflichtmikroskopie, Total-Body-Mapping und KI-Unterstützung
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                    <div>
+                      <h4 className="font-semibold mb-1">Erfahrene Hautärzte</h4>
+                      <p className="text-muted-foreground text-sm">
+                        fachärztliche Diagnostik unter Leitung von Dr. Reuther - stv. Leiterin des Hauttumorzentrums der Universität Münster
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
