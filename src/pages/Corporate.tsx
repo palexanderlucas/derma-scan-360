@@ -54,10 +54,18 @@ const Corporate = () => {
     resolver: zodResolver(formSchema)
   });
   const scrollToContact = () => {
-    const contactSection = document.getElementById("kontakt");
-    contactSection?.scrollIntoView({
-      behavior: "smooth"
-    });
+    const element = document.getElementById("kontakt");
+    if (element) {
+      // Mobile: 64px, Tablet/Desktop: 80px
+      const headerOffset = window.innerWidth < 768 ? 64 : 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
   };
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
