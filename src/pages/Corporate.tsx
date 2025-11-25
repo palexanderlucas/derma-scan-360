@@ -179,9 +179,7 @@ const Corporate = () => {
                 <CheckCircle2 className="h-6 w-6 text-primary shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold mb-2">Erfahrene Hautärzte</h3>
-                  <p className="text-muted-foreground">
-                    fachärztliche Diagnostik unter Leitung von Dr. Reuther - stv. Leiterin des Hauttumorzentrums der Universität Münster
-                  </p>
+                  <p className="text-muted-foreground">fachärztliche Diagnostik unter Leitung von Dr. Reuther (stv. Leiterin Hauttumorzentrum UKM)</p>
                 </div>
               </div>
             </div>
