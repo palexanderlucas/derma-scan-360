@@ -290,7 +290,7 @@ const Corporate = () => {
             <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-3xl mx-auto text-base">​Wir entwickeln für Sie eine passgenaue BGM-Lösung - individuell auf Ihre Bedürfnisse angepasst.                                                       </p>
             <div className="max-w-4xl mx-auto space-y-6">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">Unternehmen jeder Größe                                                                  </h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-2">Unternehm</h3>
                 <p className="text-muted-foreground">
                   Sonderkonditionen für Ihre Mitarbeiter in unserer Filiale
                 </p>
