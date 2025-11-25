@@ -6,7 +6,6 @@ export const Footer = () => {
   const activeSection = useActiveSection();
   const location = useLocation();
   const isCorporatePage = location.pathname === '/corporate';
-  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -25,7 +24,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           {/* Logo & Description */}
           <div className="space-y-3 sm:space-y-4">
-            <p className="text-xs sm:text-sm text-gray-400">
+            <p className="text-xs text-gray-400 font-semibold sm:text-base">
               DermaScan360 - Hautkrebs-Screening Osnabrück.
             </p>
           </div>
@@ -66,8 +65,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Schnelllinks</h3>
             <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-400">
-              {isCorporatePage ? (
-                <>
+              {isCorporatePage ? <>
                   <li>
                     <Link to="/" className="hover:text-primary transition-colors">
                       DermaScan360
@@ -88,9 +86,7 @@ export const Footer = () => {
                       Kontakt
                     </button>
                   </li>
-                </>
-              ) : (
-                <>
+                </> : <>
                   <li>
                     <button onClick={() => scrollToSection("technologie")} className={`hover:text-primary transition-colors ${activeSection === "technologie" ? "text-primary font-medium" : ""}`}>
                       Technologie
@@ -131,8 +127,7 @@ export const Footer = () => {
                       FAQ
                     </button>
                   </li>
-                </>
-              )}
+                </>}
             </ul>
           </div>
         </div>
