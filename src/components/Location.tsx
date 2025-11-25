@@ -2,7 +2,7 @@ import { MapPin, Car, Train, Bus, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { openingHours } from "@/lib/openingHours";
 export const Location = () => {
-  return <section id="standort" className="py-12 sm:py-16 md:py-20 bg-muted/50">
+  return <section id="standort" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 md:text-5xl">

@@ -31,7 +31,7 @@ export const FAQ = () => {
     question: "Wie lange dauert die Untersuchung?",
     answer: "Die Dauer des Ganzkörper-Screenings hängt von den individuellen Untersuchungsbedingungen sowie der Anzahl auffälliger Veränderungen ab. In der Regel dauert die eigentliche Untersuchung ca. 20-25min. Im Einzelfall kann die Dauer hiervon jedoch abweichen. Bitte planen Sie für Ihren gesamten Aufenthalt ca. 45 Minuten ein, da wir vor der Untersuchung noch Gesundheitsfragen erheben."
   }];
-  return <section id="faq" className="py-12 sm:py-16 md:py-20">
+  return <section id="faq" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
           <h2 className="sm:text-3xl font-bold mb-3 sm:mb-4 md:text-5xl text-3xl">
