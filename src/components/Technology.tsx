@@ -7,7 +7,7 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 export const Technology = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
-  return <section id="technologie" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/40">
+  return <section id="technologie" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/60">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
           <h2 className="sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight text-2xl">
