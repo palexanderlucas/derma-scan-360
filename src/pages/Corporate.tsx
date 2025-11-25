@@ -301,14 +301,14 @@ const Corporate = () => {
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold mb-1">Einfache und schnelle Abläufe</h4>
-                    <p className="text-muted-foreground text-sm">integriert in Ihren Alltag</p>
+                    <p className="text-muted-foreground text-base">integriert in Ihren Alltag</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold mb-1">Modernste Technik</h4>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-base">
                       digitale Auflichtmikroskopie, Total-Body-Mapping und KI-Unterstützung
                     </p>
                   </div>
@@ -317,8 +317,8 @@ const Corporate = () => {
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold mb-1">Erfahrene Hautärzte</h4>
-                    <p className="text-muted-foreground text-sm">
-                      fachärztliche Diagnostik unter Leitung von Dr. Reuther - stv. Leiterin des Hauttumorzentrums der Universität Münster
+                    <p className="text-muted-foreground text-base">
+                      fachärztliche Diagnostik unter Leitung von Dr. Reuther (stv. Leiterin Hauttumorzentrum UK-Münster)                   
                     </p>
                   </div>
                 </div>
