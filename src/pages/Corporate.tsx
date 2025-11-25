@@ -115,7 +115,7 @@ const Corporate = () => {
         </section>
 
         {/* Ihre Vorteile */}
-        <section id="vorteile" className="py-8 sm:py-16 md:py-20 bg-muted/40">
+        <section id="vorteile" className="py-8 sm:py-16 md:py-20 bg-muted/60">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12">
               Ihre Vorteile
@@ -238,7 +238,7 @@ const Corporate = () => {
         </section>
 
         {/* Unser Angebot */}
-        <section id="angebot" className="py-12 sm:py-16 md:py-20 bg-muted/40">
+        <section id="angebot" className="py-12 sm:py-16 md:py-20 bg-muted/60">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Unser Angebot für Ihr Unternehmen
