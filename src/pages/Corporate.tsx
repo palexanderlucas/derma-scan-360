@@ -308,7 +308,7 @@ const Corporate = () => {
                 </p>
               </div>
 
-              <div className="bg-card p-6 sm:p-8 rounded-xl border mt-8">
+              <div className="bg-primary/10 p-6 sm:p-8 rounded-xl border border-primary/20 mt-8">
                 <h3 className="text-lg sm:text-xl font-bold mb-6">Wir bieten</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
