@@ -249,15 +249,6 @@ const Corporate = () => {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold mb-1 text-base">Individuelle Lösungen</h4>
-                    <p className="text-muted-foreground text-base">
-                      in unserer Filiale oder vor Ort direkt in Ihrem Unternehmen
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <div>
                     <h4 className="font-semibold mb-1">Einfache und schnelle Abläufe</h4>
                     <p className="text-muted-foreground text-base">integriert in Ihren Alltag</p>
                   </div>
