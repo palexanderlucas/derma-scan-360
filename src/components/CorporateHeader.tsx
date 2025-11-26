@@ -64,9 +64,7 @@ export const CorporateHeader = () => {
       {/* Mobile Menu */}
       {isMenuOpen && <div className="lg:hidden absolute top-full left-0 w-full bg-background backdrop-blur-xl border-b shadow-lg">
           <div className="container mx-auto px-3 sm:px-4 py-4 flex flex-col gap-3">
-            <Link to="/" className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border/50" onClick={() => setIsMenuOpen(false)}>
-              DermaScan360
-            </Link>
+            <Link to="/" className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border/50" onClick={() => setIsMenuOpen(false)}>Home</Link>
             <button onClick={() => scrollToSection("vorteile")} className="text-base font-medium text-foreground/80 hover:text-primary transition-colors text-left py-2 border-b border-border/50">
               Vorteile
             </button>
