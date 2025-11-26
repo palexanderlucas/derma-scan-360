@@ -47,6 +47,10 @@ export const CorporateHeader = () => {
             Vorteile
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
           </button>
+          <button onClick={() => scrollToSection("hautkrebs")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
+            Hautkrebs
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
+          </button>
           <button onClick={() => scrollToSection("angebot")} className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group">
             Unser Angebot
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
@@ -92,6 +96,12 @@ export const CorporateHeader = () => {
               className="text-base font-medium text-foreground/80 hover:text-primary transition-colors text-left py-2 border-b border-border/50"
             >
               Vorteile
+            </button>
+            <button 
+              onClick={() => scrollToSection("hautkrebs")} 
+              className="text-base font-medium text-foreground/80 hover:text-primary transition-colors text-left py-2 border-b border-border/50"
+            >
+              Hautkrebs
             </button>
             <button 
               onClick={() => scrollToSection("angebot")} 
