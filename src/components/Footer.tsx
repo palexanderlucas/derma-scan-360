@@ -68,7 +68,7 @@ export const Footer = () => {
               {isCorporatePage ? <>
                   <li>
                     <Link to="/" className="hover:text-primary transition-colors">
-                      DermaScan360
+                      ​Home
                     </Link>
                   </li>
                   <li>
