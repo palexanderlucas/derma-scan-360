@@ -77,6 +77,11 @@ export const Footer = () => {
                     </button>
                   </li>
                   <li>
+                    <button onClick={() => scrollToSection("hautkrebs")} className={`hover:text-primary transition-colors ${activeSection === "hautkrebs" ? "text-primary font-medium" : ""}`}>
+                      Hautkrebs
+                    </button>
+                  </li>
+                  <li>
                     <button onClick={() => scrollToSection("angebot")} className={`hover:text-primary transition-colors ${activeSection === "angebot" ? "text-primary font-medium" : ""}`}>
                       Unser Angebot
                     </button>

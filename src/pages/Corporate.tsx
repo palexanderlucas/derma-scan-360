@@ -153,7 +153,7 @@ const Corporate = () => {
 
 
         {/* Hautkrebs Fakten */}
-        <section className="py-12 sm:py-16 md:py-20">
+        <section id="hautkrebs" className="py-12 sm:py-16 md:py-20">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Hautkrebs: Risiken und Chancen   
