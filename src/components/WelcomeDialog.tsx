@@ -11,7 +11,7 @@ export const WelcomeDialog = ({ open, onOpenChange }: WelcomeDialogProps) => {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
-          <DialogTitle className="text-2xl">Willkommen bei Hautkrebsscreening Frankfurt</DialogTitle>
+          <DialogTitle className="text-2xl">Willkommen bei DermaScan360 in Osnabrück</DialogTitle>
           <DialogDescription className="text-base space-y-4 pt-4">
             <p>
               Wir eröffnen voraussichtlich am <strong>01.02.2026</strong>. Termine können wenige Wochen vor Eröffnung online auf dieser Seite oder Doctorlib gebucht werden.
