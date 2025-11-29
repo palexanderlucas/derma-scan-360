@@ -26,9 +26,9 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           {/* Logo & Description */}
           <div className="space-y-3 sm:space-y-4">
-            <p className="text-xs text-gray-400 font-semibold sm:text-base">
+            <Link to="/" className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block">
               DermaScan360 - Hautkrebs-Screening Osnabrück.
-            </p>
+            </Link>
           </div>
 
           {/* Contact */}
