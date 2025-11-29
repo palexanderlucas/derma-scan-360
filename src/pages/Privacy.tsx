@@ -1,17 +1,14 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
-
 const Privacy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main className="container mx-auto px-4 py-16 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">Datenschutzerklärung</h1>
+        <h1 className="text-4xl font-bold mb-8">Datenschutz</h1>
         
         <div className="prose prose-lg max-w-none space-y-8 text-foreground">
           <section>
@@ -277,8 +274,6 @@ const Privacy = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Privacy;
