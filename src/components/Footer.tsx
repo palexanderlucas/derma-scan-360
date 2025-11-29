@@ -189,7 +189,7 @@ export const Footer = () => {
 
         <div className="pt-6 sm:pt-7 md:pt-8 border-t border-gray-800 text-center text-xs sm:text-sm text-gray-400">
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-            <a href="#" className="hover:text-primary transition-colors">Impressum</a>
+            <Link to="/impressum" className="hover:text-primary transition-colors">Impressum</Link>
             <span>•</span>
             <Link to="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</Link>
             <span>•</span>
