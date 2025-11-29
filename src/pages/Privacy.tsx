@@ -7,7 +7,7 @@ const Privacy = () => {
   }, []);
   return <div className="min-h-screen">
       <Header />
-      <main className="container mx-auto px-4 py-16 max-w-4xl">
+      <main className="container mx-auto px-4 pt-28 pb-16 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">Datenschutz</h1>
         
         <div className="prose prose-lg max-w-none space-y-8 text-foreground">
