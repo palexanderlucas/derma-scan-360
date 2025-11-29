@@ -141,7 +141,7 @@ export const Footer = () => {
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-3 sm:mb-4">
             <a href="#" className="hover:text-primary transition-colors">Impressum</a>
             <span>•</span>
-            <a href="#" className="hover:text-primary transition-colors">Datenschutz</a>
+            <Link to="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</Link>
             <span>•</span>
             <a href="#" className="hover:text-primary transition-colors">AGB</a>
           </div>
