@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { openingHours } from "@/lib/openingHours";
 import { BookingDialog } from "@/components/BookingDialog";
+import { WalkInDialog } from "@/components/WalkInDialog";
 import { useState } from "react";
 
 export const Pricing = () => {
@@ -30,6 +31,7 @@ export const Pricing = () => {
   }];
   return <section id="preise" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/60">
       <BookingDialog open={showBooking} onOpenChange={setShowBooking} />
+      <WalkInDialog open={showWalkIn} onOpenChange={setShowWalkIn} />
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <h2 className="sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight text-4xl">
@@ -66,35 +68,13 @@ export const Pricing = () => {
               </ul>
 
               {plan.name === "Single Lesion" ? (
-                <>
-                  <Button 
-                    className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
-                    variant={plan.popular ? 'default' : 'outline'}
-                    onClick={() => setShowWalkIn(true)}
-                  >
-                    Jetzt vorbeikommen
-                  </Button>
-                  <Dialog open={showWalkIn} onOpenChange={setShowWalkIn}>
-                    <DialogContent className="sm:max-w-md">
-                      <DialogHeader>
-                        <DialogTitle className="text-xl sm:text-2xl">Kommen Sie spontan zu uns - ohne Termin!</DialogTitle>
-                      </DialogHeader>
-                      <div className="space-y-4 py-4">
-                        <div className="space-y-3">
-                          {openingHours.map((item, index) => (
-                            <div key={item.day} className={`flex justify-between py-2 ${index < openingHours.length - 1 ? 'border-b' : ''}`}>
-                              <span className="font-medium">{item.day}</span>
-                              <span className="text-muted-foreground">{item.hours}</span>
-                            </div>
-                          ))}
-                        </div>
-                        <p className="text-sm text-muted-foreground pt-2">
-                          Die Wartezeit beträgt erfahrungsgemäß etwa 5-20 Minuten.
-                        </p>
-                      </div>
-                    </DialogContent>
-                  </Dialog>
-                </>
+                <Button 
+                  className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
+                  variant={plan.popular ? 'default' : 'outline'}
+                  onClick={() => setShowWalkIn(true)}
+                >
+                  Jetzt vorbeikommen
+                </Button>
               ) : (
                 <Button 
                   className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
