@@ -1,8 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Award, Microscope } from "lucide-react";
 import heroImage from "@/assets/hero-scan.png";
+import { BookingDialog } from "@/components/BookingDialog";
+import { useState } from "react";
+
 export const Hero = () => {
+  const [showBooking, setShowBooking] = useState(false);
+  
   return <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
+      <BookingDialog open={showBooking} onOpenChange={setShowBooking} />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 relative max-w-[1600px]">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14 xl:gap-20 lg:items-center">
@@ -15,7 +21,11 @@ export const Hero = () => {
             </p>
             
             <div className="pt-2 sm:pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200 text-sm sm:text-base lg:text-lg h-11 sm:h-12 lg:h-14 xl:h-16 font-semibold px-6 sm:px-8">
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200 text-sm sm:text-base lg:text-lg h-11 sm:h-12 lg:h-14 xl:h-16 font-semibold px-6 sm:px-8"
+                onClick={() => setShowBooking(true)}
+              >
                 <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Jetzt Termin buchen
               </Button>
