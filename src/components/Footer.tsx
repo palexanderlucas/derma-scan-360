@@ -26,9 +26,18 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           {/* Logo & Description */}
           <div className="space-y-3 sm:space-y-4">
-            <Link to="/" className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block">
-              DermaScan360 - Hautkrebs-Screening Osnabrück.
-            </Link>
+            {isMainPage ? (
+              <button 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+                className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block text-left"
+              >
+                DermaScan360 - Hautkrebs-Screening Osnabrück.
+              </button>
+            ) : (
+              <Link to="/" className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block">
+                DermaScan360 - Hautkrebs-Screening Osnabrück.
+              </Link>
+            )}
           </div>
 
           {/* Contact */}
