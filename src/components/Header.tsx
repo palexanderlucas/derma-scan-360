@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.svg";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import { BookingDialog } from "@/components/BookingDialog";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showBooking, setShowBooking] = useState(false);
   const activeSection = useActiveSection();
   const location = useLocation();
   const isMainPage = location.pathname === '/';
@@ -41,6 +43,7 @@ export const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 z-50 border-b shadow-sm">
+      <BookingDialog open={showBooking} onOpenChange={setShowBooking} />
       <nav className="container mx-auto px-3 sm:px-4 lg:px-6 h-16 sm:h-20 flex items-center justify-between">
         <Link 
           to="/" 
@@ -223,7 +226,10 @@ export const Header = () => {
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <Button className="bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-200 hidden sm:inline-flex text-sm lg:text-base px-3 lg:px-4 h-9 lg:h-10">
+          <Button 
+            className="bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all duration-200 hidden sm:inline-flex text-sm lg:text-base px-3 lg:px-4 h-9 lg:h-10"
+            onClick={() => setShowBooking(true)}
+          >
             Termin buchen
           </Button>
           
@@ -354,7 +360,13 @@ export const Header = () => {
                 FAQ
               </Link>
             )}
-            <Button className="bg-primary hover:bg-primary/90 w-full mt-2 sm:hidden">
+            <Button 
+              className="bg-primary hover:bg-primary/90 w-full mt-2 sm:hidden"
+              onClick={() => {
+                setShowBooking(true);
+                setIsMenuOpen(false);
+              }}
+            >
               Termin buchen
             </Button>
           </div>
