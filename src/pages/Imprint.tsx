@@ -70,7 +70,7 @@ const Imprint = () => {
               <p>
                 <strong>Name und Sitz des Versicherers:</strong><br />
                 ​AXA-Verischerung AG <br />
-                Hannover
+                Köln
               </p>
             </section>
 
