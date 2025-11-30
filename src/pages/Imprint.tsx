@@ -1,9 +1,7 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-
 const Imprint = () => {
-  return (
-    <div className="min-h-screen flex flex-col bg-background">
+  return <div className="min-h-screen flex flex-col bg-background">
       <Header />
       <main className="flex-1 container mx-auto px-4 pt-28 pb-16">
         <div className="max-w-4xl mx-auto">
@@ -71,7 +69,7 @@ const Imprint = () => {
               <h2 className="text-2xl font-semibold mb-4">Angaben zur Berufshaftpflichtversicherung</h2>
               <p>
                 <strong>Name und Sitz des Versicherers:</strong><br />
-                HDI-Versicherungen<br />
+                ​AXA-Verischerung AG <br />
                 Hannover
               </p>
             </section>
@@ -86,8 +84,6 @@ const Imprint = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Imprint;
