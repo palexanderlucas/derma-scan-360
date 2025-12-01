@@ -7,7 +7,6 @@ export const Footer = () => {
   const location = useLocation();
   const isCorporatePage = location.pathname === '/corporate';
   const isMainPage = location.pathname === '/';
-  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -26,18 +25,14 @@ export const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           {/* Logo & Description */}
           <div className="space-y-3 sm:space-y-4">
-            {isMainPage ? (
-              <button 
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
-                className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block text-left"
-              >
+            {isMainPage ? <button onClick={() => window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          })} className="text-xs font-semibold sm:text-base transition-colors cursor-pointer block text-left text-inherit">
                 DermaScan360 - Hautkrebs-Screening Osnabrück.
-              </button>
-            ) : (
-              <Link to="/" className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block">
+              </button> : <Link to="/" className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block">
                 DermaScan360 - Hautkrebs-Screening Osnabrück.
-              </Link>
-            )}
+              </Link>}
           </div>
 
           {/* Contact */}
@@ -104,92 +99,60 @@ export const Footer = () => {
                   </li>
                 </> : <>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("technologie")} className={`hover:text-primary transition-colors ${activeSection === "technologie" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("technologie")} className={`hover:text-primary transition-colors ${activeSection === "technologie" ? "text-primary font-medium" : ""}`}>
                         Technologie
-                      </button>
-                    ) : (
-                      <Link to="/#technologie" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#technologie" className="hover:text-primary transition-colors">
                         Technologie
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("ablauf")} className={`hover:text-primary transition-colors ${activeSection === "ablauf" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("ablauf")} className={`hover:text-primary transition-colors ${activeSection === "ablauf" ? "text-primary font-medium" : ""}`}>
                         Ablauf
-                      </button>
-                    ) : (
-                      <Link to="/#ablauf" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#ablauf" className="hover:text-primary transition-colors">
                         Ablauf
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("preise")} className={`hover:text-primary transition-colors ${activeSection === "preise" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("preise")} className={`hover:text-primary transition-colors ${activeSection === "preise" ? "text-primary font-medium" : ""}`}>
                         Preise
-                      </button>
-                    ) : (
-                      <Link to="/#preise" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#preise" className="hover:text-primary transition-colors">
                         Preise
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("standort")} className={`hover:text-primary transition-colors ${activeSection === "standort" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("standort")} className={`hover:text-primary transition-colors ${activeSection === "standort" ? "text-primary font-medium" : ""}`}>
                         Standort
-                      </button>
-                    ) : (
-                      <Link to="/#standort" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#standort" className="hover:text-primary transition-colors">
                         Standort
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("unternehmen")} className={`hover:text-primary transition-colors ${activeSection === "unternehmen" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("unternehmen")} className={`hover:text-primary transition-colors ${activeSection === "unternehmen" ? "text-primary font-medium" : ""}`}>
                         Für Unternehmen
-                      </button>
-                    ) : (
-                      <Link to="/#unternehmen" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#unternehmen" className="hover:text-primary transition-colors">
                         Für Unternehmen
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("kommunen")} className={`hover:text-primary transition-colors ${activeSection === "kommunen" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("kommunen")} className={`hover:text-primary transition-colors ${activeSection === "kommunen" ? "text-primary font-medium" : ""}`}>
                         Für Kommunen
-                      </button>
-                    ) : (
-                      <Link to="/#kommunen" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#kommunen" className="hover:text-primary transition-colors">
                         Für Kommunen
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("team")} className={`hover:text-primary transition-colors ${activeSection === "team" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("team")} className={`hover:text-primary transition-colors ${activeSection === "team" ? "text-primary font-medium" : ""}`}>
                         Team
-                      </button>
-                    ) : (
-                      <Link to="/#team" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#team" className="hover:text-primary transition-colors">
                         Team
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                   <li>
-                    {isMainPage ? (
-                      <button onClick={() => scrollToSection("faq")} className={`hover:text-primary transition-colors ${activeSection === "faq" ? "text-primary font-medium" : ""}`}>
+                    {isMainPage ? <button onClick={() => scrollToSection("faq")} className={`hover:text-primary transition-colors ${activeSection === "faq" ? "text-primary font-medium" : ""}`}>
                         FAQ
-                      </button>
-                    ) : (
-                      <Link to="/#faq" className="hover:text-primary transition-colors">
+                      </button> : <Link to="/#faq" className="hover:text-primary transition-colors">
                         FAQ
-                      </Link>
-                    )}
+                      </Link>}
                   </li>
                 </>}
             </ul>
