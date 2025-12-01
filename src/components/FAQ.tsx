@@ -29,7 +29,7 @@ export const FAQ = () => {
     answer: "Für eine ideale Beurteilbarkeit sollte die Haut sauber und ungeschminkt sein. Langes Haar sollte zusammengebunden oder hochgesteckt werden. Bei starker Körperbehaarung empfiehlt sich eine Körperrasur. Alternativ können stark behaarte Bereiche aber auch manuell mit einem Dermatoskop inspiziert und dokumentiert werden."
   }, {
     question: "Wie lange dauert die Untersuchung?",
-    answer: "Die Dauer des Ganzkörper-Screenings hängt von den individuellen Untersuchungsbedingungen sowie der Anzahl auffälliger Veränderungen ab. In der Regel dauert die eigentliche Untersuchung ca. 20-25min. Im Einzelfall kann die Dauer hiervon jedoch abweichen. Bitte planen Sie für Ihren gesamten Aufenthalt ca. 45 Minuten ein, da wir vor der Untersuchung noch Gesundheitsfragen erheben."
+    answer: "Die Dauer des Ganzkörper-Screenings hängt von den individuellen Untersuchungsbedingungen sowie der Anzahl auffälliger Veränderungen ab. In der Regel dauert die eigentliche Untersuchung ca. 15-20min. Im Einzelfall kann die Dauer hiervon jedoch abweichen. Bitte planen Sie für Ihren gesamten Aufenthalt ca. 30 Minuten ein, da wir vor der Untersuchung noch Gesundheitsfragen erheben."
   }];
   return <section id="faq" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-3 sm:px-4">
