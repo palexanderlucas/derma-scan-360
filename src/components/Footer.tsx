@@ -30,7 +30,7 @@ export const Footer = () => {
             behavior: 'smooth'
           })} className="text-xs font-semibold sm:text-base transition-colors cursor-pointer block text-left text-inherit">
                 DermaScan360 - Hautkrebs-Screening Osnabrück.
-              </button> : <Link to="/" className="text-xs text-gray-400 font-semibold sm:text-base hover:text-primary transition-colors cursor-pointer block">
+              </button> : <Link to="/" className="text-xs font-semibold sm:text-base transition-colors cursor-pointer block text-inherit">
                 DermaScan360 - Hautkrebs-Screening Osnabrück.
               </Link>}
           </div>
