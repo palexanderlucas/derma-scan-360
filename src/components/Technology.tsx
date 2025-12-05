@@ -14,7 +14,7 @@ export const Technology = () => {
             Modernste Technologie für Ihre Sicherheit
           </h2>
           <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2">
-            Wir setzen auf weltweit führende Medizintechnik von Canfield® für präzise Früherkennung
+             DermaScan360 setzt auf weltweit führende Medizintechnik von Canfield® für präzise Früherkennung
           </p>
         </div>
 
