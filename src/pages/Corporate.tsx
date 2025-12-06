@@ -122,9 +122,12 @@ const Corporate = () => {
         {/* Ihre Vorteile */}
         <section id="vorteile" className="py-8 sm:py-16 md:py-20 bg-muted/60">
           <div className="container mx-auto px-3 sm:px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Vorteile für Ihr Unternehmen   
             </h2>
+            <p className="text-center text-muted-foreground mb-6 sm:mb-12 max-w-4xl mx-auto text-base">
+              Mit DermaScan360 fördern Sie Hautkrebsprävention direkt in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Wir bieten einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise.
+            </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 max-w-6xl mx-auto">
               <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                 <TrendingUp className="h-10 w-10 sm:h-12 sm:w-12 text-primary mx-auto mb-2 sm:mb-4 group-hover:scale-110 transition-transform duration-300" />
