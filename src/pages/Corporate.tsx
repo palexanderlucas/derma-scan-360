@@ -60,7 +60,6 @@ const Corporate = () => {
       const headerOffset = window.innerWidth < 768 ? 64 : 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth"
@@ -107,9 +106,7 @@ const Corporate = () => {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
                   Hautkrebs-Screening für Unternehmen
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">
-                  Machen Sie Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich. Wir bieten maßgeschneiderte Lösungen, ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!
-                </p>
+                <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8">Machen Sie mit DermaScan360 Hautkrebsvorsorge auch für Ihre Mitarbeiter einfach und zugänglich. Wir bieten maßgeschneiderte Lösungen, ob in unserer Filiale oder direkt vor Ort in Ihrem Unternehmen – wir freuen uns über einen Austausch!</p>
                 <Button size="lg" onClick={scrollToContact} className="gap-3 justify-start w-fit">
                   <Mail className="h-5 w-5" />
                   Kontakt
