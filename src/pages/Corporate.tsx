@@ -271,7 +271,7 @@ const Corporate = () => {
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold mb-1">Erfahrene Hautärzte</h4>
-                    <p className="text-muted-foreground text-base">fachärztliche Diagnostik unter Leitung von Reuther (stv. Leiterin Hauttumorzentrum UK-Münster)</p>
+                    <p className="text-muted-foreground text-base">fachärztliche Diagnostik unter Leitung von Frau Reuther (stv. Leiterin Hauttumorzentrum UK-Münster)</p>
                   </div>
                 </div>
               </div>
