@@ -8,7 +8,7 @@ export const Team = () => {
   const founders = [{
     name: "Judith Reuther",
     image: judithImg,
-    description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Dr. med. Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
+    description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
   }, {
     name: "Dr. med. Leon Hardung",
     image: profilImg,
