@@ -123,7 +123,7 @@ const Corporate = () => {
         <section id="vorteile" className="py-8 sm:py-16 md:py-20 bg-muted/60">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12">
-              Ihre Vorteile
+              Vorteile für Ihr Unternehmen   
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 max-w-6xl mx-auto">
               <div className="group bg-card p-4 sm:p-6 rounded-xl border text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer">
