@@ -4,6 +4,7 @@ import bodyScanner from "@/assets/body-scanner.jpg";
 import dermatoscope from "@/assets/dermatoscope.jpg";
 import doctorAnalysis from "@/assets/doctor-analysis.png";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { OptimizedImage } from "@/components/ui/optimized-image";
 export const Technology = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -32,7 +33,7 @@ export const Technology = () => {
               {/* Image for mobile only - between title and text */}
               <div className="relative group lg:hidden">
                 <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                <img src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+                <OptimizedImage src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
@@ -73,7 +74,7 @@ export const Technology = () => {
             {/* Image for desktop/tablet only */}
             <div className="relative group hidden lg:block">
               <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <img src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+              <OptimizedImage src={bodyScanner} alt="Total-Body-Mapping Scanner" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
             </div>
           </div>
 
@@ -81,7 +82,7 @@ export const Technology = () => {
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-14 xl:gap-20 items-center">
             <div className="relative order-2 lg:order-1 group hidden lg:block">
               <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <img src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+              <OptimizedImage src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
             </div>
             <div className="space-y-4 sm:space-y-5 lg:space-y-6 order-1 lg:order-2 max-w-2xl">
               <div className="flex items-center gap-3 sm:gap-4">
@@ -94,7 +95,7 @@ export const Technology = () => {
               {/* Image for mobile only - between title and text */}
               <div className="relative group lg:hidden">
                 <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                <img src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+                <OptimizedImage src={dermatoscope} alt="Digitale Auflichtmikroskopie" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
@@ -144,14 +145,14 @@ export const Technology = () => {
               {/* Image for mobile only - between title and text */}
               <div className="relative group lg:hidden">
                 <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                <img src={doctorAnalysis} alt="Qualitätssicherung durch Hautarzt" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+                <OptimizedImage src={doctorAnalysis} alt="Qualitätssicherung durch Hautarzt" className="relative rounded-xl sm:rounded-2xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
               </div>
               
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">Bei DermaScan360 wird jeder Befund von einem erfahrenen Hautarzt erstellt. Zusätzlich erfolgt eine Qualitätssicherung durch Frau Reuther. Sie ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster und hat eine Zusatzbezeichnung für Tumortherapien erworben. Zudem hält sie regelmäßig Fortbildungen zum Thema Hautkrebsvorsorge und Auflichtmikroskopie. Die Befundung wird von Frau Reuther supervidiert und signiert. Bei Auffälligkeiten erfolgt zusätzlich eine telefonische Befundbesprechung.</p>
             </div>
             <div className="relative group hidden lg:block">
               <div className="absolute -inset-1 sm:-inset-2 bg-gradient-to-br from-primary/20 to-accent/10 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-              <img src={doctorAnalysis} alt="Qualitätssicherung durch Hautarzt" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
+              <OptimizedImage src={doctorAnalysis} alt="Qualitätssicherung durch Hautarzt" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-xl w-full transition-transform duration-300 group-hover:scale-[1.02]" />
             </div>
           </div>
         </div>
