@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Award, Microscope } from "lucide-react";
 import heroImage from "@/assets/hero-scan.png";
 import { BookingDialog } from "@/components/BookingDialog";
-import { OptimizedImage } from "@/components/ui/optimized-image";
 import { useState } from "react";
 
 export const Hero = () => {
@@ -66,12 +65,7 @@ export const Hero = () => {
 
           <div className="relative group mt-3 lg:mt-0 order-2">
             <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 rounded-2xl sm:rounded-3xl blur-2xl lg:blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <OptimizedImage 
-              src={heroImage} 
-              alt="Hautkrebs Screening mit digitaler Analyse" 
-              className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl w-full transition-transform duration-500 group-hover:scale-[1.02]" 
-              eager={true}
-            />
+            <img src={heroImage} alt="Hautkrebs Screening mit digitaler Analyse" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl w-full transition-transform duration-500 group-hover:scale-[1.02]" />
           </div>
 
           {/* Icons for mobile - shown only below lg */}

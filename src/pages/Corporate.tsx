@@ -11,7 +11,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { useState, useEffect } from "react";
-import { OptimizedImage } from "@/components/ui/optimized-image";
 const formSchema = z.object({
   email: z.string().email({
     message: "Bitte geben Sie eine gültige E-Mail-Adresse ein"
@@ -114,7 +113,7 @@ const Corporate = () => {
                 </Button>
               </div>
               <div className="relative">
-                <OptimizedImage src={heroImage} alt="Hautkrebs-Screening für Unternehmen" className="w-full h-auto rounded-2xl shadow-2xl" eager={true} />
+                <img src={heroImage} alt="Hautkrebs-Screening für Unternehmen" className="w-full h-auto rounded-2xl shadow-2xl" />
               </div>
             </div>
           </div>
