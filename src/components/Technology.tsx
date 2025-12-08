@@ -1,7 +1,7 @@
 import { Scan, Microscope, Brain, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import bodyScanner from "@/assets/body-scanner.webp";
-import dermatoscope from "@/assets/dermatoscope.jpg";
+import dermatoscope from "@/assets/dermatoscope.webp";
 import doctorAnalysis from "@/assets/doctor-analysis.png";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 export const Technology = () => {
