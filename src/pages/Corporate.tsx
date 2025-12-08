@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X } from "lucide-react";
-import heroImage from "@/assets/start-unternehmen.png";
+import heroImage from "@/assets/corporate-hero.webp";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
