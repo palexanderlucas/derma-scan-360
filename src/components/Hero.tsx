@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Award, Microscope } from "lucide-react";
-import heroImage from "@/assets/hero-scan.png";
+import heroImage from "@/assets/hero-scan.webp";
 import { BookingDialog } from "@/components/BookingDialog";
 import { useState } from "react";
 
