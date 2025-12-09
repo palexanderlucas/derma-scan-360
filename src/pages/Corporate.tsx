@@ -365,7 +365,7 @@ const Corporate = () => {
               <div className="mt-8 text-center">
                 <p className="text-muted-foreground mb-2">Kontaktieren Sie uns jetzt:</p>
                 <p className="font-semibold">
-                  Tel.: <a href="tel:01725436394" className="text-primary hover:underline">0172 5436394</a> oder{" "}
+                  Tel.:  oder{" "}
                   <a href="mailto:info@dermascan360.de" className="text-primary hover:underline">info@dermascan360.de</a>
                 </p>
               </div>
