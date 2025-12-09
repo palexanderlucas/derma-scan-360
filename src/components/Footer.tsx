@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { openingHours } from "@/lib/openingHours";
 import { useActiveSection } from "@/hooks/useActiveSection";
@@ -42,10 +42,6 @@ export const Footer = () => {
               <div className="flex items-start gap-1.5 sm:gap-2">
                 <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 mt-0.5 sm:mt-1 shrink-0" />
                 <span>Möserstraße 2-3<br />49074 Osnabrück</span>
-              </div>
-              <div className="flex items-center gap-1.5 sm:gap-2">
-                <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-                <span>+49 (0)172 5436394  </span>
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
