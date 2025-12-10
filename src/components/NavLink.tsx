@@ -24,8 +24,8 @@ export const NavLink = ({
         <button 
           onClick={() => onScroll(id)} 
           className={cn(
-            "text-left py-2 font-medium transition-colors",
-            isActive ? "text-primary" : "hover:text-primary"
+            "text-left py-2 font-medium",
+            isActive ? "text-primary" : ""
           )}
         >
           {label}
@@ -35,7 +35,7 @@ export const NavLink = ({
     return (
       <Link 
         to={`/#${id}`} 
-        className="text-left py-2 font-medium hover:text-primary transition-colors"
+        className="text-left py-2 font-medium"
       >
         {label}
       </Link>
@@ -48,15 +48,14 @@ export const NavLink = ({
       <button 
         onClick={() => onScroll(id)} 
         className={cn(
-          "text-sm font-medium transition-all duration-200 relative group",
-          isActive ? "text-primary" : "text-foreground/80 hover:text-primary"
+          "text-sm font-medium relative",
+          isActive ? "text-primary" : "text-foreground/80"
         )}
       >
         {label}
-        <span className={cn(
-          "absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-200",
-          isActive ? "w-full" : "w-0 group-hover:w-full"
-        )} />
+        {isActive && (
+          <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary" />
+        )}
       </button>
     );
   }
@@ -64,10 +63,9 @@ export const NavLink = ({
   return (
     <Link 
       to={`/#${id}`} 
-      className="text-sm font-medium text-foreground/80 hover:text-primary transition-all duration-200 relative group"
+      className="text-sm font-medium text-foreground/80 relative"
     >
       {label}
-      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full" />
     </Link>
   );
 };
