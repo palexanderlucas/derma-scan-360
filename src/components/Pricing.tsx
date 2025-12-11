@@ -43,7 +43,7 @@ export const Pricing = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
-          {plans.map(plan => <div key={plan.name} className={`relative flex flex-col p-4 sm:p-5 md:p-6 lg:p-8 bg-card rounded-xl sm:rounded-2xl border-2 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ${plan.popular ? 'border-primary lg:scale-105 shadow-xl' : 'border-border/50 hover:border-primary/30'}`}>
+          {plans.map(plan => <div key={plan.name} className={`relative flex flex-col p-4 sm:p-5 md:p-6 lg:p-8 bg-card rounded-xl sm:rounded-2xl border-2 shadow-lg ${plan.popular ? 'border-primary lg:scale-105 shadow-xl' : 'border-border/50'}`}>
               {plan.popular && <div className="absolute -top-2.5 sm:-top-3 left-1/2 -translate-x-1/2 px-2.5 sm:px-3 md:px-4 py-1 bg-primary text-primary-foreground text-[10px] sm:text-xs md:text-sm font-semibold rounded-full whitespace-nowrap">
                   Beliebteste Option
                 </div>}
