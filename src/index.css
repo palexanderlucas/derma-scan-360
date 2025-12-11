@@ -89,10 +89,6 @@
     @apply border-border;
   }
 
-  html {
-    scrollbar-gutter: stable;
-  }
-
   html, body {
     @apply overflow-x-hidden;
   }
