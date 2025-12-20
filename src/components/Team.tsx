@@ -42,7 +42,7 @@ export const Team = () => {
             <CarouselContent>
               {founders.map((founder, index) => <CarouselItem key={index}>
                   <div className="flex flex-col items-center text-center px-4">
-                    <div className={`mb-6 rounded-lg overflow-hidden w-full max-w-md ${index === 2 ? 'aspect-[16/10]' : 'aspect-video'}`}>
+                    <div className="mb-6 rounded-lg overflow-hidden w-full max-w-md aspect-video">
                       <LazyImage src={founder.image} alt={founder.name} className="w-full h-full object-cover object-top" />
                     </div>
                     <h3 className="font-semibold text-foreground mb-3 text-lg">
@@ -67,7 +67,7 @@ export const Team = () => {
         {/* Desktop: Grid */}
         <div className="hidden lg:grid grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
           {founders.map((founder, index) => <div key={index} className="flex flex-col items-center text-center">
-              <div className={`mb-6 rounded-lg overflow-hidden w-full ${index === 2 ? 'aspect-[16/10]' : 'aspect-video'}`}>
+              <div className="mb-6 rounded-lg overflow-hidden w-full aspect-video">
                 <LazyImage src={founder.image} alt={founder.name} className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-semibold text-foreground mb-3 text-2xl">
