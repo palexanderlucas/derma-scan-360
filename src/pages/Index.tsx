@@ -35,17 +35,24 @@ const Index = () => {
         }
       };
       
-      // Wait for document to be fully ready, then scroll multiple times
-      // to handle lazy-loaded images causing layout shifts
-      const attemptScroll = (attempts: number) => {
-        scrollToHash();
-        if (attempts > 0) {
-          setTimeout(() => attemptScroll(attempts - 1), 200);
-        }
+      // Wait for window.onload to ensure all resources are loaded
+      const handleLoad = () => {
+        // Multiple scroll attempts over 2 seconds to handle any remaining layout shifts
+        const intervals = [0, 100, 300, 600, 1000, 1500, 2000];
+        intervals.forEach(delay => {
+          setTimeout(scrollToHash, delay);
+        });
       };
-      
-      // Initial delay for first render, then re-scroll a few times
-      setTimeout(() => attemptScroll(3), 50);
+
+      // Check if already loaded
+      if (document.readyState === 'complete') {
+        handleLoad();
+      } else {
+        window.addEventListener('load', handleLoad);
+        // Also start scrolling immediately in case load event already fired
+        setTimeout(scrollToHash, 50);
+        return () => window.removeEventListener('load', handleLoad);
+      }
     }
   }, []);
   
