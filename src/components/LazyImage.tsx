@@ -5,9 +5,10 @@ interface LazyImageProps {
   alt: string;
   className?: string;
   eager?: boolean;
+  aspectRatio?: string; // e.g., "16/9", "4/3", "1/1"
 }
 
-export const LazyImage = ({ src, alt, className = "", eager = false }: LazyImageProps) => {
+export const LazyImage = ({ src, alt, className = "", eager = false, aspectRatio }: LazyImageProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [shouldLoad, setShouldLoad] = useState(eager);
   const imgRef = useRef<HTMLImageElement>(null);
@@ -37,6 +38,28 @@ export const LazyImage = ({ src, alt, className = "", eager = false }: LazyImage
 
     return () => observer.disconnect();
   }, [eager]);
+
+  // If aspectRatio is provided, wrap in a container
+  if (aspectRatio) {
+    return (
+      <div 
+        className="relative w-full overflow-hidden"
+        style={{ aspectRatio }}
+      >
+        <img
+          ref={imgRef}
+          src={shouldLoad ? src : undefined}
+          alt={alt}
+          className={`absolute inset-0 w-full h-full object-cover ${className}`}
+          onLoad={() => setIsLoaded(true)}
+          style={{
+            opacity: isLoaded || !shouldLoad ? 1 : 0,
+            transition: "opacity 0.3s ease-in-out",
+          }}
+        />
+      </div>
+    );
+  }
 
   return (
     <img
