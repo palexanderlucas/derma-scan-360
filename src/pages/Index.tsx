@@ -20,7 +20,7 @@ const Index = () => {
     if (!window.location.hash) {
       window.scrollTo(0, 0);
     } else {
-      // Handle hash navigation after images have loaded
+      // Handle hash navigation after page content has loaded
       const hash = window.location.hash.substring(1);
       const scrollToHash = () => {
         const element = document.getElementById(hash);
@@ -34,8 +34,18 @@ const Index = () => {
           });
         }
       };
-      // Wait for fonts and layout to settle
-      setTimeout(scrollToHash, 100);
+      
+      // Wait for document to be fully ready, then scroll multiple times
+      // to handle lazy-loaded images causing layout shifts
+      const attemptScroll = (attempts: number) => {
+        scrollToHash();
+        if (attempts > 0) {
+          setTimeout(() => attemptScroll(attempts - 1), 200);
+        }
+      };
+      
+      // Initial delay for first render, then re-scroll a few times
+      setTimeout(() => attemptScroll(3), 50);
     }
   }, []);
   
