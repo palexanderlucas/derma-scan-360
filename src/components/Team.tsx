@@ -1,5 +1,5 @@
 import profilImg from "@/assets/profil.jpg";
-import judithImg from "@/assets/judith.jpg";
+import judithImg from "@/assets/judith-reuther.webp";
 import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { LazyImage } from "@/components/LazyImage";
