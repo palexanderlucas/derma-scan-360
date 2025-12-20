@@ -1,27 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.svg";
 import { corporateNavItems } from "@/lib/navigation";
 import { scrollToSection } from "@/lib/scrollUtils";
+import { useMobileMenu } from "@/hooks/useMobileMenu";
 
 export const CorporateHeader = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isMenuOpen]);
+  const { isOpen: isMenuOpen, toggle: toggleMenu, close: closeMenu } = useMobileMenu();
 
   const handleScrollToSection = (id: string) => {
-    scrollToSection(id, () => setIsMenuOpen(false));
+    scrollToSection(id, closeMenu);
   };
 
   return (
@@ -60,9 +49,8 @@ export const CorporateHeader = () => {
             Kontakt aufnehmen
           </Button>
           
-          {/* Mobile Menu Button */}
           <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)} 
+            onClick={toggleMenu} 
             className="lg:hidden p-2 hover:bg-accent rounded-md transition-colors" 
             aria-label="Menu"
           >
@@ -78,7 +66,7 @@ export const CorporateHeader = () => {
             <Link 
               to="/" 
               className="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border/50" 
-              onClick={() => setIsMenuOpen(false)}
+              onClick={closeMenu}
             >
               Home
             </Link>

@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Award, Microscope } from "lucide-react";
 import heroImage from "@/assets/hero-scan.webp";
 import { BookingDialog } from "@/components/BookingDialog";
+import { FeatureItem } from "@/components/FeatureItem";
 import { useState } from "react";
-
 export const Hero = () => {
   const [showBooking, setShowBooking] = useState(false);
   
@@ -31,35 +31,10 @@ export const Hero = () => {
               </Button>
             </div>
 
-            {/* Icons for desktop/tablet - shown only on lg and above */}
             <div className="hidden lg:flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-5 lg:gap-8 pt-6 sm:pt-8 lg:pt-10 border-t border-border/50">
-              <div className="flex items-center gap-2.5 sm:gap-3 group">
-                <div className="p-2 sm:p-2.5 lg:p-3 bg-primary/10 rounded-lg sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                  <Clock className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 xl:h-9 xl:w-9 text-primary" />
-                </div>
-                <div className="min-w-0">
-                  <div className="font-semibold text-xs sm:text-sm lg:text-base whitespace-nowrap">Termingarantie</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-muted-foreground whitespace-nowrap">innerhalb von 3 Tagen</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2.5 sm:gap-3 group">
-                <div className="p-2 sm:p-2.5 lg:p-3 bg-primary/10 rounded-lg sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                  <Microscope className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 xl:h-9 xl:w-9 text-primary" />
-                </div>
-                <div className="min-w-0">
-                  <div className="font-semibold text-xs sm:text-sm lg:text-base whitespace-nowrap">Modernste Technik</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-muted-foreground whitespace-nowrap">KI-unterstützt</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-2.5 sm:gap-3 group">
-                <div className="p-2 sm:p-2.5 lg:p-3 bg-primary/10 rounded-lg sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                  <Award className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 xl:h-9 xl:w-9 text-primary" />
-                </div>
-                <div className="min-w-0">
-                  <div className="font-semibold text-xs sm:text-sm lg:text-base whitespace-nowrap">Facharztstandard</div>
-                  <div className="text-[10px] sm:text-xs lg:text-sm text-muted-foreground whitespace-nowrap">erfahrene Hautärzte</div>
-                </div>
-              </div>
+              <FeatureItem icon={Clock} title="Termingarantie" subtitle="innerhalb von 3 Tagen" size="sm" />
+              <FeatureItem icon={Microscope} title="Modernste Technik" subtitle="KI-unterstützt" size="sm" />
+              <FeatureItem icon={Award} title="Facharztstandard" subtitle="erfahrene Hautärzte" size="sm" />
             </div>
           </div>
 
@@ -70,33 +45,9 @@ export const Hero = () => {
 
           {/* Icons for mobile - shown only below lg */}
           <div className="flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-5 pt-6 sm:pt-8 border-t border-border/50 lg:hidden order-3">
-            <div className="flex items-center gap-3 sm:gap-3 group">
-              <div className="p-3 sm:p-3 bg-primary/10 rounded-xl sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                <Clock className="h-9 w-9 sm:h-8 sm:w-8 text-primary" />
-              </div>
-              <div className="min-w-0">
-                <div className="font-semibold text-base sm:text-base whitespace-nowrap">Termingarantie</div>
-                <div className="text-sm sm:text-sm text-muted-foreground whitespace-nowrap">innerhalb von 3 Tagen</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 sm:gap-3 group">
-              <div className="p-3 sm:p-3 bg-primary/10 rounded-xl sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                <Microscope className="h-9 w-9 sm:h-8 sm:w-8 text-primary" />
-              </div>
-              <div className="min-w-0">
-                <div className="font-semibold text-base sm:text-base whitespace-nowrap">Modernste Technik</div>
-                <div className="text-sm sm:text-sm text-muted-foreground whitespace-nowrap">KI-unterstützt</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 sm:gap-3 group">
-              <div className="p-3 sm:p-3 bg-primary/10 rounded-xl sm:rounded-xl group-hover:bg-primary/15 transition-colors duration-200 flex-shrink-0">
-                <Award className="h-9 w-9 sm:h-8 sm:w-8 text-primary" />
-              </div>
-              <div className="min-w-0">
-                <div className="font-semibold text-base sm:text-base whitespace-nowrap">Facharztstandard</div>
-                <div className="text-sm sm:text-sm text-muted-foreground whitespace-nowrap">erfahrene Hautärzte</div>
-              </div>
-            </div>
+            <FeatureItem icon={Clock} title="Termingarantie" subtitle="innerhalb von 3 Tagen" size="lg" />
+            <FeatureItem icon={Microscope} title="Modernste Technik" subtitle="KI-unterstützt" size="lg" />
+            <FeatureItem icon={Award} title="Facharztstandard" subtitle="erfahrene Hautärzte" size="lg" />
           </div>
         </div>
       </div>
