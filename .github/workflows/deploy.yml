@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # change if your default branch is different
+    branches: ["main"]  # or your default branch name
   workflow_dispatch:
 
 permissions:
@@ -12,15 +12,13 @@ permissions:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: "18"
@@ -32,13 +30,17 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Add 404 fallback for SPA
+        run: |
+          cp dist/index.html dist/404.html
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist
+          path: dist
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
