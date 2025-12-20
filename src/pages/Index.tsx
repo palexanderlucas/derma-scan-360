@@ -16,44 +16,7 @@ const Index = () => {
   const [showWelcome, setShowWelcome] = useState(true);
   
   useEffect(() => {
-    // Only scroll to top if there's no hash in the URL
-    if (!window.location.hash) {
-      window.scrollTo(0, 0);
-    } else {
-      // Handle hash navigation after page content has loaded
-      const hash = window.location.hash.substring(1);
-      const scrollToHash = () => {
-        const element = document.getElementById(hash);
-        if (element) {
-          const headerOffset = window.innerWidth < 768 ? 64 : 80;
-          const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "instant"
-          });
-        }
-      };
-      
-      // Wait for window.onload to ensure all resources are loaded
-      const handleLoad = () => {
-        // Multiple scroll attempts over 2 seconds to handle any remaining layout shifts
-        const intervals = [0, 100, 300, 600, 1000, 1500, 2000];
-        intervals.forEach(delay => {
-          setTimeout(scrollToHash, delay);
-        });
-      };
-
-      // Check if already loaded
-      if (document.readyState === 'complete') {
-        handleLoad();
-      } else {
-        window.addEventListener('load', handleLoad);
-        // Also start scrolling immediately in case load event already fired
-        setTimeout(scrollToHash, 50);
-        return () => window.removeEventListener('load', handleLoad);
-      }
-    }
+    window.scrollTo(0, 0);
   }, []);
   
   return (

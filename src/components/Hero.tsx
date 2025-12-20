@@ -65,15 +65,7 @@ export const Hero = () => {
 
           <div className="relative group mt-3 lg:mt-0 order-2">
             <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 rounded-2xl sm:rounded-3xl blur-2xl lg:blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="relative w-full" style={{ aspectRatio: '4/3' }}>
-              <img 
-                src={heroImage} 
-                alt="Hautkrebs Screening mit digitaler Analyse" 
-                className="absolute inset-0 w-full h-full object-cover rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl"
-                loading="eager"
-                fetchPriority="high"
-              />
-            </div>
+            <img src={heroImage} alt="Hautkrebs Screening mit digitaler Analyse" className="relative rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-2xl w-full" />
           </div>
 
           {/* Icons for mobile - shown only below lg */}
