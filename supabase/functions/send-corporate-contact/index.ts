@@ -3,7 +3,7 @@ import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 
 const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": "https://dermascan360.de",
   "Access-Control-Allow-Headers":
     "authorization, x-client-info, apikey, content-type",
 };
@@ -18,6 +18,18 @@ interface CorporateContactRequest {
   message: string;
 }
 
+// HTML-Escape-Funktion zur Vermeidung von XSS/HTML-Injection
+function escapeHtml(text: string): string {
+  const htmlEntities: Record<string, string> = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  };
+  return text.replace(/[&<>"']/g, (char) => htmlEntities[char]);
+}
+
 const handler = async (req: Request): Promise<Response> => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
@@ -25,6 +37,15 @@ const handler = async (req: Request): Promise<Response> => {
 
   try {
     const data: CorporateContactRequest = await req.json();
+
+    // Escape all user inputs before using in HTML
+    const safeFirstName = escapeHtml(data.firstName);
+    const safeLastName = escapeHtml(data.lastName);
+    const safeEmail = escapeHtml(data.email);
+    const safePhone = escapeHtml(data.phone);
+    const safeCompany = escapeHtml(data.company);
+    const safeEmployeeCount = escapeHtml(data.employeeCount);
+    const safeMessage = escapeHtml(data.message);
 
     const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -35,21 +56,21 @@ const handler = async (req: Request): Promise<Response> => {
       body: JSON.stringify({
         from: "DermaScan360 <onboarding@resend.dev>",
         to: ["info@dermascan360.de"],
-        subject: `Neue Unternehmensanfrage von ${data.firstName} ${data.lastName}`,
+        subject: `Neue Unternehmensanfrage von ${safeFirstName} ${safeLastName}`,
         html: `
           <h2>Neue Unternehmensanfrage</h2>
           
           <h3>Kontaktdaten</h3>
-          <p><strong>Name:</strong> ${data.firstName} ${data.lastName}</p>
-          <p><strong>E-Mail:</strong> ${data.email}</p>
-          <p><strong>Telefon:</strong> ${data.phone}</p>
+          <p><strong>Name:</strong> ${safeFirstName} ${safeLastName}</p>
+          <p><strong>E-Mail:</strong> ${safeEmail}</p>
+          <p><strong>Telefon:</strong> ${safePhone}</p>
           
           <h3>Unternehmensdaten</h3>
-          <p><strong>Unternehmen:</strong> ${data.company}</p>
-          <p><strong>Mitarbeiteranzahl:</strong> ${data.employeeCount}</p>
+          <p><strong>Unternehmen:</strong> ${safeCompany}</p>
+          <p><strong>Mitarbeiteranzahl:</strong> ${safeEmployeeCount}</p>
           
           <h3>Nachricht</h3>
-          <p>${data.message.replace(/\n/g, '<br>')}</p>
+          <p>${safeMessage.replace(/\n/g, '<br>')}</p>
         `,
       }),
     });
