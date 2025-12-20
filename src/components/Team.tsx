@@ -1,5 +1,6 @@
 import profilImg from "@/assets/profil.jpg";
 import judithImg from "@/assets/judith-reuther.webp";
+import leonImg from "@/assets/leon-hardung.webp";
 import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { LazyImage } from "@/components/LazyImage";
@@ -12,7 +13,7 @@ export const Team = () => {
     description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
   }, {
     name: "Dr. med. Leon Hardung",
-    image: profilImg,
+    image: leonImg,
     description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
   }, {
     name: "Dr. med. Alexander Lucas",
@@ -42,7 +43,7 @@ export const Team = () => {
               {founders.map((founder, index) => <CarouselItem key={index}>
                   <div className="flex flex-col items-center text-center px-4">
                     <div className="mb-6 rounded-lg overflow-hidden w-full max-w-md aspect-video">
-                      <LazyImage src={founder.image} alt={founder.name} className={`w-full h-full object-cover ${index === 0 ? 'object-[center_5%]' : ''}`} />
+                      <LazyImage src={founder.image} alt={founder.name} className={`w-full h-full object-cover ${index <= 1 ? 'object-[center_5%]' : ''}`} />
                     </div>
                     <h3 className="font-semibold text-foreground mb-3 text-lg">
                       {founder.name}
@@ -67,7 +68,7 @@ export const Team = () => {
         <div className="hidden lg:grid grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
           {founders.map((founder, index) => <div key={index} className="flex flex-col items-center text-center">
               <div className="mb-6 rounded-lg overflow-hidden w-full aspect-video">
-                <LazyImage src={founder.image} alt={founder.name} className={`w-full h-full object-cover ${index === 0 ? 'object-[center_5%]' : ''}`} />
+                <LazyImage src={founder.image} alt={founder.name} className={`w-full h-full object-cover ${index <= 1 ? 'object-[center_5%]' : ''}`} />
               </div>
               <h3 className="font-semibold text-foreground mb-3 text-2xl">
                 {founder.name}
