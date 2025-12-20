@@ -16,7 +16,27 @@ const Index = () => {
   const [showWelcome, setShowWelcome] = useState(true);
   
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Only scroll to top if there's no hash in the URL
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    } else {
+      // Handle hash navigation after images have loaded
+      const hash = window.location.hash.substring(1);
+      const scrollToHash = () => {
+        const element = document.getElementById(hash);
+        if (element) {
+          const headerOffset = window.innerWidth < 768 ? 64 : 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "instant"
+          });
+        }
+      };
+      // Wait for fonts and layout to settle
+      setTimeout(scrollToHash, 100);
+    }
   }, []);
   
   return (
