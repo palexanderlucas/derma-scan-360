@@ -1,19 +1,11 @@
 import { useState, useEffect } from "react";
+import { mainNavItems, corporateNavItems } from "@/lib/navigation";
 
 export const useActiveSection = () => {
   const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
-    const sections = [
-      "technologie",
-      "ablauf",
-      "preise",
-      "team",
-      "standort",
-      "unternehmen",
-      "kommunen",
-      "faq",
-    ];
+    const allSections = [...mainNavItems, ...corporateNavItems].map(item => item.id);
 
     const observerOptions = {
       root: null,
@@ -31,7 +23,7 @@ export const useActiveSection = () => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    sections.forEach((sectionId) => {
+    allSections.forEach((sectionId) => {
       const element = document.getElementById(sectionId);
       if (element) {
         observer.observe(element);
@@ -39,7 +31,7 @@ export const useActiveSection = () => {
     });
 
     return () => {
-      sections.forEach((sectionId) => {
+      allSections.forEach((sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
           observer.unobserve(element);

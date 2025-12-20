@@ -1,34 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.svg";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import { useMobileMenu } from "@/hooks/useMobileMenu";
 import { BookingDialog } from "@/components/BookingDialog";
 import { NavLink } from "@/components/NavLink";
 import { mainNavItems } from "@/lib/navigation";
 import { scrollToSection, scrollToTop } from "@/lib/scrollUtils";
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isOpen: isMenuOpen, toggle: toggleMenu, close: closeMenu } = useMobileMenu();
   const [showBooking, setShowBooking] = useState(false);
   const activeSection = useActiveSection();
   const location = useLocation();
   const isMainPage = location.pathname === '/';
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isMenuOpen]);
   
   const handleScrollToSection = (id: string) => {
-    scrollToSection(id, () => setIsMenuOpen(false));
+    scrollToSection(id, closeMenu);
   };
 
   return (
@@ -76,9 +66,8 @@ export const Header = () => {
             Termin buchen
           </Button>
           
-          {/* Mobile Menu Button */}
           <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={toggleMenu}
             className="lg:hidden p-2 hover:bg-accent rounded-md transition-colors"
             aria-label="Menu"
           >
@@ -106,7 +95,7 @@ export const Header = () => {
               className="bg-primary hover:bg-primary/90 w-full mt-2 sm:hidden"
               onClick={() => {
                 setShowBooking(true);
-                setIsMenuOpen(false);
+                closeMenu();
               }}
             >
               Termin buchen
