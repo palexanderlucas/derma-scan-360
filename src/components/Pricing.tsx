@@ -26,7 +26,7 @@ export const Pricing = () => {
     name: "Ganzkörper-Screening Express",
     price: "199",
     delivery: "Befund innerhalb von 5 Werktagen",
-    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
+    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
     popular: false
   }];
   return <section id="preise" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/60">
