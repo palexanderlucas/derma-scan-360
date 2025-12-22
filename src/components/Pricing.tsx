@@ -38,7 +38,7 @@ export const Pricing = () => {
             Preise
           </h2>
           <p className="sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2 sm:px-4 text-sm">
-            Selbstzahlerleistung - von privaten Krankenkassen regelhaft übernommen. (Teil)erstattung bei gesetzlichen Krankenkassen möglich. Eine Kostenübernahme kann von uns nicht garantiert werden.
+            Selbstzahlerleistung - von privaten Krankenkassen regelhaft übernommen. (Teil-)erstattung bei gesetzlichen Krankenkassen möglich. Eine Kostenübernahme kann von uns nicht garantiert werden.
           </p>
         </div>
 
