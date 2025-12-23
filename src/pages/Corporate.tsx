@@ -12,6 +12,7 @@ import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { useState, useEffect } from "react";
 import { scrollToSection } from "@/lib/scrollUtils";
+import { Helmet } from "react-helmet-async";
 
 const formSchema = z.object({
   email: z.string().email({ message: "Bitte geben Sie eine gültige E-Mail-Adresse ein" }),
@@ -73,6 +74,22 @@ const Corporate = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>DermaScan360: Hautkrebs-Screening für Unternehmen</title>
+        <meta name="description" content="Hautkrebsvorsorge vor Ort in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise" />
+        <link rel="canonical" href="https://dermascan360.de/corporate" />
+        
+        <meta property="og:title" content="DermaScan360: Hautkrebs-Screening für Unternehmen" />
+        <meta property="og:description" content="Hautkrebsvorsorge vor Ort in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise" />
+        <meta property="og:image" content="https://dermascan360.de/DermaScan360.hero.og.jpg" />
+        <meta property="og:url" content="https://dermascan360.de/corporate" />
+        <meta property="og:type" content="website" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="DermaScan360: Hautkrebs-Screening für Unternehmen" />
+        <meta name="twitter:description" content="Hautkrebsvorsorge vor Ort in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise" />
+        <meta name="twitter:image" content="https://dermascan360.de/DermaScan360.hero.og.jpg" />
+      </Helmet>
       <CorporateHeader />
       <main className="pt-16 sm:pt-20">
         {/* Hero Section */}
