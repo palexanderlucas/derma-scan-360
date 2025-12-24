@@ -1,9 +1,3 @@
-/**
- * WICHTIG: Bei Änderungen der Meta-Tags (Zeilen 77-92) muss auch die Datei
- * public/corporate/index.html aktualisiert werden! Diese statische HTML-Datei
- * wird für Social Media Crawler (WhatsApp, Facebook, Twitter) benötigt, da
- * diese kein JavaScript ausführen.
- */
 import { CorporateHeader } from "@/components/CorporateHeader";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
