@@ -1,8 +1,8 @@
 import { Scan, Microscope, Brain, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import bodyScanner from "@/assets/body-scanner.webp";
-import dermatoscope from "@/assets/dermatoscope.webp";
-import doctorAnalysis from "@/assets/doctor-analysis.webp";
+import bodyScanner from "@/assets/total-body-mapping-ganzkoerper-screening.webp";
+import dermatoscope from "@/assets/digitale-dermatoskopie-auflichtmikroskop.webp";
+import doctorAnalysis from "@/assets/hautkrebs-screening-arzt-befundung.webp";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { TechCard } from "@/components/TechCard";
 
