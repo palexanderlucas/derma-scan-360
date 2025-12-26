@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/dermascan360-logo.svg";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { useMobileMenu } from "@/hooks/useMobileMenu";
 import { BookingDialog } from "@/components/BookingDialog";

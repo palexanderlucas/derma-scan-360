@@ -1,6 +1,6 @@
-import judithImg from "@/assets/judith-reuther.webp";
-import leonImg from "@/assets/leon-hardung.webp";
-import alexanderImg from "@/assets/alexander-lucas.webp";
+import judithImg from "@/assets/judith-reuther-hautarzt.webp";
+import leonImg from "@/assets/leon-hardung-hautarzt.webp";
+import alexanderImg from "@/assets/alexander-lucas-hautarzt.webp";
 import { useState, useEffect } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 export const Team = () => {
