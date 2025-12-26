@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/dermascan360-logo.svg";
 import { corporateNavItems } from "@/lib/navigation";
 import { scrollToSection } from "@/lib/scrollUtils";
 import { useMobileMenu } from "@/hooks/useMobileMenu";

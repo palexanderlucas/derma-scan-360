@@ -81,14 +81,14 @@ const Corporate = () => {
         
         <meta property="og:title" content="DermaScan360: Hautkrebs-Screening für Unternehmen" />
         <meta property="og:description" content="Hautkrebsvorsorge vor Ort in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise" />
-        <meta property="og:image" content="https://dermascan360.de/DermaScan360.hero.og.jpg" />
+        <meta property="og:image" content="https://dermascan360.de/dermascan360-hautkrebs-screening-og.jpg" />
         <meta property="og:url" content="https://dermascan360.de/corporate" />
         <meta property="og:type" content="website" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="DermaScan360: Hautkrebs-Screening für Unternehmen" />
         <meta name="twitter:description" content="Hautkrebsvorsorge vor Ort in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise" />
-        <meta name="twitter:image" content="https://dermascan360.de/DermaScan360.hero.og.jpg" />
+        <meta name="twitter:image" content="https://dermascan360.de/dermascan360-hautkrebs-screening-og.jpg" />
       </Helmet>
       <CorporateHeader />
       <main className="pt-16 sm:pt-20">
