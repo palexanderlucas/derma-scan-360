@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Award, Microscope } from "lucide-react";
-import heroImage from "@/assets/hero-scan.webp";
+import heroImage from "@/assets/hautkrebs-screening-dermascan360-osnabrueck.webp";
 import { BookingDialog } from "@/components/BookingDialog";
 import { FeatureItem } from "@/components/FeatureItem";
 import { useState } from "react";

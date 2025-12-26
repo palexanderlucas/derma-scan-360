@@ -1,6 +1,6 @@
 import { Calendar, Scan, CheckCircle, FileText, Clock, Stethoscope, CalendarCheck } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import monitoring from "@/assets/monitoring.webp";
+import monitoring from "@/assets/hautkrebs-screening-verlaufskontrolle.webp";
 export const Process = () => {
   const fullBodySteps = [{
     icon: Calendar,
