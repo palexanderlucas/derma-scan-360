@@ -115,7 +115,7 @@ export const Technology = () => {
               Nach Ihrem Besuch werden die gesammelten Aufnahmen unseren Hautärzten zur Befundung bereitgestellt. Alle Befunde werden zusätzlich von Frau Reuther geprüft und signiert. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster, verfügt über eine Zusatzbezeichnung für Tumortherapien und leitet regelmäßig Fortbildungen zu Hautkrebsvorsorge und Auflichtmikroskopie.
             </p>
             <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mt-4">
-              Als Ergebnis erhalten Sie einen ausführlichen Arztbrief mit der medizinischen Einschätzung und konkreten Handlungsempfehlungen. Bei Auffälligkeiten erfolgt zusätzlich eine persönliche telefonische Besprechung des Untersuchungsergebnis.
+              Als Ergebnis erhalten Sie einen Arztbrief mit der medizinischen Einschätzung und konkreten Handlungsempfehlungen. Bei Auffälligkeiten erfolgt zusätzlich eine persönliche telefonische Besprechung des Untersuchungsergebnis.
             </p>
           </TechCard>
         </div>
