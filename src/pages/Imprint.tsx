@@ -29,7 +29,6 @@ const Imprint = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Kontakt</h2>
               <p>
-                <strong>Telefon:</strong> 0172 5436394<br />
                 <strong>E-Mail:</strong> <a href="mailto:info@dermascan360.de" className="text-primary hover:underline">info@dermascan360.de</a>
               </p>
             </section>
