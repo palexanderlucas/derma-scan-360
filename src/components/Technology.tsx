@@ -38,7 +38,7 @@ export const Technology = () => {
             Hautkrebsvorsorge auf höchstem Niveau
           </h2>
           <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2">
-            DermaScan360 setzt auf weltweit führende Medizintechnik von Canfield® und erfahrene Hautärzte für präzise Früherkennung.
+            DermaScan360 kombiniert modernste Medizintechnik mit der Expertise erfahrener Dermatologen für eine präzise Früherkennung von Hautkrebs.
           </p>
         </div>
 
