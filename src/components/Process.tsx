@@ -13,7 +13,7 @@ export const Process = () => {
   }, {
     icon: CheckCircle,
     title: "Qualitätsprüfung",
-    description: "Ein Hautarzt überprüft die Aufnahmen hinsichtlich Qualität und Vollständigkeit."
+    description: "Nach Ihrem Besuch bei DermaScan360 werden die angefertigten Aufnahmen von einem Dermatologen auf Qualität und Vollständigkeit geprüft."
   }, {
     icon: CalendarCheck,
     title: "Zweittermin",
