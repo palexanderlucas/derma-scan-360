@@ -6,7 +6,7 @@ export const CorporateCTA = () => {
       <div className="container mx-auto px-3 sm:px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="sm:text-3xl font-bold mb-3 sm:mb-4 md:text-5xl text-3xl">
-            Für Unternehmen
+            Für Unternehmen und Behörden
           </h2>
           <p className="sm:text-lg md:text-xl text-muted-foreground mb-4 sm:mb-6 text-base">
             Integrieren Sie Hautkrebsvorsorge in Ihr betriebliches Gesundheitsmanagement.
