@@ -7,7 +7,8 @@ interface CorporateContactRequest {
   phone: string;
   company: string;
   employeeCount: string;
-  name: string;
+  firstName: string;
+  lastName: string;
   message: string;
 }
 
@@ -42,10 +43,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { email, phone, company, employeeCount, name, message }: CorporateContactRequest = req.body;
+    const { email, phone, company, employeeCount, firstName, lastName, message }: CorporateContactRequest = req.body;
 
     // Validate required fields
-    if (!email || !company || !name) {
+    if (!email || !company || !firstName || !lastName) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
 
@@ -54,7 +55,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const safePhone = escapeHtml(phone || '');
     const safeCompany = escapeHtml(company);
     const safeEmployeeCount = escapeHtml(employeeCount || '');
-    const safeName = escapeHtml(name);
+    const safeFirstName = escapeHtml(firstName);
+    const safeLastName = escapeHtml(lastName);
     const safeMessage = escapeHtml(message || '');
 
     const emailResponse = await fetch('https://api.resend.com/emails', {
@@ -71,7 +73,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           <h1>Neue Unternehmensanfrage</h1>
           <h2>Kontaktdaten</h2>
           <ul>
-            <li><strong>Name:</strong> ${safeName}</li>
+            <li><strong>Name:</strong> ${safeFirstName} ${safeLastName}</li>
             <li><strong>E-Mail:</strong> ${safeEmail}</li>
             <li><strong>Telefon:</strong> ${safePhone || 'Nicht angegeben'}</li>
           </ul>
