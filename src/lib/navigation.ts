@@ -4,7 +4,7 @@ export interface NavItem {
 }
 
 export const mainNavItems: NavItem[] = [
-  { id: "technologie", label: "Technologie" },
+  { id: "technologie", label: "Technologie & Befundung" },
   { id: "ablauf", label: "Ablauf" },
   { id: "preise", label: "Preise" },
   { id: "standort", label: "Standort" },
