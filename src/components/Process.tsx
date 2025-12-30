@@ -34,11 +34,11 @@ export const Process = () => {
   }, {
     icon: Scan,
     title: "Auflichtmikroskopie",
-    description: "Wir erstellen spezielle Nahaufnahmen aller gewünschten Hautveränderungen."
+    description: "Unser Team erstellt auflichtmikroskopische Nahaufnahmen aller gewünschten Hautveränderungen."
   }, {
     icon: FileText,
     title: "Arztbrief & Empfehlung",
-    description: "Fachärztlicher Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten telefonische Befundbesprechung."
+    description: "Sie erhalten innerhalb weniger Tage einen fachärztlichen Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten erfolgt eine ärztliche Befundbesprechung telefonisch."
   }];
   return <section id="ablauf" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-background">
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
