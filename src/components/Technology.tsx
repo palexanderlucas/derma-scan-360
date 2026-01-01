@@ -45,33 +45,24 @@ export const Technology = () => {
         <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-28 xl:space-y-36">
           <TechCard icon={Scan} title="Total-Body-Mapping" image={bodyScanner} imageAlt="Total-Body-Mapping Scanner">
             <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-              Unser Ganzkörper-Scanner erstellt eine Landkarte der gesamten Hautoberfläche. 
-              Auf diese Weise können auffällige Veränderungen genau analysiert werden. Bei Verlaufskontrollen 
-              werden alle Läsionen von einer Software übereinandergelegt und über die Zeit hinweg verglichen. 
-              Neue Muttermale oder Veränderungen in Form und Farbe können so präzise detektiert werden. 
-              Dank künstlicher Intelligenz werden auch sehr kleine Veränderungen frühzeitig erkannt. 
-              Die Sicherheit des Screenings wird so maximiert.
+              Unser Ganzkörper-Scanner erstellt eine detaillierte Landkarte Ihrer gesamten Hautoberfläche. Auffällige Hautveränderungen lassen sich dadurch gezielt erfassen und genau analysieren. Bei Verlaufskontrollen werden alle Läsionen softwaregestützt übereinandergelegt und über die Zeit hinweg verglichen. So können neue Muttermale sowie kleinste Veränderungen in Form oder Farbe frühzeitig erkannt werden. Die integrierte künstliche Intelligenz unterstützt diesen Prozess und erhöht die diagnostische Sicherheit des Screenings.
             </p>
             
             <div className="hidden lg:block space-y-4 sm:space-y-5 lg:space-y-6">
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.
+                Wir arbeiten mit dem Ganzkörper-Scanner IntelliStudio® des Herstellers Canfield®. Auch die zugehörige Software und künstliche Intelligenz stammen von Canfield®. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.
               </p>
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
-                in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
-                Universitätskliniken setzen auf diese Technologie.
+                Bei den eingesetzten Systemen handelt es sich um zugelassene, etablierte Medizinprodukte, deren Nutzen in zahlreichen wissenschaftlichen Studien belegt ist. Immer mehr spezialisierte Zentren und Universitätskliniken setzen auf diese Technologie.
               </p>
             </div>
 
             <CollapsibleText isOpen={isOpen} onOpenChange={setIsOpen}>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Wir arbeiten mit dem Ganzkörper-Scanner "IntelliStudio®" der Marke Canfield®. Auch die Software und künstliche Intelligenz werden von Canfield® zur Verfügung gestellt. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.
+                Wir arbeiten mit dem Ganzkörper-Scanner IntelliStudio® des Herstellers Canfield®. Auch die zugehörige Software und künstliche Intelligenz stammen von Canfield®. Canfield® ist in dieser Technologie weltweit führend und entspricht dem Prinzip von FotoFinder®.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Es handelt sich um zugelassene und etablierte Medizinprodukte. Der Mehrwert konnte bereits 
-                in zahlreichen Studien nachgewiesen werden. Immer mehr spezialisierte Zentren und 
-                Universitätskliniken setzen auf diese Technologie.
+                Bei den eingesetzten Systemen handelt es sich um zugelassene, etablierte Medizinprodukte, deren Nutzen in zahlreichen wissenschaftlichen Studien belegt ist. Immer mehr spezialisierte Zentren und Universitätskliniken setzen auf diese Technologie.
               </p>
             </CollapsibleText>
           </TechCard>
