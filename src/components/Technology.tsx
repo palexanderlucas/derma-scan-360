@@ -69,34 +69,30 @@ export const Technology = () => {
 
           <TechCard icon={Microscope} title="Digitale Auflichtmikroskopie" image={dermatoscope} imageAlt="Digitale Auflichtmikroskopie" reverse>
             <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-              Mit einem Auflichtmikroskop können Muttermale stark vergrößert und sehr detailliert 
-              beurteilt werden. Dank speziellem und polarisiertem Licht können Muster und Strukturen 
-              dargestellt werden, die mit dem bloßen Auge nicht erkennbar sind.
+              Mit der digitalen Auflichtmikroskopie lassen sich Muttermale stark vergrößert und äußerst präzise beurteilen. Durch den Einsatz von speziellem, polarisiertem Licht werden feine Muster und Strukturen sichtbar, die mit dem bloßen Auge nicht erkennbar sind und für die medizinische Beurteilung entscheidend sein können.
             </p>
             
             <div className="hidden lg:block space-y-4 sm:space-y-5 lg:space-y-6">
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Auflichtmikroskopische Nahaufnahmen erhöhen anerkannterweise die Genauigkeit eines Hautkrebsscreenings und werden 
-                von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen 
-                Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield® D2 Dermatoskop).
+                Die Auflichtmikroskopie gilt als wesentlicher Bestandteil einer hochwertigen Hautkrebsvorsorge und wird von dermatologischen Fachgesellschaften sowie medizinischen Leitlinien ausdrücklich empfohlen. Ihr diagnostischer Mehrwert ist wissenschaftlich gut belegt. Bei DermaScan360 verwenden wir mit dem Canfield® D2 Dermatoskop eines der modernsten und leistungsfähigsten Systeme auf dem Markt.
               </p>
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.
+                Alle auflichtmikroskopischen Aufnahmen werden direkt Ihrem persönlichen Haut-Avatar zugeordnet. Dadurch werden Total-Body-Mapping und Dermatoskopie sinnvoll miteinander kombiniert. Veränderungen einzelner Hautläsionen lassen sich so auch im zeitlichen Verlauf besonders präzise nachvollziehen.
               </p>
               <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.
+                Sämtliche Aufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende medizinische Beurteilung und Befundung erfolgt jedoch immer durch einen erfahrenen Hautarzt.
               </p>
             </div>
 
             <CollapsibleText isOpen={isOpen2} onOpenChange={setIsOpen2}>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Auflichtmikroskopische Nahaufnahmen erhöhen anerkannterweise die Genauigkeit eines Hautkrebsscreenings und werden von sämtlichen Fachgesellschaften und Leitlinien empfohlen. Der Nutzen wurde in zahlreichen Studien belegt. Wir verwenden eines der modernsten Dermatoskope auf dem Markt (Canfield® D2 Dermatoskop).
+                Die Auflichtmikroskopie gilt als wesentlicher Bestandteil einer hochwertigen Hautkrebsvorsorge und wird von dermatologischen Fachgesellschaften sowie medizinischen Leitlinien ausdrücklich empfohlen. Ihr diagnostischer Mehrwert ist wissenschaftlich gut belegt. Bei DermaScan360 verwenden wir mit dem Canfield® D2 Dermatoskop eines der modernsten und leistungsfähigsten Systeme auf dem Markt.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Die auflichtmikroskopischen Nahaufnahmen werden auf der Landkarte Ihrer Haut (Ihrem persönlichen Avatar) abgespeichert. Total-Body-Mapping und Dermatoskopie werden hierdurch kombiniert. So können auch auflichtmikroskopische Veränderungen im zeitlichen Verlauf präzise erkannt werden.
+                Alle auflichtmikroskopischen Aufnahmen werden direkt Ihrem persönlichen Haut-Avatar zugeordnet. Dadurch werden Total-Body-Mapping und Dermatoskopie sinnvoll miteinander kombiniert. Veränderungen einzelner Hautläsionen lassen sich so auch im zeitlichen Verlauf besonders präzise nachvollziehen.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Sämtliche Nahaufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende Befundung erfolgt immer von einem erfahrenen Hautarzt.
+                Sämtliche Aufnahmen werden von einer künstlichen Intelligenz mitbeurteilt. Die abschließende medizinische Beurteilung und Befundung erfolgt jedoch immer durch einen erfahrenen Hautarzt.
               </p>
             </CollapsibleText>
           </TechCard>
