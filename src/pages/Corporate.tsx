@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Building2, Building } from "lucide-react";
+import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Building2, Network } from "lucide-react";
 import heroImage from "@/assets/hautkrebs-screening-unternehmen-behoerden.webp";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -251,7 +251,7 @@ const Corporate = () => {
               </div>
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
                 <div className="flex items-center gap-3 mb-2">
-                  <Building className="h-6 w-6 text-primary shrink-0" />
+                  <Network className="h-6 w-6 text-primary shrink-0" />
                   <h3 className="text-lg sm:text-xl font-bold">&gt; 100 Mitarbeiter</h3>
                 </div>
                 <p className="text-muted-foreground">
