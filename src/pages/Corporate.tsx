@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X } from "lucide-react";
+import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Building2, Building } from "lucide-react";
 import heroImage from "@/assets/hautkrebs-screening-unternehmen-behoerden.webp";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -233,46 +233,27 @@ const Corporate = () => {
               ​Wir entwickeln für Sie eine passgenaue BGM-Lösung - individuell angepasst auf Ihre Bedürfnisse.
             </p>
             <div className="max-w-4xl mx-auto space-y-6">
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-semibold mb-1">Einfache und schnelle Abläufe</h4>
-                    <p className="text-muted-foreground text-base">integriert in Ihren Alltag</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-semibold mb-1">Modernste Technik</h4>
-                    <p className="text-muted-foreground text-base">
-                      digitale Auflichtmikroskopie, Total-Body-Mapping und KI-Unterstützung
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="font-semibold mb-1">Erfahrene Hautärzte</h4>
-                    <p className="text-muted-foreground text-base">
-                      fachärztliche Diagnostik unter Leitung von Frau Reuther (stv. Leiterin Hauttumorzentrum UK-Münster)
-                    </p>
-                  </div>
-                </div>
-              </div>
-
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">Unternehmen jeder Größe</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <Building2 className="h-6 w-6 text-primary shrink-0" />
+                  <h3 className="text-lg sm:text-xl font-bold">Unternehmen jeder Größe</h3>
+                </div>
                 <p className="text-muted-foreground">Sonderkonditionen für Ihre Mitarbeiter in unserer Filiale</p>
               </div>
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">&gt; 10 Mitarbeiter</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <Users className="h-6 w-6 text-primary shrink-0" />
+                  <h3 className="text-lg sm:text-xl font-bold">&gt; 10 Mitarbeiter</h3>
+                </div>
                 <p className="text-muted-foreground">
                   fachärztliches Ganzkörper-Screening mit Auflichtmikroskop vor Ort in Ihrem Unternehmen
                 </p>
               </div>
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-lg sm:text-xl font-bold mb-2">&gt; 100 Mitarbeiter</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <Building className="h-6 w-6 text-primary shrink-0" />
+                  <h3 className="text-lg sm:text-xl font-bold">&gt; 100 Mitarbeiter</h3>
+                </div>
                 <p className="text-muted-foreground">
                   fachärztliches Ganzkörper-Screening mit Auflichtmikroskop und optional Total-Body-Mapping vor Ort in Ihrem Unternehmen
                 </p>
