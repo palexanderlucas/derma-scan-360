@@ -147,7 +147,8 @@ const Corporate = () => {
             <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-4xl mx-auto text-base">
               Hautkrebs ist die häufigste Krebserkrankung des Menschen und bei frühzeitiger Erkennung in den meisten Fällen heilbar. Dennoch nehmen viele Mitarbeitende aus Zeitmangel oder organisatorischen Hürden keine regelmäßige Vorsorge wahr.
             </p>
-            <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="max-w-3xl mx-auto flex flex-col gap-6 sm:gap-8">
+              {/* Problem-Karten */}
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs (Malignes Melanom)</h3>
                 <ul className="space-y-3 text-muted-foreground">
@@ -202,8 +203,9 @@ const Corporate = () => {
                 </ul>
               </div>
               
-              <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening in Unternehmen</h3>
+              {/* Lösungs-Karte hervorgehoben */}
+              <div className="bg-gradient-to-br from-emerald-50/80 to-card dark:from-emerald-950/30 dark:to-card p-6 sm:p-8 rounded-xl border-2 border-emerald-500/50 mt-4">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-emerald-700 dark:text-emerald-400">Hautkrebs-Screening in Unternehmen</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
