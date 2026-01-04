@@ -204,22 +204,25 @@ const Corporate = () => {
               </div>
               
               {/* Lösungs-Karte hervorgehoben */}
-              <div className="bg-gradient-to-br from-emerald-50/80 to-card dark:from-emerald-950/30 dark:to-card p-6 sm:p-8 rounded-xl border-2 border-emerald-500/50 mt-4">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-emerald-700 dark:text-emerald-400">Hautkrebs-Screening in Unternehmen</h3>
-                <ul className="space-y-3 text-muted-foreground">
+              <div className="bg-card p-6 sm:p-8 rounded-xl border-2 border-primary mt-4">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening in Unternehmen</h3>
+                <ul className="space-y-3 text-muted-foreground mb-6">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <span>Vorstufen meist leicht behandelbar</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <span>Hauttumore zum Großteil vermeidbar</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <span>Früherkennung senkt Ausfälle und Kosten</span>
                   </li>
                 </ul>
+                <Button onClick={() => scrollToSection("kontakt")} className="w-full sm:w-auto">
+                  Kontakt aufnehmen
+                </Button>
               </div>
             </div>
           </div>
