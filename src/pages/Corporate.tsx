@@ -142,18 +142,18 @@ const Corporate = () => {
         <section id="hautkrebs" className="py-12 sm:py-16 md:py-20">
           <div className="container mx-auto px-3 sm:px-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
-              Hautkrebs: Risiken und Chancen
+              Hautkrebs: Risiken erkennen – Chancen nutzen
             </h2>
             <p className="text-center text-muted-foreground mb-10 sm:mb-12 max-w-4xl mx-auto text-base">
-              Hautkrebs ist der häufigste Tumor des Menschen und früh erkannt fast immer heilbar. Viele Mitarbeiter nehmen aus Zeitgründen keine Vorsorge wahr.
+              Hautkrebs ist die häufigste Krebserkrankung des Menschen und bei frühzeitiger Erkennung in den meisten Fällen heilbar. Dennoch nehmen viele Mitarbeitende aus Zeitmangel oder organisatorischen Hürden keine regelmäßige Vorsorge wahr.
             </p>
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs (Malignes Melanom)</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-[0.3em] leading-none">•</span>
-                    <span>ca. 2% Lebenszeitprävalenz → jeder 50. Mitarbeiter</span>
+                    <span>Lebenszeitprävalenz ca. 2 % → jeder 50. Mitarbeitende</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-[0.3em] leading-none">•</span>
@@ -161,7 +161,7 @@ const Corporate = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-[0.3em] leading-none">•</span>
-                    <span>Lange Krankheitsausfälle, medikamentöse Nebenwirkungen, psychische Folgeprobleme</span>
+                    <span>Lange Krankheitsausfälle, belastende Therapien, psychische Folgewirkungen</span>
                   </li>
                 </ul>
               </div>
@@ -179,21 +179,21 @@ const Corporate = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-[0.3em] leading-none">•</span>
-                    <span>Outdoor-Berufe besonders gefährdet</span>
+                    <span>Outdoor-Berufe und Mitarbeitende mit UV-Exposition besonders gefährdet</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Real-Life</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Realität im Arbeitsalltag</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
-                    <span>Hauttumoren oftmals zu spät erkannt</span>
+                    <span>50–80 % der Bevölkerung ungescreent</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
-                    <span>50-80% der Bevölkerung ungescreent</span>
+                    <span>Hauttumoren oftmals zu spät erkannt</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
@@ -203,7 +203,7 @@ const Corporate = () => {
               </div>
               
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening in Unternehmen</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
@@ -215,7 +215,7 @@ const Corporate = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
-                    <span>Früherkennung reduziert Ausfälle und Kosten</span>
+                    <span>Früherkennung senkt Ausfälle und Kosten</span>
                   </li>
                 </ul>
               </div>
