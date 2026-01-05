@@ -16,9 +16,9 @@ import { Helmet } from "react-helmet-async";
 
 const formSchema = z.object({
   email: z.string().email({ message: "Bitte geben Sie eine gültige E-Mail-Adresse ein" }),
-  phone: z.string().min(1, { message: "Bitte geben Sie eine Telefonnummer ein" }),
+  phone: z.string().optional(),
   company: z.string().min(1, { message: "Bitte geben Sie Ihr Unternehmen ein" }),
-  employeeCount: z.string().min(1, { message: "Bitte geben Sie die Mitarbeiteranzahl ein" }),
+  employeeCount: z.string().optional(),
   firstName: z.string().min(1, { message: "Bitte geben Sie Ihren Vornamen ein" }),
   lastName: z.string().min(1, { message: "Bitte geben Sie Ihren Nachnamen ein" }),
   message: z.string().min(10, { message: "Bitte geben Sie eine Nachricht mit mindestens 10 Zeichen ein" })
@@ -150,7 +150,7 @@ const Corporate = () => {
             <div className="max-w-3xl mx-auto flex flex-col gap-6 sm:gap-8">
               {/* Problem-Karten */}
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs:</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-[0.3em] leading-none">•</span>
@@ -278,7 +278,7 @@ const Corporate = () => {
                 Wir freuen uns darauf, im Austausch mit Ihnen die beste Lösung für Sie zu finden!
               </p>
               
-              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-card p-6 sm:p-8 rounded-xl border">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 bg-card p-6 sm:p-8 rounded-xl border-2 border-primary">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">Vorname *</Label>
@@ -299,9 +299,8 @@ const Corporate = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Telefonnummer *</Label>
-                  <Input id="phone" type="tel" {...register("phone")} className={errors.phone ? "border-destructive" : ""} />
-                  {errors.phone && <p className="text-sm text-destructive">{errors.phone.message}</p>}
+                  <Label htmlFor="phone">Telefonnummer</Label>
+                  <Input id="phone" type="tel" {...register("phone")} />
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -311,9 +310,8 @@ const Corporate = () => {
                     {errors.company && <p className="text-sm text-destructive">{errors.company.message}</p>}
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="employeeCount">Mitarbeiteranzahl *</Label>
-                    <Input id="employeeCount" {...register("employeeCount")} className={errors.employeeCount ? "border-destructive" : ""} />
-                    {errors.employeeCount && <p className="text-sm text-destructive">{errors.employeeCount.message}</p>}
+                    <Label htmlFor="employeeCount">Mitarbeiteranzahl</Label>
+                    <Input id="employeeCount" {...register("employeeCount")} />
                   </div>
                 </div>
 
