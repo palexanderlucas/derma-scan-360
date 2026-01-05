@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, X, Building2, Share2 } from "lucide-react";
+import { CheckCircle2, Users, TrendingUp, Heart, Shield, Mail, AlertTriangle, Building2, Share2 } from "lucide-react";
 import heroImage from "@/assets/hautkrebs-screening-unternehmen-behoerden.webp";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -150,7 +150,7 @@ const Corporate = () => {
             <div className="max-w-3xl mx-auto flex flex-col gap-6 sm:gap-8">
               {/* Problem-Karten */}
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs (Malignes Melanom)</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-4">Schwarzer Hautkrebs:</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-[0.3em] leading-none">•</span>
@@ -162,7 +162,7 @@ const Corporate = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-[0.3em] leading-none">•</span>
-                    <span>Lange Krankheitsausfälle, belastende Therapien, psychische Folgewirkungen</span>
+                    <span>Lange Krankheitsausfälle, medikamentöse Nebenwirkungen, psychische Folgeprobleme</span>
                   </li>
                 </ul>
               </div>
@@ -189,22 +189,22 @@ const Corporate = () => {
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Realität im Arbeitsalltag</h3>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
                     <span>50–80 % der Bevölkerung ungescreent</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
                     <span>Hauttumoren oftmals zu spät erkannt</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <X className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
                     <span>Lange Wartezeiten und unfreundliche Praxis-Öffnungszeiten für Arbeitnehmer</span>
                   </li>
                 </ul>
               </div>
               
               {/* Lösungs-Karte hervorgehoben */}
-              <div className="bg-card p-6 sm:p-8 rounded-xl border-2 border-primary mt-4">
+              <div className="bg-card p-6 sm:p-8 rounded-xl border-2 border-primary">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4">Hautkrebs-Screening in Unternehmen</h3>
                 <ul className="space-y-3 text-muted-foreground mb-6">
                   <li className="flex items-start gap-2">
