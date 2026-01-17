@@ -13,20 +13,20 @@ export const Pricing = () => {
     name: "Single Lesion",
     price: "ab 29",
     delivery: "Erste Läsion 29€, jede weitere 10€",
-    features: ["Digitale Auflichtmikroskopie aller gewünschten Hautveränderungen", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt"],
+    features: ["Auflichtmikroskopie aller gewünschten Hautveränderungen", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt"],
     negativeFeatures: ["kein Total-Body-Mapping"],
     popular: false
   }, {
     name: "Ganzkörper-Screening",
     price: "149",
     delivery: "Befund innerhalb von 14 Tagen",
-    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief"],
+    features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief"],
     popular: true
   }, {
     name: "Ganzkörper-Screening Express",
     price: "199",
     delivery: "Befund innerhalb von 5 Werktagen",
-    features: ["Total-Body-Mapping", "Digitale Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
+    features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
     popular: false
   }];
   return <section id="preise" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/60">
