@@ -28,9 +28,9 @@ export const Process = () => {
     description: "Sie erhalten innerhalb weniger Tage einen fachärztlichen Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten erfolgt eine ärztliche Befundbesprechung telefonisch."
   }];
   const singleLesionSteps = [{
-    icon: Clock,
-    title: "Sofort ohne Termin",
-    description: "Kommen Sie jetzt vorbei - ohne Termin. Besuchen Sie uns spontan zu unseren Öffnungszeiten. Die Wartezeit beträgt erfahrungsgemäß etwa 5-20 Minuten."
+    icon: Calendar,
+    title: "Terminvereinbarung",
+    description: "Wir garantieren einen Termin innerhalb von drei Werktagen. Notfalls geben wir weitere Termine frei."
   }, {
     icon: Scan,
     title: "Auflichtmikroskopie",
@@ -113,10 +113,9 @@ export const Process = () => {
             </div>
 
             <div className="p-4 sm:p-5 md:p-6 lg:p-8 bg-accent/50 rounded-lg sm:rounded-xl md:rounded-2xl text-center max-w-2xl mx-auto">
-              <h3 className="font-bold sm:text-3xl md:text-4xl mb-3 sm:mb-4 text-lg lg:text-4xl">Schnelle Untersuchung ohne Wartezeit</h3>
+              <h3 className="font-bold sm:text-3xl md:text-4xl mb-3 sm:mb-4 text-lg lg:text-4xl">Gezielte Untersuchung</h3>
               <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">
-                Ideal für die schnelle Abklärung einzelner verdächtiger Hautveränderungen. 
-                Sie entscheiden, welche Muttermale oder Läsionen wir anschauen sollen.
+                Für die fokussierte Beurteilung einzelner verdächtiger Hautstellen. Wir untersuchen gezielt die Hautveränderungen, die Ihnen Sorgen bereiten.
               </p>
             </div>
           </TabsContent>
