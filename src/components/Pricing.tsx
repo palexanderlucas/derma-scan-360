@@ -13,7 +13,7 @@ export const Pricing = () => {
     name: "Single Lesion",
     price: "ab 29",
     delivery: "Erste Läsion 29€, jede weitere 10€",
-    features: ["Auflichtmikroskopische Aufnahme", "KI-Unterstützung", "Fachärztlicher Befund", "Sofort ohne Termin"],
+    features: ["Digitale Auflichtmikroskopie aller gewünschten Hautveränderungen", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt"],
     negativeFeatures: ["kein Total-Body-Mapping"],
     popular: false
   }, {
@@ -71,9 +71,9 @@ export const Pricing = () => {
                 <Button 
                   className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
                   variant={plan.popular ? 'default' : 'outline'}
-                  onClick={() => setShowWalkIn(true)}
+                  onClick={() => setShowBooking(true)}
                 >
-                  Jetzt vorbeikommen
+                  Termin buchen
                 </Button>
               ) : (
                 <Button 
