@@ -14,7 +14,7 @@ export const WelcomeDialog = ({ open, onOpenChange }: WelcomeDialogProps) => {
       buttonText="Weiter zur Website"
     >
       <p>
-        Wir eröffnen voraussichtlich am <strong>01.03.2026</strong>. Termine können wenige Wochen vor Eröffnung online auf dieser Seite oder Doctolib gebucht werden.
+        Wir eröffnen voraussichtlich am <strong>01.04.2026</strong>. Termine können wenige Wochen vor Eröffnung online auf dieser Seite oder Doctolib gebucht werden.
       </p>
       <p>
         Für Unternehmen und Kommunen bieten wir unser mobiles Screening bereits jetzt an.
