@@ -2,6 +2,7 @@ import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const DOCTOLIB_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/motives?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSector=public&insuranceSectorEnabled=true&bookingFunnelSource=profile";
+const DOCTOLIB_SINGLE_LESION_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/availabilities?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSectorEnabled=true&insuranceSector=public&motiveIds%5B%5D=15245959&bookingFunnelSource=deep_link";
 
 export const Pricing = () => {
   const plans = [{
@@ -63,7 +64,7 @@ export const Pricing = () => {
               <Button 
                 className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
                 variant={plan.popular ? 'default' : 'outline'}
-                onClick={() => window.open(DOCTOLIB_URL, '_blank')}
+                onClick={() => window.open(plan.name === "Single Lesion" ? DOCTOLIB_SINGLE_LESION_URL : DOCTOLIB_URL, '_blank')}
               >
                 Termin buchen
               </Button>
