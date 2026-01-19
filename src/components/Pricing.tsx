@@ -1,14 +1,9 @@
 import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { openingHours } from "@/lib/openingHours";
-import { BookingDialog } from "@/components/BookingDialog";
-import { WalkInDialog } from "@/components/WalkInDialog";
-import { useState } from "react";
+
+const DOCTOLIB_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/motives?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSector=public&insuranceSectorEnabled=true&bookingFunnelSource=profile";
 
 export const Pricing = () => {
-  const [showBooking, setShowBooking] = useState(false);
-  const [showWalkIn, setShowWalkIn] = useState(false);
   const plans = [{
     name: "Single Lesion",
     price: "ab 29",
@@ -30,8 +25,6 @@ export const Pricing = () => {
     popular: false
   }];
   return <section id="preise" className="py-12 sm:py-16 md:py-20 lg:py-28 xl:py-36 bg-muted/60">
-      <BookingDialog open={showBooking} onOpenChange={setShowBooking} />
-      <WalkInDialog open={showWalkIn} onOpenChange={setShowWalkIn} />
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20">
           <h2 className="sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight text-4xl">
@@ -67,23 +60,13 @@ export const Pricing = () => {
                   </li>)}
               </ul>
 
-              {plan.name === "Single Lesion" ? (
-                <Button 
-                  className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
-                  variant={plan.popular ? 'default' : 'outline'}
-                  onClick={() => setShowBooking(true)}
-                >
-                  Termin buchen
-                </Button>
-              ) : (
-                <Button 
-                  className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
-                  variant={plan.popular ? 'default' : 'outline'}
-                  onClick={() => setShowBooking(true)}
-                >
-                  Termin buchen
-                </Button>
-              )}
+              <Button 
+                className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
+                variant={plan.popular ? 'default' : 'outline'}
+                onClick={() => window.open(DOCTOLIB_URL, '_blank')}
+              >
+                Termin buchen
+              </Button>
             </div>)}
         </div>
 
