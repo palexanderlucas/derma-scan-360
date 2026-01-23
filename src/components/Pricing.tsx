@@ -1,8 +1,8 @@
 import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const DOCTOLIB_SINGLE_LESION_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/availabilities?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSectorEnabled=true&insuranceSector=public&motiveIds%5B%5D=15245959&bookingFunnelSource=deep_link";
-const DOCTOLIB_FULLBODY_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/availabilities?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSectorEnabled=true&insuranceSector=public&motiveIds%5B%5D=15245898&bookingFunnelSource=deep_link";
+const DOCTOLIB_SINGLE_LESION_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/availabilities?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSectorEnabled=true&insuranceSector=private&motiveIds%5B%5D=15245959&bookingFunnelSource=profile";
+const DOCTOLIB_FULLBODY_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/availabilities?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSectorEnabled=true&insuranceSector=private&motiveIds%5B%5D=15245898&bookingFunnelSource=profile";
 
 export const Pricing = () => {
   const plans = [{
