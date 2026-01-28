@@ -17,7 +17,7 @@ export const Location = () => {
           {/* Map placeholder */}
           <div className="relative h-[280px] sm:h-[350px] md:h-[400px] lg:h-[500px] bg-muted rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
             <div className="absolute inset-0 flex items-center justify-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.8!2d8.0436111!3d52.2761111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9e58c5bb8b3a5%3A0x8f8f8f8f8f8f8f8f!2sDermaScan360!5e0!3m2!1sde!2sde!4v1706000000000!5m2!1sde!2sde" width="100%" height="100%" style={{
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.8!2d8.043476!3d52.276164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9e58317b6ed4d%3A0xf6e32df8bba73f77!2sDermaScan360!5e0!3m2!1sde!2sde!4v1706000000000!5m2!1sde!2sde" width="100%" height="100%" style={{
               border: 0
             }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="DermaScan360 Standort Osnabrück"></iframe>
             </div>
