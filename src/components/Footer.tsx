@@ -6,6 +6,8 @@ import { mainNavItems, corporateNavItems } from "@/lib/navigation";
 import { scrollToSection, scrollToTop } from "@/lib/scrollUtils";
 import { cn } from "@/lib/utils";
 
+const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/8HeqvpVGXtFA8QQh7";
+
 export const Footer = () => {
   const activeSection = useActiveSection();
   const location = useLocation();
@@ -65,10 +67,13 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Kontakt</h3>
             <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
-              <div className="flex items-start gap-1.5 sm:gap-2">
+              <button 
+                onClick={() => window.open(GOOGLE_MAPS_URL, '_blank')}
+                className="flex items-start gap-1.5 sm:gap-2 hover:text-primary transition-colors text-left"
+              >
                 <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 mt-0.5 sm:mt-1 shrink-0" />
                 <span>Möserstraße 2-3<br />49074 Osnabrück</span>
-              </div>
+              </button>
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
                 <span>info@dermascan360.de</span>
