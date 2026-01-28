@@ -1,6 +1,9 @@
 import { MapPin, Car, Train, Bus, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { openingHours } from "@/lib/openingHours";
+
+const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/8HeqvpVGXtFA8QQh7";
+
 export const Location = () => {
   return <section id="standort" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-3 sm:px-4">
@@ -15,7 +18,7 @@ export const Location = () => {
           {/* Map placeholder */}
           <div className="relative h-[280px] sm:h-[350px] md:h-[400px] lg:h-[500px] bg-muted rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
             <div className="absolute inset-0 flex items-center justify-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.1871234567890!2d8.043611!3d52.278611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE2JzQzLjAiTiA4wrAwMiczdTciRQ!5e0!3m2!1sde!2sde!4v1234567890" width="100%" height="100%" style={{
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.8!2d8.0436111!3d52.2761111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9e5824c5c5c5d%3A0x4a5c5c5c5c5c5c5c!2sM%C3%B6serstra%C3%9Fe%202-3%2C%2049074%20Osnabr%C3%BCck!5e0!3m2!1sde!2sde!4v1706000000000!5m2!1sde!2sde" width="100%" height="100%" style={{
               border: 0
             }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="DermaScan360 Standort Osnabrück"></iframe>
             </div>
@@ -33,7 +36,11 @@ export const Location = () => {
                   Möserstraße 2-3<br />
                   49074 Osnabrück
                 </p>
-                <Button variant="link" className="px-0 mt-1.5 sm:mt-2 text-xs sm:text-sm">
+                <Button 
+                  variant="link" 
+                  className="px-0 mt-1.5 sm:mt-2 text-xs sm:text-sm"
+                  onClick={() => window.open(GOOGLE_MAPS_URL, '_blank')}
+                >
                   In Google Maps öffnen
                 </Button>
               </div>
