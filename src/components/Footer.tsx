@@ -72,10 +72,13 @@ export const Footer = () => {
                 <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 mt-0.5 sm:mt-1 shrink-0" />
                 <span>Möserstraße 2-3<br />49074 Osnabrück</span>
               </button>
-              <div className="flex items-center gap-1.5 sm:gap-2">
+              <a 
+                href="mailto:info@dermascan360.de"
+                className="flex items-center gap-1.5 sm:gap-2 hover:text-primary transition-colors"
+              >
                 <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
                 <span>info@dermascan360.de</span>
-              </div>
+              </a>
             </div>
           </div>
 
