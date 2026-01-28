@@ -1,6 +1,5 @@
-import { MapPin, Car, Train, Bus, Clock } from "lucide-react";
+import { MapPin, Car, Train, Bus } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { openingHours } from "@/lib/openingHours";
 
 const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/8HeqvpVGXtFA8QQh7";
 
@@ -84,21 +83,6 @@ export const Location = () => {
               </div>
             </div>
 
-            {/* Opening Hours */}
-            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 bg-card rounded-lg sm:rounded-xl border">
-              <div className="p-2 sm:p-2.5 md:p-3 bg-primary/10 rounded-lg shrink-0">
-                <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-              </div>
-              <div className="w-full">
-                <h3 className="font-semibold text-base sm:text-lg mb-2 sm:mb-3">Öffnungszeiten</h3>
-                <div className="space-y-1.5">
-                  {openingHours.map(item => <div key={item.day} className="flex justify-between text-xs sm:text-sm">
-                      <span className="text-muted-foreground">{item.day}</span>
-                      <span className="font-medium">{item.hours}</span>
-                    </div>)}
-                </div>
-              </div>
-            </div>
 
             {/* Coming Soon */}
             <div className="p-4 sm:p-5 md:p-6 bg-accent/50 rounded-lg sm:rounded-xl">

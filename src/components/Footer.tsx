@@ -1,6 +1,5 @@
-import { MapPin, Mail, Clock } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import { openingHours } from "@/lib/openingHours";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { mainNavItems, corporateNavItems } from "@/lib/navigation";
 import { scrollToSection, scrollToTop } from "@/lib/scrollUtils";
@@ -43,8 +42,7 @@ export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-100 py-8 sm:py-10 md:py-12">
       <div className="container mx-auto px-3 sm:px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
-          {/* Logo & Description */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-7 md:mb-8">
           <div className="space-y-3 sm:space-y-4">
             {isMainPage ? (
               <button 
@@ -81,20 +79,6 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Opening Hours */}
-          <div>
-            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Öffnungszeiten</h3>
-            <div className="space-y-2 text-xs sm:text-sm text-gray-400">
-              <div className="flex items-start gap-1.5 sm:gap-2">
-                <Clock className="h-3.5 w-3.5 sm:h-4 sm:w-4 mt-0.5 sm:mt-1 shrink-0" />
-                <div>
-                  {openingHours.map(item => (
-                    <p key={item.day}>{item.day}: {item.hours}</p>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Quick Links */}
           <div>
