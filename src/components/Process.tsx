@@ -36,6 +36,10 @@ export const Process = () => {
     title: "Auflichtmikroskopie",
     description: "Unser Team erstellt auflichtmikroskopische Nahaufnahmen aller gewünschten Hautveränderungen."
   }, {
+    icon: CheckCircle,
+    title: "Qualitätsprüfung & Analyse",
+    description: "Die angefertigten Aufnahmen werden nach Ihrem Besuch bei DermaScan360 von einem Dermatologen geprüft und befundet - unterstützt von einer künstlichen Intelligenz."
+  }, {
     icon: FileText,
     title: "Arztbrief & Empfehlung",
     description: "Sie erhalten innerhalb weniger Tage einen fachärztlichen Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten erfolgt eine ärztliche Befundbesprechung telefonisch."
