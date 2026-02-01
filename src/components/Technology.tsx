@@ -99,7 +99,10 @@ export const Technology = () => {
 
           <TechCard icon={Brain} title="Dermatologische Befundung" image={doctorAnalysis} imageAlt="Dermatologische Befundung durch Hautarzt">
             <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-              Nach Ihrem Besuch bei DermaScan360 werden die gesammelten Aufnahmen unseren Hautärzten zur Befundung bereitgestellt. Alle Befunde werden zusätzlich von Frau Reuther geprüft und signiert. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster, verfügt über eine Zusatzbezeichnung für Tumortherapien und leitet regelmäßig Fortbildungen zu Hautkrebsvorsorge und Auflichtmikroskopie.
+              Die Befundung durch unsere Hautärzt:innen erfolgt nach Ihrem Besuch bei DermaScan360 zeitversetzt anhand der digitalen Fotoaufnahmen. Bei Ihrem Termin vor Ort besteht kein direkter Arztkontakt.
+            </p>
+            <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mt-4">
+              Alle Befunde werden von Frau Reuther geprüft und signiert. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster, verfügt über eine Zusatzbezeichnung für Tumortherapien und leitet regelmäßig Fortbildungen zu Hautkrebsvorsorge und Auflichtmikroskopie.
             </p>
             <p className="text-base lg:text-lg text-muted-foreground leading-relaxed mt-4">
               Als Ergebnis erhalten Sie einen Arztbrief mit der medizinischen Einschätzung und konkreten Handlungsempfehlung. Bei Auffälligkeiten erfolgt zusätzlich eine persönliche telefonische Besprechung des Untersuchungsergebnis.
