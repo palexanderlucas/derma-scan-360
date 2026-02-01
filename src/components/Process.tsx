@@ -33,8 +33,8 @@ export const Process = () => {
     description: "Wir garantieren einen Termin innerhalb von drei Werktagen. Notfalls geben wir weitere Termine frei."
   }, {
     icon: Scan,
-    title: "Auflichtmikroskopie",
-    description: "Unser Team erstellt auflichtmikroskopische Nahaufnahmen aller gewünschten Hautveränderungen."
+    title: "Gezielte-Hautkrebs-Untersuchung",
+    description: "Unser Team erstellt mit einem Dermatoskop hochauflösende Nahaufnahmen aller gewünschten Muttermale/Hautveränderungen. Vor Ort besteht kein direkter Arztkontakt."
   }, {
     icon: CheckCircle,
     title: "Qualitätsprüfung & Analyse",
