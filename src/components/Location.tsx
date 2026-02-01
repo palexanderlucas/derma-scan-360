@@ -1,7 +1,9 @@
 import { MapPin, Car, Train, Bus } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { MapConsent } from "@/components/MapConsent";
 
 const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/8HeqvpVGXtFA8QQh7";
+const GOOGLE_MAPS_EMBED_URL = "https://www.google.com/maps?q=DermaScan360+Osnabrück&output=embed";
 
 export const Location = () => {
   return <section id="standort" className="py-12 sm:py-16 md:py-20 bg-background">
@@ -14,13 +16,13 @@ export const Location = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 max-w-6xl mx-auto">
-          {/* Map placeholder */}
+          {/* Map with Cookie Consent */}
           <div className="relative h-[280px] sm:h-[350px] md:h-[400px] lg:h-[500px] bg-muted rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <iframe src="https://www.google.com/maps?q=DermaScan360+Osnabrück&output=embed" width="100%" height="100%" style={{
-              border: 0
-            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="DermaScan360 Standort Osnabrück"></iframe>
-            </div>
+            <MapConsent
+              mapUrl={GOOGLE_MAPS_EMBED_URL}
+              title="DermaScan360 Standort Osnabrück"
+              className="absolute inset-0"
+            />
           </div>
 
           <div className="space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8">
