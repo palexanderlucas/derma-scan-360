@@ -7,9 +7,9 @@ export const Process = () => {
     title: "Terminvereinbarung",
     description: "Wir garantieren einen Termin innerhalb von drei Werktagen. Notfalls geben wir weitere Termine frei."
   }, {
-    icon: Scan,
+  icon: Scan,
     title: "Ganzkörper-Screening",
-    description: "Zuerst wird das Total-Body-Mapping erstellt. Danach werden auffällige Veränderungen mit einem Dermatoskop aufgenommen. In unserer Praxis begleitet Sie unser speziell geschultes Team."
+    description: "Zuerst wird das Total-Body-Mapping erstellt. Danach werden auffällige Veränderungen mit einem Dermatoskop dokumentiert. In unserer Praxis begleitet Sie unser speziell geschultes Team. Ein direkter Arztkontakt besteht nicht."
   }, {
     icon: CheckCircle,
     title: "Qualitätsprüfung",
