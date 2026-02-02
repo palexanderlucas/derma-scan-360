@@ -26,20 +26,23 @@ const Privacy = () => {
     <div className="min-h-screen">
       <Header />
       <main className="container mx-auto px-4 pt-28 pb-16 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">Datenschutz</h1>
+        <h1 className="text-4xl font-bold mb-4">Datenschutz</h1>
+        <p className="text-muted-foreground mb-8">Stand: Januar 2026</p>
         
         <div className="prose prose-lg max-w-none space-y-8 text-foreground">
           <p>
-            Diese Datenschutzerklärung informiert darüber, welche personenbezogenen Daten beim Besuch der Website von DermaScan360 – privatärztliche Berufsausübungsgemeinschaft Reuther/Hardung/Lucas – verarbeitet werden. Die Seite dient ausschließlich der Information, Kontaktaufnahme und Terminvereinbarung; es werden keine medizinischen Befunde oder Hautbilder über die Website hochgeladen.
+            Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Nachfolgend informieren wir Sie darüber, welche personenbezogenen Daten beim Besuch unserer Website verarbeitet werden, zu welchen Zwecken dies geschieht und welche Rechte Ihnen nach der Datenschutz-Grundverordnung (DSGVO) zustehen. Diese Website dient ausschließlich der Information, der Kontaktaufnahme sowie der Terminvereinbarung. Über die Website selbst werden keine medizinischen Befunde oder Hautbilder erhoben oder verarbeitet.
           </p>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">1. Verantwortliche Stelle & Kontakt</h2>
+            <h2 className="text-2xl font-semibold mb-4">1. Verantwortliche Stelle</h2>
             <p>
-              Verantwortlich für die Datenverarbeitung ist<br />
-              Privatärztliche Berufsausübungsgemeinschaft Judith Reuther, Leon Hardung, Alexander Lucas<br />
+              DermaScan360 - Privatärztliche Berufsausübungsgemeinschaft Judith Reuther, Leon Hardung, Alexander Lucas<br />
               Möserstraße 2–3, 49074 Osnabrück<br />
-              E-Mail: info@dermascan360.de
+              E-Mail:{" "}
+              <a href="mailto:info@dermascan360.de" className="text-primary hover:underline">
+                info@dermascan360.de
+              </a>
             </p>
           </section>
 
@@ -51,38 +54,53 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">3. Welche Daten wir beim Besuch der Website erheben</h2>
+            <h2 className="text-2xl font-semibold mb-4">3. Datenerfassung beim Besuch der Website</h2>
             
-            <h3 className="text-xl font-semibold mt-6 mb-3">a) Server-Logdateien</h3>
+            <h3 className="text-xl font-semibold mt-6 mb-3">a) Server-Logdateien / Hosting</h3>
             <p>
-              Beim Aufruf der Website erhebt der Hosting-Provider automatisch technische Daten (z. B. Browsertyp, Betriebssystem, Referrer, Zeitpunkt, IP-Adresse). Diese Daten dienen der Bereitstellung, Sicherheit und Fehlerbehebung und werden nicht mit anderen Datenquellen zusammengeführt.
+              Unsere Website wird gehostet bei Vercel Inc.. Beim Aufruf der Website erhebt der Hosting-Anbieter automatisch technische Daten (sogenannte Server-Logdateien), z. B. Browsertyp, Betriebssystem, Referrer, Hostname, Zeitpunkt der Anfrage und IP-Adresse. Diese Daten dienen der technischen Bereitstellung, Sicherheit und Stabilität der Website und werden nicht mit anderen Datenquellen zusammengeführt.
             </p>
             <p>
-              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse).
+              Da sich der Sitz des Hosting-Anbieters in den USA befinden kann, kann es zu einer Übermittlung personenbezogener Daten in ein Drittland kommen. Die Übermittlung erfolgt auf Grundlage eines mit dem Anbieter geschlossenen Auftragsverarbeitungsvertrags (Art. 28 DSGVO) sowie geeigneter Garantien für Drittlandübermittlungen (z. B. Standardvertragsklauseln der EU-Kommission). Weitere Informationen zum DPA von Vercel finden Sie hier:{" "}
+              <a 
+                href="https://vercel.com/legal/dpa" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-primary hover:underline"
+              >
+                https://vercel.com/legal/dpa
+              </a>
+            </p>
+            <p>
+              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und funktionsfähigen Website)
             </p>
 
             <h3 className="text-xl font-semibold mt-6 mb-3">b) Cookies & optionale Drittinhalte</h3>
             <p>
-              Die Website verwendet ausschließlich technisch notwendige Cookies für den Betrieb der Seite. Optionale Drittinhalte (z. B. die Kartenansicht) werden erst nach Ihrer ausdrücklichen Einwilligung geladen. Beim Laden optionaler Inhalte können beim Drittanbieter Cookies oder vergleichbare Technologien gesetzt werden.
+              Unsere Website verwendet ausschließlich technisch notwendige Cookies, die für den Betrieb der Seite erforderlich sind. Optionale Drittinhalte (z. B. Kartenansichten) werden erst nach Ihrer ausdrücklichen Einwilligung geladen.
             </p>
             <p>
-              <strong>Rechtsgrundlagen:</strong> technisch notwendige Cookies: Art. 6 Abs. 1 lit. f DSGVO; optionale Inhalte nach Einwilligung: Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 TTDSG.
+              Derzeit setzen wir auf dieser Landingpage keine Tracking-Tools wie Google Analytics ein.
             </p>
+            <p>
+              <strong>Rechtsgrundlagen:</strong>
+            </p>
+            <ul className="list-disc pl-6 space-y-1">
+              <li>technisch notwendige Cookies: Art. 6 Abs. 1 lit. f DSGVO</li>
+              <li>optionale Inhalte nach Einwilligung: Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 TTDSG</li>
+            </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">4. Google Maps (Click-to-load; Einwilligung in localStorage)</h2>
+            <h2 className="text-2xl font-semibold mb-4">4. Google Maps (Click-to-load) und Google-Dienste</h2>
             <p>
-              Die Kartenansicht wird über die Dienste von Google Ireland Limited bereitgestellt. Aus Datenschutzgründen zeigen wir zunächst einen Hinweis-Placeholder. Erst durch Ihren ausdrücklichen Klick wird das Google-Maps-iframe geladen.
+              Für einige Dienste (z. B. Karten, E-Mail-Dienst) nutzen wir Dienste von Google LLC. Auf der Website eingebundene Karten werden nur als Hinweis-Placeholder angezeigt; erst durch Ihren aktiven Klick auf „Karte laden" wird das Google-Maps-iframe geladen.
             </p>
             <p>
-              Beim Laden des iframe können technische Daten (z. B. IP-Adresse, Browser-Informationen) an Google übermittelt und in Drittländer übertragen werden. Die Übermittlung erfolgt auf Basis Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO i. V. m. § 25 TTDSG).
+              Beim Laden des iframe können technische Daten (z. B. IP-Adresse, Browser-Informationen) an Google übermittelt und ggf. in Drittländer (z. B. USA) übertragen werden. Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (bei der Kartenanzeige) bzw. auf der Grundlage eines AVV für Dienste, die wir als Auftragsverarbeiter verwenden.
             </p>
             <p>
-              <strong>Speicherung der Einwilligung:</strong> Ihre Zustimmung wird lokal in Ihrem Browser (localStorage) gespeichert, damit die Karte bei späteren Besuchen nicht erneut bestätigt werden muss. Standardmäßig wird die Einwilligung bis zu 12 Monate gespeichert, sofern Sie sie nicht vorher widerrufen oder löschen.
-            </p>
-            <p>
-              <strong>Widerruf:</strong> Sie können die Einwilligung jederzeit widerrufen — z. B. über die auf der Website bereitgestellte Funktion „Einwilligungen verwalten / Karte entziehen" oder durch Löschen des entsprechenden Eintrags im Browser-Speicher (localStorage). Nach Widerruf wird die Karte beim nächsten Aufruf nicht automatisch geladen.
+              Ihre Einwilligung zur Kartenanzeige wird im Browser lokal (localStorage) gespeichert, damit die Karte bei späteren Besuchen nicht erneut bestätigt werden muss. Sie können diese Einwilligung jederzeit widerrufen, z. B. durch Löschen des Browser-Speichers oder über eine auf der Website angebotene Widerrufs-Funktion.
             </p>
 
             {/* Interactive consent management box */}
@@ -126,71 +144,93 @@ const Privacy = () => {
             </div>
 
             <p className="mt-4">
-              Weitere Informationen zur Datenverarbeitung durch Google finden Sie in der{" "}
+              Weitere Informationen zur Datenverarbeitung durch Google:{" "}
               <a 
-                href="https://policies.google.com/privacy?hl=de" 
+                href="https://policies.google.com/privacy" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-primary hover:underline"
               >
-                Google-Datenschutzerklärung
-              </a>.
+                https://policies.google.com/privacy
+              </a>
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">5. Kontaktformular (E-Mail über Resend)</h2>
+            <h2 className="text-2xl font-semibold mb-4">5. Kontaktaufnahme</h2>
+            
+            <h3 className="text-xl font-semibold mt-6 mb-3">a) Kontaktformular (E-Mail-Versand über Resend)</h3>
             <p>
-              Wenn Sie das Kontaktformular nutzen, verarbeiten wir die dort angegebenen Daten (z. B. Name, E-Mail, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage. Der Versand der Nachricht erfolgt per E-Mail über den Dienst Resend. Eine Weitergabe Ihrer Kontaktdaten an Dritte erfolgt nicht ohne Ihre ausdrückliche Zustimmung.
+              Wenn Sie uns über das Kontaktformular kontaktieren, verarbeiten wir die von Ihnen gemachten Angaben (z. B. Name, E-Mail-Adresse, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage. Der Versand erfolgt per E-Mail über den Dienst Resend Inc.. Resend verarbeitet die Daten in unserem Auftrag; hierfür besteht ein Auftragsverarbeitungsvertrag (Art. 28 DSGVO). Aufgrund des Sitzes des Anbieters kann es zu Übermittlungen in Drittländer kommen; diese erfolgen auf Grundlage geeigneter Garantien (z. B. Standardvertragsklauseln). Weitere Informationen:{" "}
+              <a 
+                href="https://resend.com/legal/dpa" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-primary hover:underline"
+              >
+                https://resend.com/legal/dpa
+              </a>
             </p>
             <p>
-              <strong>Rechtsgrundlagen:</strong> Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Bearbeitung der Anfrage).
+              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen)
+            </p>
+
+            <h3 className="text-xl font-semibold mt-6 mb-3">b) Direktkontakt per E-Mail (Google Workspace)</h3>
+            <p>
+              Wenn Sie uns direkt per E-Mail kontaktieren, werden Ihre Angaben (E-Mail-Adresse, Inhalt der Nachricht) zur Bearbeitung Ihres Anliegens verarbeitet. Unsere E-Mail-Postfächer werden über Google Workspace betrieben (Google LLC). Google verarbeitet diese Daten in unserem Auftrag; für diese Verarbeitung besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO. Es kann zu Übermittlungen in Drittländer kommen; diese erfolgen auf Grundlage geeigneter Garantien (z. B. Standardvertragsklauseln). Weitere Informationen:{" "}
+              <a 
+                href="https://policies.google.com/privacy" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-primary hover:underline"
+              >
+                https://policies.google.com/privacy
+              </a>
             </p>
             <p>
-              Daten aus Kontaktanfragen werden gelöscht, sobald der Zweck entfällt und keine gesetzlichen Aufbewahrungsfristen bestehen.
+              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">6. Online-Terminbuchung (Doctolib)</h2>
             <p>
-              Für die Terminvereinbarung nutzen wir den externen Dienst Doctolib GmbH. Die von Ihnen eingegebenen Termin- und Kontaktdaten werden direkt an Doctolib übermittelt und dort verarbeitet; mit Doctolib besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO. Die Verarbeitung dient der Organisation und Durchführung von Terminen.
+              Für die Online-Terminvereinbarung nutzen wir den externen Dienst Doctolib GmbH. Die von Ihnen eingegebenen Termin- und Kontaktdaten werden direkt an Doctolib übermittelt und dort verarbeitet. Mit Doctolib besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO.
             </p>
             <p>
-              <strong>Rechtsgrundlage:</strong> in der Regel Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Vertragsanbahnung). Bei Eingabe besonderer Kategorien personenbezogener Daten ist ggf. Art. 9 DSGVO (Einwilligung) einschlägig.
+              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertrag bzw. Vertragsanbahnung); bei der Verarbeitung besonderer Kategorien personenbezogener Daten ggf. Art. 9 DSGVO.
             </p>
             <p>
-              Bitte beachten Sie die{" "}
+              Weitere Informationen zur Datenverarbeitung durch Doctolib (PDF):{" "}
               <a 
                 href="https://media.doctolib.com/image/upload/v1753974148/legal/B2C-PrivacyPolicy-JULY_25-DE.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-primary hover:underline"
               >
-                Datenschutzhinweise von Doctolib
-              </a>{" "}
-              auf deren Website.
+                https://media.doctolib.com/image/upload/v1753974148/legal/B2C-PrivacyPolicy-JULY_25-DE.pdf
+              </a>
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">7. Keine Nutzung von Analyse-Tools</h2>
+            <h2 className="text-2xl font-semibold mb-4">7. Drittlandübermittlungen</h2>
             <p>
-              Auf dieser Landingpage wird kein Google Analytics oder ein vergleichbares Webtracking-Tool eingesetzt. Es findet kein Tracking zu Marketing- oder Analysezwecken statt.
+              Soweit personenbezogene Daten in Länder außerhalb des Europäischen Wirtschaftsraums übermittelt werden, sorgen wir — soweit erforderlich und technisch/vertraglich möglich — durch Auftragsverarbeitungsverträge und geeignete Garantien (z. B. Standardvertragsklauseln) für ein angemessenes Datenschutzniveau.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">8. Sicherheit</h2>
+            <h2 className="text-2xl font-semibold mb-4">8. Sicherheit (TLS/SSL)</h2>
             <p>
-              Wir verwenden TLS/SSL-Verschlüsselung, um die Vertraulichkeit der Datenübertragung zu schützen. Trotzdem lässt sich eine Übertragung über das Internet nie vollständig gegen Zugriffe Dritter absichern.
+              Diese Website nutzt eine TLS/SSL-Verschlüsselung, um übermittelte Daten vor unbefugtem Zugriff zu schützen. Ein vollständiger Schutz kann bei der Übertragung über das Internet jedoch nicht garantiert werden.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">9. Speicherdauer</h2>
             <p>
-              Soweit in dieser Erklärung nicht anders angegeben, speichern wir personenbezogene Daten nur so lange, wie es für die Zwecke der Verarbeitung erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Einwilligungen (z. B. für optionale Inhalte) bleiben bis zum Widerruf gespeichert; die localStorage-Einwilligung zur Kartenanzeige wird standardmäßig bis zu 12 Monate gespeichert.
+              Personenbezogene Daten werden nur so lange gespeichert, wie es für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen. Einwilligungen (z. B. für optionale Inhalte) bleiben bis zum Widerruf gespeichert; die localStorage-Einwilligung zur Kartenanzeige wird standardmäßig bis zu 12 Monate gespeichert, sofern nicht anders angegeben.
             </p>
           </section>
 
@@ -206,9 +246,9 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">11. Änderungen dieser Erklärung</h2>
+            <h2 className="text-2xl font-semibold mb-4">11. Änderungen dieser Datenschutzerklärung</h2>
             <p>
-              Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen (z. B. bei geänderten technischen Abläufen oder gesetzlichen Vorgaben). Die jeweils aktuelle Fassung ist auf der Website hinterlegt.
+              Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen (z. B. bei technischen Änderungen oder neuen gesetzlichen Vorgaben). Die jeweils aktuelle Fassung ist auf dieser Website verfügbar.
             </p>
           </section>
         </div>
