@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CorporateHeader } from "@/components/CorporateHeader";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -324,6 +325,11 @@ const Corporate = () => {
                 <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
                 </Button>
+
+                <p className="text-sm text-muted-foreground text-center mt-4">
+                  Mit dem Absenden des Formulars stimmen Sie der Verarbeitung Ihrer Daten zur Bearbeitung Ihrer Anfrage zu. Weitere Informationen finden Sie in unserer{" "}
+                  <Link to="/datenschutz" className="text-primary hover:underline">Datenschutzerklärung</Link>.
+                </p>
               </form>
 
               <div className="mt-8 text-center">
