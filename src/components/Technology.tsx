@@ -35,7 +35,7 @@ export const Technology = () => {
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 max-w-[1600px]">
         <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 tracking-tight">
-            Hautkrebsvorsorge auf höchstem Niveau
+            Hautkrebsscreening auf höchstem Niveau
           </h2>
           <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2">
             DermaScan360 kombiniert modernste Medizintechnik mit der Expertise erfahrener Dermatologen für eine präzise Früherkennung von Hautkrebs.
