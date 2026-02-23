@@ -1,22 +1,27 @@
 
 
-## Team-Abschnitt "Wer wir sind" vorübergehend ausblenden
+## Wartungsmodus aktivieren (503 - Service Temporarily Unavailable)
 
-Der Team-Abschnitt wird aus der Hauptseite entfernt, aber die Komponente (`src/components/Team.tsx`) bleibt vollständig erhalten, sodass er jederzeit mit einem kurzen Prompt wiederhergestellt werden kann.
+Beide Seiten (Hauptseite und Corporate-Seite) werden mit einem vollflachigen Wartungs-Overlay blockiert. Die gesamte bestehende Codebasis bleibt unangetastet -- nur eine neue Komponente und minimale Einbindungen werden hinzugefuegt.
 
-### Änderungen
+### Aenderungen
 
-**1. `src/pages/Index.tsx`**
-- Import von `Team` entfernen
-- `<Team />` aus dem JSX entfernen
+**1. Neue Komponente `src/components/MaintenanceOverlay.tsx` erstellen**
+- Vollbild-Overlay (fixed, z-60, ueber allem) mit zentriertem Inhalt
+- Zeigt an: "Technische Wartungsarbeiten" als Ueberschrift
+- Darunter: "503 - Service Temporarily Unavailable"
+- Schlichtes, professionelles Design passend zum bestehenden Styling
+- Kein Schliessen-Button -- die Seite ist komplett blockiert
 
-**2. `src/lib/navigation.ts`**
-- Den Navigationseintrag `{ id: "team", label: "Team" }` aus `mainNavItems` entfernen, damit kein toter Link in Header/Footer erscheint
+**2. `src/pages/Index.tsx` anpassen**
+- Import von `MaintenanceOverlay` hinzufuegen
+- `<MaintenanceOverlay />` als erstes Element im Container rendern
 
-**3. `src/components/Team.tsx`**
-- Datei bleibt unverändert bestehen und kann sofort wieder eingebunden werden
+**3. `src/pages/Corporate.tsx` anpassen**
+- Import von `MaintenanceOverlay` hinzufuegen
+- `<MaintenanceOverlay />` als erstes Element im Container rendern
 
 ### Wiederherstellung
 
-Um den Abschnitt wiederherzustellen, genügt der Prompt: *"Füge den Team-Abschnitt 'Wer wir sind' wieder ein"* -- dann wird `<Team />` wieder in `Index.tsx` (zwischen `MunicipalityCTA` und `FAQ`) eingefügt und der Navigations-Eintrag wiederhergestellt.
+Um den Wartungsmodus zu deaktivieren, genuegt der Prompt: *"Entferne den Wartungsmodus und stelle die Website wieder her"* -- dann werden die drei Zeilen (Import + Komponente) aus `Index.tsx` und `Corporate.tsx` entfernt und die `MaintenanceOverlay`-Komponente geloescht. Der gesamte Seiteninhalt bleibt darunter vollstaendig erhalten und wird sofort wieder sichtbar.
 
