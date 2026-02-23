@@ -10,7 +10,7 @@ export const mainNavItems: NavItem[] = [
   { id: "standort", label: "Standort" },
   { id: "unternehmen", label: "Für Unternehmen & Behörden" },
   { id: "kommunen", label: "Für Kommunen" },
-  { id: "team", label: "Team" },
+  
   { id: "faq", label: "FAQ" },
 ];
 
