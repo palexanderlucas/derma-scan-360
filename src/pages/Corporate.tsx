@@ -1,3 +1,4 @@
+import { MaintenanceOverlay } from "@/components/MaintenanceOverlay";
 import { Link } from "react-router-dom";
 import { CorporateHeader } from "@/components/CorporateHeader";
 import { Footer } from "@/components/Footer";
@@ -75,6 +76,7 @@ const Corporate = () => {
 
   return (
     <div className="min-h-screen">
+      <MaintenanceOverlay />
       <Helmet>
         <title>DermaScan360: Hautkrebs-Screening für Unternehmen</title>
         <meta name="description" content="Hautkrebsvorsorge vor Ort in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise" />
