@@ -31,13 +31,13 @@ const Privacy = () => {
         
         <div className="prose prose-lg max-w-none space-y-8 text-foreground">
           <p>
-            Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Nachfolgend informieren wir Sie darüber, welche personenbezogenen Daten beim Besuch unserer Website verarbeitet werden, zu welchen Zwecken dies geschieht und welche Rechte Ihnen nach der Datenschutz-Grundverordnung (DSGVO) zustehen. Diese Website dient ausschließlich der Information, der Kontaktaufnahme sowie der Terminvereinbarung. Über die Website selbst werden keine medizinischen Befunde oder Hautbilder erhoben oder verarbeitet.
+            Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Nachfolgend informieren wir Sie darüber, welche personenbezogenen Daten beim Besuch unserer Website verarbeitet werden, zu welchen Zwecken dies geschieht und welche Rechte Ihnen nach der Datenschutz-Grundverordnung (DSGVO) zustehen. Diese Website dient ausschließlich der Information, der Kontaktaufnahme sowie der Terminvereinbarung. Über die Website selbst werden keine medizinischen Befunde oder Hautbilder erhoben oder verarbeitet. Die medizinische Dokumentation und Befundung erfolgt ausschließlich außerhalb der Website in gesonderten, geschützten Systemen.
           </p>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">1. Verantwortliche Stelle</h2>
             <p>
-              DermaScan360 - Privatärztliche Berufsausübungsgemeinschaft Judith Reuther, Leon Hardung, Alexander Lucas<br />
+              DermaScan360 – Privatärztliche Berufsausübungsgemeinschaft (GbR) vertreten durch Dr. med. Judith Reuther, Dr. med. Leon Hardung, Dr. med. Alexander Lucas<br />
               Möserstraße 2–3, 49074 Osnabrück<br />
               E-Mail:{" "}
               <a href="mailto:info@dermascan360.de" className="text-primary hover:underline">
@@ -51,6 +51,26 @@ const Privacy = () => {
             <p>
               Sie haben nach der DSGVO u. a. die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerruf erteilter Einwilligungen sowie ein Beschwerderecht bei der Aufsichtsbehörde. Widerrufe berühren nicht die Rechtmäßigkeit bis zum Widerruf erfolgter Verarbeitungen.
             </p>
+            <p>
+              Sie haben unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren.
+            </p>
+            <p>Zuständige Aufsichtsbehörde für unser Unternehmen ist:</p>
+            <p>
+              Die Landesbeauftragte für den Datenschutz Niedersachsen<br />
+              Prinzenstraße 5<br />
+              30159 Hannover
+            </p>
+            <p>
+              Telefon: +49 (0) 511 120-4500<br />
+              E-Mail:{" "}
+              <a href="mailto:poststelle@lfd.niedersachsen.de" className="text-primary hover:underline">
+                poststelle@lfd.niedersachsen.de
+              </a><br />
+              Website:{" "}
+              <a href="https://lfd.niedersachsen.de" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                https://lfd.niedersachsen.de
+              </a>
+            </p>
           </section>
 
           <section>
@@ -62,12 +82,7 @@ const Privacy = () => {
             </p>
             <p>
               Da sich der Sitz des Hosting-Anbieters in den USA befinden kann, kann es zu einer Übermittlung personenbezogener Daten in ein Drittland kommen. Die Übermittlung erfolgt auf Grundlage eines mit dem Anbieter geschlossenen Auftragsverarbeitungsvertrags (Art. 28 DSGVO) sowie geeigneter Garantien für Drittlandübermittlungen (z. B. Standardvertragsklauseln der EU-Kommission). Weitere Informationen zum DPA von Vercel finden Sie hier:{" "}
-              <a 
-                href="https://vercel.com/legal/dpa" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-primary hover:underline"
-              >
+              <a href="https://vercel.com/legal/dpa" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 https://vercel.com/legal/dpa
               </a>
             </p>
@@ -94,7 +109,7 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">4. Google Maps (Click-to-load) und Google-Dienste</h2>
             <p>
-              Für einige Dienste (z. B. Karten, E-Mail-Dienst) nutzen wir Dienste von Google LLC. Auf der Website eingebundene Karten werden nur als Hinweis-Placeholder angezeigt; erst durch Ihren aktiven Klick auf „Karte laden" wird das Google-Maps-iframe geladen.
+              Für einige Dienste (z. B. Karten, E-Mail-Dienst) nutzen wir Dienste von Google Ireland Ltd. bzw. Google LLC. Auf der Website eingebundene Karten werden nur als Hinweis-Placeholder angezeigt; erst durch Ihren aktiven Klick auf „Karte laden" wird das Google-Maps-iframe geladen.
             </p>
             <p>
               Beim Laden des iframe können technische Daten (z. B. IP-Adresse, Browser-Informationen) an Google übermittelt und ggf. in Drittländer (z. B. USA) übertragen werden. Die Verarbeitung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (bei der Kartenanzeige) bzw. auf der Grundlage eines AVV für Dienste, die wir als Auftragsverarbeiter verwenden.
@@ -145,12 +160,7 @@ const Privacy = () => {
 
             <p className="mt-4">
               Weitere Informationen zur Datenverarbeitung durch Google:{" "}
-              <a 
-                href="https://policies.google.com/privacy" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-primary hover:underline"
-              >
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 https://policies.google.com/privacy
               </a>
             </p>
@@ -162,14 +172,12 @@ const Privacy = () => {
             <h3 className="text-xl font-semibold mt-6 mb-3">a) Kontaktformular (E-Mail-Versand über Resend)</h3>
             <p>
               Wenn Sie uns über das Kontaktformular kontaktieren, verarbeiten wir die von Ihnen gemachten Angaben (z. B. Name, E-Mail-Adresse, Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage. Der Versand erfolgt per E-Mail über den Dienst Resend Inc.. Resend verarbeitet die Daten in unserem Auftrag; hierfür besteht ein Auftragsverarbeitungsvertrag (Art. 28 DSGVO). Aufgrund des Sitzes des Anbieters kann es zu Übermittlungen in Drittländer kommen; diese erfolgen auf Grundlage geeigneter Garantien (z. B. Standardvertragsklauseln). Weitere Informationen:{" "}
-              <a 
-                href="https://resend.com/legal/dpa" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-primary hover:underline"
-              >
+              <a href="https://resend.com/legal/dpa" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 https://resend.com/legal/dpa
               </a>
+            </p>
+            <p>
+              Die Bereitstellung der im Kontaktformular abgefragten Daten ist für die Bearbeitung Ihrer Anfrage erforderlich. Ohne diese Angaben ist eine Bearbeitung nicht möglich. Bitte übermitteln Sie über das Kontaktformular keine sensiblen Gesundheitsdaten.
             </p>
             <p>
               <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen)
@@ -177,13 +185,8 @@ const Privacy = () => {
 
             <h3 className="text-xl font-semibold mt-6 mb-3">b) Direktkontakt per E-Mail (Google Workspace)</h3>
             <p>
-              Wenn Sie uns direkt per E-Mail kontaktieren, werden Ihre Angaben (E-Mail-Adresse, Inhalt der Nachricht) zur Bearbeitung Ihres Anliegens verarbeitet. Unsere E-Mail-Postfächer werden über Google Workspace betrieben (Google LLC). Google verarbeitet diese Daten in unserem Auftrag; für diese Verarbeitung besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO. Es kann zu Übermittlungen in Drittländer kommen; diese erfolgen auf Grundlage geeigneter Garantien (z. B. Standardvertragsklauseln). Weitere Informationen:{" "}
-              <a 
-                href="https://policies.google.com/privacy" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-primary hover:underline"
-              >
+              Wenn Sie uns direkt per E-Mail kontaktieren, werden Ihre Angaben (E-Mail-Adresse, Inhalt der Nachricht) zur Bearbeitung Ihres Anliegens verarbeitet. Unsere E-Mail-Postfächer werden über Google Workspace betrieben (Google Ireland Ltd. bzw. Google LLC). Google verarbeitet diese Daten in unserem Auftrag; für diese Verarbeitung besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO. Es kann zu Übermittlungen in Drittländer kommen; diese erfolgen auf Grundlage geeigneter Garantien (z. B. Standardvertragsklauseln). Weitere Informationen:{" "}
+              <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 https://policies.google.com/privacy
               </a>
             </p>
@@ -195,19 +198,17 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">6. Online-Terminbuchung (Doctolib)</h2>
             <p>
-              Für die Online-Terminvereinbarung nutzen wir den externen Dienst Doctolib GmbH. Die von Ihnen eingegebenen Termin- und Kontaktdaten werden direkt an Doctolib übermittelt und dort verarbeitet. Mit Doctolib besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO.
+              Für die Online-Terminvereinbarung nutzen wir den externen Dienst Doctolib GmbH. Die von Ihnen eingegebenen Termin- und Kontaktdaten werden direkt an Doctolib übermittelt und dort verarbeitet. Mit Doctolib besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO. Doctolib verarbeitet Daten teilweise als eigener Verantwortlicher. Nähere Informationen finden Sie in der Datenschutzerklärung von Doctolib.
+            </p>
+            <p>
+              Die Bereitstellung der im Rahmen der Terminbuchung abgefragten Daten ist für den Abschluss bzw. die Durchführung der Terminvereinbarung erforderlich. Ohne diese Angaben ist eine Terminbuchung nicht möglich.
             </p>
             <p>
               <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertrag bzw. Vertragsanbahnung); bei der Verarbeitung besonderer Kategorien personenbezogener Daten ggf. Art. 9 DSGVO.
             </p>
             <p>
               Weitere Informationen zur Datenverarbeitung durch Doctolib (PDF):{" "}
-              <a 
-                href="https://media.doctolib.com/image/upload/v1753974148/legal/B2C-PrivacyPolicy-JULY_25-DE.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-primary hover:underline"
-              >
+              <a href="https://media.doctolib.com/image/upload/v1753974148/legal/B2C-PrivacyPolicy-JULY_25-DE.pdf" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 https://media.doctolib.com/image/upload/v1753974148/legal/B2C-PrivacyPolicy-JULY_25-DE.pdf
               </a>
             </p>
@@ -249,6 +250,13 @@ const Privacy = () => {
             <h2 className="text-2xl font-semibold mb-4">11. Änderungen dieser Datenschutzerklärung</h2>
             <p>
               Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen (z. B. bei technischen Änderungen oder neuen gesetzlichen Vorgaben). Die jeweils aktuelle Fassung ist auf dieser Website verfügbar.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">12. Automatisierte Entscheidungsfindung</h2>
+            <p>
+              Eine automatisierte Entscheidungsfindung oder ein Profiling im Sinne von Art. 22 DSGVO findet auf dieser Website nicht statt.
             </p>
           </section>
         </div>
