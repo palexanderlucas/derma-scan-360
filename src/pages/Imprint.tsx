@@ -122,18 +122,6 @@ const Imprint = () => {
               </p>
             </section>
 
-            <hr className="border-border" />
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4">
-                Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
-              </h2>
-              <p>
-                Alexander Lucas<br />
-                Möserstraße 2–3<br />
-                49074 Osnabrück
-              </p>
-            </section>
           </div>
         </div>
       </main>
