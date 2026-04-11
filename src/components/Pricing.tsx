@@ -8,7 +8,7 @@ export const Pricing = () => {
   const plans = [{
     name: "Single Lesion",
     price: "ab 29",
-    delivery: "Erste Läsion 29€, jede weitere 10€",
+    delivery: "Erste Läsion ca. 29€, jede weitere ca. 10€",
     features: ["Auflichtmikroskopie aller gewünschten Hautveränderungen", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt"],
     negativeFeatures: ["kein Total-Body-Mapping"],
     popular: false
