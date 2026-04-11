@@ -14,7 +14,7 @@ export const Pricing = () => {
     popular: false
   }, {
     name: "Ganzkörper-Screening",
-    price: "149",
+    price: "ca. 149",
     delivery: "Befund innerhalb von 14 Tagen",
     features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief"],
     popular: true
