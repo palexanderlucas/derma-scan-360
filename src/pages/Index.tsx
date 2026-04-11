@@ -1,4 +1,5 @@
 
+import { MaintenanceOverlay } from "@/components/MaintenanceOverlay";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Technology } from "@/components/Technology";
