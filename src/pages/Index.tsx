@@ -1,4 +1,5 @@
 
+import { MaintenanceOverlay } from "@/components/MaintenanceOverlay";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Technology } from "@/components/Technology";
@@ -22,7 +23,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen overflow-x-hidden">
-      
+      <MaintenanceOverlay />
       <WelcomeDialog open={showWelcome} onOpenChange={setShowWelcome} />
       <Header />
       <main className="overflow-x-hidden">
