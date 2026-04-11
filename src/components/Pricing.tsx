@@ -20,7 +20,7 @@ export const Pricing = () => {
     popular: true
   }, {
     name: "Ganzkörper-Screening Express",
-    price: "199",
+    price: "ca. 199",
     delivery: "Befund innerhalb von 5 Werktagen",
     features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
     popular: false
