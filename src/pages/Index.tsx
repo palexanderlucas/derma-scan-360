@@ -23,7 +23,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen overflow-x-hidden">
-      
+      <MaintenanceOverlay />
       <WelcomeDialog open={showWelcome} onOpenChange={setShowWelcome} />
       <Header />
       <main className="overflow-x-hidden">
