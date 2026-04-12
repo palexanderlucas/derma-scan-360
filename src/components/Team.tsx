@@ -11,19 +11,23 @@ export const Team = () => {
     name: "Dr. med. Christian Drerup",
     image: christianImg,
     description: "Facharzt für Dermatologie."
-  }, {
-    name: "Judith Reuther",
-    image: judithImg,
-    description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
-  }, {
-    name: "Dr. med. Leon Hardung",
-    image: leonImg,
-    description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
-  }, {
-    name: "Dr. med. Alexander Lucas",
-    image: alexanderImg,
-    description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
-  }];
+  // Ausgeblendete Teammitglieder – zum Wiedereinblenden einfach in das `founders`-Array verschieben:
+  // {
+  //   name: "Judith Reuther",
+  //   image: judithImg,
+  //   description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
+  // },
+  // {
+  //   name: "Dr. med. Leon Hardung",
+  //   image: leonImg,
+  //   description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
+  // },
+  // {
+  //   name: "Dr. med. Alexander Lucas",
+  //   image: alexanderImg,
+  //   description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
+  // },
+  ];
   useEffect(() => {
     if (!api) return;
     setCurrent(api.selectedScrollSnap());
