@@ -28,7 +28,6 @@ export const Team = () => {
   //   image: alexanderImg,
   //   description: "Gründer von DermaScan360 - Arzt in der Hautklinik der Universitätsklinik Münster"
   // },
-  ];
   useEffect(() => {
     if (!api) return;
     setCurrent(api.selectedScrollSnap());
