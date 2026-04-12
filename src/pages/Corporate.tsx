@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 
 import { CorporateHeader } from "@/components/CorporateHeader";
+import { MaintenanceOverlay } from "@/components/MaintenanceOverlay";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -77,6 +78,7 @@ const Corporate = () => {
 
   return (
     <div className="min-h-screen">
+      <MaintenanceOverlay />
       
       <Helmet>
         <title>DermaScan360: Hautkrebs-Screening für Unternehmen</title>
