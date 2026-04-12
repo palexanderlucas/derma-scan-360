@@ -78,6 +78,7 @@ const Corporate = () => {
 
   return (
     <div className="min-h-screen">
+      <MaintenanceOverlay />
       
       <Helmet>
         <title>DermaScan360: Hautkrebs-Screening für Unternehmen</title>
