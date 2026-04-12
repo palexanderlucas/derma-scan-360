@@ -8,6 +8,10 @@ export const Team = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const founders = [{
+    name: "Dr. med. Christian Drerup",
+    image: christianImg,
+    description: "Facharzt für Dermatologie."
+  }, {
     name: "Judith Reuther",
     image: judithImg,
     description: "Gründerin von DermaScan360 - Fachärztin für Dermatologie. Frau Reuther ist stellvertretende Leiterin des Hauttumorzentrums der Universitätsklinik Münster mit der Zusatzbezeichnung für Medikamentöse Tumortherapien. Sie ist verantwortlich für die Qualitätssicherung und medizinische Befundung."
