@@ -1,3 +1,4 @@
+import christianImg from "@/assets/christian-drerup-hautarzt.webp";
 import judithImg from "@/assets/judith-reuther-hautarzt.webp";
 import leonImg from "@/assets/leon-hardung-hautarzt.webp";
 import alexanderImg from "@/assets/alexander-lucas-hautarzt.webp";
