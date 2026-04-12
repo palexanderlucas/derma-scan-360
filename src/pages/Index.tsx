@@ -9,6 +9,7 @@ import { Pricing } from "@/components/Pricing";
 import { Location } from "@/components/Location";
 import { CorporateCTA } from "@/components/CorporateCTA";
 import { MunicipalityCTA } from "@/components/MunicipalityCTA";
+import { Team } from "@/components/Team";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { WelcomeDialog } from "@/components/WelcomeDialog";
@@ -34,6 +35,7 @@ const Index = () => {
       <Location />
       <CorporateCTA />
       <MunicipalityCTA />
+      <Team />
       
       <FAQ />
       </main>
