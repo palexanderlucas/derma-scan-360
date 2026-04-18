@@ -5,7 +5,7 @@ export const Process = () => {
   const fullBodySteps = [{
     icon: Calendar,
     title: "Terminvereinbarung",
-    description: "Wir garantieren einen Termin innerhalb von drei Werktagen. Notfalls geben wir weitere Termine frei."
+    description: "Wir garantieren einen Termin innerhalb von sieben Werktagen. Notfalls geben wir weitere Termine frei."
   }, {
   icon: Scan,
     title: "Total-Body-Mapping",
@@ -30,7 +30,7 @@ export const Process = () => {
   const singleLesionSteps = [{
     icon: Calendar,
     title: "Terminvereinbarung",
-    description: "Wir garantieren einen Termin innerhalb von drei Werktagen. Notfalls geben wir weitere Termine frei."
+    description: "Wir garantieren einen Termin innerhalb von sieben Werktagen. Notfalls geben wir weitere Termine frei."
   }, {
     icon: Scan,
     title: "Gezielte-Hautkrebs-Untersuchung",
