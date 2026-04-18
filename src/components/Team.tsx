@@ -10,7 +10,7 @@ export const Team = () => {
   const founders = [{
     name: "Dr. med. Christian Drerup",
     image: christianImg,
-    description: "Facharzt für Dermatologie."
+    description: "Leitender Dermatologe und Praxismanager mit langjähriger Erfahrung - auch bekannt von doctorderma.com"
   }];
   // Ausgeblendete Teammitglieder – zum Wiedereinblenden einfach in das `founders`-Array verschieben:
   // {
