@@ -45,7 +45,7 @@ export const Technology = () => {
         <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-28 xl:space-y-36">
           <TechCard icon={Scan} title="Total-Body-Mapping" image={bodyScanner} imageAlt="Total-Body-Mapping Scanner">
             <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-              Unser Ganzkörper-Scanner erstellt eine detaillierte Landkarte Ihrer gesamten Hautoberfläche. Auffällige Hautveränderungen lassen sich dadurch gezielt erfassen und genau analysieren. Bei Verlaufskontrollen werden alle Läsionen softwaregestützt übereinandergelegt und über die Zeit hinweg verglichen. So können neue Muttermale sowie kleinste Veränderungen in Form oder Farbe frühzeitig erkannt werden. Die integrierte künstliche Intelligenz unterstützt diesen Prozess und erhöht die diagnostische Sicherheit des Screenings.
+              Unser Ganzkörper-Scanner erstellt eine detaillierte Landkarte Ihrer Hautoberfläche. Auffällige Hautveränderungen lassen sich dadurch gezielt erfassen und genau analysieren. Bei Verlaufskontrollen werden alle Läsionen softwaregestützt übereinandergelegt und über die Zeit hinweg verglichen. So können neue Muttermale sowie kleinste Veränderungen in Form oder Farbe frühzeitig erkannt werden. Die integrierte künstliche Intelligenz unterstützt diesen Prozess und erhöht die diagnostische Sicherheit des Screenings.
             </p>
             
             <div className="hidden lg:block space-y-4 sm:space-y-5 lg:space-y-6">
