@@ -51,7 +51,7 @@ export const Process = () => {
             Einfacher Ablauf – Hohe Qualität
           </h2>
           <p className="sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-2 text-base">
-            Wählen Sie zwischen unserem Ganzkörper-Screening oder der Untersuchung einzelner Hautveränderungen
+            Wählen Sie zwischen Hautkrebsscreening mittels Total-Body-Mapping oder der gezielten Untersuchung einzelner Hautveränderungen
           </p>
         </div>
 
