@@ -13,13 +13,13 @@ export const Pricing = () => {
     negativeFeatures: ["kein Total-Body-Mapping"],
     popular: false
   }, {
-    name: "Ganzkörper-Screening",
+    name: "Total-Body-Mapping",
     price: "ca. 149",
     delivery: "Befund innerhalb von 14 Tagen",
     features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief"],
     popular: true
   }, {
-    name: "Ganzkörper-Screening Express",
+    name: "Total-Body-Mapping Express",
     price: "ca. 199",
     delivery: "Befund innerhalb von 5 Werktagen",
     features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
