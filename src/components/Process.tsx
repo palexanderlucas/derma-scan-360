@@ -57,7 +57,7 @@ export const Process = () => {
 
         <Tabs defaultValue="fullbody" className="max-w-7xl mx-auto">
           <TabsList className="grid w-full max-w-md sm:max-w-lg mx-auto grid-cols-2 mb-6 sm:mb-8 md:mb-10 h-auto">
-            <TabsTrigger value="fullbody" className="text-xs sm:text-sm lg:text-base py-2.5 sm:py-3">Ganzkörper-Screening</TabsTrigger>
+            <TabsTrigger value="fullbody" className="text-xs sm:text-sm lg:text-base py-2.5 sm:py-3">Total-Body-Mapping</TabsTrigger>
             <TabsTrigger value="single" className="text-xs sm:text-sm lg:text-base py-2.5 sm:py-3">Einzelne Läsion</TabsTrigger>
           </TabsList>
 
