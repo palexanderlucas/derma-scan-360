@@ -10,7 +10,7 @@ export const Pricing = () => {
     price: "ab 29",
     delivery: "Erste Läsion ca. 29€, jede weitere ca. 10€",
     features: ["Auflichtmikroskopie aller gewünschten Hautveränderungen", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt"],
-    negativeFeatures: ["kein Total-Body-Mapping"],
+    negativeFeatures: ["kein Ganzkörper-Screening"],
     popular: false
   }, {
     name: "Ganzkörper-Screening",
