@@ -16,6 +16,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useState, useEffect } from "react";
 import { scrollToSection } from "@/lib/scrollUtils";
 import { Helmet } from "react-helmet-async";
+import { MaintenanceOverlay } from "@/components/MaintenanceOverlay";
 
 const formSchema = z.object({
   email: z.string().email({ message: "Bitte geben Sie eine gültige E-Mail-Adresse ein" }),
@@ -77,6 +78,7 @@ const Corporate = () => {
 
   return (
     <div className="min-h-screen">
+      <MaintenanceOverlay />
       <Helmet>
         <title>DermaScan360: Hautkrebs-Screening für Unternehmen</title>
         <meta name="description" content="Hautkrebsvorsorge vor Ort in Ihrem Unternehmen - für gesunde und leistungsfähige Mitarbeiter. Einfache und schnelle Abläufe, modernste Technik und fachärztliche Expertise" />
