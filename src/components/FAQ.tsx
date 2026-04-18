@@ -26,7 +26,7 @@ export const FAQ = () => {
     answer: "Während des Total-Body-Mappings ist es erforderlich, über etwa 5-10 Minuten selbstständig zu stehen. Während des Scans müssen zudem verschiedene Positionen (zB. Arme und Füße heben, Drehen um die Körperachse) eingenommen werden. Daher ist ein sicherer Stand und eine gewisse Beweglichkeit erforderlich. Einzelne Hautveränderungen können jedoch auch bei eingeschränkter Gehfähigkeit und Beweglichkeit mit Unterstützung durch unser Team dokumentiert werden."
   }, {
     question: "Kann ich mich vorbereiten?",
-    answer: "Für eine ideale Beurteilbarkeit sollte die Haut sauber und ungeschminkt sein. Langes Haar sollte zusammengebunden oder hochgesteckt werden. Bei starker Körperbehaarung empfiehlt sich eine Körperrasur. Alternativ können stark behaarte Bereiche aber auch manuell mit einem Dermatoskop inspiziert und dokumentiert werden."
+    answer: "Für eine ideale Beurteilbarkeit sollte die Haut sauber und ungeschminkt sein. Langes Haar sollte zusammengebunden oder hochgesteckt werden. Bei starker Körperbehaarung empfiehlt sich eine Körperrasur. Alternativ können stark behaarte Bereiche aber auch manuell mit einem Dermatoskop inspiziert und dokumentiert werden. Bitte achten Sie auf eine telefonische Erreichbarkeit vor und nach Ihrem Besuch in unserer Praxis."
   }, {
     question: "Wie lange dauert die Untersuchung?",
     answer: "Die Dauer des Total-Body-Mappings hängt von den individuellen Untersuchungsbedingungen sowie der Anzahl auffälliger Veränderungen ab. In der Regel dauert die eigentliche Untersuchung ca. 15-20min. Im Einzelfall kann die Dauer hiervon jedoch abweichen. Bitte planen Sie für Ihren gesamten Aufenthalt ca. 30 Minuten ein, da wir vor der Untersuchung noch Gesundheitsfragen erheben."
