@@ -254,7 +254,7 @@ const Corporate = () => {
                   <h3 className="text-lg sm:text-xl font-bold">&gt; 10 Mitarbeiter</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  fachärztliches Ganzkörper-Screening mit Auflichtmikroskop vor Ort in Ihrem Unternehmen
+                  fachärztliches Total-Body-Mapping mit Auflichtmikroskop vor Ort in Ihrem Unternehmen
                 </p>
               </div>
               <div className="bg-card p-6 sm:p-8 rounded-xl border">
@@ -263,7 +263,7 @@ const Corporate = () => {
                   <h3 className="text-lg sm:text-xl font-bold">&gt; 100 Mitarbeiter</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  fachärztliches Ganzkörper-Screening mit Auflichtmikroskop und optional Total-Body-Mapping vor Ort in Ihrem Unternehmen
+                  fachärztliches Total-Body-Mapping mit Auflichtmikroskop vor Ort in Ihrem Unternehmen
                 </p>
               </div>
             </div>
