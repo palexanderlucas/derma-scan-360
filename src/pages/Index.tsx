@@ -13,7 +13,6 @@ import { Team } from "@/components/Team";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { WelcomeDialog } from "@/components/WelcomeDialog";
-import { MaintenanceOverlay } from "@/components/MaintenanceOverlay";
 import { useEffect, useState } from "react";
 
 const Index = () => {
@@ -25,7 +24,6 @@ const Index = () => {
   
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <MaintenanceOverlay />
       <WelcomeDialog open={showWelcome} onOpenChange={setShowWelcome} />
       <Header />
       <main className="overflow-x-hidden">
