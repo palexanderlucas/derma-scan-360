@@ -10,7 +10,7 @@ export const Team = () => {
   const founders = [{
     name: "Dr. med. Christian Drerup",
     image: christianImg,
-    description: "Leitender Dermatologe und Praxismanager mit langjähriger Erfahrung."
+    description: "Leitender Dermatologe und Praxismanager."
   }];
   // Ausgeblendete Teammitglieder – zum Wiedereinblenden einfach in das `founders`-Array verschieben:
   // {
