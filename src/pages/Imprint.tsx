@@ -13,7 +13,7 @@ const Imprint = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Angaben gemäß § 5 DDG</h2>
               <p className="mb-2">
-                <strong>DermaScan360 – Privatärztliche Berufsausübungsgemeinschaft (GbR)</strong><br />
+                <strong>DermaScan360 (GbR)</strong><br />
                 Judith Reuther, Leon Hardung, Alexander Lucas
               </p>
               <p className="mb-4">
