@@ -12,19 +12,15 @@ import { MunicipalityCTA } from "@/components/MunicipalityCTA";
 import { Team } from "@/components/Team";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
-import { WelcomeDialog } from "@/components/WelcomeDialog";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Index = () => {
-  const [showWelcome, setShowWelcome] = useState(true);
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <WelcomeDialog open={showWelcome} onOpenChange={setShowWelcome} />
       <Header />
       <main className="overflow-x-hidden">
       <Hero />
