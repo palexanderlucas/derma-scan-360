@@ -11,6 +11,7 @@ export const mainNavItems: NavItem[] = [
   { id: "unternehmen", label: "Für Unternehmen & Behörden" },
   { id: "kommunen", label: "Für Kommunen" },
   { id: "team", label: "Wer wir sind" },
+  { id: "partner-praxen", label: "Partner-Praxen" },
   { id: "faq", label: "FAQ" },
 ];
 
