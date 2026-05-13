@@ -91,9 +91,9 @@ const Imprint = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Angaben zur Berufshaftpflichtversicherung</h2>
               <p>
-                AXA Versicherung AG<br />
-                Colonia-Allee 10–20<br />
-                51067 Köln<br />
+                Dialog Versicherung AG<br />
+                Adenauerring 7<br />
+                81737 München<br />
                 Deutschland
               </p>
               <p className="mt-2">
