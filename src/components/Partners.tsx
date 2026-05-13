@@ -24,7 +24,7 @@ export const Partners = () => {
           Unsere Partner-Praxen
         </h2>
         <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-3xl mx-auto md:text-xl text-base">
-          Für den Fall, dass sich aus Ihrem Hautkrebsscreening ein weiterer diagnostischer oder therapeutischer Bedarf ergibt, arbeiten wir mit ausgewählten, erfahrenen Fachpraxen zusammen. So stellen wir eine qualitätsgesicherte und nahtlose Weiterbehandlung sicher.
+          Für den Fall, dass sich aus Ihrem Hautkrebsscreening ein weiterer diagnostischer oder therapeutischer Handlungsbedarf ergibt, arbeiten wir mit ausgewählten, erfahrenen Fachpraxen zusammen. So stellen wir eine qualitätsgesicherte und nahtlose Weiterbehandlung sicher.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
