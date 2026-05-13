@@ -10,6 +10,7 @@ import { Location } from "@/components/Location";
 import { CorporateCTA } from "@/components/CorporateCTA";
 import { MunicipalityCTA } from "@/components/MunicipalityCTA";
 import { Team } from "@/components/Team";
+import { Partners } from "@/components/Partners";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
@@ -31,7 +32,7 @@ const Index = () => {
       <CorporateCTA />
       <MunicipalityCTA />
       <Team />
-      
+      <Partners />
       <FAQ />
       </main>
       <Footer />
