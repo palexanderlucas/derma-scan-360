@@ -22,8 +22,8 @@ const Imprint = () => {
               </p>
               <p className="mb-4">
                 <strong>E-Mail:</strong>{" "}
-                <a href="mailto:info@dermascan360.de" className="text-primary hover:underline">
-                  info@dermascan360.de
+                <a href="mailto:kontakt@dermascan360.de" className="text-primary hover:underline">
+                  kontakt@dermascan360.de
                 </a>
               </p>
               <p>

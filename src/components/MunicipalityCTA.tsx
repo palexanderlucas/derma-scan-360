@@ -15,9 +15,9 @@ export const MunicipalityCTA = () => {
           </p>
           <div className="flex justify-center">
             <Button size="lg" asChild>
-              <a href="mailto:info@dermascan360.de" className="gap-3">
+              <a href="mailto:kontakt@dermascan360.de" className="gap-3">
                 <Mail className="h-5 w-5" />
-                info@dermascan360.de
+                kontakt@dermascan360.de
               </a>
             </Button>
           </div>
