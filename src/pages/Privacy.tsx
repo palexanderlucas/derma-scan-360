@@ -40,8 +40,8 @@ const Privacy = () => {
               DermaScan360 – Privatärztliche Berufsausübungsgemeinschaft (GbR) vertreten durch Dr. med. Judith Reuther, Dr. med. Leon Hardung, Dr. med. Alexander Lucas<br />
               Möserstraße 2–3, 49074 Osnabrück<br />
               E-Mail:{" "}
-              <a href="mailto:info@dermascan360.de" className="text-primary hover:underline">
-                info@dermascan360.de
+              <a href="mailto:kontakt@dermascan360.de" className="text-primary hover:underline">
+                kontakt@dermascan360.de
               </a>
             </p>
           </section>
@@ -239,8 +239,8 @@ const Privacy = () => {
             <h2 className="text-2xl font-semibold mb-4">10. Widerruf, Löschung und Kontakt</h2>
             <p>
               Wenn Sie Auskunft, Berichtigung, Löschung oder Einschränkung Ihrer personenbezogenen Daten wünschen oder eine erteilte Einwilligung widerrufen möchten, kontaktieren Sie uns bitte per E-Mail an:{" "}
-              <a href="mailto:info@dermascan360.de" className="text-primary hover:underline">
-                info@dermascan360.de
+              <a href="mailto:kontakt@dermascan360.de" className="text-primary hover:underline">
+                kontakt@dermascan360.de
               </a>
               . Wir bestätigen den Eingang Ihrer Anfrage und setzen die rechtlich vorgesehenen Schritte um.
             </p>

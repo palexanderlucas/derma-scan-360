@@ -73,11 +73,11 @@ export const Footer = () => {
                 <span>Möserstraße 2-3<br />49074 Osnabrück</span>
               </button>
               <a 
-                href="mailto:info@dermascan360.de"
+                href="mailto:kontakt@dermascan360.de"
                 className="flex items-center gap-1.5 sm:gap-2 hover:text-primary transition-colors"
               >
                 <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-                <span>info@dermascan360.de</span>
+                <span>kontakt@dermascan360.de</span>
               </a>
             </div>
           </div>

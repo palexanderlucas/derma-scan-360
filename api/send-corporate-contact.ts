@@ -67,7 +67,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       },
       body: JSON.stringify({
         from: 'DermaScan360 Anfrage <onboarding@resend.dev>',
-        to: ['info@dermascan360.de'],
+        to: ['kontakt@dermascan360.de'],
         subject: `Neue Unternehmensanfrage von ${safeCompany}`,
         html: `
           <h1>Neue Unternehmensanfrage</h1>
