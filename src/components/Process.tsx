@@ -34,7 +34,7 @@ export const Process = () => {
   }, {
     icon: Scan,
     title: "Gezielte-Hautkrebs-Untersuchung",
-    description: "Unser Team erstellt mit einem Dermatoskop hochauflösende Nahaufnahmen aller gewünschten Muttermale/Hautveränderungen (max. 8 Läsionen). Vor Ort besteht kein direkter Arztkontakt."
+    description: "Unser Team erstellt mit einem Dermatoskop hochauflösende Nahaufnahmen aller gewünschten Muttermale/Hautveränderungen (max. 6 Läsionen). Vor Ort besteht kein direkter Arztkontakt."
   }, {
     icon: CheckCircle,
     title: "Qualitätsprüfung & Analyse",
