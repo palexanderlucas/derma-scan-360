@@ -7,8 +7,8 @@ const DOCTOLIB_FULLBODY_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/d
 export const Pricing = () => {
   const plans = [{
     name: "Single Lesion",
-    price: "ab 29",
-    delivery: "Erste Läsion ca. 29€, jede weitere ca. 10€ (max. 8 Läsionen)",
+    price: "ab 49",
+    delivery: "Erste Läsion ca. 49€, jede weitere ca. 10€ (max. 8 Läsionen)",
     features: ["Auflichtmikroskopie aller gewünschten Hautveränderungen", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt"],
     negativeFeatures: ["kein Total-Body-Mapping"],
     popular: false
