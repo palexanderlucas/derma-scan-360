@@ -5,7 +5,7 @@ export const Process = () => {
   const fullBodySteps = [{
     icon: Calendar,
     title: "Terminvereinbarung",
-    description: "Wir garantieren einen Termin innerhalb von sieben Werktagen. Notfalls geben wir weitere Termine frei."
+    description: "Buchen Sie Ihren Wunschtermin bequem online. Für Ihre Untersuchung reservieren wir ausreichend Zeit, um eine ausführliche und sorgfältige Untersuchung zu ermöglichen."
   }, {
   icon: Scan,
     title: "Total-Body-Mapping",
@@ -30,7 +30,7 @@ export const Process = () => {
   const singleLesionSteps = [{
     icon: Calendar,
     title: "Terminvereinbarung",
-    description: "Wir garantieren einen Termin innerhalb von sieben Werktagen. Notfalls geben wir weitere Termine frei."
+    description: "Buchen Sie Ihren Wunschtermin bequem online. Für Ihre Untersuchung reservieren wir ausreichend Zeit, um eine ausführliche und sorgfältige Untersuchung zu ermöglichen."
   }, {
     icon: Scan,
     title: "Gezielte-Hautkrebs-Untersuchung",
