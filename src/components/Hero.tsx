@@ -3,7 +3,7 @@ import { Calendar, Clock, Award, Microscope } from "lucide-react";
 import heroImage from "@/assets/hautkrebs-screening-dermascan360-osnabrueck.webp";
 import { FeatureItem } from "@/components/FeatureItem";
 
-const DOCTOLIB_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/motives?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSector=public&insuranceSectorEnabled=true&bookingFunnelSource=profile";
+const DOCTOLIB_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/motives?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSector=private&insuranceSectorEnabled=true&bookingFunnelSource=profile";
 
 export const Hero = () => {
   return <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
