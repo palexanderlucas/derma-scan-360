@@ -334,13 +334,6 @@ const Corporate = () => {
                 </p>
               </form>
 
-              <div className="mt-8 text-center">
-                <p className="text-muted-foreground mb-2">Kontaktieren Sie uns jetzt:</p>
-                <p className="font-semibold">
-                  E-Mail:{" "}
-                  <a href="mailto:kontakt@dermascan360.de" className="text-primary hover:underline">kontakt@dermascan360.de</a>
-                </p>
-              </div>
             </div>
           </div>
         </section>
