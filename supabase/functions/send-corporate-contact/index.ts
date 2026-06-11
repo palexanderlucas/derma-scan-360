@@ -55,7 +55,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "DermaScan360 <onboarding@resend.dev>",
-        to: ["kontakt@dermascan360.de"],
+        to: ["info@dermascan360.de"],
         subject: `Neue Unternehmensanfrage von ${safeFirstName} ${safeLastName}`,
         html: `
           <h2>Neue Unternehmensanfrage</h2>
