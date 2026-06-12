@@ -38,7 +38,7 @@ export const Technology = () => {
             Hautkrebs-Screening 360°
           </h2>
           <p className="text-base text-muted-foreground max-w-4xl mx-auto leading-relaxed px-2">
-            DermaScan360 kombiniert modernste Medizintechnik mit der Expertise erfahrener Dermatologen für eine präzise Früherkennung von Hautkrebs.
+            DermaScan360 kombiniert modernste Medizintechnik mit der Expertise erfahrener Hautärzte für eine präzise Früherkennung von Hautkrebs.
           </p>
         </div>
 
