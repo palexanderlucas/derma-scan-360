@@ -32,7 +32,7 @@ export const Hero = () => {
             <div className="hidden lg:flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-5 lg:gap-8 pt-6 sm:pt-8 lg:pt-10 border-t border-border/50">
               <FeatureItem icon={Clock} title="Kurze Wartezeiten" subtitle="Einfache und digitale Abläufe" size="sm" />
               <FeatureItem icon={Microscope} title="Modernste Technik" subtitle="KI-unterstützt" size="sm" />
-              <FeatureItem icon={Award} title="Facharztstandard" subtitle="erfahrene Hautärzte" size="sm" />
+              <FeatureItem icon={Award} title="Erfahrene Hautärzte" subtitle="Facharztstandard" size="sm" />
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-5 pt-6 sm:pt-8 border-t border-border/50 lg:hidden order-3">
             <FeatureItem icon={Clock} title="Kurze Wartezeiten" subtitle="Einfache und digitale Abläufe" size="lg" />
             <FeatureItem icon={Microscope} title="Modernste Technik" subtitle="KI-unterstützt" size="lg" />
-            <FeatureItem icon={Award} title="Facharztstandard" subtitle="erfahrene Hautärzte" size="lg" />
+            <FeatureItem icon={Award} title="Erfahrene Hautärzte" subtitle="Facharztstandard" size="lg" />
           </div>
         </div>
       </div>
