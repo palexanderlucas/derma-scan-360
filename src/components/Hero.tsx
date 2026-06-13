@@ -15,7 +15,7 @@ export const Hero = () => {
               Praxis für Hautkrebsscreening Osnabrück
             </h1>
             <p className="sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed text-base">
-              Hautkrebsvorsorge mit Total-Body-Mapping und digitaler Auflichtmikroskopie – befundet von erfahrenen Dermatologen mit KI-Unterstützung.
+              Dermatologische Hautkrebsvorsorge mit Ganzkörper-Scanner und digitaler Auflichtmikroskopie – befundet von erfahrenen Hautärzten mit KI-Unterstützung.
             </p>
             
             <div className="pt-2 sm:pt-4">
