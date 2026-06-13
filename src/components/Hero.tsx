@@ -11,8 +11,8 @@ export const Hero = () => {
       <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 relative max-w-[1600px]">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14 xl:gap-20 lg:items-center">
           <div className="space-y-5 sm:space-y-6 lg:space-y-8 xl:space-y-10 max-w-2xl order-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight break-words">
-              Praxis für Hautkrebsscreening Osnabrück
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight">
+              Praxis für <span className="whitespace-nowrap">Hautkrebsscreening</span> Osnabrück
             </h1>
             <p className="sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed text-base">
               Dermatologische Hautkrebsvorsorge mit Ganzkörper-Scanner und digitaler Auflichtmikroskopie – befundet von erfahrenen Hautärzten mit KI-Unterstützung.
