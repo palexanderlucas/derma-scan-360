@@ -16,9 +16,9 @@ export const FeatureItem = ({ icon: Icon, title, subtitle, size = "lg" }: Featur
         <Icon className={`${isSmall ? 'h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 xl:h-9 xl:w-9' : 'h-9 w-9 sm:h-8 sm:w-8'} text-primary`} />
       </div>
       <div className="min-w-0">
-        <div className={`font-semibold ${isSmall ? 'text-xs sm:text-sm lg:text-base' : 'text-base'} whitespace-nowrap`}>
+        <h3 className={`font-semibold ${isSmall ? 'text-xs sm:text-sm lg:text-base' : 'text-base'} whitespace-nowrap`}>
           {title}
-        </div>
+        </h3>
         <div className={`${isSmall ? 'text-[10px] sm:text-xs lg:text-sm' : 'text-sm'} text-muted-foreground whitespace-nowrap`}>
           {subtitle}
         </div>
