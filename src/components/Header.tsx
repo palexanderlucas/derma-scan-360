@@ -8,7 +8,7 @@ import { NavLink } from "@/components/NavLink";
 import { mainNavItems } from "@/lib/navigation";
 import { scrollToSection, scrollToTop } from "@/lib/scrollUtils";
 
-const DOCTOLIB_URL = "https://www.doctolib.de/privatpraxis/osnabrueck/dermascan360/booking/motives?specialityId=1289&telehealth=false&placeId=practice-728521&insuranceSector=private&insuranceSectorEnabled=true&bookingFunnelSource=profile";
+const DOCTOLIB_URL = "https://www.doctolib.de/gemeinschaftspraxis/osnabrueck/dermascan360/booking/patient-insurance-sector?specialityId=1289&telehealth=false&placeId=practice-728521&pid=practice-728521&source=profile";
 
 export const Header = () => {
   const { isOpen: isMenuOpen, toggle: toggleMenu, close: closeMenu } = useMobileMenu();
