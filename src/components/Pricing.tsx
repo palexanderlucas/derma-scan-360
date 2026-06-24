@@ -63,7 +63,7 @@ export const Pricing = () => {
               <Button 
                 className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
                 variant={plan.popular ? 'default' : 'outline'}
-                onClick={() => window.open(plan.name === "Single Lesion" ? DOCTOLIB_SINGLE_LESION_URL : DOCTOLIB_FULLBODY_URL, '_blank')}
+                onClick={() => window.open(DOCTOLIB_URL, '_blank')}
               >
                 Termin buchen
               </Button>
