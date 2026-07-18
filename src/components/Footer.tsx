@@ -1,4 +1,4 @@
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { mainNavItems, corporateNavItems } from "@/lib/navigation";
@@ -78,6 +78,13 @@ export const Footer = () => {
               >
                 <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
                 <span>kontakt@dermascan360.de</span>
+              </a>
+              <a 
+                href="tel:054193132180"
+                className="flex items-center gap-1.5 sm:gap-2 hover:text-primary transition-colors"
+              >
+                <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
+                <span>0541 93132180</span>
               </a>
             </div>
           </div>
