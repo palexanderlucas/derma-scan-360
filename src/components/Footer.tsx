@@ -1,4 +1,4 @@
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { mainNavItems, corporateNavItems } from "@/lib/navigation";
