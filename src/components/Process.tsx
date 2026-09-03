@@ -120,7 +120,7 @@ export const Process = () => {
               <h3 className="font-bold sm:text-3xl md:text-4xl mb-3 sm:mb-4 text-lg lg:text-4xl">Gezielte Untersuchung</h3>
               <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">
                 Für die fokussierte Beurteilung einzelner verdächtiger Hautstellen. Wir untersuchen gezielt die Hautveränderungen, die Ihnen Sorgen bereiten. 
-Auch geeignet zur kurzfristigen Kontrolle auffälliger Befunde nach dem Total-Body-Mapping.
+Auch geeignet zur Verlaufskontrolle auffälliger Befunde.
               </p>
             </div>
           </TabsContent>
