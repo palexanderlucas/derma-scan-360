@@ -5,7 +5,7 @@ const DOCTOLIB_URL = "https://www.doctolib.de/gemeinschaftspraxis/osnabrueck/der
 
 export const Pricing = () => {
   const plans = [{
-    name: "Single Lesion",
+    name: "gezielte Hautkrebs-Untersuchung/ Kontrolle einzelner Läsionen",
     price: "ab 49",
     delivery: "Erste Läsion ca. 49€, jede weitere ca. 10€ (max. 6 Läsionen)",
     features: ["Auflichtmikroskopie aller gewünschten Hautveränderungen", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt"],
