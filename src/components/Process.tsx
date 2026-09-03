@@ -92,7 +92,7 @@ export const Process = () => {
                   <img src={monitoring} alt="Verlaufskontrollen" className="rounded-lg sm:rounded-xl shadow-lg w-full" />
                 </div>
                 
-                <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen.</p>
+                <p className="text-muted-foreground leading-relaxed sm:text-base lg:text-lg text-base">Dank des Total-Body-Mappings können neue Läsionen und Veränderungen im zeitlichen Verlauf schnell und präzise erkannt werden. Die Wahrscheinlichkeit, an Hautkrebs zu erkranken, steigt mit dem Lebensalter. Daher sollten Kontrollen in regelmäßigen Abständen erfolgen. Der volle Nutzen des Total-Body-Mappings entsteht daher bei der Verlaufskontrolle.</p>
               </div>
             </div>
           </TabsContent>
