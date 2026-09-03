@@ -88,10 +88,9 @@ export const Location = () => {
 
             {/* Coming Soon */}
             <div className="p-4 sm:p-5 md:p-6 bg-accent/50 rounded-lg sm:rounded-xl">
-              <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Bald auch in Köln</h3>
+              <h3 className="font-semibold text-base sm:text-lg mb-1.5 sm:mb-2">Bald auch in Köln und Bonn</h3>
               <p className="text-muted-foreground sm:text-sm md:text-base text-sm">
-                Unser zweiter Standort in Köln Innenstadt ist in Planung. 
-                Bleiben Sie informiert über die Eröffnung!
+                Unsere neuen Standorte in Köln Deutz, Köln Innenstadt und Bonn sind in Planung. Bleiben Sie informiert über die Eröffnung!
               </p>
             </div>
           </div>
