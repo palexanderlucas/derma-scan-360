@@ -1,24 +1,24 @@
-import { MapPin, Mail, Phone } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { Instagram, Mail } from "lucide-react";
 import { useActiveSection } from "@/hooks/useActiveSection";
-import { mainNavItems, corporateNavItems } from "@/lib/navigation";
+import { mainNavItems, corporateNavItems, cityNavItems } from "@/lib/navigation";
+import { locations, locationPath, CONTACT_EMAIL } from "@/lib/locations";
 import { scrollToSection, scrollToTop } from "@/lib/scrollUtils";
 import { cn } from "@/lib/utils";
-
-const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/8HeqvpVGXtFA8QQh7";
 
 export const Footer = () => {
   const activeSection = useActiveSection();
   const location = useLocation();
   const isCorporatePage = location.pathname === '/corporate';
   const isMainPage = location.pathname === '/';
+  const isCityPage = locations.some((entry) => decodeURIComponent(location.pathname) === `/${entry.slug}`);
 
-  const navItems = isCorporatePage ? corporateNavItems : mainNavItems;
+  const navItems = isCorporatePage ? corporateNavItems : isCityPage ? cityNavItems.filter((item) => item.id !== "standort") : mainNavItems;
 
   const renderNavLink = (id: string, label: string) => {
     const isActive = activeSection === id;
     
-    if (isCorporatePage || isMainPage) {
+    if (isCorporatePage || isMainPage || isCityPage) {
       return (
         <button 
           onClick={() => scrollToSection(id)} 
@@ -49,55 +49,52 @@ export const Footer = () => {
                 onClick={scrollToTop}
                 className="text-xs font-semibold sm:text-base transition-colors cursor-pointer block text-left text-inherit"
               >
-                DermaScan360 - Hautkrebs-Screening Osnabrück.
+                DermaScan360 - Hautkrebsscreening
               </button>
             ) : (
               <Link 
                 to="/" 
                 className="text-xs font-semibold sm:text-base transition-colors cursor-pointer block text-inherit"
               >
-                DermaScan360 - Hautkrebs-Screening Osnabrück.
+                DermaScan360 - Hautkrebsscreening
               </Link>
             )}
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="inline-flex items-center gap-2 text-xs sm:text-sm text-gray-400 hover:text-primary transition-colors"
+            >
+              <Mail className="h-4 w-4 shrink-0" />
+              {CONTACT_EMAIL}
+            </a>
           </div>
 
-          {/* Contact */}
+          {/* Locations */}
           <div>
-            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Kontakt</h3>
-            <div className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-gray-400">
-              <button 
-                onClick={() => window.open(GOOGLE_MAPS_URL, '_blank')}
-                className="flex items-start gap-1.5 sm:gap-2 hover:text-primary transition-colors text-left"
-              >
-                <MapPin className="h-3.5 w-3.5 sm:h-4 sm:w-4 mt-0.5 sm:mt-1 shrink-0" />
-                <span>Möserstraße 2-3<br />49074 Osnabrück</span>
-              </button>
-              <a 
-                href="mailto:kontakt@dermascan360.de"
-                className="flex items-center gap-1.5 sm:gap-2 hover:text-primary transition-colors"
-              >
-                <Mail className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-                <span>kontakt@dermascan360.de</span>
-              </a>
-              <a 
-                href="tel:054193132180"
-                className="flex items-center gap-1.5 sm:gap-2 hover:text-primary transition-colors"
-              >
-                <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
-                <span>0541 93132180</span>
-              </a>
-            </div>
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Standorte</h3>
+            <ul className="space-y-2 sm:space-y-2.5 text-xs sm:text-sm text-gray-400">
+              {locations.map((entry) => (
+                <li key={entry.slug}>
+                  <Link
+                    to={locationPath(entry)}
+                    className="font-semibold text-gray-100 hover:text-primary transition-colors"
+                  >
+                    {entry.city}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
 
 
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Schnelllinks</h3>
             <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-400">
-              {isCorporatePage && (
+              {(isCorporatePage || isCityPage) && (
                 <li>
                   <Link to="/" className="hover:text-primary transition-colors">
-                    ​Home
+                    {isCityPage ? "Zur Startseite" : "Home"}
                   </Link>
                 </li>
               )}
@@ -115,8 +112,10 @@ export const Footer = () => {
             <Link to="/impressum" className="hover:text-primary transition-colors">Impressum</Link>
             <span>•</span>
             <Link to="/datenschutz" className="hover:text-primary transition-colors">Datenschutz</Link>
-            <span>•</span>
-            <a href="#" className="hover:text-primary transition-colors">AGB</a>
+            <span aria-hidden="true">•</span>
+            <a href="https://www.instagram.com/dermascan360" target="_blank" rel="noopener noreferrer" aria-label="DermaScan360 auf Instagram" className="inline-flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Instagram className="h-4 w-4" /> Instagram
+            </a>
           </div>
           <p>&copy; {new Date().getFullYear()} DermaScan360. Alle Rechte vorbehalten.</p>
         </div>

@@ -12,24 +12,54 @@ const Imprint = () => {
           <div className="prose prose-slate max-w-none space-y-8 text-foreground">
             <section>
               <h2 className="text-2xl font-semibold mb-4">Angaben gemäß § 5 DDG</h2>
-              <p className="mb-2">
-                <strong>DermaScan360 (GbR)</strong>
-              </p>
               <p className="mb-4">
-                Möserstraße 2–3<br />
-                49074 Osnabrück<br />
+                <strong>DermaScan360 GmbH i.G.</strong>
+                <br />
+                Alarichstraße 53
+                <br />
+                50679 Köln
+                <br />
                 Deutschland
               </p>
               <p className="mb-4">
-                <strong>E-Mail:</strong>{" "}
+                <strong>Vertreten durch:</strong>
+                <br />
+                Geschäftsführer: Sebastian Müller
+              </p>
+              <p>
+                <strong>Kontakt:</strong>
+                <br />
+                Telefon:{" "}
+                <a href="tel:+4954193132180" className="text-primary hover:underline">
+                  0541 93132180
+                </a>
+                <br />
                 <a href="mailto:kontakt@dermascan360.de" className="text-primary hover:underline">
                   kontakt@dermascan360.de
                 </a>
               </p>
-              <p>
-                <strong>Vertreten durch die Gesellschafter:</strong><br />
-                Judith Reuther<br />
-                Leon Hardung<br />
+            </section>
+
+            <hr className="border-border" />
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4">Standort Osnabrück</h2>
+              <p className="mb-4">
+                <strong>DermaScan360 - Hautkrebsscreening Osnabrück BAG (GbR)</strong>
+                <br />
+                Möserstraße 2–3
+                <br />
+                49074 Osnabrück
+                <br />
+                Deutschland
+              </p>
+              <p className="mb-4">
+                <strong>Vertreten durch die Gesellschafter:</strong>
+                <br />
+                Judith Reuther
+                <br />
+                Leon Hardung
+                <br />
                 Alexander Lucas
               </p>
             </section>
@@ -39,9 +69,12 @@ const Imprint = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Zuständige Aufsichtsbehörde</h2>
               <p>
-                Ärztekammer Niedersachsen<br />
-                Berliner Allee 20<br />
-                30175 Hannover<br />
+                Ärztekammer Niedersachsen
+                <br />
+                Berliner Allee 20
+                <br />
+                30175 Hannover
+                <br />
                 Deutschland
               </p>
               <p className="mt-2">
@@ -56,19 +89,23 @@ const Imprint = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Berufsbezeichnungen und berufsrechtliche Regelungen</h2>
               <p className="mb-2">
-                <strong>Judith Reuther</strong><br />
+                <strong>Judith Reuther</strong>
+                <br />
                 Fachärztin für Dermatologie (verliehen in der Bundesrepublik Deutschland)
               </p>
               <p className="mb-2">
-                <strong>Leon Hardung</strong><br />
+                <strong>Leon Hardung</strong>
+                <br />
                 Arzt (verliehen in der Bundesrepublik Deutschland)
               </p>
               <p className="mb-4">
-                <strong>Alexander Lucas</strong><br />
+                <strong>Alexander Lucas</strong>
+                <br />
                 Arzt (verliehen in der Bundesrepublik Deutschland)
               </p>
               <p className="mb-4">
-                <strong>Zuständige Kammer:</strong><br />
+                <strong>Zuständige Kammer:</strong>
+                <br />
                 Ärztekammer Niedersachsen
               </p>
               <p className="mb-2">Es gelten folgende berufsrechtliche Regelungen:</p>
@@ -91,9 +128,12 @@ const Imprint = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Angaben zur Berufshaftpflichtversicherung</h2>
               <p>
-                Dialog Versicherung AG<br />
-                Adenauerring 7<br />
-                81737 München<br />
+                Dialog Versicherung AG
+                <br />
+                Adenauerring 7
+                <br />
+                81737 München
+                <br />
                 Deutschland
               </p>
               <p className="mt-2">

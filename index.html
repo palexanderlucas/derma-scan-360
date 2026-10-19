@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://maps.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://*.supabase.co https://maps.googleapis.com; frame-src https://www.google.com https://maps.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
     <title>Hautarzt-Praxis für Hautkrebsscreening Osnabrück</title>
-    <meta name="description" content="Hautarzt-Praxis für Hautkrebsvorsorge mit Ganzkörper-Scanner, digitaler Auflichtmikroskopie und KI-Unterstützung. Erfahrene Hautärzte - kurze Wartezeiten - modernste Technik." />
+    <meta name="description" content="Praxis für Hautkrebsvorsorge mit Ganzkörper-Scanner, digitaler Auflichtmikroskopie und KI-Unterstützung. Erfahrene Hautärzte - kurze Wartezeiten - modernste Technik." />
     <meta name="keywords" content="Hautkrebs Screening, Osnabrück, Total Body Mapping, Hautkrebsvorsorge, Auflichtmikroskopie, Dermatoskopie" />
     <meta name="author" content="DermaScan360" />
 
     <meta property="og:title" content="Hautarzt-Praxis für Hautkrebsscreening Osnabrück" />
-    <meta property="og:description" content="Hautarzt-Praxis für Hautkrebsvorsorge mit Ganzkörper-Scanner, digitaler Auflichtmikroskopie und KI-Unterstützung. Erfahrene Hautärzte - kurze Wartezeiten - modernste Technik." />
+    <meta property="og:description" content="Praxis für Hautkrebsvorsorge mit Ganzkörper-Scanner, digitaler Auflichtmikroskopie und KI-Unterstützung. Erfahrene Hautärzte - kurze Wartezeiten - modernste Technik." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dermascan360.de" />
     <meta property="og:image" content="https://dermascan360.de/dermascan360-hautkrebs-screening-og.jpg" />
@@ -27,7 +27,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Hautarzt-Praxis für Hautkrebsscreening Osnabrück" />
-    <meta name="twitter:description" content="Hautarzt-Praxis für Hautkrebsvorsorge mit Ganzkörper-Scanner, digitaler Auflichtmikroskopie und KI-Unterstützung. Erfahrene Hautärzte - kurze Wartezeiten - modernste Technik." />
+    <meta name="twitter:description" content="Praxis für Hautkrebsvorsorge mit Ganzkörper-Scanner, digitaler Auflichtmikroskopie und KI-Unterstützung. Erfahrene Hautärzte - kurze Wartezeiten - modernste Technik." />
     <meta name="twitter:image" content="https://dermascan360.de/dermascan360-hautkrebs-screening-og.jpg" />
     <meta name="twitter:image:alt" content="DermaScan360 - Professionelles Hautkrebs-Screening mit modernster Technologie" />
 
@@ -36,13 +36,13 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["MedicalBusiness", "Physician"],
+      "@type": "MedicalOrganization",
       "@id": "https://dermascan360.de/#organization",
       "name": "DermaScan360",
       "url": "https://dermascan360.de",
       "logo": "https://dermascan360.de/dermascan360-logo.svg",
       "image": "https://dermascan360.de/dermascan360-logo.svg",
-      "description": "Hautkrebs-Screening 360° in Osnabrück. Total-Body-Mapping, digitale Auflichtmikroskopie & KI-gestützte Analyse.",
+      "description": "Hautkrebsvorsorge mit Standorten in Osnabrück, Köln und Bonn. Total-Body-Mapping, digitale Auflichtmikroskopie & KI-gestützte Analyse.",
       "email": "kontakt@dermascan360.de",
       "address": {
         "@type": "PostalAddress",
@@ -51,25 +51,6 @@
         "postalCode": "49074",
         "addressCountry": "DE"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "52.2799",
-        "longitude": "8.0472"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "10:00",
-          "closes": "21:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "10:00",
-          "closes": "16:00"
-        }
-      ],
       "medicalSpecialty": "Dermatology",
       "availableService": [
         {
@@ -108,11 +89,71 @@
           "description": "Betriebliches Hautkrebs-Screening im Rahmen des Gesundheitsmanagements"
         }
       ],
-      "areaServed": {
-        "@type": "City",
-        "name": "Osnabrück"
+      "areaServed": [
+        {"@type": "City", "name": "Osnabrück"},
+        {"@type": "City", "name": "Köln"},
+        {"@type": "City", "name": "Bonn"}
+      ],
+      "subOrganization": [
+        {"@id": "https://dermascan360.de/osnabr%C3%BCck#praxis"},
+        {"@id": "https://dermascan360.de/k%C3%B6ln#praxis"},
+        {"@id": "https://dermascan360.de/bonn#praxis"}
+      ],
+      "sameAs": [
+        "https://www.doctolib.de/gemeinschaftspraxis/osnabrueck/dermascan360",
+        "https://www.instagram.com/dermascan360"
+      ],
+      "knowsAbout": ["Hautkrebsscreening und Früherkennung", "Total-Body-Mapping", "Digitale Auflichtmikroskopie", "Erfahrene Hautärzte"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Leistungen & Preise",
+        "itemListElement": [
+          {"@type": "Offer", "name": "Gezielte Untersuchung einzelner Läsionen", "price": "49.00", "priceCurrency": "EUR", "description": "Ab 49 € (erste Läsion ca. 49 €, jede weitere ca. 10 €, max. 6 Läsionen)"},
+          {"@type": "Offer", "name": "Ganzkörper-Screening (Total-Body-Mapping)", "price": "149.00", "priceCurrency": "EUR", "description": "Ca. 149 €"}
+        ]
       },
       "priceRange": "€€"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["MedicalClinic", "LocalBusiness"],
+          "@id": "https://dermascan360.de/osnabr%C3%BCck#praxis",
+          "name": "DermaScan360 Osnabrück",
+          "url": "https://dermascan360.de/osnabr%C3%BCck",
+          "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00"}],
+          "medicalSpecialty": "Dermatology",
+          "parentOrganization": {"@id": "https://dermascan360.de/#organization"},
+          "address": {"@type": "PostalAddress", "streetAddress": "Möserstraße 2-3", "postalCode": "49074", "addressLocality": "Osnabrück", "addressCountry": "DE"},
+          "geo": {"@type": "GeoCoordinates", "latitude": "52.2799", "longitude": "8.0472"}
+        },
+        {
+          "@type": ["MedicalClinic", "LocalBusiness"],
+          "@id": "https://dermascan360.de/k%C3%B6ln#praxis",
+          "name": "DermaScan360 Köln",
+          "url": "https://dermascan360.de/k%C3%B6ln",
+          "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00"}],
+          "medicalSpecialty": "Dermatology",
+          "parentOrganization": {"@id": "https://dermascan360.de/#organization"},
+          "address": {"@type": "PostalAddress", "streetAddress": "Alarichstraße 53", "postalCode": "50679", "addressLocality": "Köln", "addressCountry": "DE"},
+          "geo": {"@type": "GeoCoordinates", "latitude": "50.9337", "longitude": "6.9814"}
+        },
+        {
+          "@type": ["MedicalClinic", "LocalBusiness"],
+          "@id": "https://dermascan360.de/bonn#praxis",
+          "name": "DermaScan360 Bonn",
+          "url": "https://dermascan360.de/bonn",
+          "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00"}],
+          "medicalSpecialty": "Dermatology",
+          "parentOrganization": {"@id": "https://dermascan360.de/#organization"},
+          "address": {"@type": "PostalAddress", "streetAddress": "Reuterstraße 122", "postalCode": "53113", "addressLocality": "Bonn", "addressCountry": "DE"},
+          "geo": {"@type": "GeoCoordinates", "latitude": "50.7200", "longitude": "7.1108"}
+        }
+      ]
     }
     </script>
 
@@ -125,7 +166,7 @@
       "url": "https://dermascan360.de/corporate",
       "description": "Betriebliches Hautkrebs-Screening für Unternehmen und Behörden im Rahmen des betrieblichen Gesundheitsmanagements (BGM). Mobiles Screening vor Ort mit modernster Technik.",
       "provider": {
-        "@type": "MedicalBusiness",
+        "@type": "MedicalOrganization",
         "@id": "https://dermascan360.de/#organization"
       },
       "serviceType": "Betriebliches Gesundheitsmanagement",
@@ -161,50 +202,12 @@
       "name": "DermaScan360",
       "url": "https://dermascan360.de",
       "publisher": {
-        "@type": "MedicalBusiness",
+        "@type": "MedicalOrganization",
         "@id": "https://dermascan360.de/#organization"
       }
     }
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://dermascan360.de/#localbusiness",
-      "name": "DermaScan360",
-      "image": "https://dermascan360.de/dermascan360-logo.svg",
-      "url": "https://dermascan360.de",
-      "email": "kontakt@dermascan360.de",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Möserstraße 2-3",
-        "addressLocality": "Osnabrück",
-        "postalCode": "49074",
-        "addressCountry": "DE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "52.2799",
-        "longitude": "8.0472"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "10:00",
-          "closes": "21:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "10:00",
-          "closes": "16:00"
-        }
-      ],
-      "priceRange": "€€"
-    }
-    </script>
 
     <script type="application/ld+json">
     {

@@ -1,9 +1,21 @@
+import { useEffect, useRef } from "react";
 import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const DOCTOLIB_URL = "https://www.doctolib.de/gemeinschaftspraxis/osnabrueck/dermascan360/booking/patient-insurance-sector?specialityId=1289&telehealth=false&placeId=practice-728521&pid=practice-728521&source=profile";
+import { MAIN_BOOKING_URL, openBookingUrl } from "@/lib/booking";
 
-export const Pricing = () => {
+export const Pricing = ({ bookingUrl = MAIN_BOOKING_URL, bookingLabel = "Termin buchen" }: { bookingUrl?: string; bookingLabel?: string }) => {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    const target = el?.querySelector<HTMLElement>("[data-popular]");
+    if (!el || !target || window.innerWidth >= 1024) return;
+    const track = el.getBoundingClientRect();
+    const card = target.getBoundingClientRect();
+    el.scrollLeft += card.left - track.left - (track.width - card.width) / 2;
+  }, []);
+
   const plans = [{
     name: "gezielte Hautkrebs-Untersuchung/ Kontrolle einzelner Läsionen",
     price: "ab 49",
@@ -35,8 +47,8 @@ export const Pricing = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
-          {plans.map(plan => <div key={plan.name} className={`relative flex flex-col p-4 sm:p-5 md:p-6 lg:p-8 bg-card rounded-xl sm:rounded-2xl border-2 shadow-lg ${plan.popular ? 'border-primary lg:scale-105 shadow-xl' : 'border-border/50'}`}>
+        <div ref={scrollerRef} className="relative flex gap-4 sm:gap-5 max-w-7xl mx-auto overflow-x-auto snap-x snap-mandatory pt-5 pb-7 -mx-3 px-5 sm:-mx-4 sm:px-7 scroll-px-5 sm:scroll-px-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:mx-0 lg:px-0 lg:pt-0 lg:pb-0">
+          {plans.map(plan => <div key={plan.name} data-popular={plan.popular ? "" : undefined} className={`relative flex flex-col shrink-0 w-[72%] sm:w-[60%] md:w-[58%] lg:w-auto snap-center p-4 sm:p-5 md:p-6 lg:p-8 bg-card rounded-xl sm:rounded-2xl border-2 shadow-lg ${plan.popular ? 'border-primary lg:scale-105 shadow-xl' : 'border-border/50'}`}>
               {plan.popular && <div className="absolute -top-2.5 sm:-top-3 left-1/2 -translate-x-1/2 px-2.5 sm:px-3 md:px-4 py-1 bg-primary text-primary-foreground text-[10px] sm:text-xs md:text-sm font-semibold rounded-full whitespace-nowrap">
                   Beliebteste Option
                 </div>}
@@ -63,9 +75,9 @@ export const Pricing = () => {
               <Button 
                 className={`w-full text-xs sm:text-sm ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
                 variant={plan.popular ? 'default' : 'outline'}
-                onClick={() => window.open(DOCTOLIB_URL, '_blank')}
+                onClick={() => openBookingUrl(bookingUrl)}
               >
-                Termin buchen
+                {bookingLabel}
               </Button>
             </div>)}
         </div>

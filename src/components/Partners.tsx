@@ -16,43 +16,47 @@ const partners = [
   },
 ];
 
-export const Partners = () => {
+export const Partners = ({ showPartners = true }: { showPartners?: boolean }) => {
   return (
-    <section id="partner-praxen" className="py-16 md:py-24 bg-background">
+    <section id="partner-praxen" className="py-16 md:py-24 bg-accent/40">
       <div className="container mx-auto px-4">
         <h2 className="md:text-4xl font-bold text-center mb-4 text-foreground lg:text-6xl text-3xl">
           Unsere Partner-Praxen
         </h2>
         <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-3xl mx-auto md:text-xl text-base">
-          Für den Fall, dass sich aus Ihrem Hautkrebsscreening ein weiterer diagnostischer oder therapeutischer Handlungsbedarf ergibt, arbeiten wir mit ausgewählten, erfahrenen Fachpraxen zusammen. So stellen wir eine qualitätsgesicherte und nahtlose Weiterbehandlung sicher.
+          Für den Fall, dass sich aus Ihrem Hautkrebsscreening ein weiterer diagnostischer oder therapeutischer Handlungsbedarf ergibt, arbeiten wir mit ausgewählten, erfahrenen Fachpraxen zusammen. So stellen wir eine schnelle, qualitätsgesicherte und nahtlose Weiterbehandlung sicher.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
-          {partners.map((partner) => (
-            <div
-              key={partner.name}
-              className="flex flex-col items-center text-center bg-muted/40 rounded-lg p-8"
-            >
-              <div className="h-32 md:h-40 w-full flex items-center justify-center mb-6">
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="max-h-full max-w-full object-contain"
-                />
-              </div>
-              <h3 className="font-semibold text-foreground mb-3 text-xl md:text-2xl">
-                {partner.name}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-                {partner.description}
-              </p>
+        {showPartners && (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
+              {partners.map((partner) => (
+                <div
+                  key={partner.name}
+                  className="flex flex-col items-center text-center bg-muted/40 rounded-lg p-8"
+                >
+                  <div className="h-32 md:h-40 w-full flex items-center justify-center mb-6">
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-full max-w-full object-contain"
+                    />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-3 text-xl md:text-2xl">
+                    {partner.name}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
+                    {partner.description}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
 
-        <p className="text-center text-muted-foreground mt-10 md:mt-12 max-w-3xl mx-auto text-sm md:text-base italic">
-          Ist eine weiterführende Behandlung medizinisch erforderlich, kann diese zeitnah in einer unserer Partnerpraxen erfolgen. Die Wahl der weiterbehandelnden Praxis steht Ihnen selbstverständlich frei.
-        </p>
+            <p className="text-center text-muted-foreground mt-10 md:mt-12 max-w-3xl mx-auto text-sm md:text-base italic">
+              Ist eine weiterführende Behandlung medizinisch erforderlich, kann diese zeitnah in einer unserer Partnerpraxen erfolgen. Die Wahl der weiterbehandelnden Praxis steht Ihnen selbstverständlich frei.
+            </p>
+          </>
+        )}
       </div>
     </section>
   );

@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { mainNavItems, corporateNavItems } from "@/lib/navigation";
+import { mainNavItems, corporateNavItems, cityNavItems } from "@/lib/navigation";
 
 export const useActiveSection = () => {
   const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
-    const allSections = [...mainNavItems, ...corporateNavItems].map(item => item.id);
+    const allSections = [...mainNavItems, ...corporateNavItems, ...cityNavItems].map(item => item.id);
 
     const observerOptions = {
       root: null,
