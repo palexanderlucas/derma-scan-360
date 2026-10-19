@@ -1,7 +1,7 @@
 import { Calendar, Scan, FileText, Stethoscope, History } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import monitoringAsset from "@/assets/dermascan360-verlaufskontrolle-muttermale-vergleich-ki.webp";
-const monitoring = monitoringAsset.url;
+const monitoring = monitoringAsset;
 export const Process = () => {
   const fullBodySteps = [{
     icon: Calendar,

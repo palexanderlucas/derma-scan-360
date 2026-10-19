@@ -1,10 +1,10 @@
 import { Scan, Microscope, Brain } from "lucide-react";
 import bodyScannerAsset from "@/assets/dermascan360-total-body-mapping-ganzkoerper-scanner-intellistudio.webp";
-const bodyScanner = bodyScannerAsset.url;
+const bodyScanner = bodyScannerAsset;
 import dermatoscopeAsset from "@/assets/dermascan360-digitale-auflichtmikroskopie-dermatoskopie-muttermal.webp";
-const dermatoscope = dermatoscopeAsset.url;
+const dermatoscope = dermatoscopeAsset;
 import doctorAnalysisAsset from "@/assets/dermascan360-dermatologische-befundung-hautarzt-ki-analyse.webp";
-const doctorAnalysis = doctorAnalysisAsset.url;
+const doctorAnalysis = doctorAnalysisAsset;
 import { TechCard } from "@/components/TechCard";
 
 export const Technology = () => {
