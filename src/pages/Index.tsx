@@ -8,7 +8,6 @@ import { Pricing } from "@/components/Pricing";
 
 import { Location } from "@/components/Location";
 import { CorporateCTA } from "@/components/CorporateCTA";
-import { MunicipalityCTA } from "@/components/MunicipalityCTA";
 import { Team } from "@/components/Team";
 import { Partners } from "@/components/Partners";
 import { FAQ } from "@/components/FAQ";
@@ -30,9 +29,8 @@ const Index = () => {
       <Pricing />
       <Location />
       <CorporateCTA />
-      <MunicipalityCTA />
       <Team />
-      <Partners />
+      <Partners showPartners={false} />
       <FAQ />
       </main>
       <Footer />

@@ -1,0 +1,45 @@
+# DermaScan360
+
+> Praxis für Hautkrebsvorsorge mit Standorten in Osnabrück, Köln und Bonn. Total-Body-Mapping mittels Ganzkörper-Scanner, digitale Dermatoskopie, KI-Unterstützung und Befundung durch erfahrene Dermatologen.
+
+DermaScan360 ist eine dermatologische Praxis mit Schwerpunkt Hautkrebs-Früherkennung (Melanom, weißer Hautkrebs).
+
+Technologie & Ablauf:
+- Dauer vor Ort: ca. 30 Minuten
+- Total-Body-Mapping mittels Ganzkörper-Scanner (FotoFinder IntelliStudio)
+- Digitale Dermatoskopie (Auflichtmikroskopie) auffälliger Muttermale
+- KI-Unterstützung
+- Befundung durch erfahrene Dermatologen
+
+Leistungen & Preise:
+- Gezielte Untersuchung / Kontrolle einzelner Läsionen: ab 49 € (erste Läsion ca. 49 €, jede weitere ca. 10 €, max. 6 Läsionen)
+- Ganzkörper-Screening (Total-Body-Mapping): ca. 149 €, Befund innerhalb von 14 Tagen
+
+Kostenerstattung:
+- Die Untersuchung ist eine Selbstzahlerleistung.
+- Private Krankenversicherungen übernehmen die Kosten regelhaft.
+- Gesetzliche Krankenkassen übernehmen die Kosten teilweise.
+
+Terminbuchung: Online-Terminbuchung für alle Standorte über Doctolib.
+
+Öffnungszeiten (alle Standorte): Mo–Fr 08:00–20:00 Uhr, Sa 10:00–16:00 Uhr.
+Kontakt: kontakt@dermascan360.de
+
+Für Unternehmen & Kommunen: Betriebliches Gesundheitsmanagement maßgeschneidert vor Ort für Unternehmen und Kommunen (weniger Personalausfälle – stärkere Mitarbeiterbindung – höhere Produktivität).
+
+## Standorte
+
+- [Osnabrück](https://dermascan360.de/osnabr%C3%BCck): Möserstraße 2-3, 49074 Osnabrück. ÖPNV: Berliner Platz ca. 3 min Fußweg, Hauptbahnhof ca. 11 min Fußweg.
+- [Köln](https://dermascan360.de/k%C3%B6ln): Alarichstraße 53, 50679 Köln (Deutz). Öffentliche Parkmöglichkeiten in unmittelbarer Umgebung der Praxis. ÖPNV: Haltestelle Suevenstraße 5 min Fußweg, Köln Messe/Deutz 12 min Fußweg.
+- [Bonn](https://dermascan360.de/bonn): 4. Etage Ärztehaus Wellbeing, Reuterstraße 122, 53113 Bonn. Für Praxisbesucher stehen Stellplätze in der Tiefgarage zur Verfügung. ÖPNV: Straßburger Weg 1 min Fußweg, Haus der Jugend 3 min Fußweg, Museum König 9 min Fußweg.
+
+## Seiten
+
+- [Startseite](https://dermascan360.de/): Technologie, Ablauf, Preise, Team und FAQ.
+- [Für Unternehmen & Kommunen](https://dermascan360.de/corporate): Betriebliches Gesundheitsmanagement vor Ort.
+- [Terminbuchung](https://www.doctolib.de/gemeinschaftspraxis/osnabrueck/dermascan360/booking/places?specialityId=1289&telehealth=false&source=profile): Online-Terminbuchung über Doctolib für alle Standorte.
+
+## Optional
+
+- [Impressum](https://dermascan360.de/impressum)
+- [Datenschutz](https://dermascan360.de/datenschutz)

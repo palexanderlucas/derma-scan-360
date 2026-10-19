@@ -1,6 +1,7 @@
-import { Calendar, Scan, CheckCircle, FileText, Clock, Stethoscope, CalendarCheck } from "lucide-react";
+import { Calendar, Scan, FileText, Stethoscope, History } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import monitoring from "@/assets/hautkrebs-screening-verlaufskontrolle.webp";
+import monitoringAsset from "@/assets/dermascan360-verlaufskontrolle-muttermale-vergleich-ki.webp";
+const monitoring = monitoringAsset.url;
 export const Process = () => {
   const fullBodySteps = [{
     icon: Calendar,
@@ -8,16 +9,8 @@ export const Process = () => {
     description: "Buchen Sie Ihren Wunschtermin bequem online. Für Ihre Untersuchung reservieren wir ausreichend Zeit, um eine ausführliche und sorgfältige Untersuchung zu ermöglichen."
   }, {
   icon: Scan,
-    title: "Total-Body-Mapping",
+    title: "Total-Body-Mapping & Dermatoskopie",
     description: "Zuerst wird das Total-Body-Mapping erstellt. Danach werden auffällige Veränderungen mit einem Dermatoskop dokumentiert. In unserer Praxis begleitet Sie unser speziell geschultes Team. Ein direkter Arztkontakt besteht nicht."
-  }, {
-    icon: CheckCircle,
-    title: "Qualitätsprüfung",
-    description: "Nach Ihrem Besuch bei DermaScan360 werden die angefertigten Aufnahmen von einem Dermatologen auf Qualität und Vollständigkeit geprüft."
-  }, {
-    icon: CalendarCheck,
-    title: "Zweittermin",
-    description: "Selten ist ein zweiter Termin notwendig, zB. bei unscharfen Aufnahmen oder um weitere spezielle auflichtmikroskopische Aufnahmen zu ergänzen. Dieser Termin wird Ihnen selbstverständlich nicht in Rechnung gestellt."
   }, {
     icon: Stethoscope,
     title: "Analyse",
@@ -26,6 +19,10 @@ export const Process = () => {
     icon: FileText,
     title: "Arztbrief & Empfehlung",
     description: "Sie erhalten innerhalb weniger Tage einen fachärztlichen Befundbericht mit konkreter Empfehlung. Bei Auffälligkeiten erfolgt eine ärztliche Befundbesprechung telefonisch."
+  }, {
+    icon: History,
+    title: "Verlaufskontrolle",
+    description: "Das Total-Body-Mapping schafft die Basis für einen umfassenden, KI-gestützten Vergleich der Aufnahmen für spätere Verlaufskontrollen."
   }];
   const singleLesionSteps = [{
     icon: Calendar,
@@ -36,9 +33,9 @@ export const Process = () => {
     title: "Gezielte-Hautkrebs-Untersuchung",
     description: "Unser Team erstellt mit einem Dermatoskop hochauflösende Nahaufnahmen aller gewünschten Muttermale/Hautveränderungen (max. 6 Läsionen). Vor Ort besteht kein direkter Arztkontakt."
   }, {
-    icon: CheckCircle,
-    title: "Qualitätsprüfung & Analyse",
-    description: "Die angefertigten Aufnahmen werden nach Ihrem Besuch bei DermaScan360 von einem Dermatologen geprüft und befundet - unterstützt von einer künstlichen Intelligenz."
+    icon: Stethoscope,
+    title: "Analyse",
+    description: "Ein erfahrener Hautarzt befundet die Fotoaufnahmen - unterstützt von einer spezialisierten künstlichen Intelligenz. Wenn Sie uns schon einmal besucht haben, erfolgt auch ein ausgiebiger Vergleich mit Ihren Voraufnahmen."
   }, {
     icon: FileText,
     title: "Arztbrief & Empfehlung",
@@ -98,7 +95,7 @@ export const Process = () => {
           </TabsContent>
 
           <TabsContent value="single" className="space-y-6 sm:space-y-8 md:space-y-10">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
             {singleLesionSteps.map((step, index) => <div key={index} className="relative">
                   <div className="flex flex-col h-full p-4 sm:p-5 md:p-6 lg:p-7 bg-card sm:rounded-2xl border border-border/50 shadow-md rounded-xl">
                     <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">

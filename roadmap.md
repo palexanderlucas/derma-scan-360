@@ -1,0 +1,13 @@
+- [x] Replace locations block with three swipeable city cards and links.
+- [x] Add city-specific pages with map, travel details, and shared screening sections.
+- [x] Rename the company navigation label to "Für Unternehmen".
+- [x] Add a locations submenu linking to all three city pages on desktop and mobile.
+- [x] Polish swipeable price cards on mobile and tablet: visible neighbors, unclipped edges and popular banner.
+- [x] Replace Osnabrück city image with supplied practice exterior photo in the city hero and homepage location card.
+- [x] Replace Bonn illustrative city image with the supplied practice exterior photo in the city hero and homepage location card.
+- [x] Replace Köln illustrative city image with the supplied practice interior photos (hero: reception, anfahrt: entrance view).
+- [x] Add supplied Bonn entrance photo (Wellbeing building) to the Bonn anfahrt section.
+- [x] Add parking and station details for Köln and Bonn (Köln: public parking nearby, Suevenstraße/Messe-Deutz; Bonn: Tiefgarage, Straßburger Weg/Haus der Jugend/Museum König).
+- [ ] Add dedicated Bonn booking URL (waiting on supplied link; Köln link is live).
+- [x] Restructure imprint: GmbH i.G. (Köln) as legal entity, Osnabrück GbR as location section.
+- [x] Add email contact to the footer and a Kontakt block (email + phone) to each city page; phone identical at all locations for now, per-location number still to come.

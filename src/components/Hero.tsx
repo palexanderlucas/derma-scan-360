@@ -2,8 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Award, Microscope } from "lucide-react";
 import heroImage from "@/assets/hautkrebs-screening-dermascan360-osnabrueck.webp";
 import { FeatureItem } from "@/components/FeatureItem";
+import { scrollToSection } from "@/lib/scrollUtils";
 
-const DOCTOLIB_URL = "https://www.doctolib.de/gemeinschaftspraxis/osnabrueck/dermascan360/booking/patient-insurance-sector?specialityId=1289&telehealth=false&placeId=practice-728521&pid=practice-728521&source=profile";
+import { MAIN_BOOKING_URL } from "@/lib/booking";
 
 export const Hero = () => {
   return <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 bg-gradient-to-b from-accent/40 via-accent/20 to-background relative overflow-hidden">
@@ -12,27 +13,35 @@ export const Hero = () => {
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14 xl:gap-20 lg:items-center">
           <div className="space-y-5 sm:space-y-6 lg:space-y-8 xl:space-y-10 max-w-2xl order-1">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight">
-              Praxis für <span className="whitespace-nowrap">Hautkrebsscreening</span> Osnabrück
+              Hautkrebsscreening&nbsp;in Osnabrück | Köln&nbsp;| Bonn
             </h1>
             <p className="sm:text-lg lg:text-xl xl:text-2xl text-muted-foreground leading-relaxed text-base">
-              Dermatologische Hautkrebsvorsorge mit Ganzkörper-Scanner und digitaler Auflichtmikroskopie – befundet von erfahrenen Hautärzten mit KI-Unterstützung.
+              Hautkrebsvorsorge mit Ganzkörper-Scanner und digitaler Auflichtmikroskopie – befundet von erfahrenen Hautärzten, unterstützt durch KI, mit kurzen Wartezeiten.
             </p>
             
-            <div className="pt-2 sm:pt-4">
+            <div className="pt-2 sm:pt-4 flex flex-row gap-2 sm:gap-4">
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200 text-sm sm:text-base lg:text-lg h-11 sm:h-12 lg:h-14 xl:h-16 font-semibold px-6 sm:px-8"
-                onClick={() => window.open(DOCTOLIB_URL, '_blank')}
+                className="bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-200 text-xs sm:text-base lg:text-lg h-11 sm:h-12 lg:h-14 xl:h-16 font-semibold px-3 sm:px-8 whitespace-nowrap"
+                onClick={() => window.open(MAIN_BOOKING_URL, '_blank', 'noopener,noreferrer')}
               >
-                <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <Calendar className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                 Jetzt Termin buchen
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="text-xs sm:text-base lg:text-lg h-11 sm:h-12 lg:h-14 xl:h-16 font-semibold px-3 sm:px-8 whitespace-nowrap"
+                onClick={() => scrollToSection("standort")}
+              >
+                Zu unseren Standorten
               </Button>
             </div>
 
             <div className="hidden lg:flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-5 lg:gap-8 pt-6 sm:pt-8 lg:pt-10 border-t border-border/50">
-              <FeatureItem icon={Award} title="Erfahrene Hautärzte" subtitle="Facharztstandard" size="sm" />
-              <FeatureItem icon={Microscope} title="Modernste Technik" subtitle="KI-unterstützt" size="sm" />
-              <FeatureItem icon={Clock} title="Kurze Wartezeiten" subtitle="Einfache und digitale Abläufe" size="sm" />
+              <FeatureItem icon={Award} title="Erfahrene Hautärzte" subtitle="Fachärztliche Expertise" size="sm" />
+              <FeatureItem icon={Microscope} title="Modernste Diagnostik" subtitle="KI-gestützt & präzise" size="sm" />
+              <FeatureItem icon={Clock} title="Zeitnahe Termine" subtitle="Auch abends & samstags" size="sm" />
             </div>
           </div>
 
@@ -43,9 +52,9 @@ export const Hero = () => {
 
           {/* Icons for mobile - shown only below lg */}
           <div className="flex flex-col sm:flex-row sm:justify-between gap-4 sm:gap-5 pt-6 sm:pt-8 border-t border-border/50 lg:hidden order-3">
-            <FeatureItem icon={Award} title="Erfahrene Hautärzte" subtitle="Facharztstandard" size="lg" />
-            <FeatureItem icon={Microscope} title="Modernste Technik" subtitle="KI-unterstützt" size="lg" />
-            <FeatureItem icon={Clock} title="Kurze Wartezeiten" subtitle="Einfache und digitale Abläufe" size="lg" />
+            <FeatureItem icon={Award} title="Erfahrene Hautärzte" subtitle="Fachärztliche Expertise" size="lg" />
+            <FeatureItem icon={Microscope} title="Modernste Diagnostik" subtitle="KI-gestützt & präzise" size="lg" />
+            <FeatureItem icon={Clock} title="Zeitnahe Termine" subtitle="Auch abends & samstags" size="lg" />
           </div>
         </div>
       </div>
