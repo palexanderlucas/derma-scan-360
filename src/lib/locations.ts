@@ -42,7 +42,7 @@ export const locations = [
     bookingUrl: koelnBooking,
     welcomeDialog: "koeln",
     phone: "0541 93132180",
-    mapQuery: "Alarichstraße 53, 50679 Köln",
+    mapQuery: "DermaScan360 - Hautkrebsscreening, Alarichstraße 53, 50679 Köln",
     parking: ["Öffentliche Parkmöglichkeiten befinden sich in unmittelbarer Umgebung der Praxis."],
     station: ["Haltestelle Suevenstraße: 5 min Fußweg", "Köln Messe/Deutz: 12 min Fußweg"],
   },
