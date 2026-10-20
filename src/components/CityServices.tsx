@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Check, X, Zap } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { openBookingUrl } from "@/lib/booking";
