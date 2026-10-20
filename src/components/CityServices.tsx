@@ -59,7 +59,7 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       items: [
         ["Gezielte Dermatoskopie", "Hochauflösende Auflichtmikroskopie von bis zu 6 ausgewählten Hautveränderungen."],
         ["Dermatologische Befundung", "unterstützt durch KI."],
-        ["Arztbrief & Empfehlung", "Befundbericht der untersuchten Stellen mit konkreter Empfehlung."],
+        ["Arztbrief", "Befundbericht der untersuchten Stellen mit konkreter Empfehlung."],
       ],
       negative: ["Kein Ganzkörper-Scan"],
     },
@@ -71,7 +71,7 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       items: [
         ["Ganzkörper-Scan & digitale Dermatoskopie", "Total-Body-Mapping mit Detailaufnahmen auffälliger Hautveränderungen."],
         ["Dermatologische Befundung", "unterstützt durch KI."],
-        ["Arztbrief & Empfehlung", "Befundbericht mit Empfehlungen zum weiteren Vorgehen."],
+        ["Arztbrief", "mit Empfehlungen zum weiteren Vorgehen."],
         ["Verlaufskontrolle", "Basis für einen umfassenden Vorher-Nachher-Vergleich bei zukünftigen Untersuchungen."],
       ],
       negative: [] as string[],
@@ -84,7 +84,7 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       items: [
         ["Ganzkörper-Scan & digitale Dermatoskopie", "Total-Body-Mapping mit Detailaufnahmen auffälliger Hautveränderungen."],
         ["Dermatologische Befundung", "unterstützt durch KI."],
-        ["Arztbrief & Empfehlung", "Befundbericht mit Empfehlungen zum weiteren Vorgehen."],
+        ["Arztbrief", "mit Empfehlungen zum weiteren Vorgehen."],
         ["Fotoreport", "Auszug der aufgenommenen Bilder für Ihre Unterlagen."],
         ["Express-Befundung", "Befund innerhalb von 5 Werktagen."],
       ],
