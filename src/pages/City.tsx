@@ -93,7 +93,7 @@ export const City = ({ location }: { location: PracticeLocation }) => {
     </Helmet>
     <Header />
     <main>
-      <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 bg-gradient-to-b from-accent/50 via-accent/35 to-accent/20 relative overflow-hidden">
+      <section className="pt-20 pb-12 sm:pt-24 sm:pb-16 md:pt-32 md:pb-20 lg:pt-44 lg:pb-28 xl:pt-52 xl:pb-36 bg-gradient-to-b from-accent/50 via-accent/35 to-accent/20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08),transparent_50%)]"></div>
         <div className="container mx-auto px-3 sm:px-4 lg:px-8 xl:px-12 relative max-w-[1600px]">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14 xl:gap-20 lg:items-center">
