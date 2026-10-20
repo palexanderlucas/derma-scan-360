@@ -64,7 +64,7 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       negative: ["Kein Ganzkörper-Scan"],
     },
     {
-      name: "Total-Body-Mapping",
+      name: "Hautkrebsscreening Komplettpaket",
       price: "ca. 149 €",
       priceNote: "Befund innerhalb von 14 Tagen",
       popular: true,
@@ -77,7 +77,7 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       negative: [] as string[],
     },
     {
-      name: "Total-Body-Mapping Express",
+      name: "Hautkrebsscreening Express",
       price: "ca. 199 €",
       priceNote: "Befund innerhalb von 5 Werktagen",
       popular: false,
