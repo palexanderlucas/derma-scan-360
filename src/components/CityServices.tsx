@@ -87,7 +87,6 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
         ["Arztbrief", "mit Empfehlungen zum weiteren Vorgehen."],
         ["Verlaufskontrolle", "Basis für einen umfassenden Vorher-Nachher-Vergleich bei zukünftigen Untersuchungen."],
         ["Fotoreport", "Auszug der aufgenommenen Bilder für Ihre Unterlagen."],
-        ["Express-Befundung", "Befund innerhalb von 5 Werktagen."],
       ],
       negative: [] as string[],
     },
