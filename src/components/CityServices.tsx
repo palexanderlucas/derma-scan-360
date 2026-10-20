@@ -69,7 +69,7 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       priceNote: "Befund innerhalb von 14 Tagen",
       popular: true,
       items: [
-        ["Ganzkörper-Scan & digitale Dermatoskopie", "Strukturierte Fotodokumentation mit Detailaufnahmen auffälliger Hautveränderungen."],
+        ["Ganzkörper-Scan & digitale Dermatoskopie", "Total-Body-Mapping mit Detailaufnahmen auffälliger Hautveränderungen."],
         ["Dermatologische Befundung", "Fachärztliche Beurteilung, unterstützt durch KI."],
         ["Arztbrief & Empfehlung", "Befundbericht mit Empfehlungen zum weiteren Vorgehen."],
         ["Verlaufskontrolle", "Basis für einen umfassenden Vorher-Nachher-Vergleich bei zukünftigen Untersuchungen."],
@@ -82,7 +82,7 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       priceNote: "Befund innerhalb von 5 Werktagen",
       popular: false,
       items: [
-        ["Ganzkörper-Scan & digitale Dermatoskopie", "Strukturierte Fotodokumentation mit Detailaufnahmen auffälliger Hautveränderungen."],
+        ["Ganzkörper-Scan & digitale Dermatoskopie", "Total-Body-Mapping mit Detailaufnahmen auffälliger Hautveränderungen."],
         ["Dermatologische Befundung", "Fachärztliche Beurteilung, unterstützt durch KI."],
         ["Arztbrief & Empfehlung", "Befundbericht mit Empfehlungen zum weiteren Vorgehen."],
         ["Fotoreport", "Auszug der aufgenommenen Bilder für Ihre Unterlagen."],
