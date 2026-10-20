@@ -24,13 +24,13 @@ export const Pricing = ({ bookingUrl = MAIN_BOOKING_URL, bookingLabel = "Termin 
     negativeFeatures: ["kein Total-Body-Mapping"],
     popular: false
   }, {
-    name: "Total-Body-Mapping",
+    name: "Hautkrebsscreening Komplettpaket",
     price: "ca. 149",
     delivery: "Befund innerhalb von 14 Tagen",
     features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief"],
     popular: true
   }, {
-    name: "Total-Body-Mapping Express",
+    name: "Hautkrebsscreening Express",
     price: "ca. 199",
     delivery: "Befund innerhalb von 5 Werktagen",
     features: ["Total-Body-Mapping", "Auflichtmikroskopie", "KI-Unterstützung", "Befundung durch erfahrenen Hautarzt", "Arztbrief", "Fotoreport mit Auszug der aufgenommenen Bilder", "Express-Befundung innerhalb von 5 Werktagen"],
