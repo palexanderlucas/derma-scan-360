@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { Check, X, Zap } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { openBookingUrl } from "@/lib/booking";
@@ -21,7 +21,11 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
 
   useEffect(() => {
     const el = scrollerRef.current;
-    if (el && window.innerWidth < 1024) el.scrollLeft = 0;
+    const target = el?.querySelector<HTMLElement>("[data-popular]");
+    if (!el || !target || window.innerWidth >= 1024) return;
+    const track = el.getBoundingClientRect();
+    const card = target.getBoundingClientRect();
+    el.scrollLeft += card.left - track.left - (track.width - card.width) / 2;
   }, []);
 
   const photos = [
@@ -48,10 +52,21 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
 
   const plans = [
     {
+      name: "Kontrolle einzelner Läsionen / gezielte Hautkrebs-Untersuchung",
+      price: "ab 49 €",
+      priceNote: "Erste Läsion ca. 49 €, jede weitere ca. 10 € (max. 6 Läsionen)",
+      popular: false,
+      items: [
+        ["Gezielte Dermatoskopie", "Hochauflösende Auflichtmikroskopie von bis zu 6 ausgewählten Hautveränderungen."],
+        ["Dermatologische Befundung", "Fachärztliche Beurteilung, unterstützt durch KI."],
+        ["Arztbrief & Empfehlung", "Befundbericht der untersuchten Stellen mit konkreter Empfehlung."],
+      ],
+      negative: ["Kein Ganzkörper-Scan"],
+    },
+    {
       name: "Total-Body-Mapping",
       price: "ca. 149 €",
-      priceNote: "Befund in 14 Tagen",
-      expressNote: "Express-Option: ca. 199 € · 5 Werktage inkl. Fotoauszug",
+      priceNote: "Befund innerhalb von 14 Tagen",
       popular: true,
       items: [
         ["Ganzkörper-Scan & digitale Dermatoskopie", "Strukturierte Fotodokumentation mit Detailaufnahmen auffälliger Hautveränderungen."],
@@ -62,17 +77,18 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
       negative: [] as string[],
     },
     {
-      name: "Kontrolle einzelner Läsionen / gezielte Hautkrebs-Untersuchung",
-      price: "ab 49 €",
-      priceNote: "Erste Läsion ca. 49 €, jede weitere ca. 10 € (max. 6 Läsionen)",
-      expressNote: undefined as string | undefined,
+      name: "Total-Body-Mapping Express",
+      price: "ca. 199 €",
+      priceNote: "Befund innerhalb von 5 Werktagen",
       popular: false,
       items: [
-        ["Gezielte Dermatoskopie", "Hochauflösende Auflichtmikroskopie von bis zu 6 ausgewählten Hautveränderungen."],
+        ["Ganzkörper-Scan & digitale Dermatoskopie", "Strukturierte Fotodokumentation mit Detailaufnahmen auffälliger Hautveränderungen."],
         ["Dermatologische Befundung", "Fachärztliche Beurteilung, unterstützt durch KI."],
-        ["Arztbrief & Empfehlung", "Befundbericht der untersuchten Stellen mit konkreter Empfehlung."],
+        ["Arztbrief & Empfehlung", "Befundbericht mit Empfehlungen zum weiteren Vorgehen."],
+        ["Fotoreport", "Auszug der aufgenommenen Bilder für Ihre Unterlagen."],
+        ["Express-Befundung", "Befund innerhalb von 5 Werktagen."],
       ],
-      negative: ["Kein Ganzkörper-Scan"],
+      negative: [] as string[],
     },
   ];
 
@@ -126,20 +142,12 @@ export const CityServices = ({ city, bookingUrl }: Props) => {
           </p>
         </div>
 
-        <div ref={scrollerRef} className="flex gap-4 sm:gap-5 overflow-x-auto snap-x snap-mandatory pt-5 pb-7 -mx-3 px-5 sm:-mx-4 sm:px-7 scroll-px-5 sm:scroll-px-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-2 lg:gap-8 lg:overflow-visible lg:mx-0 lg:px-0">
-          {plans.map((plan) => <div key={plan.name} className={`relative flex flex-col shrink-0 w-[82%] sm:w-[62%] lg:w-auto snap-center p-5 sm:p-6 lg:p-8 bg-card rounded-xl sm:rounded-2xl border-2 shadow-lg ${plan.popular ? "border-primary shadow-xl" : "border-border/50"}`}>
+        <div ref={scrollerRef} className="flex gap-4 sm:gap-5 overflow-x-auto snap-x snap-mandatory pt-5 pb-7 -mx-3 px-5 sm:-mx-4 sm:px-7 scroll-px-5 sm:scroll-px-7 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:mx-0 lg:px-0">
+          {plans.map((plan) => <div key={plan.name} data-popular={plan.popular ? "" : undefined} className={`relative flex flex-col shrink-0 w-[82%] sm:w-[62%] lg:w-auto snap-center p-5 sm:p-6 lg:p-8 bg-card rounded-xl sm:rounded-2xl border-2 shadow-lg ${plan.popular ? "border-primary lg:scale-105 shadow-xl" : "border-border/50"}`}>
             {plan.popular && <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-primary text-primary-foreground text-xs sm:text-sm font-semibold rounded-full whitespace-nowrap">Beliebteste Option</div>}
             <h3 className="text-xl lg:text-2xl font-bold mb-1">{plan.name}</h3>
             <div className="text-3xl lg:text-4xl font-bold mt-4">{plan.price}</div>
-            <p className="text-sm text-muted-foreground mt-1">{plan.priceNote}</p>
-            {plan.expressNote ? (
-              <div className="inline-flex items-center gap-1.5 mt-2 mb-6 px-2.5 py-1 rounded-md bg-accent border border-border/50 text-xs text-accent-foreground">
-                <Zap className="h-3.5 w-3.5 text-primary shrink-0" />
-                <span>{plan.expressNote}</span>
-              </div>
-            ) : (
-              <p className="text-sm text-muted-foreground mt-1 mb-6">&nbsp;</p>
-            )}
+            <p className="text-sm text-muted-foreground mt-1 mb-6">{plan.priceNote}</p>
 
             <ul className="space-y-4 mb-7 flex-grow">
               {plan.items.map(([t, d]) => <li key={t} className="flex gap-2">
