@@ -14,8 +14,8 @@ export const Location = () => (
       <div aria-label="Standorte" className="flex lg:grid lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 overflow-x-auto lg:overflow-visible snap-x snap-mandatory pb-5 -mx-3 px-3 sm:-mx-4 sm:px-4 lg:mx-0 lg:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {locations.map((location) => (
           <article key={location.slug} className="snap-center shrink-0 w-[84%] sm:w-[62%] lg:w-auto bg-card border border-border rounded-lg overflow-hidden flex flex-col shadow-sm">
-            <div className="relative aspect-[3/2] bg-muted">
-              <img src={location.image} alt={location.imageAlt} width={1200} height={800} loading="lazy" className="w-full h-full object-cover object-top" />
+            <div className="relative aspect-[3/2] bg-muted overflow-hidden">
+              <img src={location.image} alt={location.imageAlt} width={1200} height={800} className="absolute inset-0 w-full h-full object-cover object-top" />
               {!location.isPracticePhoto && <span className="absolute bottom-2 right-2 bg-background/90 text-foreground text-xs px-2 py-1 rounded-sm">Stadtansicht · Praxisfoto folgt</span>}
             </div>
             <div className="p-5 sm:p-6 flex flex-col flex-1">
